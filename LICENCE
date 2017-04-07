@@ -1,0 +1,6 @@
+The preprocessing scripts included in this repository (files with extensions .sh and .py) are under 
+Copyright (c) 2017 The University of Edinburgh and subject to the MIT licence, included in this repository as the file MIT-LICENCE
+
+The data contained in the corpora is under the respective licences of the repositories it was scraped from and should not be used,
+without their copyright holders consent, for purposes other than research in machine learning, natural language processing and
+automated code processing.
