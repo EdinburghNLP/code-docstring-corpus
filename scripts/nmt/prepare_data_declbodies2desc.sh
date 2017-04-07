@@ -25,5 +25,6 @@ $BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2d
 $BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2desc.test.tok.clean.db > data_ps.declbodies2desc.test.bpe.clean.db
 
 cat data_ps.declbodies2desc.train.bpe.clean.db data_ps.declbodies2desc.train.bpe.clean.d > data_ps.declbodies2desc.train.bpe.clean.merged
-$NEMATUS/data/build_dictionary.py corpus.bpe.clean.merged
+$NEMATUS/data/build_dictionary.py data_ps.declbodies2desc.train.bpe.clean.merged
+
 
