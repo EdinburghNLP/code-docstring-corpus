@@ -1,0 +1,2000 @@
+@frappe.whitelist() DCNL def setup_complete(args):
+def main():
+def __guess_dataset_by_filename(filename):
+def resolve_possible_pending_xrefs(app, fromdocname, maybe_xrefs):
+def prepare_to_run():
+def test_download_exit_status_code_when_no_requirements(script):
+def main():
+def _out(msg):
+@hook.command('bingimage', 'bis') DCNL def bingimage(text, bot):
+def create_option_values_for_optionable(optionable_type, **options):
+def probitloglike(params, endog, exog):
+def test_pix2world():
+def influence_plot(results, external=True, alpha=0.05, criterion='cooks', size=48, plot_alpha=0.75, ax=None, **kwargs):
+def send_file(name, data):
+def root_create(request):
+def block_device_mapping_update_or_create(context, values):
+@profiler.trace DCNL @memoized DCNL def flavor_list(request, is_public=True, get_extras=False):
+def build_content_type(format, encoding=u'utf-8'):
+def assign_random_category(resource):
+@contextlib.contextmanager DCNL def temporary_mutation(obj, **kwargs):
+def is_harvard_notes_enabled(course):
+def seqs_from_file(ids, file_lines):
+def dice_coe(output, target, epsilon=1e-10):
+def _skip_create_test_db(self, verbosity=1, autoclobber=False, serialize=True):
+def upload_mission(aFileName):
+def evaluator(variables, functions, math_expr, case_sensitive=False):
+def make_pie_chart(data, dir_path, level, prefs, pref_colors, background_color, label_color, generate_image_type, plot_width, plot_height, bar_width, dpi, include_html_legend, file_prefix=None, props={}, others_key='All DCSP Other DCSP Categories', others_color='#eeeeee', should_capitalize=True):
+def ismount(path):
+def libvlc_vlm_get_media_instance_title(p_instance, psz_name, i_instance):
+def IE_Dispatcher(s):
+def combine_path_lists(*path_seqs):
+def first_ip(network):
+def load_sparse_dataset(name, normalize=True, transfer=False, randomize_valid=False, randomize_test=False):
+def libvlc_video_get_spu_description(p_mi):
+def sum_parts(data):
+def test_contains_one_of():
+def getTransferClosestNestedRing(extrusionHalfWidth, nestedRings, oldOrderedLocation, skein, threadSequence):
+def org_organisation_requires(required=False, realms=None, updateable=False):
+def get_id(sensorid, feedtag, feedname, feedid, feeduserid):
+def set_network(ip, netmask, gateway):
+def pickle(obj, fname, protocol=2):
+def split_file_dummy(changed_file):
+def _merge_entries(path, tree1, tree2):
+def register_onaccept(form):
+def gf_mul_ground(f, a, p, K):
+def close_review_requests(payload, server_url):
+def encoding(argument):
+def setConfigOptions(**opts):
+def _getReportItem(itemName, results):
+def getInnerText(node):
+def resolve_name(name, namespace_, remappings=None):
+def separate_qtranslate_content(text):
+def get(item, default=None):
+def detect_paragraph_type(txt):
+def unique_file_name(base_name, extension=''):
+def UniqueIterator(iterator, key=(lambda x: x)):
+def _putmask_smart(v, m, n):
+def _traverse_generic(start_node, get_parents, get_children, filter_func=None, yield_descendants_of_unyielded=False):
+def getQuadraticPath(elementNode):
+@opt.register_specialize('stabilize', 'fast_compile') DCNL @gof.local_optimizer([tensor.Elemwise]) DCNL def local_logsoftmax(node):
+def stChromaFeaturesInit(nfft, fs):
+def _set_nxm_headers(nxm_headers):
+def gettext(string, **variables):
+def _modified_weiszfeld_step(X, x_old):
+def translate_exception(req, e):
+def rand_uuid_hex():
+def current_time():
+def check_packages(module, xbps_path, packages, state):
+def send_summary():
+def set_driver(drivers, provider, module, klass):
+def classname_for_table(base, tablename, table):
+def getVertexGivenLine(line):
+def filter_new_cons(packet):
+def memcache_set(request):
+def splantider(tck, n=1):
+@contextfunction DCNL def core_generic_list(context, objects, skip_group=False, tag=None):
+def _get_sysfs_netdev_path(pci_addr, pf_interface):
+def unpack(desc, formodulename=''):
+def convert_labels(labels, transl):
+def absent(name, path, mask, cmd, user='root'):
+@blueprint.route('/users') DCNL def list_all_users():
+def _get_frame_class(frame):
+def dmp_ground_TC(f, u, K):
+def load_random_chromosome(chr_name):
+def _selective_search_IJCV_top_k(split, year, top_k):
+def is_file_ignored(opts, fname):
+def _warn_iers(ierserr):
+def mean(x, axis=None, keepdims=False):
+@verbose DCNL def morph_source_spaces(src_from, subject_to, surf='white', subject_from=None, subjects_dir=None, verbose=None):
+def _read(filepath_or_buffer, kwds):
+def get_details_for_etag(options):
+def __virtual__():
+def rs_diff(p, x):
+def _generate_python_path(pkg, rospack):
+def follow_files(follow_paths, outstream, lastlines_dirpath=None, waitsecs=5):
+def oo_select_keys_from_list(data, keys):
+def is_user_capable(user, api_name):
+def get_c_extract(r, name, sub):
+def _join(value):
+def produce(url, ident):
+def getLoopStartingClosest(extrusionHalfWidth, location, loop):
+def var_count_error(is_independent, is_plotting):
+def train(xs, ys, update_fn=None, typecode=None):
+@_api_version(1.21) DCNL @_client_version('1.5.0') DCNL def create_volume(name, driver=None, driver_opts=None):
+def register(linter):
+def test_scharr_v_vertical():
+def _get_lines_from_file(filename, lineno, context_lines):
+def parse_options():
+def download_libxml2(dest_dir, version=None):
+def enqueue_push_course_update(update, course_key):
+def fake_os_walk(paths):
+def get_all_objects(start_obj=None):
+def send_mail_to_student(student, param_dict, language=None):
+def get_profiler_log_path(autodir):
+def sh(cmd):
+def raise_http_conflict_for_instance_invalid_state(exc, action, server_id):
+def random_selection(a, start, end, i):
+def main():
+def collect_data_files(package, include_py_files=False, subdir=None):
+def encrypt(plaintext):
+def parse_acl(acl_string):
+def popen_nonblock(*args, **kwargs):
+def dup_transform(f, p, q, K):
+def serialize_item(collection, item):
+def create_instance(c_instance):
+def req_item():
+def service_status(hostname=None, service=None, **kwargs):
+def command_show(problem):
+def current_route_url(request, *elements, **kw):
+def obfuscatePowershellScript(code):
+def add_metadata_type(ir):
+def factory(type):
+def get_dl_data(song, mediatype='any'):
+def sign(wire, keyname, secret, time, fudge, original_id, error, other_data, request_mac, ctx=None, multi=False, first=True, algorithm=default_algorithm):
+def errors_response(status, errors):
+def dmp_integrate_in(f, m, j, u, K):
+def dump_thread_stack():
+@endpoint(u'/ajax/books/{library_id=None}', postprocess=json) DCNL def books(ctx, rd, library_id):
+def get_injected_network_template(network_info, use_ipv6=CONF.use_ipv6, template=CONF.injected_network_template):
+@pytest.fixture DCNL def reset_standarddir(no_cachedir_tag):
+def refresh_db(full=False):
+def from_current_timezone(value):
+def DEFINE_boolean(name, default, help):
+def load_lang_conf():
+def badDecorator(fn):
+def find_file(path, saltenv='base', **kwargs):
+def load_pandas():
+def flatten(seq, scalarp=is_scalar_or_string):
+def isLineIntersectingLoops(loops, pointBegin, pointEnd):
+def report_expected_diffs(diffs, colorize=False):
+@treeio_login_required DCNL @handle_response_format DCNL def tax_view(request, tax_id, response_format='html'):
+def timeit(func):
+def http_date_to_dt(http_date, obs_date=False):
+def setup_platform(hass, config, add_devices, discovery_info=None):
+def task_enable_flocker_control(distribution, action='start'):
+def get_conn(service='SoftLayer_Virtual_Guest'):
+def autocorr(s, axis=(-1)):
+def _has_access_course(user, action, courselike):
+def sequences_add_start_id(sequences, start_id=0, remove_last=False):
+def test_cnn_sample_wt_fit():
+def div_proxy(x, y):
+def seteuid(uid):
+def _native_set_to_python_list(typ, payload, c):
+def synopsis(filename, cache={}):
+def delete_rax_scaling_group(args):
+def get_default_ddir():
+def floating_ip_pool_list(call=None):
+def delete(table_name, region=None, key=None, keyid=None, profile=None):
+def _qualNameWalker(qualName):
+@pytest.mark.parametrize('specialchars, DCSP count_char', [(' DCSP abcde DCSP  DCSP  DCSP  DCSP  DCSP ', ' DCSP '), (' DCSP aaaaaaaaaa', 'a'), ('\xc4\x81\xc3\xa9\xc4\xa9\xc3\xb8\xc3\xb8\xc3\xb8\xc3\xb8\xc3\xb8\xc3\xb8\xc3\xbc', u'\xf8')]) DCNL @pytest.mark.django_db DCNL def test_clean_specialchars_unique(specialchars, count_char):
+def present(name, attributes=None, region=None, key=None, keyid=None, profile=None):
+def _sqrt_match(p):
+@treeio_login_required DCNL @handle_response_format DCNL def event_edit(request, event_id, response_format='html'):
+def is_media_request(request):
+def find_subnets(vpc_conn, vpc_id, identified_subnets):
+def test_sigma_clipped_stats():
+def test_read_bin_lush_matrix_ubyte_scalar():
+def data_path(path):
+def add_interface(zone, interface, permanent=True):
+def dylib_info(filename):
+def finite_diff_kauers(sum):
+def get_disk_list(std_mounts_only=True, get_all_disks=False):
+def no_afni():
+def initialize(cli):
+def seed(seed=None):
+def check_paths():
+def confirm(message=u'Confirm DCSP (y DCSP or DCSP n) DCSP '):
+def dictfind(dictionary, element):
+def main_loop(options, modules, sender, tags):
+def uninstall():
+def _compute_mi(x, y, x_discrete, y_discrete, n_neighbors=3):
+def _check_bem_size(surfs):
+def url_name_for_block(block):
+def storify(f, *requireds, **defaults):
+def login(session, *args, **kwargs):
+def double_coset_can_rep(dummies, sym, b_S, sgens, S_transversals, g):
+def setup(app, status, warning):
+@task(queue='web') DCNL def move_files(version_pk, hostname, html=False, localmedia=False, search=False, pdf=False, epub=False):
+def generate_reset_password_token(user):
+def rrggbb_to_triplet(color):
+@commands(u'suggest') DCNL def suggest(bot, trigger):
+def assign_role_for_exploration(committer_id, exploration_id, assignee_id, new_role):
+def _queue_management_worker(executor_reference, processes, pending_work_items, work_ids_queue, call_queue, result_queue):
+def timefunc(correct, s, func, *args, **kwargs):
+def demo():
+@register_specialize DCNL @register_canonicalize DCNL @gof.local_optimizer([T.mul]) DCNL def local_mul_switch_sink(node):
+def po_due_followups():
+def lstrips(text, remove):
+def writeOutput(fileName):
+def move(src, dst):
+def iri_to_uri(iri):
+def perform_check(prerelease=current_version.is_prerelease):
+def virtual_root(resource, request):
+def config(conf_path='/etc/rsyncd.conf'):
+def intTime(scale=1):
+def _make_compound_key(table, key):
+def DNSServiceResolve(flags=0, interfaceIndex=_NO_DEFAULT, name=_NO_DEFAULT, regtype=_NO_DEFAULT, domain=_NO_DEFAULT, callBack=None):
+def FindRegisterPackage(packageName, knownFile, searchPaths, registryAppName=None):
+def kernel_info(attrs=None, where=None):
+def vsepr_build_correct_answer(geometry, atoms):
+def _get_enabled_tax_rules(taxing_context, tax_class):
+def hilbert(n):
+def float_sum(iterable):
+def json2csv_entities(tweets_file, outfile, main_fields, entity_type, entity_fields, encoding='utf8', errors='replace', gzip_compress=False):
+def quota_allocated_update(context, project_id, resource, allocated):
+def AllocateIdsAsync(model_key, size=None, **kwargs):
+def unpack(source):
+def encode_quopri(msg):
+def dump_metadata(filename, show_row_group_metadata, out=sys.stdout):
+def make_query_from_filter(sample_filter, require_meter=True):
+def get_value_from_user(message, default_value='', hidden=False):
+def is_private_subnet(ip):
+def emit_certificate_event(event_name, user, course_id, course=None, event_data=None):
+def write_checkpoint(current_key, ctr, cluster_mapping, ids, bestscores, order, out_fp):
+def get_nexusport_binding(port_id, vlan_id, switch_ip, instance_id):
+def filter_user(user_ref):
+def BdbQuit_excepthook(et, ev, tb, excepthook=None):
+def social_auth_login_redirect(request):
+def get_user_model():
+def remove_useless_meta(meta):
+def bidirectional_rnn(incoming, rnncell_fw, rnncell_bw, return_seq=False, return_states=False, initial_state_fw=None, initial_state_bw=None, dynamic=False, scope=None, name='BiRNN'):
+def test_scenario_may_own_outlines():
+def xml_decode(string):
+def ChiNoncentral(name, k, l):
+def name_for_collection_relationship(base, local_cls, referred_cls, constraint):
+def demo_str_rule_format():
+def get_location(vm_=None):
+def test_unicode_column(tmpdir):
+@skip_if_not_win32 DCNL @with_environment DCNL def test_get_home_dir_1():
+def pct_to_int(value, num_items, min_value=1):
+def zip_timeseries(*series, **kwargs):
+def html_body(input_string, source_path=None, destination_path=None, input_encoding='unicode', output_encoding='unicode', doctitle=True, initial_header_level=1):
+def wlPen(wl):
+@conf.commands.register DCNL def defragment(plist):
+def validate_positive_integer_or_none(option, value):
+def sixteen(data):
+def test_example2():
+def texts(i, e):
+def test_conditional_get_vae():
+def task_create(context, values, session=None):
+def getEvaluatedIntDefault(defaultInt, key, xmlElement=None):
+def _ToBlobstoreError(error):
+def csolve_prime(f, p, e=1):
+def _get_nets(vif, subnet, version, net_num, link_id):
+def inv_item_quantity():
+def get_connection(service, module=None, region=None, key=None, keyid=None, profile=None):
+def trigger(registry, xml_parent, data):
+def logger(_modem, message_, type_):
+def read_double(fid):
+def getToothProfileCylinder(derivation, pitchRadius, teeth):
+def run_simple(hostname, port, application, use_reloader=False, use_debugger=False, use_evalex=True, extra_files=None, reloader_interval=1, reloader_type='auto', threaded=False, processes=1, request_handler=None, static_files=None, passthrough_errors=False, ssl_context=None):
+def summary_table(res, alpha=0.05):
+def get_receptive_field(layers, img_size):
+def clear_all_actions():
+def timesince(d=None, now=None, abbreviate=False, separator=','):
+def _fill_cdata(cls):
+def get_user_unique_id_and_display_name(request, mapped_properties):
+def disable(name, lbn, target, profile='default', tgt_type='glob', expr_form=None):
+def swap_inf_nan(val):
+def get_job_count_by_state(request, username):
+def filer_file_from_upload(request, path, upload_data, sha1=None):
+def last_updated(document):
+def stub_out_registry_image_update(stubs):
+def RemoveFlags(flag_values=FLAGS):
+@require_context DCNL def volume_get_all_by_group(context, group_id, filters=None):
+def XmlToString(content, encoding='utf-8', pretty=False):
+def add_email_to_campaign(survey, email):
+def test_lda_empty_docs():
+def _diff(state_data, resource_object):
+@utils.arg('server', metavar='<server>', help=_('Name DCSP or DCSP ID DCSP of DCSP server.')) DCNL def do_resize_confirm(cs, args):
+def op_abs_tmul(lin_op, value):
+def html4annotation(htmlpage, baseurl=None, proxy_resources=None):
+def run_as_contextmanager(ctx, fn, *arg, **kw):
+def continued_indentation(logical_line, tokens, indent_level, hang_closing, indent_char, noqa, verbose):
+def test_prompt_should_ask_and_rm_repo_dir(mocker, tmpdir):
+def ipart(x):
+def nlmeans_proxy(in_file, settings, snr=None, smask=None, nmask=None, out_file=None):
+def get_zones(permanent=True):
+def p_test(p):
+def get_terminal_size():
+def _get_forward_relationships(opts):
+def get_qos(tenant_id, qos_id):
+def get_resources_dests(resources_root, rules):
+def cap_alert_is_template(alert_id):
+def add_close_action(widget):
+@task DCNL @timed DCNL def check_memcache():
+def abstractmethod(funcobj):
+def validate_filters(where, resource):
+@pytest.mark.network DCNL def test_uptodate_editables_flag(script, data):
+def _du(real_path):
+def pr_api_url_from_web_url(url):
+def Client(version=None, unstable=False, session=None, **kwargs):
+def NullController(*_args, **_kwargs):
+@pytest.mark.django_db DCNL def test_social_media_plugin_ordering():
+def parse_backend_conf(backend, **kwargs):
+def shell(cmds, env=None, **kwds):
+def normalize_timestamp(timestamp):
+def simple_parse_to_segments(formatted_text):
+def _write_proj(fid, projs):
+def clean_up_tables(db, tmp_prefix):
+def custom_url(generator, metadata):
+def find_sockfiles():
+def local_extra_dirs(func):
+def topological_sort(graph, key=None):
+def get_transcripts_from_youtube(youtube_id, settings, i18n, youtube_transcript_name=''):
+def coreproperties(title, subject, creator, keywords, lastmodifiedby=None):
+def setup_request_bound_data(config):
+def has_no_time(at):
+def band_stop_obj(wp, ind, passb, stopb, gpass, gstop, type):
+def view(tpl_name, **defaults):
+def primes(n):
+def subjunctive(sentence, classical=True, **kwargs):
+def test_MultipleLocator_set_params():
+@contextmanager DCNL def disable_overrides():
+def main(args):
+def stack(xs, axis=0):
+def _execute(*cmd, **kwargs):
+def which_files(file, mode=(F_OK | X_OK), path=None, pathext=None):
+def runner():
+def customized_clean_str(string):
+def var_label(var, precision=3):
+def valid_android_zip(app_dir):
+def validate_required_iff(**kwargs):
+@pytest.mark.django_db DCNL def test_format_registry_reregister(no_formats):
+def import_no_virt_driver_import_deps(physical_line, filename):
+def _trim_text(text, max_width):
+def _labels_inertia_precompute_dense(X, x_squared_norms, centers, distances):
+def compute_node_statistics(context):
+def common_texification(text):
+@register.filter(name='str_to_list') DCNL def str_to_list(info):
+def upload_problem_grade_report(_xmodule_instance_args, _entry_id, course_id, _task_input, action_name):
+def _ip_to_number(ipstr):
+def _validate_dict_keys(dict_to_check, required_keys, optional_keys):
+def _convert_to_array_of_opt_val(optvals):
+def image_volume_cache_create(context, host, cluster_name, image_id, image_updated_at, volume_id, size):
+def test_against_hor2eq():
+def test_vector_to_conv_c01b_invertible():
+@when(u'we DCSP connect DCSP to DCSP test DCSP database') DCNL def step_db_connect_test(context):
+def setup_user_info():
+def copy_constr(constr, func):
+def __virtual__():
+def mul_elemwise(lh_op, rh_op):
+def list_headers(general=None, request=None, response=None, entity=None):
+def map_vera_device(vera_device, remap):
+def auth(username, password):
+def check_mapping_file(mapping_fp, output_dir='.', has_barcodes=True, char_replace='_', verbose=True, variable_len_barcodes=False, disable_primer_check=False, added_demultiplex_field=None, suppress_html=False):
+@with_device DCNL def push(local_path, remote_path):
+def oo_ami_selector(data, image_name):
+def get_lib_extension():
+def _sort_names(FQDNs):
+def tostring(xml=None, xmlns=u'', stream=None, outbuffer=u'', top_level=False, open_only=False, namespaces=None):
+def safe_join(directory, *pathnames):
+def urldecode(query):
+@contextmanager DCNL def context(grpc_context):
+def delete_device(name, safety_on=True):
+def _write_3(fid, val):
+def make_avpr_object(json_data):
+@constructor DCNL def shape_padaxis(t, axis):
+def dumps_with_persistent_ids(obj, protocol=None):
+def cluster_remove(version, name='main', stop=False):
+def returner(ret):
+def expanding_quantile(arg, quantile, min_periods=1, freq=None):
+def is_funcvar(expr):
+def getLocalAndroidPath(client, args):
+def main():
+def mult(a, b):
+def test_check_dictionary():
+def create_generic_related_manager(superclass):
+def get_metadata(stream, extract_cover=True):
+def install_readline(hook):
+def _run_shell_command(cmd, tmpdir):
+def _run_composer(action, directory=None, composer=None, php=None, runas=None, prefer_source=None, prefer_dist=None, no_scripts=None, no_plugins=None, optimize=None, no_dev=None, quiet=False, composer_home='/root', extra_flags=None):
+def _setup_styles(conditions, style_dict, style, default):
+def parse(json_string):
+def _filter_configured_avoids(module):
+def _grow_nonoverlapping_labels(subject, seeds_, extents_, hemis, vertices_, graphs, names_):
+def _perform_pairwise_tests(labels, dists, tail_type, num_permutations):
+def get_num_instances(server=None, version=None):
+def raw(key=None):
+def smart_str(s, encoding='utf-8', strings_only=False, errors='strict'):
+def localize(value):
+def test__FileIO_tell():
+@requires_application() DCNL def test_functionality_desktop():
+def SearchDataAdapter(results, format, collection):
+def delaxes(*args):
+def volume_get_all_by_group(context, group_id, filters=None):
+def __virtual__():
+def to_tornado_future(asyncio_future):
+def has_open_quotes(s):
+def get_bulk_archive(selected_submissions, zip_directory=''):
+def _frangi_hessian_common_filter(image, scale_range, scale_step, beta1, beta2):
+def dns_dhcp(interface='Local DCSP Area DCSP Connection'):
+def dijkstra_predecessor_and_distance(G, source, cutoff=None, weight='weight'):
+def internJID(jidstring):
+def get_all_roles(exclude_system=False):
+def get_user_hash(request):
+def test_max_pool():
+def test_alknn_not_good_object():
+def required_estimates_fields(columns):
+@register.tag DCNL def ssi(parser, token):
+def real_path(path):
+def main():
+def _create_base_cipher(dict_parameters):
+@register_specialize DCNL @register_canonicalize DCNL @gof.local_optimizer([Subtensor]) DCNL def local_subtensor_inc_subtensor(node):
+def load_check(agentConfig, hostname, checkname):
+def import_string(import_name, silent=False):
+def get():
+def english_sort(x, y):
+@register.filter(is_safe=True) DCNL def length(value):
+def get_event_loop():
+def get_visibility(name):
+def _extractCommon(string):
+def test_np_rng():
+def _translate_str(sequence, table, stop_symbol='*', to_stop=False, cds=False, pos_stop='X', gap=None):
+def track_time_change(year=None, month=None, day=None, hour=None, minute=None, second=None):
+def lz4_encode(payload):
+def rc(group, **kwargs):
+def _comp_method_SERIES(op, name, str_rep, masker=False):
+@allow_public DCNL def contribute_view(request):
+def load_from_folder(app):
+def encipher_bifid(msg, key, symbols=None):
+def _get_view_to_display_matrix(scene):
+def debug_msg(text, prefix='Debug'):
+@pytest.mark.cmd DCNL @pytest.mark.django_db DCNL def test_list_projects_modified_since(capfd):
+def get_modules_containing_name(evaluator, mods, name):
+def get_next_disk_info(mapping, disk_bus, device_type='disk', boot_index=None, assigned_devices=None):
+def atleast_2d(*arys):
+def last_month_day(tm):
+def set_block_scalar_indent(TokenClass):
+@require_context DCNL def vol_get_usage_by_time(context, begin):
+def role_list(request):
+def run_discovery(entry_points_iter, cached=False):
+def _reduce_function(func, globs):
+def replace(s, old, new, maxsplit=0):
+@inlineCallbacks DCNL def main(reactor, args, base_path, top_level):
+def hilbert(x, N=None, axis=(-1)):
+def unpickleStringO(val, sek):
+@FileSystem.in_directory(current_directory, 'django', 'alfaces') DCNL def test_django_background_server_running_in_background():
+def do_lower(s):
+def human_readable_to_bytes(value):
+@mock_streams('stdout') DCNL def test_global_parallel_honors_runs_once():
+def request_latency(results, limit):
+@with_setup(prepare_stdout, registry.clear) DCNL def test_jsonreport_output_with_no_steps():
+def is_full_slice(obj, l):
+def second(seq):
+@contextmanager DCNL def collect_profile(file_prefix):
+def guard_null(context, builder, value, exc_tuple):
+def ode_separable(eq, func, order, match):
+def _update_rs_from_primary(sds, replica_set_name, server_description, max_set_version, max_election_id):
+def langnames_to_langcodes(names):
+@pytest.fixture() DCNL def celery_app(request, celery_config, celery_parameters, celery_enable_logging, use_celery_app_trap):
+def checkMatch(input, prediction, sparse=True, verbosity=0):
+def _user_has_module_perms(user, app_label):
+def tostring(raw, **kwargs):
+def decode_entities(html):
+@with_setup(setup, teardown) DCNL def test_show_negative_chains():
+def escape_ajax(url):
+def verbose_lookup_expr(lookup_expr):
+def insured(pool, fun, args, kwargs, errback=None, on_revive=None, **opts):
+def read_png_depth(filename):
+def _infer_decorator_callchain(node):
+def txt_records_for_name(name):
+def spherical_yn(n, z, derivative=False):
+def write_csv_file(path, app_messages, lang_dict):
+def current_year_and_week():
+def both():
+def popen_wrapper(args, os_err_exc_type=CommandError):
+def staticfiles_urlpatterns(prefix=None):
+def match_patterns(pathname, patterns):
+def itemlist(tparams):
+def tty(*args, **kwargs):
+def main(argv):
+def GetTokenInformation(token, information_class):
+def fill_diagonal(a, val, wrap=False):
+def test_multiclass_error():
+def full_like(array, fill_value, stream=None):
+def query(uuid):
+def instance_add_security_group(context, instance_uuid, security_group_id):
+def parseOptions(args=None):
+@login_required DCNL @expect_json DCNL def delete_item(request, usage_key):
+def request(http, uri, method='GET', body=None, headers=None, redirections=httplib2.DEFAULT_MAX_REDIRECTS, connection_type=None):
+def _chk_asarray(a, axis):
+def simsam_range_to_files(table, tree, simulated_sample_sizes, dissimilarities, output_dir, mapping_f=None, output_table_basename='table', output_map_basename='map'):
+def parse_function_plugin(logger, line, state):
+def set_subnet_name(name):
+@ignore_warnings DCNL def test_sensitivity_specificity_ignored_labels():
+def description():
+def estimate_beta_ridge(x, y, alpha):
+def for_name(fq_name, recursive=False):
+def vgcreate(vgname, devices, **kwargs):
+@scope.define DCNL def call(fn, args=(), kwargs={}):
+def test_raise_exception_spatial():
+def new_table(table, family='ipv4'):
+def function_exponentiation(tokens, local_dict, global_dict):
+@testing.requires_testing_data DCNL def test_fine_calibration():
+def _parse_core_site():
+def compute_norms(array, norm_axes=None):
+def hrm_person_controller(**attr):
+def _get_basic_stream(stream_name, conn):
+@protocol.commands.add(u'addid', songpos=protocol.UINT) DCNL def addid(context, uri, songpos=None):
+def SampleRows(df, nrows, replace=False):
+def flushall(host=None, port=None, db=None, password=None):
+def get_common_path(pathlist):
+def _getwindowview(folder_alias):
+def group_backend_by_type(items):
+def test_large_angle_representation():
+def check_fasta_seqs_lens(input_fasta_fp):
+def py_scanstring(s, end, encoding=None, strict=True, _b=BACKSLASH, _m=STRINGCHUNK.match):
+def harmonicModel(x, fs, w, N, t, nH, minf0, maxf0, f0et):
+def _make_allocated_size_testcases():
+def Gamma(name, k, theta):
+def remove_wsgi_intercept(host, port):
+def build_full_traversal():
+def make_subprocess(cmdline, stdout=False, stderr=False, stdin=False, universal_newlines=False):
+def __virtual__():
+def addStreamHandler():
+@click.command(name='snapshot') DCNL @click.option('--repository', type=str, required=True, help='Snapshot DCSP repository') DCNL @click.option('--name', type=str, help='Snapshot DCSP name', show_default=True, default='curator-%Y%m%d%H%M%S') DCNL @click.option('--ignore_unavailable', is_flag=True, show_default=True, help='Ignore DCSP unavailable DCSP shards/indices.') DCNL @click.option('--include_global_state', type=bool, show_default=True, default=True, expose_value=True, help='Store DCSP cluster DCSP global DCSP state DCSP with DCSP snapshot.') DCNL @click.option('--partial', is_flag=True, show_default=True, help='Do DCSP not DCSP fail DCSP if DCSP primary DCSP shard DCSP is DCSP unavailable.') DCNL @click.option('--wait_for_completion', type=bool, show_default=True, default=True, help='Wait DCSP for DCSP operation DCSP to DCSP complete') DCNL @click.option('--skip_repo_fs_check', is_flag=True, expose_value=True, help='Skip DCSP repository DCSP filesystem DCSP access DCSP validation.') DCNL @click.option('--ignore_empty_list', is_flag=True, help='Do DCSP not DCSP raise DCSP exception DCSP if DCSP there DCSP are DCSP no DCSP actionable DCSP indices') DCNL @click.option('--filter_list', callback=validate_filter_json, default='{"filtertype":"none"}', help='JSON DCSP string DCSP representing DCSP an DCSP array DCSP of DCSP filters.') DCNL @click.pass_context DCNL def snapshot_singleton(ctx, repository, name, ignore_unavailable, include_global_state, partial, skip_repo_fs_check, wait_for_completion, ignore_empty_list, filter_list):
+def info(request, message, extra_tags='', fail_silently=False):
+def string_param(registry, xml_parent, data):
+def parse_media_range(range):
+def findImageFile(filename):
+def rfft(x, n=None, axis=(-1), overwrite_x=False):
+def login_required(handler_method):
+def get_writer(extension):
+def _compute_variable_length_solns(model, t0, k0, g, tol):
+def SortedConcatenate(sep=u','):
+def make_headers(keep_alive=None, accept_encoding=None, user_agent=None, basic_auth=None, proxy_basic_auth=None):
+def group(seq, size):
+def safe_value(name, value):
+def quote(string, safe=u'/'):
+def delete_subnet_group(name, region=None, key=None, keyid=None, profile=None):
+def _in_gce_environment():
+def useTest(vm, prompt=Prompt):
+def dimension_mul(a, b):
+def mask_between_time(dts, start, end, include_start=True, include_end=True):
+def line_search_armijo(f, xk, pk, gfk, old_fval, args=(), c1=0.0001, alpha0=1):
+def compile_and_install_client(project_client, extra_args='', install_client=True):
+def _replication_request(command, host=None, core_name=None, params=None):
+def config_value(option):
+def synchronize(*klasses):
+def __virtual__():
+def request_fingerprint(request, include_headers=None):
+def parse_argv(tokens, options, options_first=False):
+def _make_namespaced_xattr_key(key, namespace='user'):
+def main():
+@slow_test DCNL @requires_sklearn_0_15 DCNL def test_generalization_across_time():
+def _zpklp2hp(z, p, k, wo=1.0):
+def _getlabel(object_alias):
+def snipmate_files_for(ft):
+def dbsize(host=None, port=None, db=None, password=None):
+def sign_entity_descriptor(edesc, ident, secc):
+def multi_future(children, quiet_exceptions=()):
+def serve(request, path, document_root=None, insecure=False, **kwargs):
+def ant(registry, xml_parent, data):
+def _arcball(x, y, w, h):
+def test_coordinate_vars():
+def CheckBraces(filename, clean_lines, linenum, error):
+def full_restart(name):
+def validate_auth_option(option, value):
+def regen(it):
+@constructor DCNL def round(a, mode='half_away_from_zero'):
+def is_arity(n, func, sigspec=None):
+def UINT(value):
+def _json_plays(drive, data):
+def add_trailing_slash(path):
+@api_versions.wraps('2.17') DCNL @utils.arg('server', metavar='<server>', help=_('Name DCSP or DCSP ID DCSP of DCSP server.')) DCNL def do_trigger_crash_dump(cs, args):
+def libvlc_video_set_spu(p_mi, i_spu):
+def gf_eval(f, a, p, K):
+def available(name):
+def TestH2a(sequenceLength, nTests, cellsPerColumn, numCols=100, nSequences=[2], pctShared=0.02, seqGenMode='shared DCSP sequence', shouldFail=False):
+@block_user_agents DCNL @require_GET DCNL def top_level(request):
+def find_native_user_instrumentation_hook(cls):
+def addFacesByConcaveLoop(faces, indexedLoop):
+def init(mpstate):
+def cache_project(cls):
+@require_GET DCNL def aggregated_metrics(request):
+def RewriteResponse(response_file, response_rewriters=None, request_headers=None, env_dict=None):
+def addBevelGear(derivation, extrudeDerivation, pitchRadius, positives, teeth, vector3GearProfile):
+def t_LPAR(t):
+def cachefile(src, dst, api=None, logger=None):
+def get_course_updates(location, provided_id, user_id):
+def served_by_perl(url):
+def func1(x):
+def library_check_auth(content, renew=False):
+def b64c(b):
+@not_implemented_for('directed') DCNL def common_neighbors(G, u, v):
+def filename_match(filename, patterns, default=True):
+def connect_configservice(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+@utils.arg('ip_range', metavar='<range>', help=_('Address DCSP range DCSP to DCSP create.')) DCNL @utils.arg('--pool', dest='pool', metavar='<pool>', default=None, help=_('Pool DCSP for DCSP new DCSP Floating DCSP IPs.')) DCNL @utils.arg('--interface', metavar='<interface>', default=None, help=_('Interface DCSP for DCSP new DCSP Floating DCSP IPs.')) DCNL @deprecated_network DCNL def do_floating_ip_bulk_create(cs, args):
+def _decode_preferred_encoding(s):
+def run_migrations_offline():
+def create_resource():
+def conjuncts(expr):
+def no_real_gs_credentials():
+def invert_docs_link_map(docs_links):
+@require_global_staff DCNL @require_POST DCNL def generate_example_certificates(request, course_id=None):
+def start():
+def create_submission(conf, transform_valid, transform_test=None, features=None):
+def translate(s, a, b=None, c=None):
+@handle_response_format DCNL @treeio_login_required DCNL def sla_view(request, sla_id, response_format='html'):
+def multi_replace(text, word_dic):
+def get_azimuth_value(label):
+def is_automated():
+@pytest.mark.installed DCNL def test_activate_does_not_leak_echo_setting(shell):
+def gf_berlekamp(f, p, K):
+def notify_status(doc, method=None):
+def ajax_editable_boolean(attr, short_description):
+def from_text(textring):
+def _create_base_cipher(dict_parameters):
+def _lscmp(a, b):
+def get_minions():
+def get_writer_names():
+def install(pkgs=None, requirements=None, bin_env=None, use_wheel=False, no_use_wheel=False, log=None, proxy=None, timeout=None, editable=None, find_links=None, index_url=None, extra_index_url=None, no_index=False, mirrors=None, build=None, target=None, download=None, download_cache=None, source=None, upgrade=False, force_reinstall=False, ignore_installed=False, exists_action=None, no_deps=False, no_install=False, no_download=False, global_options=None, install_options=None, user=None, no_chown=False, cwd=None, pre_releases=False, cert=None, allow_all_external=False, allow_external=None, allow_unverified=None, process_dependency_links=False, saltenv='base', env_vars=None, use_vt=False, trusted_host=None, no_cache_dir=False):
+def _onPygletText(text, emulated=False):
+@gen.coroutine DCNL def _UploadWelcomePhotos(http_client, client, user, upload_request):
+def _get_next_prev(generic_view, date, is_previous, period):
+@not_implemented_for('undirected') DCNL def antichains(G):
+def get_build_version():
+def update_content_in_local_cache(url, content, method='GET'):
+def daemonize(pidfile=None, uid=None, umask=63):
+def _blockdevice_id_to_dataset_id(blockdevice_id):
+def legitimize(text, os=platform.system()):
+def decrypt(stream, parameters):
+def UploadSeparatePatches(issue, rpc_server, patchset, data, options):
+@world.absorb DCNL def css_html(css_selector, index=0):
+def delete_multi(blob_keys, **options):
+def show_check(request, name):
+def install(config, plugins):
+def get_base_path(base):
+def constant_time_compare(val1, val2):
+def location_to_string(locationID):
+@login_check DCNL def components_delete_layout(request):
+def _sphinx_version():
+def get_subordinate_users(user, site):
+def get_numpy_status():
+def triangulate_point(x1, x2, P1, P2):
+def is_installed(pkg_name):
+def knownfailureif(fail_condition, msg=None):
+@api_versions.wraps('2.10') DCNL @utils.arg('name', metavar='<name>', help=_('Keypair DCSP name DCSP to DCSP delete.')) DCNL @utils.arg('--user', metavar='<user-id>', default=None, help=_('ID DCSP of DCSP key-pair DCSP owner DCSP (Admin DCSP only).')) DCNL def do_keypair_delete(cs, args):
+def _parse_date_rfc822(date):
+def Zero(dtype=None):
+def griddata(points, values, xi, method='linear', fill_value=np.nan, rescale=False):
+def match(string, trie):
+def _removeIfPresent(filename):
+def coerce_kw_type(kw, key, type_, flexi_bool=True):
+def test_validate_estimator_default():
+def split_at_whitespace(string):
+def test_batch_normalized_mlp_mean_only_propagated_at_alloc():
+def wrap_aws_conn(raw_conn):
+def test_conversion_qtable_table():
+@frame_transform_graph.transform(coord.StaticMatrixTransform, coord.Galactic, Sagittarius) DCNL def galactic_to_sgr():
+def _StructPackDecoder(wire_type, format):
+def dt_row_cnt(reporter, check=(), quiet=True, utObj=None):
+def pagerank(matrix, d_factor=0.85):
+def login(studentid, studentpwd, url, session, proxy):
+def main(global_config, **settings):
+def isPointInsideLoop(loop, point):
+@frappe.whitelist() DCNL def enroll_student(source_name):
+def fill_gaps(*args, **kwargs):
+@verbose DCNL def tweets_by_user_demo(user='NLTK_org', count=200):
+def grad_clip(x, lower_bound, upper_bound):
+def merge(file, names, config, coord):
+def script(vm_):
+def _do_surface_dots_subset(intrad, rsurf, rmags, rref, refl, lsurf, rlens, this_nn, cosmags, ws, volume, lut, n_fact, ch_type, idx):
+def gf_pow_mod(f, n, g, p, K):
+def computeOverlap(x, y):
+def list_job(jid, ext_source=None, display_progress=False):
+def DEFINE_choice(name, default, choices, help):
+def _fulfills_version_spec(versions, oper, desired_version, ignore_epoch=False):
+def list_exports(exports='/etc/exports'):
+def mkdir(path, owner=None, grant_perms=None, deny_perms=None, inheritance=True):
+@snippet DCNL def client_list_subscriptions(client, to_delete):
+def article(word, function=INDEFINITE):
+@csrf_exempt DCNL def notify_url_handler(request):
+def validate_bool_maybe_none(b):
+def test_frame_init():
+def random_bytes(n):
+def has_player(accessing_obj, accessed_obj, *args, **kwargs):
+def CalculateGeneratorInputInfo(params):
+@testing.requires_testing_data DCNL def test_add_reference():
+def module_s1(nfm, first=False):
+def _mocked_presets(*args, **kwargs):
+def runSome():
+def pportD5(state):
+def is_executable(exe):
+def option_present(name, value, reload=False):
+@validator DCNL def app(environ, start_response):
+def attach_total_points(queryset, as_field='total_points_attr'):
+def create_vdir(name, site, sourcepath, app='/'):
+def _test_args():
+def run_tests_in_emulator(package):
+def test_hsl_to_rgb_part_4():
+def from_agraph(A, create_using=None):
+def filter_tool(context, tool):
+def toggle(device, partition, flag):
+def parse_editable(editable_req, default_vcs=None):
+def processElementNodeByDerivation(derivation, elementNode):
+@contextfilter DCNL def do_map(*args, **kwargs):
+def test_parser_without_subparser_recieves_root_entry(complete_parser):
+def test_table_with_no_newline():
+def gauge():
+def initiate_deletion(req, location_data, id):
+def timedelta_to_integral_minutes(delta):
+def purge(name=None, pkgs=None, **kwargs):
+def matchOnlyAtCol(n):
+def test_odd(value):
+def show_key(kwargs=None, call=None):
+def adjacency(graph, directed=False, reversed=False, stochastic=False, heuristic=None):
+def get_name_levels(node):
+def condentropy(px, py, pxpy=None, logbase=2):
+def task(*args, **kwargs):
+def _is_image_available(context, image):
+def publish_exploration_and_update_user_profiles(committer_id, exp_id):
+def subsample(inputs, factor, scope=None):
+@membership_required DCNL def group_invite(request, slug, template_name='groups/group_invite.html'):
+def strip_files(files, argv_max=(256 * 1024)):
+def riemann_cyclic(t2):
+def sanitize_html(html_code):
+def read_local(tex_root, name):
+def cut_threshold(labels, rag, thresh, in_place=True):
+@login_required DCNL @require_POST DCNL def add_leader(request, group_slug):
+@register.inclusion_tag('addons/impala/contribution.html') DCNL @jinja2.contextfunction DCNL def impala_contribution(context, addon, text=None, src='', show_install=False, show_help=True, large=False, contribution_src=None):
+def kinetic_energy(vel):
+def ldata():
+def flavor_destroy(context, flavor_id):
+def generate_module(src):
+@contextmanager DCNL def set_trap(app):
+@functools.lru_cache() DCNL def get_languages():
+def is_clean_uri(uri):
+def build_model():
+def _get_ssh_interface(vm_):
+def get_tenancy(vm_):
+def true_dot(x, y, grad_preserves_dense=True):
+def parse_owner_mappings(type, options, fatal):
+def parse_xmlrpc(xml_string):
+def distrib_release():
+def get_total_project_memberships(project):
+def fit(function, x, y):
+def indexable(*iterables):
+@decorators.api_view(['GET']) DCNL @decorators.permission_classes((permissions.AllowAny,)) DCNL @decorators.renderer_classes((JSONRenderer,)) DCNL def section_search(request):
+def remove_non_release_groups(name):
+def is_filelike(obj):
+def get_netrc_auth(url):
+def _tmp_name(input):
+@register.filter(is_safe=True, needs_autoescape=True) DCNL @stringfilter DCNL def linenumbers(value, autoescape=True):
+def name(pretty=False):
+def get_logger(name):
+def prepare_database(db, coord, projection):
+def getTricomplexTimesColumn(firstTricomplex, otherColumn):
+def getFabmetheusUtilitiesPath(subName=''):
+def file_upload_echo(request):
+def _setSocketPreConnect():
+def urlquote_plus(url, safe=''):
+def mock_open(mock=None, read_data=''):
+def parse_only_date(raw, assume_utc=True, as_utc=True):
+@jit(nopython=True, cache=True) DCNL def get_mixed_actions(tableaux, bases):
+def make_pkgng_aware(jname):
+@csrf_exempt DCNL @gzip_page DCNL @require_sync_session DCNL @api_handle_error_with_json DCNL def device_download(data, session):
+def load_auth_tokens(user=None):
+def modify_monitor(hostname, username, password, monitor_type, name, **kwargs):
+def sample_from_model(hps, logdir, traindir):
+@pytest.mark.parametrize('fast_reader', [True, False, 'force']) DCNL def test_read_rdb_wrong_type(fast_reader):
+def get_arg_text(ob):
+@sopel.module.commands(u'reload') DCNL @sopel.module.priority(u'low') DCNL @sopel.module.thread(False) DCNL def pm_f_reload(bot, trigger):
+def _safeFormat(fmtString, fmtDict):
+def getInsetLoopsFromLoop(loop, radius, thresholdRatio=0.9):
+def testInterface(algo):
+def build_api_error(message, **kwargs):
+def p_definition_token(p):
+def win32_clipboard_get():
+def _setup_fixtures(doctest_item):
+def uniq_stable(elems):
+def migrate_cohort_settings(course):
+@register.tag DCNL def app_reverse(parser, token):
+@register.filter DCNL def break_long_headers(header):
+def _ensure_exists(name, path=None):
+def _convert_java_pattern_to_python(pattern):
+def rgConv(inpedfilepath, outhtmlname, outfilepath):
+def format_correlation_info(corr_coeff, param_p_val, nonparam_p_val, conf_interval, num_permutations, header=''):
+def test_mark_done(pg_xlog):
+def dict_union(*dicts, **kwargs):
+def disabled(name, **kwargs):
+def make_path_searcher(path_generator, target_predicate, target_normalizer, extra_paths, **kwargs):
+def validate():
+def update_transferability(site_id=None):
+def project_indicator_progress_report(r, **attr):
+def find_module(module, paths=None):
+def make_layout(doc, meta, format_data=None):
+def create_rpc(deadline=None, callback=None):
+def get_default_access_key_id():
+def cache_relation(descriptor, timeout=None):
+def tuplize(seq):
+@conf.commands.register DCNL def tshark(*args, **kargs):
+def make_sparse_random_conv2D(num_nonzero, input_space, output_space, kernel_shape, pad=0, kernel_stride=(1, 1), border_mode='valid', message='', rng=None, partial_sum=None):
+def infixNotation(baseExpr, opList, lpar=Suppress('('), rpar=Suppress(')')):
+def get_account_created(name):
+@commands(u'iplookup', u'ip') DCNL @example(u'.ip DCSP 8.8.8.8', u'[IP/Host DCSP Lookup] DCSP Hostname: DCSP google-public-dns-a.google.com DCSP | DCSP Location: DCSP United DCSP States DCSP | DCSP Region: DCSP CA DCSP | DCSP ISP: DCSP AS15169 DCSP Google DCSP Inc.', re=True, ignore=u'Downloading DCSP GeoIP DCSP database, DCSP please DCSP wait...') DCNL def ip(bot, trigger):
+def layer_gpx():
+def _stub_islink(path):
+def generate_py(bits, randfunc, progress_func=None, e=65537):
+@register.tag(u'filter') DCNL def do_filter(parser, token):
+def reshape_text(buffer, from_row, to_row):
+def _not_a_knot(x, k):
+def _defaultFetcher(url):
+def newer(source, target):
+def restore_asset_from_trashcan(location):
+def ToCanonicalJSON(dict, indent=False):
+def url_decode_stream(stream, charset='utf-8', decode_keys=False, include_empty=True, errors='replace', separator='&', cls=None, limit=None, return_iterator=False):
+def delete_subnet(subnet, profile=None):
+@_ensure_exists DCNL def pid(name):
+def _get_used_lun_id_counter(mapping):
+def _adapt_mismatch(original, matchee):
+def top(**kwargs):
+def test_attributes(mixin_cols):
+def reinitialize_command(self, command, reinit_subcommands):
+def _zpkbilinear(z, p, k, fs):
+def pytest_configure(config):
+def _date_year(release):
+def FindEndOfExpressionInLine(line, startpos, depth, startchar, endchar):
+def expand_login_view(login_view):
+def varOr(population, toolbox, lambda_, cxpb, mutpb):
+def _escape(value):
+def api_validate(response_type=None, add_api_type_doc=False):
+def build_lcms_70(compiler):
+def _parse_date_rfc822(dt):
+def create_image(ami_name, instance_id=None, instance_name=None, tags=None, region=None, key=None, keyid=None, profile=None, description=None, no_reboot=False, dry_run=False, filters=None):
+def sentence_chrf(reference, hypothesis, min_len=1, max_len=6, beta=3.0):
+def check_print_compat():
+def run_script(scriptfile):
+def add_cohort(course_key, name, assignment_type):
+def delete_affinity_group(kwargs=None, conn=None, call=None):
+def _sqrtdenest_rec(expr):
+def user_pre_save(sender, instance, **kw):
+def peakDetection(mX, t):
+def parse_encoding(fp):
+def _allow_CTRL_C_posix():
+def dir(suffix='', prefix='tmp', parent=None):
+def backup_dir(dir, ext='.bak'):
+@memoized DCNL def cyclic_pattern(size=None, start=None, charset_type=None):
+def Bar(xs, ys, **options):
+def dump(obj, fp, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, encoding='utf-8', default=None, use_decimal=True, namedtuple_as_object=True, tuple_as_array=True, bigint_as_string=False, sort_keys=False, item_sort_key=None, for_json=False, ignore_nan=False, int_as_string_bitcount=None, iterable_as_array=False, **kw):
+def uslugify_encoded(text, sep):
+def find_email(string, unique=True):
+def record_usage(key_prefix, time_slice):
+def setup_platform(hass, config, add_devices, discovery_info=None):
+@require_POST DCNL @login_required DCNL def watch_forum(request, forum_slug):
+def overrides_disabled():
+def H_from_ransac(fp, tp, model, maxiter=1000, match_theshold=10):
+def shorten_string(string, max_width):
+def test_mouse_key_events():
+def init_native():
+def run_supervised_learning(predictor_fp, response_fp, response_name, ntree=1000, errortype='oob', output_dir='.', verbose=False, HALT_EXEC=False):
+def test_no_truncate_using_compare():
+def _synthesize(browser, update_tryorder=1):
+def timeout(reactor, deferred, timeout_sec, reason=None):
+def _row_from_json(row, schema):
+def tree_from_cix(cix):
+@register.filter DCNL @stringfilter DCNL def issue_status_icon(status):
+def test_integer_sequence_generator():
+def remove_trailing_string(content, trailing):
+def exit_if_empty():
+def instances_by_name(name_filter):
+def RenderParetoCdf(xmin, alpha, low, high, n=50):
+def _check_apt():
+def __update_loaders(z):
+def word_ids_to_words(data, id_to_word):
+def obrientransform(*args):
+def test_install_package_with_target(script):
+def occur_check(var, x):
+def predecessor(G, source, target=None, cutoff=None, return_seen=None):
+def _fingerprint(public_key):
+def get_cli_body_ssh(command, response, module):
+def hash_(attrs=None, where=None):
+def load():
+def url_unquote_plus(s, charset='utf-8', errors='replace'):
+def createMemoryWorker():
+def is_master_node(client):
+def get_config_vars(*args):
+@frappe.whitelist() DCNL def remove(doctype, name, assign_to):
+def create_apppool(name):
+def do_baremetal_node_list(cs, _args):
+def fminbound(func, x1, x2, args=(), xtol=1e-05, maxfun=500, full_output=0, disp=1):
+def primary_key_value(instance, as_string=False):
+def between(expr, lower_bound, upper_bound):
+def _windows_commondata_path():
+def get_all_launch_configurations(region=None, key=None, keyid=None, profile=None):
+def test_conflicting_path(tmpdir, mocked_aws_cf_simple):
+def test_StepDict_raise_StepLoadingError_if_load_first_argument_is_not_a_regex():
+def _conf(family='ipv4'):
+def prelu(layer, **kwargs):
+def setup(templates, *args, **kwargs):
+def get_base_dirs():
+def ci(a, which=95, axis=None):
+def zpk2sos(z, p, k, pairing='nearest'):
+def test_to():
+def get_load(jid):
+def parse_features(feature_files, language=None):
+def get_credential(tenant_id, credential_id):
+@CELERY_APP.task DCNL def send_ccx_course_published(course_key):
+def inverse_hankel_transform(F, k, r, nu, **hints):
+def iterable(obj):
+def normalize(a, axis=None):
+def krackhardt_kite_graph(create_using=None):
+def save_load(jid, load, minions=None):
+def is_effective_user(user_id_or_name):
+def _match_abbrev(s, wordmap):
+def get_key_func(key_func):
+def weight_boundary(graph, src, dst, n):
+def xstr(*args):
+def mark_as_titlepage(container, name, move_to_start=True):
+def spew(trace_names=None, show_values=False):
+def batch_det(a):
+def add_csrf(request, **kwargs):
+def _get_content_range(start, end, total):
+def set_main_css(css_file):
+def isPointOfTableInLoop(loop, pointTable):
+def _compose_linear_fitting_data(mu, u):
+@slow_test DCNL def test_io_evoked():
+def brightness_temperature(beam_area, disp):
+def datatype(dbtype, description):
+def get_exploration_components_from_dir(dir_path):
+def _fit_dipoles(fun, min_dist_to_inner_skull, data, times, guess_rrs, guess_data, fwd_data, whitener, proj_op, ori, n_jobs):
+def copy_snapshot(kwargs=None, call=None):
+def scenario_tests_need_service_tags(physical_line, filename, previous_logical):
+def isclass(object):
+@receiver(post_save, sender=UserLog) DCNL def cull_records(sender, **kwargs):
+def JarContents(jar_path):
+def color(columns=None, palette=None, bin=False, **kwargs):
+def import_from_cwd(module, imp=None, package=None):
+@staff_member_required DCNL def dashboard(request, template_name=u'admin/dashboard.html'):
+def dump_all(documents, stream=None, Dumper=Dumper, default_style=None, default_flow_style=None, canonical=None, indent=None, width=None, allow_unicode=None, line_break=None, encoding='utf-8', explicit_start=None, explicit_end=None, version=None, tags=None):
+def _compare_by_version(path1, path2):
+def graphviz_layout(G, prog='neato', root=None, args=''):
+def get_level_tags():
+def list_rows(dataset_name, table_name, project=None):
+@environmentfilter DCNL def do_first(environment, seq):
+def main():
+@asyncio.coroutine DCNL @hook.command DCNL def flirt(text, conn, nick, message):
+def urlsplit(url, scheme='', allow_fragments=True):
+def bygroups(*args):
+def describe_policy(policyName, region=None, key=None, keyid=None, profile=None):
+def _gen_gce_as_policy(as_params):
+def parse_atom(tokens, options):
+def __test_html():
+def str2bin(value, classic_mode=True):
+def from_files(job, form):
+def debug(msg, *args, **kwargs):
+def greater_than_zero():
+def _int64_feature_list(values):
+def python_implementation():
+def construct_sort_part(model_cls, part):
+def add_resource(zone, resource_type, **kwargs):
+def bits_str(s, endian='big', zero='0', one='1'):
+def CreateGRRTempFileVFS(directory=None, filename=None, lifetime=0, mode='w+b', suffix=''):
+def pylab_setup():
+@ensure_csrf_cookie DCNL @cache_if_anonymous() DCNL def course_about(request, course_id):
+def is_private(ip_addr):
+def hessenberg(a, calc_q=False, overwrite_a=False, check_finite=True):
+def require_cuda_ndarray(obj):
+def getRotationMatrix(arrayDictionary, derivation, path, point, pointIndex):
+def slicable(dim, pad=0):
+def _indent(text, prefix, predicate=None):
+def first_value(obj):
+def is_ssh_uri(url):
+def _Cobject(cls, ctype):
+def plate_scale(platescale):
+@sensitive_post_parameters() DCNL @never_cache DCNL def password_reset_confirm(request, uidb36=None, token=None, template_name='registration/password_reset_confirm.html', token_generator=default_token_generator, set_password_form=SetPasswordForm, post_reset_redirect=None, current_app=None, extra_context=None):
+def randitems_from_structure(fmt, t):
+def track_to_mpd_format(track, position=None, stream_title=None):
+def getReadRepository(repository):
+def findTypeParent(element, tag):
+def log(repo='.', paths=None, outstream=sys.stdout, max_entries=None, reverse=False, name_status=False):
+def get_rule_handle(table='filter', chain=None, rule=None, family='ipv4'):
+def to_names(domain_obj_list):
+def load_json_dict(filename, *args):
+def _alarms_present(name, min_size_equals_max_size, alarms, alarms_from_pillar, region, key, keyid, profile):
+@app.route('/stream/<int:n>') DCNL def stream_n_messages(n):
+def partial_velocity(vel_vecs, gen_speeds, frame):
+def is_ascii(string):
+def docstring_errors(filename, global_dict=None):
+def run_doctest(target_dir=None, *args, **kwargs):
+@verbose DCNL def _get_ico_tris(grade, verbose=None, return_surf=False):
+def get_last_modified(files):
+def discoverInfo(disp, jid, node=None):
+def is_on(hass, entity_id=None):
+def p_postfix_expression_2(t):
+def available_oficial_plugins():
+def can_introspect(field):
+def user_passes_test(test_func, login_url=LOGIN_URL):
+@handle_response_format DCNL @treeio_login_required DCNL @_process_mass_form DCNL def task_view(request, task_id, response_format='html'):
+def decodeString(string):
+def checkRecursive(paths, reporter):
+def setup_platform(hass, config, add_devices, discovery_info=None):
+def test_hsl_to_rgb_part_10():
+def paths_from_event(self, event):
+def f(t):
+def func_np(a, b):
+def _parse_file(document_file, validate, entry_class, entry_keyword='r', start_position=None, end_position=None, section_end_keywords=(), extra_args=()):
+@memoized DCNL def flavor_list(request):
+def get_policy_string(base, policy_or_index):
+def upgrade(refresh=True):
+def resolve():
+def getmode(mode):
+def _save_and_restart(plugin, title=None):
+def det_perm(M):
+def config_validator(user):
+def get_group(name, match_obj):
+def salted_hmac(key_salt, value, secret=None):
+def etc_hosts(attrs=None, where=None):
+def skip_if_config(*args):
+def lasso_path(X, y, eps=0.001, n_alphas=100, alphas=None, precompute='auto', Xy=None, copy_X=True, coef_init=None, verbose=False, return_n_iter=False, positive=False, **params):
+def available_modules():
+def print_exc(limit=None, file=None):
+def lombscargle_fastchi2(t, y, dy, f0, df, Nf, normalization='standard', fit_mean=True, center_data=True, nterms=1, use_fft=True, trig_sum_kwds=None):
+def test_BoundaryNorm():
+@require_context DCNL def instance_create(context, values):
+def validate_ok_for_update(update):
+def find_prepositions(chunked):
+def eval(expression, _dict={}, **kw):
+def evaluate(op, op_str, a, b, raise_on_error=False, use_numexpr=True, **eval_kwargs):
+def gzip_file(source_path, archive_path):
+def _get_mask(X, value_to_mask):
+def benchmark_relu():
+def load_parser_result_store(package_dirpath, open_for_write=False):
+def colname(colx):
+def validate_bool_maybe_none(b):
+def seek_wrapped_response(response):
+def load_module(name, file, filename, details):
+def main():
+@ensure_csrf_cookie DCNL @cache_control(no_cache=True, no_store=True, must_revalidate=True) DCNL @coach_dashboard DCNL def ccx_invite(request, course, ccx=None):
+def socktype_to_enum(num):
+def is_asn1_token(token):
+def readsav(file_name, idict=None, python_dict=False, uncompressed_file_name=None, verbose=False):
+def surround_quotes(string):
+def add_log_redaction_filter_to_logger(engine, logger):
+def instance_key(model, instance_or_pk):
+def stream_encode_multipart(values, use_tempfile=True, threshold=(1024 * 500), boundary=None, charset='utf-8'):
+def setup_cuda_fft_resample(n_jobs, W, new_len):
+def distorted_inputs(dataset, batch_size=None, num_preprocess_threads=None):
+def use_gl(target='gl2'):
+def gen_arg_base_type(fn):
+def _make_request(token, method_name, method='get', params=None, files=None, base_url=API_URL):
+def loads(source):
+def grey_dilation(input, size=None, footprint=None, structure=None, output=None, mode='reflect', cval=0.0, origin=0):
+def _buildFakeFKTable(cls, fakeTableName):
+def get_locked_port_and_binding(context, port_id):
+def missing_whitespace_around_operator(logical_line, tokens):
+def _fake_check_ldev_status(*args, **kwargs):
+def test_diagonal_gaussian_sample_from_epsilon():
+def edns_from_text(text):
+def _date_to_datetime(value):
+def find_bad_registrations():
+def assert_has_n_elements_with_path(output, path, n):
+def test_warning_config_google_home_listen_port():
+def auc(actual, posterior):
+def addYGroove(derivation, negatives, x):
+def _get_channel_stub():
+@given('the DCSP model DCSP elements DCSP with DCSP name DCSP and DCSP tags') DCNL def step_given_named_model_elements_with_tags(context):
+def check_map(infile, disable_primer_check, barcode_type='golay_12', added_demultiplex_field=None, has_barcodes=True):
+def upload_template_and_reload(name):
+@pytest.mark.parametrize('confcutdir,passed,error', [('.', 2, 0), ('src', 1, 1), (None, 1, 1)]) DCNL def test_search_conftest_up_to_inifile(testdir, confcutdir, passed, error):
+def is_valid_number_for_region(numobj, region_code):
+def test_elemwise_collapse2():
+def is_lyrics(text, artist=None):
+def _as_meg_type_evoked(evoked, ch_type='grad', mode='fast'):
+def getFunctionsWithStringByFileNames(fileNames, searchString):
+def libvlc_video_get_title_description(p_mi):
+@validator DCNL def domain(value):
+@login_required DCNL @ensure_csrf_cookie DCNL @require_http_methods(('GET', 'POST', 'PUT')) DCNL @expect_json DCNL def advanced_settings_handler(request, course_key_string):
+def NeedsMacOSXProxyFakes():
+def generateUUID():
+def event(name, priority=128):
+def show_frontends(socket='/var/run/haproxy.sock'):
+def copy(src, dst, createpath=0, copydates=1, forcetype=None):
+def assert_snr(actual, desired, tol):
+def get_widgets(request):
+def prepare_wmt_data(data_dir, en_vocabulary_size, fr_vocabulary_size, tokenizer=None):
+def vacuum(verbose=False):
+def diff_tree(repo, old_tree, new_tree, outstream=sys.stdout):
+def test_markovchain_pmatrices():
+def words(string, filter=(lambda w: w.strip("'").isalnum()), punctuation=PUNCTUATION, **kwargs):
+@login_required DCNL def invitation_error(request, error_message='You DCSP do DCSP not DCSP have DCSP any DCSP invitations DCSP at DCSP this DCSP time.', template_name='invitations/invitation_error.html'):
+def getTypeFromProgID(prog_id):
+def resolve_hostname(hostname):
+def get_d3_section_grade_distrib(course_id, section):
+def _minimize_scalar_golden(func, brack=None, args=(), xtol=_epsilon, maxiter=5000, **unknown_options):
+@task() DCNL @timeit DCNL def maybe_award_badge(badge_template, year, user):
+def purge(name=None, pkgs=None, **kwargs):
+def buildRequestBytes(headers, data, frameFactory=None, streamID=1):
+def request_fingerprint(request, include_headers=None):
+@mock_streams('stderr') DCNL @with_patched_object(output, 'warnings', True) DCNL def test_warn():
+def setraw(fd, when=TCSAFLUSH):
+def validate(cls, model):
+@task DCNL def foo():
+def posixToNtSlashes(filepath):
+def hexdump(data):
+def _make_dssp_dict(handle):
+def null_safe(rule):
+def lucene_search(trans, cntrller, search_term, search_url, **kwd):
+def _generate_graphs():
+@jinja2.contextfunction DCNL @library.global_function DCNL def number(context, n):
+def split_qexpr_parts(e):
+def test_column_width():
+def timefunc(num_tries=1, verbose=True):
+def pmap_field(key_type, value_type, optional=False, invariant=_valid, initial=_UNDEFINED, factory=None):
+def is_safe_path_component(path):
+def upload():
+def send_mail(to_addr, mail, mimetype='plain', from_addr=None, mailer=None, username=None, password=None, callback=None, **context):
+def templatize(src):
+def processSVGElementpath(svgReader, xmlElement):
+def record_usage_multi(prefix_slices):
+@command(name='hash', usage='compute DCSP hashes') DCNL def print_hash(args):
+def print_environ(environ=os.environ):
+def for_signed_dtypes_combination(names=('dtype',), full=None):
+def urldecode(query):
+def test_emacs_cursor_movements():
+def _RecurseOverObject(obj, factory, parent=None):
+def s_byte(value, endian='<', format='binary', signed=False, full_range=False, fuzzable=True, name=None):
+def publish_collection(committer_id, collection_id):
+def _ipconfig_getnode():
+def findTwistedProjects(baseDirectory):
+def aes_encrypt(data, expanded_key):
+def group(seq, size):
+def test_wraps():
+def agent_settings(name, contact, location, services=None):
+def displayFile(filename):
+def test_extract_Array_float():
+def _heapify_max(x):
+def curve4_bezier(p1, p2, p3, p4):
+def num_windows_of_length_M_on_buffers_of_length_N(M, N):
+def instance_type_access_remove(context, flavor_id, project_id):
+def cram(text, maxlen):
+def quota_usage_update(context, project_id, resource, **kwargs):
+def build_provider_location(system, lun_type, lun_id, base_lun_name, version):
+def cr_notification_dispatcher(r, **attr):
+def _image_member_format(member_ref):
+def emitter(p=0.03):
+def _policyFileReplaceOrAppend(this_string, policy_data, append_only=False):
+def emits_warning_on(db, *warnings):
+def uldap():
+def _getTagsWith(s, cont, toClosure=False, maxRes=None):
+def digest_auth(realm, get_ha1, key, debug=False):
+def make_tarball(base_name, base_dir, compress='gzip', verbose=0, dry_run=0):
+def TRIX(ds, count, timeperiod=(- (2 ** 31))):
+def _acquire_download_cache_lock():
+def get_options(select_browser_query):
+def wrap_paragraphs(text, ncols=80):
+def remove_file(path):
+def parse_content(documentation_type, content):
+@register.tag('blocktrans') DCNL def do_block_translate(parser, token):
+def setEntryText(entry, value):
+def levene(*args, **kwds):
+def createExtraFillLoops(nestedRing, radius, radiusAround, shouldExtraLoopsBeAdded):
+def phone2numeric(phone):
+def p_unary_expression_4(t):
+def ensure_dirs(filename):
+def evaluateRegression(features, labels, nExp, MethodName, Params):
+def get_record(zone_id, record_id, profile):
+def get_restart_power_failure():
+def _plot_ci_bars(ax, x, central_data, ci, color, err_kws, **kwargs):
+def get_hqe_percentage_complete(**filter_data):
+def encrypt_stream(mode, in_stream, out_stream, block_size=BLOCK_SIZE, padding=PADDING_DEFAULT):
+def build_query_rep(query, divider=u' DCSP - DCSP '):
+def parent_dir(path):
+def load_meta_sources():
+def _get_resources(context, alias):
+def shell_init_func():
+def maybe_download(filename, work_directory):
+def set_range_metadata(builder, load, lower_bound, upper_bound):
+def get_log_for_pid(pid):
+def _layout_figure(params):
+@requires_good_network DCNL def test_fetch_file_html():
+def hadoop_fs_ls(stdout, stderr, environ, *args):
+def _indent(s, indent=4):
+def calibrate_2d_polynomial(cal_pt_cloud, screen_size=(1, 1), threshold=35, binocular=False):
+@requires_version('scipy', '0.16') DCNL def test_iir_stability():
+def safe_extra(extra):
+def readSettingsFromText(repository, text):
+def versions_report():
+def runCalibration(eyegaze_control):
+def run_mantel_correlogram(fps, distmats, num_perms, comment, alpha, sample_id_map=None, variable_size_distance_classes=False):
+def launch(dpid, port, port_eth=None, name=None, __INSTANCE__=None):
+def __validate__(config):
+def heatmap(data, vmin=None, vmax=None, cmap=None, center=None, robust=False, annot=None, fmt='.2g', annot_kws=None, linewidths=0, linecolor='white', cbar=True, cbar_kws=None, cbar_ax=None, square=False, ax=None, xticklabels=True, yticklabels=True, mask=None, **kwargs):
+def cached_property(fun):
+def buggy_mkl_svd(function):
+def _check_all_tasks(tasks):
+def _option(value):
+def socket_pair():
+@manager.command DCNL def deploy():
+def split_statements(hql):
+def _toUTF8(data, encoding):
+def cbServerGreeting(proto, username, password):
+def Ql(filter_, thing):
+def getLevel(level):
+def _delete_rpm_probes(probes):
+@login_required DCNL def dissociate(request, template_name='authopenid/dissociate.html', dissociate_form=OpenidDissociateForm, redirect_field_name=REDIRECT_FIELD_NAME, default_redirect=settings.LOGIN_REDIRECT_URL, extra_context=None):
+def check_complete(task, out_queue):
+def remove(name=None, pkgs=None, **kwargs):
+def create_test_db():
+def _get_encryption_headers(key, source=False):
+def _unpickle_appattr(reverse_name, args):
+def is_mobile_available_for_user(user, descriptor):
+@conf.commands.register DCNL def sr1(x, promisc=None, filter=None, iface=None, nofilter=0, *args, **kargs):
+def clear_caches():
+def length_is(value, arg):
+def search(opts, returners, whitelist=None):
+def base64_b64encode(instr):
+def iteritems(d):
+def safe_encode(text, incoming=None, encoding='utf-8', errors='strict'):
+def get_storage_hash(storage):
+def test_get_debug_values_no_debugger():
+def has_default_value(option, value):
+def rate_id(context, id_, val=3):
+def _get_client(timeout=None):
+def convert_to_RGB_255(colors):
+def p_expr_list_2(t):
+def p_relational_expression_5(t):
+def tryall(context, prefix=None):
+def getProfileDirectory():
+def berp_zeros(nt):
+def referenced(word, article=INDEFINITE, gender=MALE, role=SUBJECT):
+def nagios_from_file(results_file):
+@pytest.mark.django_db DCNL def test_max_revision(revision, project0_nongnu, store0):
+def json_http_response(data):
+def expect_mc(dist, func=(lambda x: 1), size=50000):
+def overrideRootMenu(root, flist):
+def limitedTime(second, func, *args, **kw):
+def rnn_helper(inp, length, cell_type=None, direction='forward', name=None, *args, **kwargs):
+def generate_random_alphanumeric(length):
+def scheme_node_from_element(node_el, registry):
+def canonicalize_emails(changelog, mapping):
+def _ordered_count(iterable):
+def pull_dkr(url, name, index):
+def managedcloud(vm_):
+def assert_raises_regex(exception_class, expected_regexp, callable_obj=None, *args, **kwargs):
+def delete_files(processPath, notwantedFiles, result, force=False):
+def confirmation_option(*param_decls, **attrs):
+@inspect_command(alias=u'dump_schedule') DCNL def scheduled(state, **kwargs):
+def layer_test(layer_cls, kwargs={}, input_shape=None, input_dtype=None, input_data=None, expected_output=None, expected_output_dtype=None, fixed_batch_size=False):
+@instrumented_task(name='sentry.tasks.post_process.plugin_post_process_group', stat_suffix=(lambda plugin_slug, *a, **k: plugin_slug)) DCNL def plugin_post_process_group(plugin_slug, event, **kwargs):
+def is_valid_asn(asn):
+def bin(number):
+def parseTargetDirect():
+def create_access_key(user_name, region=None, key=None, keyid=None, profile=None):
+def _eintr_retry(func, *args):
+def validate_color(s):
+def find_tests(testdir, prefixes=DEFAULT_PREFIXES, suffix='.py', excludes=(), remove_suffix=True):
+@lockutils.synchronized('storage-registry-lock', 'nova-', external=True) DCNL def get_storage_users(storage_path):
+def tob(data, enc='utf8'):
+@raise_if_offline DCNL def schema_has_table(table_name):
+@event(u'manager.startup') DCNL def init_parsers(manager):
+def parseline(line):
+def _qsturng(p, r, v):
+def delete(blob_key, **options):
+def TRANGE(barDs, count):
+def valid_year(year):
+def orchestrate_high(data, test=None, queue=False, pillar=None, **kwargs):
+def flatten(a):
+def run():
+def load_class(dotted_path):
+def resolve_link(stats):
+def deconv(X, w, subsample=(1, 1), border_mode=(0, 0), conv_mode='conv'):
+def raw_command(cmd, capture=False, env=None, data=None, cwd=None, explain=False, stdin=None, stdout=None):
+def getAlterationLines(fileName):
+def isFileLocked(checkfile, writeLockCheck=False):
+def get_era():
+def build_pdf(branch):
+def attach_ordered_steps(workflow, steps):
+def check_message(keywords, message):
+def _fix_global_ids(html):
+def test_scenario_has_name():
+def volumedriver(cls):
+def _matchingString(constantString, inputString):
+def make_tarball(base_name, base_dir, compress='gzip', verbose=0, dry_run=0, owner=None, group=None):
+def select(rlist, wlist, xlist, timeout=None):
+def quote_chinese(url, encodeing='utf-8'):
+@task(base=BaseInstructorTask, routing_key=settings.GRADES_DOWNLOAD_ROUTING_KEY) DCNL def generate_certificates(entry_id, xmodule_instance_args):
+@gzip_page DCNL @cache_control(max_age=settings.CACHE_MIDDLEWARE_SECONDS) DCNL def commonplace(request, repo, **kwargs):
+def _find_image_files(data_dir, labels_file):
+def order_by_precedence(media_type_lst):
+def filter_label_1(context, label):
+def run(*arg, **kw):
+def assert_samelines(testcase, text1, text2, msg=None):
+def main(*args):
+def getProcessOutput(executable, args=(), env={}, path=None, reactor=None, errortoo=0):
+def is_sorted(exp):
+def extra_job_filters(not_yet_run=False, running=False, finished=False):
+@contextmanager DCNL def _latextools_module_hack():
+def not_friends(user, other_user):
+def writeOutput(fileName=''):
+def main():
+def _LC(f):
+def initialize_plugin(pelican_obj):
+def shutdown_datastore():
+def find_lemmata(tokens):
+def test_raises_value_error_non_sym():
+def inherit_from_std_ex(node):
+def build_arg_list(fn, env):
+def is_python_proxy(parameter):
+def interpret_size(si):
+def main():
+def node_degree_xy(G, x='out', y='in', weight=None, nodes=None):
+def setup_platform(hass, config, add_devices, discovery_info=None):
+def get_asset_dir_prefix():
+def register(dmm, typecls):
+def load_meta(prefix, dist):
+def downgrade(migrate_engine):
+def condense_zero_units(css):
+def get_file_for_svn_txn(repo_path, txn_id, filename):
+def GetReportByName(name):
+def save_load(jid, clear_load, minions=None, recurse_count=0):
+def _get_service_user(user, service_username):
+@jit(nopython=True) DCNL def _initialize_tableaux_ig(X, Y, tableaux, bases):
+def sobel_v(image, mask=None):
+def _estimate_log_gaussian_prob(X, means, precisions_chol, covariance_type):
+def gen_resource(ob, perm=None):
+def get_filter(doctype, f):
+def single_line(text):
+@RegisterWithArgChecks(name='neighbor.attribute_map.get', req_args=[neighbors.IP_ADDRESS], opt_args=[ROUTE_DISTINGUISHER, VRF_RF]) DCNL def get_neighbor_attribute_map(neigh_ip_address, route_dist=None, route_family=VRF_RF_IPV4):
+def _get_conn(ret=None):
+def validate(tax_number):
+def get_file_title(files_path_list, filename):
+def query_chooser(query):
+def remove_ignorable_whitespace(node):
+def nopackages(pkg_list):
+def get_colors(palette, funcs):
+def get_time_format(format='medium', locale=LC_TIME):
+def alias(selectable, name=None, flat=False):
+def clean_html(buf):
+def getDisplayedDialogFromConstructor(repository):
+@cors_enabled('*') DCNL def serve_cors(*args, **kwargs):
+def getRoundedToThreePlaces(number):
+def create_read_replica(name, source_name, db_instance_class=None, availability_zone=None, port=None, auto_minor_version_upgrade=None, iops=None, option_group_name=None, publicly_accessible=None, tags=None, db_subnet_group_name=None, storage_type=None, copy_tags_to_snapshot=None, monitoring_interval=None, monitoring_role_arn=None, region=None, key=None, keyid=None, profile=None):
+@task(ignore_result=True) DCNL def email_membership_change(group_pk, user_pk, old_status, new_status):
+def cyclic(length=None, alphabet=string.ascii_lowercase, n=None):
+def _process_dataset(name, images, vocab, num_shards):
+def detach_user_policy(policy_name, user_name, region=None, key=None, keyid=None, profile=None):
+def scan():
+def from_castra(x, columns=None, index=False):
+def execute_manager(settings_mod, argv=None):
+def _DefaultValueConstructorForField(field):
+def new_figure_manager_given_figure(num, figure):
+def tetrahedral_graph(create_using=None):
+def get_data_path(f=''):
+def statusEnquiry():
+def encryptMessage(key, message):
+def python_version():
+def _trial(factors, n, candidates, verbose=False):
+def tokenize_wrapper(input):
+@mock_autoscaling DCNL def test_execute_policy_small_percent_change_in_capacity():
+def get_prediction(self, exog=None, transform=True, weights=None, row_labels=None, pred_kwds=None):
+def list_bucket(bucket_name):
+def liveobj_changed(obj, other):
+def site_enabled(config):
+def read_weighted_edgelist(path, comments='#', delimiter=None, create_using=None, nodetype=None, encoding='utf-8'):
+def _d(n, j, prec, sq23pi, sqrt8):
+def t_BOOLCONSTANT(t):
+def write_excellon():
+def oas(X, assume_centered=False):
+def virtualenv_no_global():
+def pkt_line(data):
+def assert_raises_regexp(exception, reg, run, *args, **kwargs):
+def network_list(call=None, **kwargs):
+@fixture DCNL def patch_network_functions(monkeypatch):
+def mkdir_p(path):
+def get_docstring_and_rest(filename):
+@pytest.mark.parametrize('constructor, DCSP attrs, DCSP expected', [(False, {}, '<test_utils.Obj>'), (False, {'foo': None}, '<test_utils.Obj DCSP foo=None>'), (False, {'foo': "b'ar", 'baz': 2}, '<test_utils.Obj DCSP baz=2 DCSP foo="b\'ar">'), (True, {}, 'test_utils.Obj()'), (True, {'foo': None}, 'test_utils.Obj(foo=None)'), (True, {'foo': "te'st", 'bar': 2}, 'test_utils.Obj(bar=2, DCSP foo="te\'st")')]) DCNL def test_get_repr(constructor, attrs, expected):
+@treeio_login_required DCNL @handle_response_format DCNL def ordered_product_delete(request, ordered_product_id, response_format='html'):
+def snmp_preprocessor(a_device, oid='.1.3.6.1.2.1.1.1.0'):
+def _can_do_sum_of_squares(n, k):
+@require_context DCNL @require_volume_exists DCNL def volume_glance_metadata_create(context, volume_id, key, value, session=None):
+def _tile_perimeter_width(coord, projection):
+def update_connection_pool(maxsize=1):
+@LocalContext DCNL def alphanumeric(raw_bytes, *a, **kw):
+def libvlc_media_list_set_media(p_ml, p_md):
+def _GetPdbPath(target_dict, config_name, vars):
+@constructor DCNL def max(x, axis=None, keepdims=False):
+def staff_member_required(view_func):
+def _is_axial_coil(coil):
+@public DCNL def guess_generating_function_rational(v, X=Symbol('x')):
+def generate_strings(total_strings, string_length=20):
+def parse_requirements(strs):
+def dynamize_value(val):
+def add_completer(widget, items):
+def _compute_hash_v1(get_deps_dict, hash):
+def negative_sampling(x, t, W, sampler, sample_size):
+@sensitive_post_parameters() DCNL @csrf_protect DCNL @never_cache DCNL def login(request, template_name='registration/login.html', redirect_field_name=REDIRECT_FIELD_NAME, authentication_form=AuthenticationForm, current_app=None, extra_context=None):
+def split_title(title, width, title_fs):
+def hpsModelSynth(hfreq, hmag, hphase, stocEnv, N, H, fs):
+def to_nnf(expr, simplify=True):
+def fromstring(*args, **kwargs):
+@pytest.mark.django_db DCNL def test_submit_with_suggestion_and_comment(client, request_users, settings):
+def get_app(services, registry_path=forms.DEFAULT_REGISTRY_PATH, debug=False, config=None):
+def getMatrixTetragridMatrix(matrixTetragrid, prefix, xmlElement):
+def get_feature_permission(request, feature, operation=None):
+def _GetTimezone(timezone_string):
+def cmp_version(a, b):
+def ToScatteredId(v):
+@handle_response_format DCNL @treeio_login_required DCNL def item_view(request, folderPath, itemPath, response_format='html'):
+def getFirstWord(splitLine):
+def create_and_check_dir(path):
+def validate_input(trans, error_map, param_values, page_param_map):
+def parse_date(string):
+def test_nonexistent_options_listed_in_order(script, data):
+def build_dict():
+def decryptAndCheckPubkeyPayload(data, address):
+def create_mac_string(num, splitter=u':'):
+def get_rising_items(omit_sr_ids, count=4):
+def get_datasources(orgname=None, profile='grafana'):
+def _get_storage_path(path, app_id):
+def url_for(endpoint, **values):
+def test_delayed_epochs():
+def git_status(path):
+def create_instance(c_instance):
+def cloud_query_sinfo(cookie, tokens, source_path):
+def build_encoder_bi(tparams, options):
+def _minimize_bfgs(fun, x0, args=(), jac=None, callback=None, gtol=1e-05, norm=Inf, eps=_epsilon, maxiter=None, disp=False, return_all=False, **unknown_options):
+def terminal_action(parent, fn):
+def present(name, DomainName, ElasticsearchClusterConfig=None, EBSOptions=None, AccessPolicies=None, SnapshotOptions=None, AdvancedOptions=None, Tags=None, region=None, key=None, keyid=None, profile=None, ElasticsearchVersion='1.5'):
+def locate_prefix_by_name(ctx, name):
+def split(line):
+def number_aware_alphabetical_cmp(str1, str2):
+def get_all_collections(bus):
+def kvToSeq(data, strict=False):
+def detect(source):
+def test__FileIO___reduce__():
+def is_valid_csv(parser, file_name, row_limit):
+def parse_certificate_issuer_id(id):
+def _parse_qsub_job_id(qsub_out):
+def not_found(*args, **kwargs):
+def strip_esc_sequence(txt):
+def compute_use_defs(blocks):
+@sensitive_post_parameters() DCNL @never_cache DCNL def password_reset_confirm(request, uidb64=None, token=None, template_name='registration/password_reset_confirm.html', token_generator=default_token_generator, set_password_form=SetPasswordForm, post_reset_redirect=None, current_app=None, extra_context=None):
+def _delAccountRights(sidObject, user_right):
+def filter_non_model_columns(data, model):
+@gen.coroutine DCNL def ShareExisting(client, obj_store, user_id, device_id, request):
+@log_call DCNL def metadef_resource_type_create(context, values):
+def __virtual__():
+def publish_string(source, source_path=None, destination_path=None, reader=None, reader_name='standalone', parser=None, parser_name='restructuredtext', writer=None, writer_name='pseudoxml', settings=None, settings_spec=None, settings_overrides=None, config_section=None, enable_exit_status=False):
+def Synchronized(f):
+def get_id(opts, cache_minion_id=False):
+def deg(r):
+def parsePWDResponse(response):
+def cross_entropy_seq(logits, target_seqs, batch_size=1, num_steps=None):
+def assert_crypto_availability(f):
+def test_color_array():
+def create_urllib3_context(ssl_version=None, cert_reqs=None, options=None, ciphers=None):
+@verbose DCNL def _merge_info(infos, force_update_to_first=False, verbose=None):
+def _get_block_count_url_string(xblock_type_set):
+def create_territories():
+@task DCNL def GitHub_release_text():
+def build_desired_iface_config(module):
+def _extract_id_token(id_token):
+def unwatch_log():
+def compress(body, compress_level):
+def alignment_summary(alignment, index=' DCSP  DCSP ', vertical_threshold=5):
+def _check_module_dependencies(is_imbalanced_dataset_installing=False):
+def setup_platform(hass, config, add_devices, discovery_info=None):
+def restart(name, jail=None):
+@pytest.mark.parametrize('fast_writer', [True, False]) DCNL def test_byte_string_output(fast_writer):
+def _name_value_to_bson(name, value, check_keys, opts):
+def getGeometryOutput(derivation, elementNode):
+def getRandomRange(a, b, randfunc=None):
+def convert_tree(beautiful_soup_tree, makeelement=None):
+def AddUpdateOptions(parser):
+def _determine_toggles(payload, toggles):
+def create_mpl_fig(fig=None, figsize=None):
+def serialize_revision(node, record, version, index, anon=False):
+def now(parser, token):
+def _validate_list(key, value):
+def test_continuous_error():
+def ntohl(bs):
+def mbruteforce(func, alphabet, length, method='upto', start=None, threads=None):
+def get_dataset_file(dataset, default_dataset, origin):
+def test_epochs_hash():
+def read_plain_int32(file_obj, count):
+def load_stored_item(cache, path, item):
+def stash_conf_values():
+def _strxfrm(s):
+def rjust(s, width):
+def WRatio(s1, s2, force_ascii=True):
+def create_tags(filesystemid, tags, keyid=None, key=None, profile=None, region=None, **kwargs):
+def has_flag(conf, atom, flag):
+def read_template(tmplf):
+@celery_app.task(base=ArchiverTask, ignore_result=False) DCNL @logged('make_copy_request') DCNL def make_copy_request(job_pk, url, data):
+def obtain_lock_id_to_hog():
+def create_instance(options):
+def make_or_verify_needed_dirs(config):
+def name_validator(value, context):
+def repeat(x, repeats, axis=None):
+@pytest.mark.hasgpu DCNL def test_hist(nbin_offset_dim_dtype_inp, backend_pair):
+def _estimate_rank_meeg_cov(data, info, scalings, tol='auto', return_singular=False):
+def _force_mutable(x):
+def _check_cron_env(user, name, value=None):
+def test_daophot_indef():
+def delete_vpc_peering_connection(name, conn_id=None, conn_name=None, region=None, key=None, keyid=None, profile=None):
+def _type_check(arg, msg):
+def test_multiclass_error():
+def add_password_arg(cmd, psw, required=False):
+def getNewDerivation(elementNode):
+def _set_sentinel():
+def formset_factory(form, formset=BaseFormSet, extra=1, can_order=False, can_delete=False, max_num=None, validate_max=False, min_num=None, validate_min=False):
+def onLoggerAppShutDown():
+def project_get_networks(context, project_id, associate=True):
+def new_test_client(cls, **kwargs):
+def relpath_to_site(lang, target_lang):
+def add_nic(si, vm, network):
+def load_tests(loader, tests, pattern):
+def format_value(val, limit=100, level=10):
+def default_formats():
+def get_latest_flexget_version_number():
+def edit_service(protocol=None, service_address=None, scheduler=None):
+@register_vcs_handler('git', 'keywords') DCNL def git_versions_from_keywords(keywords, tag_prefix, verbose):
+def value_present(name, datastore, path, config):
+def test_cache_deactivated_get_data(config_stub, tmpdir):
+@hook.command('wordusage', 'wordexample', 'usage') DCNL def word_usage(text):
+def ui_open(*files):
+def is_pure_elemwise(graph, inputs):
+def audio_codec():
+def get_bucket(conn, bucket_id):
+def range_error_message(error_message, what_to_enter, minimum, maximum):
+def instance_get_floating_address(context, instance_id):
+def _authenticate_mongo_cr(credentials, sock_info):
+def entails(expr, formula_set={}):
+def spawn_raw(function, *args, **kwargs):
+def isproxy(obj):
+def _to_app_identity_error(error):
+def get_argument_from_call(callfunc_node, position=None, keyword=None):
+def dynamic_class_import(class_path):
+def _decomp_quad(P, cond=None, rcond=None, lower=True, check_finite=True):
+def writeOutput(fileName=''):
+def _putResultInDeferred(reactor, deferred, f, args, kwargs):
+def fft(x, n=None, axis=(-1), overwrite_x=False):
+def setup():
+def make_logged_in_client(username='test', password='test', is_superuser=True, recreate=False, groupname=None):
+def test_invalid_sigma_clip():
+def create_gzip_cache(pelican):
+@removals.remove(message='Use DCSP keystoneclient.session.request DCSP instead.', version='1.7.0', removal_version='2.0.0') DCNL def request(*args, **kwargs):
+def unique_substrings(l, min_size=1):
+def event_source_mapping_present(name, EventSourceArn, FunctionName, StartingPosition, Enabled=True, BatchSize=100, region=None, key=None, keyid=None, profile=None):
+def getCraftedTextFromText(gcodeText, exportRepository=None):
+def test_gnb_pfit_wrong_nb_features():
+def _handle_key(key):
+@mock_ec2 DCNL def test_igw_desribe():
+def rpc(cmd=None, dest=None, format='xml', *args, **kwargs):
+def read(results_file):
+def export_stats(request, project, subproject):
+@bp.route('/') DCNL def nodes():
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def striptags(value):
+def delete_image(gce, name, module):
+def _write_proc_history(fid, info):
+def test_finder_installs_pre_releases(data):
+def get_config():
+def _fastq_solexa_convert_fastq_solexa(in_handle, out_handle, alphabet=None):
+def _comp_match(item, filter_, scope='collection'):
+def register_translation(src_image, target_image, upsample_factor=1, space='real'):
+@task() DCNL @timeit DCNL def maybe_award_badge(badge_template, year, user):
+def GetRegisteredExe(exeAlias):
+def json_decode(x):
+def xy_color(color):
+def zero_value_config_set(kodi_setting, all_settings):
+@public DCNL def sring(exprs, *symbols, **options):
+def getInsetLoopsFromLoops(loops, radius):
+def setup_logging():
+def guess_net_inet_tcp_sendbuf_max():
+def convert_opt(key, val):
+def _generate_zip_package(target, sources, sources_dir):
+def getNewRepository():
+def url_decode(s, charset='utf-8', decode_keys=False, include_empty=True, errors='replace', separator='&', cls=None):
+def _tagAttr(key, fullpath):
+def load_boston(return_X_y=False):
+def disinherit(name, objectType, copy_inherited_acl=True):
+def get_load(jid):
+def colnum2name(n):
+def task_reserved(request):
+def pretty_css(container, name, raw):
+@csrf_exempt DCNL @require_POST DCNL def cspreport(request):
+def extract_bool(name, value):
+def format_version(module, attr, call=False):
+def require_open(func):
+def evaluate(hps, logdir, traindir, subset='valid', return_val=False):
+def comment(parser, token):
+@dec.skip_win32 DCNL def test_find_cmd_ls():
+def get_area(y, x):
+def py_encode_basestring_ascii(s, _PY3=PY3):
+def set_reboot_required_witnessed():
+def preprocess_for_eval(image, height, width, central_fraction=0.875, scope=None):
+def user_registered_cb(user, **kwargs):
+def _is_astropy_source(path=None):
+def data_to_tfrecord(images, labels, filename):
+def save(obj, f, pickle_module=pickle, pickle_protocol=DEFAULT_PROTOCOL):
+def pearson_score(list1, list2):
+def AskString(prompt, default='', id=261, ok=None, cancel=None):
+def detect(stream):
+@flake8ext DCNL def validate_log_translations(logical_line, physical_line, filename):
+def file_join(nzo, workdir, workdir_complete, delete, joinables):
+def _ValidateClientId(client_id):
+def isvector(X):
+@register_canonicalize DCNL @register_specialize DCNL @gof.local_optimizer([T.int_div, T.true_div]) DCNL def local_zero_div(node):
+def test_nested(a, b, c):
+def make_fna(sff_fp, output_fp, use_sfftools=False, no_trim=False):
+def worker_e_step(input_queue, result_queue):
+def _sl_fit(estimator, X, y):
+def perm2tensor(t, g, canon_bp=False):
+def get_build_results(build):
+def get_hash(f):
+@requires_sklearn_0_15 DCNL def test_SearchLight():
+def _parse_output(output, template):
+def timestamp(x):
+def get_latest_repository_metadata(app, decoded_repository_id, downloadable=False):
+def test_string():
+@gen.engine DCNL def ListRecursively(store, pattern, callback):
+def _extract_doc_comment(content, line, column, markers):
+def Time2Internaldate(date_time):
+def parseSdr(s):
+def _relpath(path, start='.'):
+def packages(pkg_list, update=False):
+def construct_mirror_name(volume):
+def floating_ip_create(kwargs, call=None):
+def top_contributors_l10n(start=None, end=None, locale=None, product=None, count=10, page=1):
+def assert_array_max_ulp(a, b, maxulp=1, dtype=None):
+@login_required DCNL @ensure_csrf_cookie DCNL def assets_handler(request, course_key_string=None, asset_key_string=None):
+def savgol_coeffs(window_length, polyorder, deriv=0, delta=1.0, pos=None, use='conv'):
+def clamav(registry, xml_parent, data):
+def __virtual__():
+def tree_support(master, subsampled_tree):
+def filter_factory(global_conf, **local_conf):
+def dlcs_api_request(path, params='', user='', passwd='', throttle=True):
+def conserve_mpmath_dps(func):
+def pathMatchPatterns(path, repos):
+def minimize(fun, x0, args=(), method=None, jac=None, hess=None, hessp=None, bounds=None, constraints=(), tol=None, callback=None, options=None):
+@domain_constructor(loss_target=(-2)) DCNL def distractor():
+def is_inside_except(node):
+def dump(obj, fp, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, encoding='utf-8', default=None, use_decimal=True, **kw):
+def require(source_module, target_module, all_macros=False, assignments={}, prefix=''):
+def libvlc_media_list_player_get_state(p_mlp):
+def get_c_init(r, name, sub):
+def exp(x):
+def _getinfos_http_client_authorization(spec):
+def setup(base_path, root_module_name='autotest'):
+def get_messages(request):
+def configure_paramiko_logging():
+def fixed_ip_get_by_host(context, host):
+def check_non_negative(X, whom):
+def main():
+@pytest.mark.cmd DCNL @pytest.mark.django_db DCNL def test_refresh_scores_reset_user(capfd):
+def download_cover(log, title=None, authors=None, identifiers={}, timeout=30):
+def _map_to_list(game_map):
+def _indent(elem, level=0):
+def setvariable(cursor, mysqlvar, value):
+def group_membership():
+def interface_is_portchannel(interface, module):
+def wc_reducer(word, counts):
+def serviceCommand(methodName, cmdClass=ServiceWrapperCommand):
+def _native_package_type():
+@functools.lru_cache(maxsize=None) DCNL def get_callable(lookup_view):
+def process_validation(validation, is_compatibility=False, file_hash=None):
+@login_required DCNL @enforce_shopping_cart_enabled DCNL def show_cart(request):
+def libvlc_video_set_deinterlace(p_mi, psz_mode):
+def PostVimMessage(message, warning=True, truncate=False):
+def getRadiusByPrefix(prefix, sideLength, xmlElement):
+def addListsToRepository(fileNameHelp, getProfileDirectory, repository):
+def update(context, id, name, description, is_public=None):
+def call_command(name, *args, **options):
+@csrf_protect DCNL @permission_required('comments.can_moderate') DCNL def delete(request, comment_id, next=None):
+def _filter_doc_html(request, doc, doc_html, rendering_params):
+def create_minibatch_x(minibatches, minibatch_markers, epoch_axis):
+def CDLMORNINGDOJISTAR(barDs, count, penetration=(-4e+37)):
+def gaussian_convolution(h, Xi, x):
+def load_reg():
+def _map_plays_to_roles(graph, dirs, git_dir, key, type_1, type_2):
+def _installHandlerUsingSetWakeup(fd):
+def get_user_model():
+def handler_url(block, handler_name, suffix='', query='', thirdparty=False):
+def model_query(context, model, *args, **kwargs):
+def attr_sparse_matrix(G, edge_attr=None, node_attr=None, normalized=False, rc_order=None, dtype=None):
+@protocol.commands.add(u'command_list_ok_begin', list_command=False) DCNL def command_list_ok_begin(context):
+def _ace_to_text(ace, objectType):
+def _build_offset(offset, kwargs, default):
+def dump(object_, file_, parameters=None, use_cpickle=False, protocol=DEFAULT_PROTOCOL, **kwargs):
+def has_required_keys(xblock):
+def filter_labels(train, label, classes=None):
+def set_desktop_icons(visible_list, ignore_duplicate=True):
+def prime(nth):
+@register.function DCNL @jinja2.contextfunction DCNL def favorites_widget(context, addon, condensed=False):
+def names_from_file(filename):
+def sanitize_separators(value):
+def get_argnames(func):
+def get_indices(client):
+def test_message_hiding(qtbot, view):
+def update_dmg_makefile():
+def _initialize_headers(headers):
+@contextmanager DCNL def secret_model():
+def lsmod():
+def mark_as_cover(container, name):
+def after_VBD_create(vbd_ref, vbd_rec):
+def is_unit(xblock, parent_xblock=None):
+def bus_routes():
+def identify_format(origin, data_class_required, path, fileobj, args, kwargs):
+def get_messages_from_page(name):
+def render(template, **kwargs):
+def assert_no_element_by_id(context, _id, wait_time=MAX_WAIT_FOR_UNEXPECTED_ELEMENT):
+def extra_padding_y_keep_ratio(original_size, padding):
+def GenerateEnvironmentFiles(toplevel_build_dir, generator_flags, system_includes, open_out):
+def find_dest_path_comp_key(files, src_path=None):
+def get_long_description():
+@flake8ext DCNL def use_jsonutils(logical_line, filename):
+def get_all_vlanids():
+def get_config(config_file, repo, ctx, dir):
+@masterserviceHandle DCNL def serverStop():
+def consume_length_prefix(rlp, start):
+def addAssemblyCage(derivation, negatives, positives):
+@treeio_login_required DCNL @handle_response_format DCNL def order_invoice_view(request, order_id, response_format='html'):
+def getNewRepository():
+def json_underscore(body, charset='utf-8', **kwargs):
+def git_hook():
+def create_mgr(descr, item_shape=None):
+def role_delete(role_id=None, name=None, profile=None, **connection_args):
+def _needs_eeg_average_ref_proj(info):
+@frappe.whitelist() DCNL def add_tag(tag, dt, dn, color=None):
+def CreateBudget(client):
+def flatten(class_dict):
+def _nova_to_osvif_network(network):
+def norm_constraint(tensor_var, max_norm, norm_axes=None, epsilon=1e-07):
+def delete_disk(kwargs=None, call=None):
+def _create_wx_app():
+def externals_finder(dirname, filename):
+def quiet_close(closable):
+def add_bbox_regression_targets(roidb):
+def is_installed(pkg_name):
+def _cg(A, b, x0=None, tol=1e-10, maxiter=1000):
+def contracted_edge(G, edge, self_loops=True):
+def test_wheel_compiles_pyc(script, data):
+def base_vectors(n):
+def DateFromTicks(ticks):
+def instance_tag_delete_all(context, instance_uuid):
+def invalidate_star_import_cache(path):
+def coverage(fn):
+def _downgrade_sqlite(t_images, t_image_members, t_image_properties):
+def test_system_dynamic():
+def naturaldate(date, include_seconds=False):
+def SetupSharedModules(module_dict):
+@task DCNL def clean():
+def test_ada_fit_invalid_ratio():
+def test_custom_model_subclass():
+def countNonPrintableChars(string):
+def get_scores(video):
+def kill_pid(pid, signal=15):
+def escape(text):
+def int_to_str(value, length=2):
+def validate_payload(payload, api_model, check_required=True):
+def serialize_item(collection, item):
+def get_raising_file_and_line(tb=None):
+def _minimize_cg(fun, x0, args=(), jac=None, callback=None, gtol=1e-05, norm=Inf, eps=_epsilon, maxiter=None, disp=False, return_all=False, **unknown_options):
+def get_recurring(**filter_data):
+def absent(name):
+def quitWindows(event=None):
+def get(key, profile=None):
+def for_all_dtypes(name='dtype', no_float16=False, no_bool=False):
+def mapping_file_to_dict(mapping_data, header):
+def firstof(parser, token):
+@app.route('/scans/<int:scan_id>/exceptions/', methods=['GET']) DCNL @requires_auth DCNL def list_exceptions(scan_id):
+def _check_even_rewrite(func, arg):
+def is_jid(jid):
+def encode_single(typ, arg):
+def init_runspace():
+def test_hsl_to_rgb_part_3():
+def test_cx_Oracle():
+def default_channel():
+def pixels_to_EMU(value):
+def global_fixes():
+def get_metadata(stream):
+def _make_triplets(seq, phase=0):
+def loadClassPath(classpath):
+def _memoize(func, *args, **opts):
+def git_pull():
+def _get_css_imports_cssutils(data, inline=False):
+def make_script_path(script):
+def follow():
+def select_template(template_name_list):
+def _update_data(entity_id, public_key, sso_url, expires_at):
+def InstallDriver(kext_path):
+@depends(HAS_PYVMOMI) DCNL def list_hosts(host, username, password, protocol=None, port=None):
+def get_cluster(options, env):
+def runsimple(func, port=8080):
+def setup_form_view(view, request, form, *args, **kwargs):
+def safeCSValue(value):
+def cmp(field, value, comparison='=', escape=(lambda v: _escape(v)), table=''):
+def parse_bdist_wininst(name):
+def run_pylint_gui():
+def _process_caption(caption):
+@pytest.fixture DCNL def Worksheet():
+def allclose(x, y, rtol=1e-05, atol=1e-08):
+def abort_merge():
+def _patched_list_steps(emr_conn, *args, **kwargs):
+@register.filter DCNL def has_unrendered_errors(bound_field):
+def scrub_text(text):
+def formatStatResponse(msgs):
+def find_exact(tracks, query=None, limit=100, offset=0, uris=None):
+@transaction.non_atomic_requests DCNL @cache_control(no_cache=True, no_store=True, must_revalidate=True) DCNL @coach_dashboard DCNL def ccx_grades_csv(request, course, ccx=None):
+@register_canonicalize DCNL @register_uncanonicalize DCNL @register_specialize DCNL @gof.local_optimizer(ALL_REDUCE) DCNL def local_reduce_broadcastable(node):
+def _get_immediate_cls_attr(cls, attrname, strict=False):
+def wiki_escape(s):
+def getaddresses(fieldvalues):
+def main():
+def _extend_external_network_default(core_plugin, net_res, net_db):
+def cg_optimization_mnist(n_epochs=50, mnist_pkl_gz='mnist.pkl.gz'):
+def modify_node(hostname, username, password, name, connection_limit=None, description=None, dynamic_ratio=None, logging=None, monitor=None, rate_limit=None, ratio=None, session=None, state=None, trans_label=None):
+def get_manager(cls):
+def I(attr):
+def set_edit_mode(request, flag):
+def register(func, msg_type=None, dispatcher_name=None, active_by_default=True):
+def query(params=None):
+def is_list_of_ints(intlist):
+def pade(an, m):
+def count(session, query):
+def test_create_angles():
+def getVector3RemoveByPrefix(prefix, vector3, xmlElement):
+def _escape_jid(jid):
+def parse_time(value):
+def unparse_vs(tup):
+def _convert(expected_type, value):
+@apply_to_binary_file DCNL def xmlminify(data):
+def qd(A, B, output='real', lwork=None, sort=None, overwrite_a=False, overwrite_b=False, check_finite=True):
+def GetMostRecentClient(client_list, token=None):
+def _fwd_eeg_fit_berg_scherg(m, nterms, nfit):
+@pytest.mark.parametrize('stream', ['stdout', 'stderr']) DCNL def test_exit_unsuccessful_output(qtbot, proc, caplog, py_proc, stream):
+def create_move(project, resource, offset=None):
+def in6_isaddr6to4(x):
+def __virtual__():
+def extract_python(fileobj, keywords, comment_tags, options):
+def generate_replace_result_xml(result_sourcedid, score):
+def _get_params(mapper_spec, allowed_keys=None):
+def dir_list(load):
+def find_duplicative_certs(config, domains):
+def assemble(block):
+def getNewDerivation(elementNode):
+def make_colorizer(color):
+def is_var(exp):
+def make_middleware(app, global_conf=None, warning_level=None):
+def fromRoman(s):
+def new_figure_manager_given_figure(num, figure):
+def _py_convert_agg_to_wx_bitmap(agg, bbox):
+def generate_presigned_url(self, ClientMethod, Params=None, ExpiresIn=3600, HttpMethod=None):
+def get_scene_numbering_for_show(indexer_id, indexer):
+def oo_random_word(length, source='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'):
+def removed(name, requirements=None, bin_env=None, log=None, proxy=None, timeout=None, user=None, cwd=None, use_vt=False):
+@frappe.whitelist() DCNL def take_backup():
+@task DCNL @needs('pavelib.prereqs.install_prereqs') DCNL @cmdopts([('settings=', 's', 'Django DCSP settings DCSP for DCSP both DCSP LMS DCSP and DCSP Studio'), ('asset-settings=', 'a', 'Django DCSP settings DCSP for DCSP updating DCSP assets DCSP for DCSP both DCSP LMS DCSP and DCSP Studio DCSP (defaults DCSP to DCSP settings)'), ('worker-settings=', 'w', 'Celery DCSP worker DCSP Django DCSP settings'), ('fast', 'f', 'Skip DCSP updating DCSP assets'), ('optimized', 'o', 'Run DCSP with DCSP optimized DCSP assets'), ('settings-lms=', 'l', 'Set DCSP LMS DCSP only, DCSP overriding DCSP the DCSP value DCSP from DCSP --settings DCSP (if DCSP provided)'), ('asset-settings-lms=', None, 'Set DCSP LMS DCSP only, DCSP overriding DCSP the DCSP value DCSP from DCSP --asset-settings DCSP (if DCSP provided)'), ('settings-cms=', 'c', 'Set DCSP Studio DCSP only, DCSP overriding DCSP the DCSP value DCSP from DCSP --settings DCSP (if DCSP provided)'), ('asset-settings-cms=', None, 'Set DCSP Studio DCSP only, DCSP overriding DCSP the DCSP value DCSP from DCSP --asset-settings DCSP (if DCSP provided)'), ('asset_settings=', None, 'deprecated DCSP in DCSP favor DCSP of DCSP asset-settings'), ('asset_settings_cms=', None, 'deprecated DCSP in DCSP favor DCSP of DCSP asset-settings-cms'), ('asset_settings_lms=', None, 'deprecated DCSP in DCSP favor DCSP of DCSP asset-settings-lms'), ('settings_cms=', None, 'deprecated DCSP in DCSP favor DCSP of DCSP settings-cms'), ('settings_lms=', None, 'deprecated DCSP in DCSP favor DCSP of DCSP settings-lms'), ('worker_settings=', None, 'deprecated DCSP in DCSP favor DCSP of DCSP worker-settings')]) DCNL def run_all_servers(options):
+def _get_info_slice(obj, indexer):
+def device_memory_size(devmem):
+@register.tag('filter') DCNL def do_filter(parser, token):
+def get_queue_names(app_id=None, max_rows=100):
+def add_key_to_url(url, scheme, key):
+def route_exists(destination_cidr_block, route_table_name=None, route_table_id=None, gateway_id=None, instance_id=None, interface_id=None, tags=None, region=None, key=None, keyid=None, profile=None, vpc_peering_connection_id=None):
+def protected(callback=None):
+def _domain_variants(domain):
+def calculateDeltaSeconds(start):
+def _collect_dirs(start_dir, blacklist=set(['conftest.py', 'nox.py']), suffix='_test.py'):
+def expand_default(self, option):
+def password_option(*param_decls, **attrs):
+def stop(name):
+@click.command() DCNL @click.option('--count', default=2, callback=validate_count, help='A DCSP positive DCSP even DCSP number.') DCNL @click.option('--foo', help='A DCSP mysterious DCSP parameter.') DCNL @click.option('--url', help='A DCSP URL', type=URL()) DCNL @click.version_option() DCNL def cli(count, foo, url):
+def _collectWarnings(observeWarning, f, *args, **kwargs):
+def comment_counts(user, all_comments, filediff, interfilediff=None):
+def req_match():
+def _get_TV(codon_lst1, codon_lst2, codon_table=default_codon_table):
+def failing_checks(node_address, timeout=30):
+def batch_indices(batch_nb, data_length, batch_size):
+def import_doc(d, doctype, overwrite, row_idx, submit=False, ignore_links=False):
+def fmtstr_payload(offset, writes, numbwritten=0, write_size='byte'):
+def makeTerms(nodes, title='Node', term='xterm'):
+def set_using_network_time(enable):
+def read_cache(stream):
+def test_construction():
+def getGeometryOutput(elementNode):
+def maybe_download(filename, work_directory):
+def _set_rpm_probes(probes):
+def find_subsections(section):
+def recreate_tags_from_list(list_of_tags):
+def parse_sphinx_searchindex(searchindex):
+def _get_deep(data_structure, dot_path_or_list, default_value=None):
+def strip_unneeded(bkts, sufficient_funds):
+def run(cmd, **kwargs):
+@treeio_login_required DCNL def ajax_object_lookup(request, response_format='html'):
+def scope2index(scope, descr, where=None):
+def get_context(context):
+def publish_cmdline(reader=None, reader_name='standalone', parser=None, parser_name='restructuredtext', writer=None, writer_name='pseudoxml', settings=None, settings_spec=None, settings_overrides=None, config_section=None, enable_exit_status=True, argv=None, usage=default_usage, description=default_description):
+def user_remove(name, database=None, user=None, password=None, host=None, port=None):
+def get_base_domain(url):
+def relativize_classpath(classpath, root_dir, followlinks=True):
+def byte_compile(py_files, optimize=0, force=0, prefix=None, base_dir=None, verbose=1, dry_run=0, direct=None):
+def HoursSince(timestamp):
+def volume_present(name, volume_size, sparse=False, create_parent=False, properties=None, cloned_from=None):
+def prepare_grant_uri(uri, client_id, response_type, redirect_uri=None, scope=None, state=None, **kwargs):
+def ctcpStringify(messages):
+def beacon(config):
+@loader_option() DCNL def noload(loadopt, attr):
+def masterserviceHandle(target):
+def fetch_species_distributions(data_home=None, download_if_missing=True):
+def automaster(config='/etc/auto_salt'):
+@requires_sklearn DCNL def test_ica_reject_buffer():
+def check_valid_naming(pattern=None, multi=None, anime_type=None):
+def constrain_rgb(r, g, b):
+def _parse_split_test_data_str():
+def parse_network(rule):
+def is_field_shared_factory(field_name):
+def fix_epoch(epoch):
+def uninstall(pecls):
+def make_user_coach(user, master_course_key):
+def weights_uniform(nlags):
+def literalquery(statement, dialect=None):
+def available():
+def get_clonespec_for_valid_snapshot(config_spec, object_ref, reloc_spec, template, vm_):
+def test_email():
+@decorators.which('chef-client') DCNL def client(whyrun=False, localmode=False, logfile=None, **kwargs):
+def forwards_move_repo_source(apps, schema_editor):
+def set_wake_on_network(enabled):
+def check_files(files, file_check, exclusions=set(), pattern=None):
+def determine_format(request, serializer, default_format=u'application/json'):
+def remove_packages(module, port_path, packages):
+def _get_options(ret=None):
+def listdir(path):
+def object_id(value):
+def mquantiles_cimj(data, prob=[0.25, 0.5, 0.75], alpha=0.05, axis=None):
+def get_pools(client):
+def get_cpu_list(ip, user, passwd):
+def test_append(hist, config_stub):
+def new(rsa_key):
+def get_connection(backend=None, fail_silently=False, **kwds):
+def detect():
+def _collect_filetree_revs(obj_store, tree_sha, kset):
+def destroy_vm(session, instance, vm_ref=None):
+def dirichlet_likelihood(weights, alpha=None):
+def _urlopen_cached(url, cache):
+def create_network_acl_entry(network_acl_id=None, rule_number=None, protocol=None, rule_action=None, cidr_block=None, egress=None, network_acl_name=None, icmp_code=None, icmp_type=None, port_range_from=None, port_range_to=None, region=None, key=None, keyid=None, profile=None):
+def interface_field(interfaces, **field_kwargs):
+def resource_delete(context, data_dict):
+def multisplit(container, name, xpath, before=True):
+def create_pool(lb, name, method='ROUND_ROBIN'):
+def threads(request, document_slug):
+def _read_uint64(f):
+def get(name, default=_UNSET, scope='global', window=None, tab=None):
+@command(usage='parse DCSP links') DCNL def extend_links(args):
+def send(text, connections, **kwargs):
+def load_template(template_name, template_source=None, template_path=None, template_hash=None, template_hash_name=None, template_user='root', template_group='root', template_mode='755', saltenv=None, template_engine='jinja', skip_verify=True, defaults=None, test=False, commit=True, debug=False, replace=False, **template_vars):
+def _array_to_datum(image, label, encoding):
+def self_test():
+def _calibrate_comp(comp, chs, row_names, col_names, mult_keys=('range', 'cal'), flip=False):
+@treeio_login_required DCNL @handle_response_format DCNL def opportunity_view(request, opportunity_id, response_format='html'):
+def start(name, call=None):
+def inpaint_biharmonic(img, mask, multichannel=False):
+def get_test_result():
+def savgol_filter(x, window_length, polyorder, deriv=0, delta=1.0, axis=(-1), mode='interp', cval=0.0):
+def test_takes_kwargs():
+def load_app(target):
+def compute_f1(precision, recall):
+def colorize(lead, num, color):
+def hstack(tup):
+def dump_psutil():
+def inputs(eval_data, data_dir, batch_size):
+def scope_to_list(scope):
+@cython.locals(n=int, i=int, j=int) DCNL def permutations(iterable):
+def _push_assemble_error_status(status, ret, logs):
+def url(context, link_url):
+def histograms_plot():
+def test_array___setitem__():
+def register_linker(name, linker):
+def pkcs_mgf1(mgfSeed, maskLen, h):
+def _to_gapic_image(image):
+def init_cachedir(base=None):
+def load_extensions():
+def get_checks_places(osname, agentConfig):
+@require_admin_context DCNL def group_type_access_remove(context, type_id, project_id):
+def _plot_traces(params):
+def refine_Determinant(expr, assumptions):
+def get_rate_limit():
+@with_setup(prepare_stdout) DCNL def test_output_outlines_success_colorful():
+@utils.auth.requires_login DCNL @blueprint.route('/upload_archive', methods=['POST']) DCNL def upload_archive():
