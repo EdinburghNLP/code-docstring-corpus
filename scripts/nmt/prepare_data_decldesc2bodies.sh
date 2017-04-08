@@ -18,12 +18,12 @@ $MOSES/scripts/training/clean-corpus-n.perl data_ps.decldes2bodies.train.tok dd 
 cat data_ps.decldes2bodies.train.tok.clean.bo data_ps.decldes2bodies.train.tok.clean.dd > data_ps.decldes2bodies.train.tok.clean.merged
 $BPE/learn_bpe.py -s 89500 < data_ps.decldes2bodies.train.tok.clean.merged > data_ps.decldes2bodies.digram.model
 
-$BPE/apply_bpe.py -c data_ps.decldes2bodies.digram.model < data_ps.decldes2bodies.train.tok.dd > data_ps.decldes2bodies.train.bpe.dd
-$BPE/apply_bpe.py -c data_ps.decldes2bodies.digram.model < data_ps.decldes2bodies.train.tok.bo > data_ps.decldes2bodies.train.bpe.bo
+$BPE/apply_bpe.py -c data_ps.decldes2bodies.digram.model < data_ps.decldes2bodies.train.tok.clean.dd > data_ps.decldes2bodies.train.bpe.clean.dd
+$BPE/apply_bpe.py -c data_ps.decldes2bodies.digram.model < data_ps.decldes2bodies.train.tok.clean.bo > data_ps.decldes2bodies.train.bpe.clean.bo
 $BPE/apply_bpe.py -c data_ps.decldes2bodies.digram.model < data_ps.decldes2bodies.valid.tok.dd > data_ps.decldes2bodies.valid.bpe.dd
 $BPE/apply_bpe.py -c data_ps.decldes2bodies.digram.model < data_ps.decldes2bodies.valid.tok.bo > data_ps.decldes2bodies.valid.bpe.bo
 $BPE/apply_bpe.py -c data_ps.decldes2bodies.digram.model < data_ps.decldes2bodies.test.tok.dd > data_ps.decldes2bodies.test.bpe.dd
 
-cat data_ps.decldes2bodies.train.bpe.bo data_ps.decldes2bodies.train.bpe.dd > data_ps.decldes2bodies.train.bpe.merged
-$NEMATUS/data/build_dictionary.py data_ps.decldes2bodies.train.bpe.merged
+cat data_ps.decldes2bodies.train.bpe.clean.bo data_ps.decldes2bodies.train.bpe.clean.dd > data_ps.decldes2bodies.train.bpe.clean.merged
+$NEMATUS/data/build_dictionary.py data_ps.decldes2bodies.train.bpe.clean.merged
 

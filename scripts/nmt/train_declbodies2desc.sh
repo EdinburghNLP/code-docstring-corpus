@@ -1,16 +1,15 @@
 #!/bin/bash
 
-# warning: this test is useful to check if training fails, and what speed you can achieve
-# the toy datasets are too small to obtain useful translation results,
-# and hyperparameters are chosen for speed, not for quality.
-# For a setup that preprocesses and trains a larger data set,
-# check https://github.com/rsennrich/wmt16-scripts/tree/master/sample
+# Insert paths to nematus
+NEMATUS=/fs/meili0/amiceli/nematus-dev-tiedembeddings-truncategradient
 
-../nematus/nmt.py \
+
+$NEMATUS/nematus/nmt.py \
   --model data_ps.declbodies2desc.model.npz \
   --datasets data_ps.declbodies2desc.train.bpe.clean.db data_ps.declbodies2desc.train.bpe.clean.d \
-  --valid_datasets data_ps.declbodies2desc.valid.bpe.clean.db data_ps.declbodies2desc.valid.bpe.clean.d
+  --valid_datasets data_ps.declbodies2desc.valid.bpe.db data_ps.declbodies2desc.valid.bpe.d \
   --dictionaries data_ps.declbodies2desc.train.bpe.clean.merged.json data_ps.declbodies2desc.train.bpe.clean.merged.json \
+  --objective CE \
   --dim_word 500 \
   --dim 500 \
   --n_words_src 89500 \

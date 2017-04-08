@@ -20,9 +20,9 @@ $BPE/learn_bpe.py -s 89500 < data_ps.declbodies2desc.train.tok.clean.merged > da
 
 $BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2desc.train.tok.clean.db > data_ps.declbodies2desc.train.bpe.clean.db
 $BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2desc.train.tok.clean.d > data_ps.declbodies2desc.train.bpe.clean.d
-$BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2desc.valid.tok.clean.db > data_ps.declbodies2desc.valid.bpe.clean.db
-$BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2desc.valid.tok.clean.d > data_ps.declbodies2desc.valid.bpe.clean.d
-$BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2desc.test.tok.clean.db > data_ps.declbodies2desc.test.bpe.clean.db
+$BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2desc.valid.tok.db > data_ps.declbodies2desc.valid.bpe.db
+$BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2desc.valid.tok.d > data_ps.declbodies2desc.valid.bpe.d
+$BPE/apply_bpe.py -c data_ps.declbodies2desc.digram.model < data_ps.declbodies2desc.test.tok.db > data_ps.declbodies2desc.test.bpe.db
 
 cat data_ps.declbodies2desc.train.bpe.clean.db data_ps.declbodies2desc.train.bpe.clean.d > data_ps.declbodies2desc.train.bpe.clean.merged
 $NEMATUS/data/build_dictionary.py data_ps.declbodies2desc.train.bpe.clean.merged
