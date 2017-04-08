@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Insert paths to nematus
-NEMATUS=/fs/meili0/amiceli/nematus-dev-tiedembeddings-truncategradient
+NEMATUS=/path/to/nematus
 
 
 $NEMATUS/nematus/nmt.py \
