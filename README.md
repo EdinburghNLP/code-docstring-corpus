@@ -15,3 +15,4 @@ The Python code was then preprocessed to normalize the syntax, extract top-level
 
 The data was further sub-tokenized using Sennrich et al. 2016 "Byte Pair Encoding" - paper: https://arxiv.org/abs/1508.07909 - code: https://github.com/rsennrich/subword-nmt . Finally, we trained baseline Neural Machine Translation models for both the code2doc and the doc2code tasks using Nematus by Sennrich et al. 2017 - paper: https://arxiv.org/abs/1703.04357 - code: https://github.com/rsennrich/nematus . We used the code2doc model to generate the docstring corpus from the code-only corpus.
 
+Extraction scripts require AST Unparser - https://github.com/simonpercivall/astunparse , NMT tokenization requires the Moses tokenizer scripts - https://github.com/moses-smt/mosesdecoder
