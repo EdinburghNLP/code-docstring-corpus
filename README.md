@@ -11,11 +11,13 @@ pip install -r requirements.txt
 ### Details
 
 It includes:
-- A parallel corpus of 150370 triples of function declarations, function docstrings and function bodies, with a canonical split in  109108 training triples, 2000 validation triples and 2000 test triples. Each triple is annotated by metadata (repository name, source file name and line number).
+- A parallel corpus of 150370 triples of function declarations, function docstrings and function bodies, with a canonical split in  109108 training triples, 2000 validation triples and 2000 test triples. Each triple is annotated by metadata (repository owner, repository name, source file and line number).
 - Two versions of the above corpus reassembled into pairs: (declaration+body, docstring) and (declaration+docstring, body), for  code documentation tasks and code generation tasks, respectively.
 - A code-only corpus of 161630 pairs of function declarations and function bodies, annotated with metadata.
 - A corpus of docstrings automatically generated from the code-only corpus using Neural Machine Translation, to enable data augmentation by "backtranslation"
 - Test and validation outputs of the baseline Neural Machine Translation models.
+- An alternate train/validation/test split of the parallel corpus which is "repository-consistent": no repository is split between training, validation or test sets.
+- A "repository-consistent" filtered version of the code-only corpus: it only contains fragments which appear in the training set of the above repository.
 - Preprocessing scripts used to generate the corpora.
 
 

@@ -1,0 +1,3321 @@
+def client_start(request, socket, context):
+def client_end(request, socket, context):
+def client_end_all():
+def socketio(request):
+def send(session_id, message):
+def broadcast(message):
+def broadcast_channel(message, channel):
+def format_log(request, message_type, message):
+def rooms(request, template='rooms.html'):
+def room(request, slug, template='room.html'):
+def create(request):
+@events.on_message(channel='^room-') DCNL def message(request, socket, context, message):
+@events.on_finish(channel='^room-') DCNL def finish(request, socket, context):
+def parse_filename_page_ranges(args):
+def isString(s):
+def isInt(n):
+def isBytes(b):
+def readUntilWhitespace(stream, maxchars=None):
+def readNonWhitespace(stream):
+def skipOverWhitespace(stream):
+def readUntilRegex(stream, regex, ignore_eof=False):
+def markLocation(stream):
+@contextlib.contextmanager DCNL def _httplib2_debug_level(http_request, level, http=None):
+def _process_content_range(content_range):
+def _check_response(response):
+def _reset_http_connections(http):
+def _make_api_request_no_retry(http, http_request, redirections=_REDIRECTIONS):
+def make_api_request(http, http_request, retries=7, redirections=_REDIRECTIONS):
+def calculate_wait_for_retry(retry_attempt):
+def acceptable_mime_type(accept_patterns, mime_type):
+def _ensure_tuple_or_list(arg_name, tuple_or_list):
+def _determine_default_project(project=None):
+def _millis(when):
+def _datetime_from_microseconds(value):
+def _microseconds_from_datetime(value):
+def _millis_from_datetime(value):
+def _date_from_iso8601_date(value):
+def _time_from_iso8601_time_naive(value):
+def _rfc3339_to_datetime(dt_str):
+def _rfc3339_nanos_to_datetime(dt_str):
+def _datetime_to_rfc3339(value, ignore_zone=True):
+def _to_bytes(value, encoding='ascii'):
+def _bytes_to_unicode(value):
+def _pb_timestamp_to_datetime(timestamp_pb):
+def _pb_timestamp_to_rfc3339(timestamp_pb):
+def _datetime_to_pb_timestamp(when):
+def _timedelta_to_duration_pb(timedelta_val):
+def _duration_pb_to_timedelta(duration_pb):
+def _name_from_project_path(path, project, template):
+def make_secure_channel(credentials, user_agent, host, extra_options=None):
+def make_secure_stub(credentials, user_agent, stub_class, host, extra_options=None):
+def make_insecure_stub(stub_class, host, port=None):
+def _compute_type_url(klass, prefix=_GOOGLE_APIS_PREFIX):
+def register_type(klass, type_url=None):
+def _from_any(any_pb):
+def get_credentials():
+def _get_signed_query_params(credentials, expiration, string_to_sign):
+def _get_expiration_seconds(expiration):
+def generate_signed_url(credentials, resource, expiration, api_access_endpoint='', method='GET', content_md5=None, content_type=None, response_type=None, response_disposition=None, generation=None):
+def make_exception(response, content, error_info=None, use_json=True):
+def _walk_subclasses(klass):
+def read_config(filename):
+def make_test_rc(base_rc_filename, additions_dict, replacements_dict, target_filename):
+def valid_filename(filename):
+def is_production_filename(filename):
+def get_python_files(all_files=None):
+def lint_fileset(filenames, rcfile, description):
+def main():
+def get_examples_from_docstring(doc_str):
+def package_files(generated_json_dir, docs_build_dir, static_json_dir, tag='master'):
+def main():
+def get_package_directories():
+def get_travis_directories(package_list):
+def verify_packages(subset, all_packages):
+def get_test_packages():
+def run_package(package, tox_env):
+def get_parser():
+def get_tox_env_from_version():
+def get_tox_env():
+def main():
+def is_valid_module(filename):
+def get_public_modules(path, base_package=None):
+def verify_modules(build_root='_build'):
+def get_parser():
+def main():
+def in_travis():
+def in_travis_pr():
+def travis_branch():
+def check_output(*args):
+def rootname(filename):
+def get_changed_packages(blob_name1, blob_name2, package_list):
+def local_diff_branch():
+def get_affected_files(allow_limited=True):
+def get_required_packages(file_contents):
+def get_dependency_graph(package_list):
+def follow_dependencies(subset, package_list):
+def main():
+def transform_old_to_new(line, old_module, new_module, ignore_import_from=False):
+def transform_line(line):
+def rewrite_file(filename):
+def main():
+def config_name_from_full_name(full_name):
+def variable_name_from_full_name(full_name):
+def _item_to_variable(iterator, resource):
+def _item_to_project(iterator, resource):
+def check_environment():
+def decrypt_keyfile():
+def prepare_to_run():
+def get_parser():
+def get_modules():
+def main():
+def _retry_all(_):
+def _wait_until_complete(operation, max_attempts=5):
+def _retry_on_unavailable(exc):
+def get_parser():
+def get_start_command(package):
+def get_env_init_command(package):
+def datastore_wait_ready(popen):
+def wait_ready_prefix(popen, prefix):
+def wait_ready(package, popen):
+def cleanup(pid):
+def run_tests_in_emulator(package):
+def main():
+def _consume_topics(pubsub_client):
+def _consume_subscriptions(topic):
+def unique_resource_id(delimiter='_'):
+def _retry_on_unavailable(exc):
+def _consume_entries(logger):
+def _list_entries(logger):
+def _bad_copy(bad_request):
+def _empty_bucket(bucket):
+def _rate_limit_exceeded(forbidden):
+def _operation_complete(result):
+def _wait_until_complete(operation, max_attempts=5):
+def _make_typed_value(value):
+def _build_label_filter(category, *args, **kwargs):
+def _build_dataframe(time_series_iterable, label=None, labels=None):
+def _sorted_resource_labels(labels):
+def _group_id_from_name(path, project=None):
+def _group_name_from_id(project, group_id):
+def _item_to_resource_record_set(iterator, resource):
+def _item_to_changes(iterator, resource):
+def _item_to_zone(iterator, resource):
+def snippet(func):
+@snippet DCNL def instantiate_client(_unused_client, _unused_to_delete):
+@snippet DCNL def client_list_entries(client, to_delete):
+def client_list_entries_multi_project(client, to_delete):
+@snippet DCNL def logger_usage(client, to_delete):
+@snippet DCNL def metric_crud(client, to_delete):
+@snippet DCNL def sink_storage(client, to_delete):
+@snippet DCNL def sink_bigquery(client, to_delete):
+@snippet DCNL def sink_pubsub(client, to_delete):
+def snippet(func):
+@snippet DCNL def client_list_topics(client, to_delete):
+@snippet DCNL def client_list_subscriptions(client, to_delete):
+@snippet DCNL def topic_create(client, to_delete):
+@snippet DCNL def topic_exists(client, to_delete):
+@snippet DCNL def topic_delete(client, to_delete):
+@snippet DCNL def topic_iam_policy(client, to_delete):
+def topic_check_iam_permissions(client, to_delete):
+@snippet DCNL def topic_publish_messages(client, to_delete):
+@snippet DCNL def topic_subscription(client, to_delete):
+def topic_subscription_push(client, to_delete):
+@snippet DCNL def subscription_lifecycle(client, to_delete):
+@snippet DCNL def subscription_pull(client, to_delete):
+@snippet DCNL def subscription_pull_w_autoack(client, to_delete):
+@snippet DCNL def subscription_iam_policy(client, to_delete):
+def subscription_check_iam_permissions(client, to_delete):
+def snippet(func):
+@snippet DCNL def client_list_datasets(client, _):
+@snippet DCNL def dataset_create(client, to_delete):
+@snippet DCNL def dataset_exists(client, to_delete):
+@snippet DCNL def dataset_reload(client, to_delete):
+@snippet DCNL def dataset_patch(client, to_delete):
+@snippet DCNL def dataset_update(client, to_delete):
+@snippet DCNL def dataset_delete(client, _):
+@snippet DCNL def dataset_list_tables(client, to_delete):
+@snippet DCNL def table_create(client, to_delete):
+@snippet DCNL def table_exists(client, to_delete):
+@snippet DCNL def table_reload(client, to_delete):
+@snippet DCNL def table_patch(client, to_delete):
+@snippet DCNL def table_update(client, to_delete):
+@snippet DCNL def table_insert_fetch_data(client, to_delete):
+@snippet DCNL def table_upload_from_file(client, to_delete):
+@snippet DCNL def table_delete(client, to_delete):
+@snippet DCNL def client_list_jobs(client, _):
+@snippet DCNL def client_run_sync_query(client, _):
+@snippet DCNL def client_run_sync_query_w_param(client, _):
+@snippet DCNL def client_run_sync_query_paged(client, _):
+@snippet DCNL def client_run_sync_query_timeout(client, _):
+def snippet(func):
+def _configure_job_metadata(metadata, allow_jagged_rows, allow_quoted_newlines, create_disposition, encoding, field_delimiter, ignore_unknown_values, max_bad_records, quote_character, skip_leading_rows, write_disposition):
+def _parse_schema_resource(info):
+def _build_schema_resource(fields):
+def _item_to_row(iterator, resource):
+def _rows_page_start(iterator, page, response):
+def _convert_timestamp(value):
+def _item_to_project(iterator, resource):
+def _item_to_dataset(iterator, resource):
+def _item_to_job(iterator, resource):
+def _not_null(value, field):
+def _int_from_json(value, field):
+def _float_from_json(value, field):
+def _bool_from_json(value, field):
+def _string_from_json(value, _):
+def _bytes_from_json(value, field):
+def _timestamp_from_json(value, field):
+def _datetime_from_json(value, field):
+def _date_from_json(value, field):
+def _time_from_json(value, field):
+def _record_from_json(value, field):
+def _int_to_json(value):
+def _float_to_json(value):
+def _bool_to_json(value):
+def _bytes_to_json(value):
+def _timestamp_to_json(value):
+def _datetime_to_json(value):
+def _date_to_json(value):
+def _time_to_json(value):
+def _row_from_json(row, schema):
+def _rows_from_json(rows, schema):
+def _item_to_table(iterator, resource):
+def build_flask_context(request):
+def _log_entry_mapping_to_pb(mapping):
+def _item_to_entry(iterator, entry_pb, loggers):
+def _item_to_sink(iterator, log_sink_pb):
+def _item_to_metric(iterator, log_metric_pb):
+def make_gax_logging_api(client):
+def make_gax_metrics_api(client):
+def make_gax_sinks_api(client):
+def entry_from_resource(resource, client, loggers):
+def logger_name_from_path(path):
+def _item_to_entry(iterator, resource, loggers):
+def _item_to_sink(iterator, resource):
+def _item_to_metric(iterator, resource):
+def format_stackdriver_json(record, message):
+def setup_logging(handler, excluded_loggers=EXCLUDED_LOGGER_DEFAULTS, log_level=logging.INFO):
+def _build_request_data(sample, language_code=None, max_alternatives=None, profanity_filter=None, speech_context=None):
+def _stream_requests(sample, language_code=None, max_alternatives=None, profanity_filter=None, speech_context=None, single_utterance=None, interim_results=None):
+def _make_streaming_request(sample, language_code, max_alternatives, profanity_filter, speech_context, single_utterance, interim_results):
+def _message_pb_from_mapping(message):
+def _message_pb_to_mapping(message_pb):
+def _received_message_pb_to_mapping(received_message_pb):
+def make_gax_publisher_api(credentials=None, host=None):
+def make_gax_subscriber_api(credentials=None, host=None):
+def _item_to_topic(iterator, resource):
+def _item_to_subscription_for_topic(iterator, subscription_path):
+def _item_to_sub_for_client(iterator, sub_pb, topics):
+def topic_name_from_path(path, project):
+def subscription_name_from_path(path, project):
+def _base64_unicode(value):
+def _transform_messages_base64(messages, transform, key=None):
+def _item_to_topic(iterator, resource):
+def _item_to_subscription_for_topic(iterator, subscription_path):
+def _item_to_sub_for_client(iterator, resource, topics):
+def _to_gapic_feature(feature):
+def _to_gapic_image(image):
+def _process_image_annotations(image):
+def _make_entity_from_pb(annotations):
+def _make_faces_from_pb(faces):
+def _make_image_properties_from_pb(image_properties):
+def _make_safe_search_from_pb(safe_search):
+def _entity_from_response_type(feature_type, results):
+def _get_pb_likelihood(likelihood):
+def _make_request(image, features):
+def _get_gcd_project():
+def _determine_default_project(project=None):
+def _extended_lookup(connection, project, key_pbs, missing=None, deferred=None, eventual=False, transaction_id=None):
+def _assign_entity_to_pb(entity_pb, entity):
+def _pb_from_query(query):
+def _item_to_entity(iterator, entity_pb):
+def _validate_project(project, parent):
+def _get_meaning(value_pb, is_list=False):
+def _new_value_pb(entity_pb, name):
+def _property_tuples(entity_pb):
+def entity_from_protobuf(pb):
+def _set_pb_meaning_from_entity(entity, name, value, value_pb, is_list=False):
+def entity_to_protobuf(entity):
+def key_from_protobuf(pb):
+def _pb_attr_value(val):
+def _get_value_from_value_pb(value_pb):
+def _set_protobuf_value(value_pb, val):
+@contextlib.contextmanager DCNL def _grpc_catch_rendezvous():
+def _set_read_options(request, eventual, transaction_id):
+def _add_keys_to_request(request_field_pb, key_pbs):
+def _parse_commit_response(commit_response_pb):
+def _get_encryption_headers(key, source=False):
+def _item_to_bucket(iterator, item):
+def _generate_faux_mime_message(parser, response, content):
+def _unpack_batch_response(response, content):
+def _scalar_property(fieldname):
+def _write_buffer_to_hash(buffer_object, hash_obj, digest_block_size=8192):
+def _base64_md5hash(buffer_object):
+def _blobs_page_start(iterator, page, response):
+def _item_to_blob(iterator, item):
+def _parse_readrows_acceptance_tests(filename):
+def _raise_if(predicate, *args):
+def _create_row_request(table_name, row_key=None, start_key=None, end_key=None, filter_=None, limit=None):
+def _prepare_create_request(instance):
+def _make_data_stub(client):
+def _make_instance_stub(client):
+def _make_operations_stub(client):
+def _make_table_stub(client):
+def _prepare_create_request(cluster):
+def _parse_rmw_row_response(row_response):
+def _parse_family_pb(family_pb):
+def _gc_rule_from_pb(gc_rule_pb):
+def get_most_frequent_response(input_statement, response_list):
+def get_first_response(input_statement, response_list):
+def get_random_response(input_statement, response_list):
+def clean_whitespace(chatbot, statement):
+def unescape_html(chatbot, statement):
+def convert_to_ascii(chatbot, statement):
+def import_module(dotted_path):
+def initialize_class(data, **kwargs):
+def validate_adapter_class(validate_class, adapter_class):
+def input_function():
+def nltk_download_corpus(resource_path):
+def remove_stopwords(tokens, language):
+def levenshtein_distance(statement, other_statement):
+def synset_distance(statement, other_statement):
+def sentiment_comparison(statement, other_statement):
+def jaccard_similarity(statement, other_statement, threshold=0.5):
+def hashnum(number):
+def convert_string_to_number(value):
+def convert_time_to_hour_minute(hour, minute, convention):
+def date_from_quarter(base_date, ordinal, year):
+def date_from_relative_day(base_date, time, dow):
+def date_from_relative_week_year(base_date, time, dow, ordinal=1):
+def date_from_adverb(base_date, name):
+def date_from_duration(base_date, number_as_string, unit, duration, base_time=None):
+def this_week_day(base_date, weekday):
+def previous_week_day(base_date, weekday):
+def next_week_day(base_date, weekday):
+def datetime_parsing(text, base_date=datetime.now()):
+def generate_strings(total_strings, string_length=20):
+def _euclidean_dist(vector_a, vector_b):
+def _get_closest_matches(input_attributes, target_attributes):
+def _levenshtein_distance(s1, s2):
+def _normalized_levenshtein_distance(s1, s2, acceptable_differences):
+def _is_better_match(x, y, matched_a, matched_b, attributes_dict_a, attributes_dict_b):
+def differing_constants(block_a, block_b):
+def compare_cfg(standard, g, function_list):
+def cfg_fast_functions_check(arch, binary_path, func_addrs, func_features):
+def cfg_fast_edges_check(arch, binary_path, edges):
+def test_cle_gdb():
+def test_sharedlibs():
+def write_commit_patch(f, commit, contents, progress, version=None, encoding=None):
+def get_summary(commit):
+def unified_diff(a, b, fromfile, tofile, n=3):
+def is_binary(content):
+def write_object_diff(f, store, old_file, new_file, diff_binary=False):
+def gen_diff_header(paths, modes, shas):
+def write_blob_diff(f, old_file, new_file):
+def write_tree_diff(f, store, old_tree, new_tree, diff_binary=False):
+def git_am_patch_split(f, encoding=None):
+def parse_patch_message(msg, encoding=None):
+def S_ISGITLINK(m):
+def sha_to_hex(sha):
+def hex_to_sha(hex):
+def hex_to_filename(path, hex):
+def filename_to_hex(filename):
+def object_header(num_type, length):
+def serializable_property(name, docstring=None):
+def object_class(type):
+def check_hexsha(hex, error_msg):
+def check_identity(identity, error_msg):
+def git_line(*items):
+def _parse_message(chunks):
+def parse_tree(text, strict=False):
+def serialize_tree(items):
+def sorted_tree_items(entries, name_order):
+def key_entry(entry):
+def key_entry_name_order(entry):
+def pretty_format_tree_entry(name, mode, hexsha, encoding='utf-8'):
+def parse_timezone(text):
+def format_timezone(offset, unnecessary_negative_timezone=False):
+def parse_commit(chunks):
+def tree_lookup_path(lookup_obj, root_sha, path):
+def _collect_filetree_revs(obj_store, tree_sha, kset):
+def _split_commits_and_tags(obj_store, lst, ignore_unknown=False):
+def ensure_dir_exists(dirname):
+def _fancy_rename(oldname, newname):
+def GitFile(filename, mode='rb', bufsize=(-1)):
+def _topo_reorder(entries, get_parents=(lambda commit: commit.parents)):
+def open_repo(path_or_repo):
+@contextmanager DCNL def _noop_context_manager(obj):
+def open_repo_closing(path_or_repo):
+def archive(repo, committish=None, outstream=default_bytes_out_stream, errstream=default_bytes_err_stream):
+def update_server_info(repo='.'):
+def symbolic_ref(repo, ref_name, force=False):
+def commit(repo='.', message=None, author=None, committer=None):
+def commit_tree(repo, tree, message=None, author=None, committer=None):
+def init(path='.', bare=False):
+def clone(source, target=None, bare=False, checkout=None, errstream=default_bytes_err_stream, outstream=None, origin='origin'):
+def add(repo='.', paths=None):
+def rm(repo='.', paths=None):
+def print_commit(commit, decode, outstream=sys.stdout):
+def print_tag(tag, decode, outstream=sys.stdout):
+def show_blob(repo, blob, decode, outstream=sys.stdout):
+def show_commit(repo, commit, decode, outstream=sys.stdout):
+def show_tree(repo, tree, decode, outstream=sys.stdout):
+def show_tag(repo, tag, decode, outstream=sys.stdout):
+def print_name_status(changes):
+def log(repo='.', paths=None, outstream=sys.stdout, max_entries=None, reverse=False, name_status=False):
+def show(repo='.', objects=None, outstream=sys.stdout, default_encoding=DEFAULT_ENCODING):
+def diff_tree(repo, old_tree, new_tree, outstream=sys.stdout):
+def rev_list(repo, commits, outstream=sys.stdout):
+def tag_create(repo, tag, author=None, message=None, annotated=False, objectish='HEAD', tag_time=None, tag_timezone=None):
+def tag_list(repo, outstream=sys.stdout):
+def tag_delete(repo, name):
+def reset(repo, mode, committish='HEAD'):
+def push(repo, remote_location, refspecs=None, outstream=default_bytes_out_stream, errstream=default_bytes_err_stream):
+def pull(repo, remote_location, refspecs=None, outstream=default_bytes_out_stream, errstream=default_bytes_err_stream):
+def status(repo='.'):
+def get_tree_changes(repo):
+def daemon(path='.', address=None, port=None):
+def web_daemon(path='.', address=None, port=None):
+def upload_pack(path='.', inf=None, outf=None):
+def receive_pack(path='.', inf=None, outf=None):
+def branch_delete(repo, name):
+def branch_create(repo, name, objectish=None, force=False):
+def branch_list(repo):
+def fetch(repo, remote_location, outstream=sys.stdout, errstream=default_bytes_err_stream):
+def ls_remote(remote):
+def repack(repo):
+def pack_objects(repo, object_ids, packf, idxf, delta_window_size=None):
+def ls_tree(repo, tree_ish=None, outstream=sys.stdout, recursive=False, name_only=False):
+def _fileno_can_read(fileno):
+def find_git_command():
+def get_transport_and_path_from_url(url, config=None, **kwargs):
+def get_transport_and_path(location, **kwargs):
+def parse_graftpoints(graftpoints):
+def serialize_graftpoints(graftpoints):
+def read_gitfile(f):
+def check_ref_format(refname):
+def _split_ref_line(line):
+def read_packed_refs(f):
+def read_packed_refs_with_peeled(f):
+def write_packed_refs(f, packed_refs, peeled_refs=None):
+def write_info_refs(refs, store):
+def pkt_line(data):
+def extract_capabilities(text):
+def extract_want_line_capabilities(text):
+def ack_type(capabilities):
+def _split_proto_line(line, allowed):
+def _find_shallow(store, heads, depth):
+def _all_wants_satisfied(store, haves, wants):
+def main(argv=sys.argv):
+def serve_command(handler_cls, argv=sys.argv, backend=None, inf=sys.stdin, outf=sys.stdout):
+def generate_info_refs(repo):
+def generate_objects_info_packs(repo):
+def update_server_info(repo):
+def get_recent_tags(projdir=PROJDIR):
+def get_current_version(projdir=PROJDIR, pattern=PATTERN, logger=None):
+def load_conf(path=None, file=None):
+def swift_load_pack_index(scon, filename):
+def cmd_daemon(args):
+def default_logging_config():
+def remove_null_handler():
+def pathsplit(path):
+def pathjoin(*args):
+def read_cache_time(f):
+def write_cache_time(f, t):
+def read_cache_entry(f):
+def write_cache_entry(f, entry):
+def read_index(f):
+def read_index_dict(f):
+def write_index(f, entries):
+def write_index_dict(f, entries):
+def cleanup_mode(mode):
+def commit_tree(object_store, blobs):
+def commit_index(object_store, index):
+def changes_from_tree(names, lookup_entry, object_store, tree, want_unchanged=False):
+def index_entry_from_stat(stat_val, hex_sha, flags, mode=None):
+def build_file_from_blob(blob, mode, target_path, honor_filemode=True):
+def validate_path(path, element_validator=validate_path_element_default):
+def build_index_from_tree(root_path, index_path, object_store, tree_id, honor_filemode=True, validate_path_element=validate_path_element_default):
+def blob_from_path_and_stat(fs_path, st):
+def get_unstaged_changes(index, root_path):
+def _tree_to_fs_path(root_path, tree_path):
+def _fs_to_tree_path(fs_path, fs_encoding=None):
+def take_msb_bytes(read, crc32=None):
+def read_zlib_chunks(read_some, unpacked, include_comp=False, buffer_size=_ZLIB_BUFSIZE):
+def iter_sha1(iter):
+def load_pack_index(path):
+def load_pack_index_file(path, f):
+def bisect_find_sha(start, end, sha, unpack_name):
+def read_pack_header(read):
+def unpack_object(read_all, read_some=None, compute_crc32=False, include_comp=False, zlib_bufsize=_ZLIB_BUFSIZE):
+def _compute_object_size(value):
+def obj_sha(type, chunks):
+def compute_file_sha(f, start_ofs=0, end_ofs=0, buffer_size=(1 << 16)):
+def pack_object_header(type_num, delta_base, size):
+def write_pack_object(f, type, object, sha=None):
+def write_pack(filename, objects, deltify=None, delta_window_size=None):
+def write_pack_header(f, num_objects):
+def deltify_pack_objects(objects, window_size=None):
+def write_pack_objects(f, objects, delta_window_size=None, deltify=False):
+def write_pack_data(f, num_records, records):
+def write_pack_index_v1(f, entries, pack_checksum):
+def create_delta(base_buf, target_buf):
+def apply_delta(src_buf, delta):
+def write_pack_index_v2(f, entries, pack_checksum):
+def url_prefix(mat):
+def get_repo(backend, mat):
+def send_file(req, f, content_type):
+def make_wsgi_chain(*args, **kwargs):
+def main(argv=sys.argv):
+def parse_object(repo, objectish):
+def parse_ref(container, refspec):
+def parse_reftuple(lh_container, rh_container, refspec):
+def parse_reftuples(lh_container, rh_container, refspecs):
+def parse_refs(container, refspecs):
+def parse_commit_range(repo, committishs):
+def parse_commit(repo, committish):
+def _merge_entries(path, tree1, tree2):
+def walk_trees(store, tree1_id, tree2_id, prune_identical=False):
+def tree_changes(store, tree1_id, tree2_id, want_unchanged=False, rename_detector=None):
+def tree_changes_for_merge(store, parent_tree_ids, tree_id, rename_detector=None):
+def _count_blocks(obj):
+def _common_bytes(blocks1, blocks2):
+def _similarity_score(obj1, obj2, block_cache=None):
+def format_reflog_line(old_sha, new_sha, committer, timestamp, timezone, message):
+def parse_reflog_line(line):
+def read_reflog(f):
+def _split_commits_and_tags(obj_store, lst, ignore_unknown=False, pool=None):
+def tar_stream(store, tree, mtime, format=''):
+def _walk_tree(store, tree, root=''):
+def ignore_error(error):
+def git_version(git_path=_DEFAULT_GIT):
+def require_git_version(required_version, git_path=_DEFAULT_GIT):
+def run_git(args, git_path=_DEFAULT_GIT, input=None, capture_stdout=False, **popen_kwargs):
+def run_git_or_fail(args, git_path=_DEFAULT_GIT, input=None, **popen_kwargs):
+def import_repo_to_dir(name):
+def check_for_daemon(limit=10, delay=0.1, timeout=0.1, port=TCP_GIT_PORT):
+def open_repo(name, temp_dir=None):
+def tear_down_repo(repo):
+def make_object(cls, **attrs):
+def make_commit(**attrs):
+def make_tag(target, **attrs):
+def functest_builder(method, func):
+def ext_functest_builder(method, func):
+def build_pack(f, objects_spec, store=None):
+def build_commit_graph(object_store, commit_spec, trees=None, attrs=None):
+def setup_warning_catcher():
+def _escape_value(value):
+def parse_submodules(config):
+def resource_path(relative_path):
+def combine(left, right):
+def extract_docstring(filename, ignore_heading=False):
+def generate_example_rst(app):
+def _thumbnail_div(subdir, full_dir, fname, snippet):
+def generate_dir_rst(directory, example_dir, root_dir, plot_gallery, seen_backrefs):
+def make_thumbnail(in_fname, out_fname, width, height):
+def get_short_module_name(module_name, obj_name):
+def identify_names(code):
+def generate_file_rst(fname, target_dir, src_dir, root_dir, plot_gallery):
+def approx_fprime(x, f, eps=None, *args):
+def check_grad(layer, x0, seed=1, eps=None, rtol=None, atol=None):
+def check_grad(loss, x0, y0, seed=1, eps=None, rtol=None, atol=None):
+def img_tile(imgs, aspect_ratio=1.0, tile_shape=None, border=1, border_color=0):
+def approx_fprime(x, f, eps=None, *args):
+def seek_end_of_dict(module_data, start_line, start_col, next_node_line, next_node_col):
+def seek_end_of_string(module_data, start_line, start_col, next_node_line, next_node_col):
+def extract_metadata(module_data):
+def find_documentation(module_data):
+def remove_metadata(module_data, start_line, start_col, end_line, end_col):
+def insert_metadata(module_data, new_metadata, insertion_line, targets=('ANSIBLE_METADATA',)):
+def parse_assigned_metadata_initial(csvfile):
+def parse_assigned_metadata(csvfile):
+def metadata_summary(plugins, version=None):
+def add_from_csv(csv_file, version=None, overwrite=False):
+def add_default(version=None, overwrite=False):
+def report(version=None):
+def rst_ify(text):
+def html_ify(text):
+def rst_fmt(text, fmt):
+def rst_xline(width, char='='):
+def write_data(text, options, outputname, module):
+def list_modules(module_dir, depth=0):
+def generate_parser():
+def validate_options(options):
+def main():
+def injector():
+def runner():
+def cover():
+def coverage_command(self_dir, version):
+def find_executable(executable):
+def command_coverage_combine(args):
+def command_coverage_report(args):
+def command_coverage_html(args):
+def command_coverage_xml(args):
+def command_coverage_erase(args):
+def initialize_coverage(args):
+def ansible_environment(args):
+def find_target_completion(target_func, prefix):
+def walk_completion_targets(targets, prefix, short=False):
+def walk_internal_targets(targets, includes=None, excludes=None, requires=None):
+def walk_external_targets(targets, includes=None, excludes=None, requires=None):
+def filter_targets(targets, patterns, include=True, directories=True, errors=True):
+def walk_module_targets():
+def walk_units_targets():
+def walk_compile_targets():
+def walk_sanity_targets():
+def walk_posix_integration_targets():
+def walk_network_integration_targets():
+def walk_windows_integration_targets():
+def walk_integration_targets():
+def load_integration_prefixes():
+def walk_test_targets(path=None, module_path=None, extensions=None, prefix=None):
+def categorize_changes(paths, verbose_command=None):
+def all_tests():
+def ignore(item):
+def create_tarfile(dst_path, src_path, tar_filter):
+def create_shell_command(command):
+def install_command_requirements(args):
+def generate_egg_info(args):
+def generate_pip_install(command):
+def command_shell(args):
+def command_posix_integration(args):
+def command_network_integration(args):
+def network_run(args, platform, version):
+def network_inventory(remotes):
+def command_windows_integration(args):
+def windows_run(args, version):
+def windows_inventory(remotes):
+def command_integration_filter(args, targets):
+def command_integration_filtered(args, targets):
+def integration_environment(args):
+def command_integration_script(args, target):
+def command_integration_role(args, target, start_at_task):
+def command_units(args):
+def command_compile(args):
+def command_sanity(args):
+def command_sanity_code_smell(args, _):
+def command_sanity_validate_modules(args, targets):
+def command_sanity_shellcheck(args, targets):
+def command_sanity_yamllint(args, targets):
+def command_sanity_ansible_doc(args, targets, python_version):
+def intercept_command(args, cmd, capture=False, env=None, data=None, cwd=None, python_version=None):
+def get_coverage_path(args):
+def cleanup_coverage_dir():
+def get_changes_filter(args):
+def detect_changes(args):
+def detect_changes_shippable(args):
+def detect_changes_local(args):
+def get_integration_filter(args, targets):
+def get_integration_local_filter(args, targets):
+def get_integration_docker_filter(args, targets):
+def get_integration_remote_filter(args, targets):
+def delegate(args, exclude, require):
+def delegate_tox(args, exclude, require):
+def delegate_docker(args, exclude, require):
+def docker_pull(args, image):
+def docker_put(args, container_id, src, dst):
+def docker_get(args, container_id, src, dst):
+def docker_run(args, image, options):
+def docker_rm(args, container_id):
+def docker_exec(args, container_id, cmd, options=None, capture=False, stdin=None, stdout=None):
+def docker_command(args, cmd, capture=False, stdin=None, stdout=None):
+def docker_environment():
+def delegate_remote(args, exclude, require):
+def generate_command(args, path, options, exclude, require):
+def filter_options(args, argv, options, exclude, require):
+def is_shippable():
+def remove_file(path):
+def find_executable(executable, cwd=None, path=None, required=True):
+def run_command(args, cmd, capture=False, env=None, data=None, cwd=None, always=False, stdin=None, stdout=None):
+def raw_command(cmd, capture=False, env=None, data=None, cwd=None, explain=False, stdin=None, stdout=None):
+def common_environment():
+def pass_vars(required=None, optional=None):
+def deepest_path(path_a, path_b):
+def remove_tree(path):
+def make_dirs(path):
+def docker_qualify_image(name):
+def main():
+def parse_args():
+def add_changes(parser, argparse):
+def add_environments(parser, tox_version=False, tox_only=False):
+def add_extra_docker_options(parser, integration=True):
+def complete_target(prefix, parsed_args, **_):
+def complete_remote(prefix, parsed_args, **_):
+def complete_docker(prefix, parsed_args, **_):
+def complete_windows(prefix, parsed_args, **_):
+def complete_network_platform(prefix, parsed_args, **_):
+def _check_to_text(self, in_string, encoding, expected):
+def _check_to_bytes(self, in_string, encoding, expected):
+def _check_to_native(self, in_string, encoding, py2_expected, py3_expected):
+def test_distribution_version():
+def _test_one_distribution(facts, module, testcase):
+def params_from_doc(func):
+def mock_unfrackpath_noop(path):
+def add_method(func, *combined_args):
+@contextmanager DCNL def swap_stdin_and_argv(stdin_data='', argv_data=tuple()):
+@contextmanager DCNL def swap_stdout():
+def delete_rax(args):
+def delete_rax_clb(args):
+def delete_rax_keypair(args):
+def delete_rax_network(args):
+def delete_rax_cbs(args):
+def delete_rax_cdb(args):
+def delete_rax_scaling_group(args):
+def find_globals(g, tree):
+def get_fallback(config, value, section='openstack'):
+def push(data, key, element):
+def to_safe(word):
+def get_ips(server, access_ip=True):
+def get_metadata(server):
+def is_cache_stale(cache_file, cache_expiration_time, refresh=False):
+def save_cache(data, config):
+def get_cache(cache_item, config):
+def cache_available(config):
+def get_inventory(enterprise, config):
+def spacewalk_report(name):
+def main():
+def get_a_ssh_config(box_name):
+def parse_args():
+def create_connection():
+def get_dict_of_struct(connection, vm):
+def get_data(connection, vm_name=None):
+def initialize():
+def list_groups(api):
+def parse_args():
+def print_host(host):
+def build_dict():
+def main(argv):
+def get_html_theme_path():
+def _escape_backslashes(data, jinja_env):
+def _count_newlines_from_end(in_str):
+def safe_eval(expr, locals={}, include_exceptions=False):
+def _get_shebang(interpreter, task_vars, args=tuple()):
+def recursive_finder(name, data, py_module_names, py_module_cache, zf):
+def _find_snippet_imports(module_name, module_data, module_path, module_args, task_vars, module_compression):
+def modify_module(module_name, module_path, module_args, task_vars=dict(), module_compression='ZIP_STORED'):
+def g_connect(method):
+def detect_range(line=None):
+def expand_hostname_range(line=None):
+def _add_doc(func, doc):
+def _import_module(name):
+def add_move(move):
+def remove_move(name):
+def with_metaclass(meta, *bases):
+def add_metaclass(metaclass):
+def python_2_unicode_compatible(klass):
+def gcdns_connect(module, provider=None):
+def unexpected_error_msg(error):
+def uldap():
+def ldap_search(filter, base=None, attr=None):
+def module_by_name(module_name_):
+def get_umc_admin_objects():
+def umc_module_for_add(module, container_dn, superordinate=None):
+def umc_module_for_edit(module, object_dn, superordinate=None):
+def create_containers_and_parents(container_dn):
+def find_vm_by_id(content, vm_id, vm_id_type='vm_name', datacenter=None, cluster=None):
+def fetch_file_from_guest(content, vm, username, password, src, dest):
+def push_file_to_guest(content, vm, username, password, src, dest, overwrite=True):
+def to_bytes(obj, encoding='utf-8', errors=None, nonstring='simplerepr'):
+def to_text(obj, encoding='utf-8', errors=None, nonstring='simplerepr'):
+def _get_quote_state(token, quote_char):
+def _count_jinja2_blocks(token, cur_depth, open_token, close_token):
+def split_args(args):
+def unquote(data):
+def _botocore_exception_maybe():
+def get_ec2_creds(module):
+def boto_fix_security_token_in_profile(conn, profile_name):
+def ec2_connect(module):
+def paging(pause=0, marker_property='marker'):
+def ansible_dict_to_boto3_filter_list(filters_dict):
+def boto3_tag_list_to_ansible_dict(tags_list):
+def ansible_dict_to_boto3_tag_list(tags_dict):
+def get_ec2_security_group_ids_from_names(sec_group_list, ec2_connection, vpc_id=None, boto3=True):
+def sort_json_policy_dict(policy_dict):
+def ismount(path):
+def rax_slugify(value):
+def rax_clb_node_to_dict(obj):
+def rax_to_dict(obj, obj_type='standard'):
+def rax_find_bootable_volume(module, rax_module, server, exit=True):
+def rax_find_image(module, rax_module, image, exit=True):
+def rax_find_volume(module, rax_module, name):
+def rax_find_network(module, rax_module, network):
+def rax_find_server(module, rax_module, server):
+def rax_find_loadbalancer(module, rax_module, loadbalancer):
+def rax_argument_spec():
+def rax_required_together():
+def setup_rax_module(module, rax_module, region_required=True):
+def ce_unknown_host_cb(host, fingerprint):
+def get_netconf(**kwargs):
+def prepare_config(commands):
+def prepare_commands(commands):
+def axapi_call(module, url, post=None):
+def axapi_call_v3(module, url, method=None, body=None, signature=None):
+def axapi_enabled_disabled(flag):
+def _filter_non_json_lines(data):
+def add_git_host_key(module, url, accept_hostkey=True, create_dir=True):
+def is_ssh_url(url):
+def get_fqdn(repo_url):
+def add_host_key(module, fqdn, key_type='rsa', create_dir=False):
+def get_file_lines(path):
+def api_wrapper(func):
+@api_wrapper DCNL def get_system(module):
+def infinibox_argument_spec():
+def infinibox_required_together():
+def check_libcloud_or_fail():
+def get_credentials(module):
+def get_dd_regions():
+def get_network_domain_by_name(driver, name, location):
+def get_network_domain(driver, locator, location):
+def get_vlan(driver, locator, location, network_domain):
+def get_mcp_version(driver, location):
+def is_uuid(u, version=4):
+def expand_ip_block(block):
+def get_public_ip_block(module, driver, network_domain, block_id=False, base_ip=False):
+def list_nat_rules(module, driver, network_domain):
+def list_public_ip_blocks(module, driver, network_domain):
+def get_block_allocation(module, cp_driver, lb_driver, network_domain, block):
+def get_blocks_with_unallocated(module, cp_driver, lb_driver, network_domain):
+def get_unallocated_public_ips(module, cp_driver, lb_driver, network_domain, reuse_free, count=0):
+def is_ipv4_addr(ip):
+def get_node_by_name_and_ip(module, lb_driver, name, ip):
+def generic_urlparse(parts):
+def RedirectHandlerFactory(follow_redirects=None, validate_certs=True):
+def build_ssl_validation_error(hostname, port, paths, exc=None):
+def open_url(url, data=None, headers=None, method=None, use_proxy=True, force=False, last_mod_time=None, timeout=10, validate_certs=True, url_username=None, url_password=None, http_agent=None, force_basic_auth=False, follow_redirects='urllib2'):
+def basic_auth_header(username, password):
+def url_argument_spec():
+def fetch_url(module, url, data=None, headers=None, method=None, use_proxy=True, force=False, last_mod_time=None, timeout=10):
+def get_platform():
+def get_distribution():
+def get_distribution_version():
+def get_all_subclasses(cls):
+def load_platform_subclass(cls, *args, **kwargs):
+def json_dict_unicode_to_bytes(d, encoding='utf-8', errors='surrogate_or_strict'):
+def json_dict_bytes_to_unicode(d, encoding='utf-8', errors='surrogate_or_strict'):
+def return_values(obj):
+def remove_values(value, no_log_strings):
+def heuristic_log_sanitize(data, no_log_values=None):
+def human_to_bytes(number, default_unit=None, isbits=False):
+def is_executable(path):
+def _load_params():
+def env_fallback(*args, **kwargs):
+def _lenient_lowercase(lst):
+def get_dict_of_struct(struct, connection=None, fetch_nested=False, attributes=None):
+def create_connection(auth):
+def convert_to_bytes(param):
+def follow_link(connection, link):
+def get_link_name(connection, link):
+def equal(param1, param2):
+def search_by_attributes(service, **kwargs):
+def search_by_name(service, name, **kwargs):
+def get_entity(service):
+def wait(service, condition, fail_condition=(lambda e: False), timeout=180, wait=True, poll_interval=3):
+def ovirt_facts_full_argument_spec(**kwargs):
+def ovirt_full_argument_spec(**kwargs):
+def check_params(module):
+def _get_gcp_ansible_credentials(module):
+def _get_gcp_environ_var(var_name, default_value):
+def _get_gcp_environment_credentials(service_account_email, credentials_file, project_id):
+def _get_gcp_libcloud_credentials(service_account_email=None, credentials_file=None, project_id=None):
+def _get_gcp_credentials(module, require_valid_json=True, check_libcloud=False):
+def _validate_credentials_file(module, credentials_file, require_valid_json=True, check_libcloud=False):
+def gcp_connect(module, provider, get_driver, user_agent_product, user_agent_version):
+def get_google_cloud_credentials(module, scopes=[]):
+def get_google_api_auth(module, scopes=[], user_agent_product='ansible-python-api', user_agent_version='NA'):
+def unexpected_error_msg(error):
+def get_exception():
+def gce_connect(module, provider=None):
+def unexpected_error_msg(error):
+def _add_doc(func, doc):
+def _import_module(name):
+def add_move(move):
+def remove_move(name):
+def iterkeys(d, **kw):
+def itervalues(d, **kw):
+def iteritems(d, **kw):
+def iterlists(d, **kw):
+def with_metaclass(meta, *bases):
+def add_metaclass(metaclass):
+def rate_limit_argument_spec(spec=None):
+def retry_argument_spec(spec=None):
+def rate_limit(rate=None, rate_limit=None):
+def retry(retries=None, retry_pause=1):
+def lang_exists(cursor, lang):
+def lang_istrusted(cursor, lang):
+def lang_altertrust(cursor, lang, trust):
+def lang_add(cursor, lang, trust):
+def lang_drop(cursor, lang, cascade):
+def user_add(cursor, user, password, role_attr_flags, encrypted, expires):
+def user_alter(cursor, module, user, password, role_attr_flags, encrypted, expires, no_password_changes):
+def user_delete(cursor, user):
+def has_table_privileges(cursor, user, table, privs):
+def has_database_privileges(cursor, user, db, privs):
+def parse_role_attrs(role_attr_flags):
+def parse_privs(privs, db):
+def partial(f, *args, **kwargs):
+def typedvalue(value):
+def setvariable(cursor, mysqlvar, value):
+def privileges_get(cursor, user, host):
+def privileges_unpack(priv, mode):
+def check_compatibility(module, client):
+def user_find(client, user, db_name):
+def normalize_image(image):
+def is_running(container):
+def check_dependencies(module):
+def present(manager, containers, count, name):
+def started(manager, containers, count, name):
+def reloaded(manager, containers, count, name):
+def restarted(manager, containers, count, name):
+def stopped(manager, containers, count, name):
+def killed(manager, containers, count, name):
+def absent(manager, containers, count, name):
+def rax_dns_record(module, comment=None, data=None, domain=None, name=None, overwrite=True, priority=None, record_type='A', state='present', ttl=7200):
+def cloudfiles(module, container_, state, meta_, clear_meta, typ, ttl, public, private, web_index, web_error):
+def _get_node(lb, node_id=None, address=None, port=None):
+def _upload_folder(cf, folder, container, ttl=None, headers=None):
+def upload(module, cf, container, src, dest, meta, expires):
+def download(module, cf, container, src, dest, structure):
+def delete(module, cf, container, src, dest):
+def get_meta(module, cf, container, src, dest):
+def put_meta(module, cf, container, src, dest, meta, clear_meta):
+def delete_meta(module, cf, container, src, dest, meta):
+def cloudfiles(module, container, src, dest, method, typ, meta, clear_meta, structure, expires):
+def get_ssh_certificate_tokens(module, ssh_cert_path):
+def create_virtual_machine(module, azure):
+def terminate_virtual_machine(module, azure):
+def virtual_network_to_dict(vnet):
+def validate_rule(rule, rule_type=None):
+def create_rule_instance(rule):
+def create_rule_dict_from_obj(rule):
+def migrate_vm(vm_object, host_object):
+def power_state(vm, state, force):
+def gather_facts(vm):
+def config_check(name, passed, default, module):
+def vmware_path(datastore, datacenter, path):
+def get_obj(content, vimtype, name):
+def _needs_update(module, port, cloud):
+def _needs_update(module, secgroup):
+def _system_state_change(state, device):
+def _can_update(subnet, module, cloud):
+def _needs_update(subnet, module, cloud):
+def _system_state_change(module, project_quota_output):
+def _ports_match(protocol, module_min, module_max, rule_min, rule_max):
+def _find_matching_rule(module, secgroup, remotegroup):
+def _wait(timeout, cloud, server, action):
+def _system_state_change(action, status):
+def _needs_update(cloud, module, router, network, internal_subnet_ids):
+def _system_state_change(cloud, module, router, network, internal_ids):
+def authenticate(endpoint, token, login_user, login_password, login_tenant_name):
+def tenant_exists(keystone, tenant):
+def user_exists(keystone, user):
+def get_tenant(keystone, name):
+def get_user(keystone, name):
+def get_role(keystone, name):
+def ensure_tenant_exists(keystone, tenant_name, tenant_description, check_mode):
+def ensure_tenant_absent(keystone, tenant, check_mode):
+def ensure_user_exists(keystone, user_name, password, email, tenant_name, check_mode):
+def ensure_user_role_exists(keystone, user_name, tenant_name, role_name, check_mode):
+def dispatch(keystone, user=None, password=None, tenant=None, tenant_description=None, email=None, role=None, state='present', endpoint=None, token=None, login_user=None, login_password=None, check_mode=False):
+def _search_by_lun(disks_service, lun_id):
+def create_nic(module, profitbricks):
+def delete_nic(module, profitbricks):
+def attach_volume(module, profitbricks):
+def detach_volume(module, profitbricks):
+def create_virtual_machine(module, profitbricks):
+def remove_virtual_machine(module, profitbricks):
+def _remove_boot_volume(module, profitbricks, datacenter_id, server_id):
+def startstop_machine(module, profitbricks, state):
+def _get_datacenter_id(datacenters, identity):
+def _get_server_id(servers, identity):
+def create_datacenter(module, profitbricks):
+def remove_datacenter(module, profitbricks):
+def create_volume(module, profitbricks):
+def delete_volume(module, profitbricks):
+def _attach_volume(module, profitbricks, datacenter, volume):
+def create_script(command):
+def main():
+def serialize_device(device):
+def boto_exception(err):
+def boto_exception(err):
+def assert_policy_shape(policy):
+def make_rule_key(prefix, rule, group_id, cidr_ip):
+def get_target_from_rule(module, ec2, rule, name, group, groups, vpc_id):
+def is_fakes3(s3_url):
+def is_walrus(s3_url):
+def boto_supports_volume_encryption():
+def boto_supports_kms_key_id():
+def modify_dot_attribute(module, ec2, instance, device_name):
+def iterate_all(attr, map_method, **kwargs):
+def prefix_to_attr(attr_id):
+def first_or_default(items, default=None):
+def has_tags(available, required):
+def has_targets(available, required):
+def group_list_of_dict(array):
+def main():
+def get_cloudwatchevents_client(module):
+def get_url(module, url):
+def ubuntu(module):
+def lookup_ubuntu_ami(table, release, stream, store, arch, region, virt):
+def is_fakes3(s3_url):
+def is_walrus(s3_url):
+def get_instance_info(inst):
+def boto_supports_associate_public_ip_address(ec2):
+def boto_supports_profile_name_arg(ec2):
+def boto_supports_volume_encryption():
+def boto_supports_param_in_spot_request(ec2, param):
+def await_spot_requests(module, ec2, spot_requests, count):
+def create_instances(module, ec2, vpc, override_count=None):
+def terminate_instances(module, ec2, instance_ids):
+def startstop_instances(module, ec2, instance_ids, state, instance_tags):
+def restart_instances(module, ec2, instance_ids, state, instance_tags):
+def copy_image(module, ec2):
+def set_parameter(param, value, immediate):
+def modify_group(group, params, immediate=False):
+def boto_exception(err):
+def _collect_facts(resource):
+def create_cluster(module, redshift):
+def describe_cluster(module, redshift):
+def delete_cluster(module, redshift):
+def modify_cluster(module, redshift):
+def enforce_required_arguments(module):
+def _get_most_recent_snapshot(snapshots, max_snapshot_age_secs=None, now=None):
+def _create_with_wait(snapshot, wait_timeout_secs, sleep_func=time.sleep):
+def fetch_dhcp_options_for_vpc(vpc_conn, vpc_id):
+def match_dhcp_options(vpc_conn, tags=None, options=None):
+def to_dict(items, key, value):
+def pc(key):
+def set_api_params(module, module_params):
+def validate_params(module, aws):
+def get_lambda_alias(module, aws):
+def lambda_alias(module, aws):
+def main():
+def boto_exception(err):
+def calculate_multipart_etag(source_path, chunk_size=DEFAULT_CHUNK_SIZE):
+def calculate_local_etag(filelist, key_prefix=''):
+def find_health_check(conn, wanted):
+def get_zone_by_name(conn, module, zone_name, want_private, zone_id, want_vpc_id):
+def commit(changes, retry_interval, wait, wait_timeout):
+def boto_exception(err):
+def get_stack_events(cfn, stack_name):
+def stack_operation(cfn, stack_name, operation):
+def boto_exception(err):
+def _paginate(func, attr):
+def set_users_groups(module, iam, name, groups, updated=None, new_name=None):
+def get_vpc_info(vpc):
+def find_vpc(module, vpc_conn, vpc_id=None, cidr=None):
+def routes_match(rt_list=None, rt=None, igw=None):
+def rtb_changed(route_tables=None, vpc_conn=None, module=None, vpc=None, igw=None):
+def create_vpc(module, vpc_conn):
+def terminate_vpc(module, vpc_conn, vpc_id=None, cidr=None):
+def boto_exception(err):
+def vpc_exists(module, vpc, name, cidr_block, multi):
+def iterate_all(attr, map_method, **kwargs):
+def targets_equal(keys, a, b):
+def dict_diff(dict1, dict2, by_key=False):
+def first_or_default(items, default=None):
+def wait_for(callback, value, timeout=EFSConnection.DEFAULT_WAIT_TIMEOUT_SECONDS):
+def main():
+def get_server_certs(iam, name=None):
+def convert_to_lower(data):
+def make_tags_in_proper_format(tags):
+def make_tags_in_aws_format(tags):
+def get_tags(client, stream_name, check_mode=False):
+def find_stream(client, stream_name, check_mode=False):
+def wait_for_status(client, stream_name, status, wait_timeout=300, check_mode=False):
+def tags_action(client, stream_name, tags, action='create', check_mode=False):
+def recreate_tags_from_list(list_of_tags):
+def update_tags(client, stream_name, tags, check_mode=False):
+def stream_action(client, stream_name, shard_count=1, action='create', timeout=300, check_mode=False):
+def retention_action(client, stream_name, retention_period=24, action='increase', check_mode=False):
+def update(client, current_stream, stream_name, retention_period=None, tags=None, wait=False, wait_timeout=300, check_mode=False):
+def create_stream(client, stream_name, number_of_shards=1, retention_period=None, tags=None, wait=False, wait_timeout=300, check_mode=False):
+def delete_stream(client, stream_name, wait=False, wait_timeout=300, check_mode=False):
+def find_subnets(vpc_conn, vpc_id, identified_subnets):
+def find_igw(vpc_conn, vpc_id):
+def get_block_device_mapping(image):
+def boto_exception(err):
+def build_kwargs(registry_id):
+def convert_to_lower(data):
+def get_nat_gateways(client, subnet_id=None, nat_gateway_id=None, states=None, check_mode=False):
+def wait_for_status(client, wait_timeout, nat_gateway_id, status, check_mode=False):
+def gateway_in_subnet_exists(client, subnet_id, allocation_id=None, check_mode=False):
+def get_eip_allocation_id_by_address(client, eip_address, check_mode=False):
+def allocate_eip_address(client, check_mode=False):
+def release_address(client, allocation_id, check_mode=False):
+def create(client, subnet_id, allocation_id, client_token=None, wait=False, wait_timeout=0, if_exist_do_not_create=False, check_mode=False):
+def pre_create(client, subnet_id, allocation_id=None, eip_address=None, if_exist_do_not_create=False, wait=False, wait_timeout=0, client_token=None, check_mode=False):
+def remove(client, nat_gateway_id, wait=False, wait_timeout=0, release_eip=False, check_mode=False):
+def fix_return(node):
+def alias_details(client, module):
+def all_details(client, module):
+def config_details(client, module):
+def mapping_details(client, module):
+def policy_details(client, module):
+def version_details(client, module):
+def main():
+def get_block_device_mapping(image):
+def create_image(module, ec2):
+def deregister_image(module, ec2):
+def update_image(module, ec2, image_id):
+def pc(key):
+def ordered_obj(obj):
+def set_api_sub_params(params):
+def validate_params(module, aws):
+def get_qualifier(module):
+def lambda_event_stream(module, aws):
+def main():
+def find_address(ec2, public_ip, device_id, isinstance=True):
+def address_is_associated_with_device(ec2, address, device_id, isinstance=True):
+def allocate_address(ec2, domain, reuse_existing_ip_allowed):
+def release_address(ec2, address, check_mode):
+def find_device(ec2, module, device_id, isinstance=True):
+def find_asgs(conn, module, name=None, tags=None):
+def change_keys(recs, key='uuid', filter_func=None):
+def get_host(session):
+def convert_time(time):
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def _check_params(params, field_list):
+def _validate_autoscaling_params(params):
+def _validate_named_port_params(params):
+def _get_instance_list(mig, field='name', filter_list=['NONE']):
+def _gen_gce_as_policy(as_params):
+def create_autoscaler(gce, mig, params):
+def update_autoscaler(gce, autoscaler, params):
+def delete_autoscaler(autoscaler):
+def get_autoscaler(gce, name, zone):
+def create_mig(gce, params):
+def delete_mig(mig):
+def recreate_instances_in_mig(mig):
+def resize_mig(mig, size):
+def get_mig(gce, name, zone):
+def update_named_ports(mig, named_ports):
+def transform_headers(headers):
+def _union_items(baselist, comparelist):
+def _intersect_items(baselist, comparelist):
+def _get_changed_items(baselist, comparelist):
+def modify_tags(gce, module, node, tags, state='present'):
+def create_zone(module, gcdns, zone):
+def remove_zone(module, gcdns, zone):
+def _get_zone(gcdns, zone_name):
+def _sanity_check(module):
+def main():
+def format_allowed_section(allowed):
+def format_allowed(allowed):
+def sorted_allowed_list(allowed_list):
+def get_instance_info(inst):
+def create_instances(module, gce, instance_names, number):
+def change_instance_state(module, gce, instance_names, number, zone_name, state):
+def create_record(module, gcdns, zone, record):
+def remove_record(module, gcdns, record):
+def _get_record(gcdns, zone, record_type, record_name):
+def _get_zone(gcdns, zone_name, zone_id):
+def _records_match(old_ttl, old_record_data, new_ttl, new_record_data):
+def _sanity_check(module):
+def _additional_sanity_checks(module, zone):
+def main():
+def create_image(gce, name, module):
+def delete_image(gce, name, module):
+def randompass():
+def getInstanceDetails(api, server):
+def get_pid_location(module):
+def _convert_host_to_ip(host):
+def _convert_host_to_hex(host):
+def _create_connection(host, port, connect_timeout):
+def _filter_non_json_lines(data):
+def query_log_status(module, le_path, path, state='present'):
+def follow_log(module, le_path, logs, name=None, logtype=None):
+def unfollow_log(module, le_path, logs):
+def send_deploy_event(module, key, revision_id, deployed_by='Ansible', deployed_to=None, repository=None):
+def send_annotation_event(module, key, msg, annotated_by='Ansible', level=None, instance_id=None, event_epoch=None):
+def selector(module):
+def post_annotation(annotation, api_key):
+def create_annotation(module):
+def build_headers(api_token):
+def main():
+def selector(module):
+def get_state(b_path):
+def assemble_from_fragments(src_path, delimiter=None, compiled_regexp=None, ignore_hidden=False):
+def split_pre_existing_dir(dirname):
+def adjust_recursive_directory_permissions(pre_existing_dir, new_directory_list, module, directory_args, changed):
+def crc32(path):
+def shell_escape(string):
+def split_entry(entry):
+def build_entry(etype, entity, permissions=None, use_nfsv4_acls=False):
+def build_command(module, mode, path, follow, default, recursive, entry=''):
+def acl_changed(module, cmd):
+def pfilter(f, patterns=None, use_regex=False):
+def agefilter(st, now, age, timestamp):
+def sizefilter(st, size):
+def contentfilter(fsname, pattern):
+def get_user_diff(ipa_user, module_user):
+def get_ssh_key_fingerprint(ssh_key):
+def _load_dist_subclass(cls, *args, **kwargs):
+def action_handler(action_func, action_func_args):
+def _escape_fstab(v):
+def set_mount(module, args):
+def unset_mount(module, args):
+def mount(module, args):
+def umount(module, path):
+def remount(module, mount_bin, args):
+def is_bind_mounted(module, linux_mounts, dest, src=None, fstype=None):
+def get_linux_mounts(module):
+def keyfile(module, user, write=False, path=None, manage_dir=True):
+def parseoptions(module, options):
+def parsekey(module, raw_key, rank=None):
+def enforce_state(module, params):
+def _get_dev_size(dev, module):
+def _get_fs_size(fssize_cmd, dev, module):
+def is_available(name, ubuntuMode):
+def is_present(name):
+def fix_case(name):
+def replace_line(existing_line, new_line):
+def set_locale(name, enabled=True):
+def apply_change(targetState, name):
+def apply_change_ubuntu(targetState, name):
+def run_command(command, module, check_rc=True):
+def sanitize_output(output):
+def enforce_state(module, params):
+def sanity_check(module, host, key, sshkeygen):
+def search_for_host_key(module, host, key, hash_host, path, sshkeygen):
+def normalize_known_hosts_key(key):
+def semanage_fcontext_exists(sefcontext, target, ftype):
+def semanage_fcontext_modify(module, result, target, ftype, setype, do_reload, serange, seuser, sestore=''):
+def semanage_fcontext_delete(module, result, target, ftype, do_reload, sestore=''):
+def semanage_port_get_ports(seport, setype, proto):
+def semanage_port_get_type(seport, port, proto):
+def semanage_port_add(module, ports, proto, setype, do_reload, serange='s0', sestore=''):
+def semanage_port_del(module, ports, proto, setype, do_reload, sestore=''):
+def main():
+def main():
+def main():
+def main():
+def wakeonlan(module, mac, broadcast, port):
+def main():
+def main():
+def get_cli_body_ssh_vrf(module, command, response):
+def get_cli_body_ssh(command, response, module):
+def validate_feature(module, mode='show'):
+def get_boot_options(module):
+def set_boot_options(module, image_name, kickstart=None):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh_vrf_interface(command, response, module):
+def get_cli_body_ssh(command, response, module, text=False):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh_vrrp(command, response, module):
+def is_default_interface(interface, module):
+def get_interface_type(interface):
+def get_manual_interface_attributes(interface, module):
+def get_interface(intf, module):
+def get_interfaces_dict(module):
+def normalize_interface(if_name):
+def get_interface_config_commands(interface, intf, existing):
+def get_cli_body_ssh(command, response, module):
+def main():
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def main():
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def numerical_sort(string_int_list):
+def get_vlan_config_commands(vlan, vid):
+def get_vlan(vlanid, module):
+def get_cli_body_ssh(command, response, module):
+def main():
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module, text=False):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_cli_body_ssh(command, response, module):
+def get_interface_type(interface):
+def get_interface_mode(interface, module):
+def interface_is_portchannel(interface, module):
+def get_switchport(port, module):
+def get_switchport_config_commands(interface, existing, proposed, module):
+def is_switchport_default(existing):
+def numerical_sort(string_int_list):
+def get_cli_body_ssh(command, response, module):
+def build_desired_iface_config(module):
+def config_dict_changed(module):
+def config_changed(module):
+def add_glob_to_array(_bondmems):
+def build_desired_iface_config(module):
+def config_dict_changed(module):
+def config_changed(module):
+def add_glob_to_array(_bridgemems):
+def build_desired_iface_config(module):
+def config_dict_changed(module):
+def config_changed(module):
+def write_to_ports_conf(module):
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def main():
+def cmd_run(module, cmd, check_rc=True):
+def params_set(module):
+def main():
+def truncate_before(value, srch):
+def _set_to_get(set_cmd, module):
+def main():
+def truncate_before(value, srch):
+def _set_to_get(set_cmd, module):
+def main():
+def pn_cli(module):
+def run_cli(module, cli):
+def main():
+def pn_cli(module):
+def check_cli(module, cli):
+def run_cli(module, cli):
+def get_command_from_state(state):
+def main():
+def pn_cli(module):
+def check_cli(module, cli):
+def run_cli(module, cli):
+def get_command_from_state(state):
+def main():
+def pn_cli(module):
+def check_cli(module, cli):
+def get_nic(module, cli):
+def run_cli(module, cli):
+def get_command_from_state(state):
+def main():
+def pn_cli(module):
+def check_cli(module, cli):
+def run_cli(module, cli):
+def get_command_from_state(state):
+def main():
+def pn_cli(module):
+def check_cli(module, cli):
+def run_cli(module, cli):
+def get_command_from_state(state):
+def main():
+def pn_cli(module):
+def check_cli(module, cli):
+def run_cli(module, cli):
+def get_command_from_state(state):
+def main():
+def pn_cli(module):
+def check_cli(module, cli):
+def run_cli(module, cli):
+def get_command_from_state(state):
+def main():
+def pn_cli(module):
+def check_cli(module, cli):
+def run_cli(module, cli):
+def get_command_from_state(state):
+def main():
+def pn_cli(module):
+def check_cli(module, cli):
+def run_cli(module, cli):
+def get_command_from_state(state):
+def main():
+def get_command_from_state(state):
+def main():
+def url_get(module, url, dest, use_proxy, last_mod_time, force, timeout=10, headers=None, tmp_dest=''):
+def extract_filename_from_headers(headers):
+def absolute_location(url, location):
+def main():
+def to_lines(stdout):
+def parse_commands(module):
+def main():
+def send_msg(msg, server='localhost', port='6667', channel=None, nick_to=[], key=None, topic=None, nick='ansible', color='none', passwd=False, timeout=30, use_ssl=False, part=True, style=None):
+def send_message(module, client_id, client_secret, topic, msg):
+def escape_quotes(text):
+def send_msg_v1(module, token, room, msg_from, msg, msg_format='text', color='yellow', notify=False, api=MSG_URI_V1):
+def send_msg_v2(module, token, room, msg_from, msg, msg_format='text', color='yellow', notify=False, api=NOTIFY_URI_V2):
+def get_cert_days(module, cert_file):
+def write_file(module, dest, content):
+def regexp_extraction(string, _regexp, groups=1):
+def main():
+def present(dest, username, password, crypt_scheme, create, check_mode):
+def absent(dest, username, check_mode):
+def manage_issue(module, taiga_host, project_name, issue_subject, issue_priority, issue_status, issue_type, issue_severity, issue_description, issue_attachment, issue_attachment_description, issue_tags, state, check_mode=False):
+def remove_value(module):
+def add(module):
+def remove(module):
+def add_check(module, check):
+def remove_check(module, check_id):
+def add_service(module, service):
+def remove_service(module, service_id):
+def get_service_by_id_or_name(consul_api, service_id_or_name):
+@api_wrapper DCNL def get_pool(module, system):
+@api_wrapper DCNL def get_volume(module, system):
+@api_wrapper DCNL def create_volume(module, system):
+@api_wrapper DCNL def update_volume(module, volume):
+@api_wrapper DCNL def delete_volume(module, volume):
+@api_wrapper DCNL def get_pool(module, system):
+@api_wrapper DCNL def get_filesystem(module, system):
+@api_wrapper DCNL def create_filesystem(module, system):
+@api_wrapper DCNL def update_filesystem(module, filesystem):
+@api_wrapper DCNL def delete_filesystem(module, filesystem):
+@api_wrapper DCNL def get_filesystem(module, system):
+@api_wrapper DCNL def get_export(module, filesystem, system):
+@api_wrapper DCNL def update_export(module, export, filesystem, system):
+@api_wrapper DCNL def delete_export(module, export):
+@api_wrapper DCNL def get_pool(module, system):
+@api_wrapper DCNL def create_pool(module, system):
+@api_wrapper DCNL def update_pool(module, system, pool):
+@api_wrapper DCNL def delete_pool(module, pool):
+@api_wrapper DCNL def get_export(module, system):
+@api_wrapper DCNL def update_client(module, export):
+@api_wrapper DCNL def delete_client(module, export):
+def head_splitter(headfile, remote, module=None, fail_on_error=False):
+def get_version(module, git_path, dest, ref='HEAD'):
+def clone(git_path, module, repo, dest, remote, depth, version, bare, reference, refspec, verify_commit):
+def reset(git_path, module, dest):
+def get_diff(module, git_path, dest, repo, remote, depth, bare, before, after):
+def get_head_branch(git_path, module, dest, remote, bare=False):
+def get_remote_url(git_path, module, dest, remote):
+def set_remote_url(git_path, module, repo, dest, remote):
+def fetch(git_path, module, repo, dest, version, remote, depth, bare, refspec, git_version_used):
+def submodule_update(git_path, module, dest, track_submodules, force=False):
+def set_remote_branch(git_path, module, dest, remote, version, depth):
+def git_version(git_path, module):
+def query_package(module, name):
+def is_pubkey(string):
+def get_cache_mtime():
+def get_updated_cache_time():
+def get_cache(module):
+def split_name_version(name):
+def get_installed_state(m, packages):
+def get_cmd(m, subcommand):
+def package_present(m, name, want_latest):
+def package_update_all(m):
+def package_absent(m, name):
+def repo_refresh(m):
+def update_package_db(module, opkg_path):
+def query_package(module, opkg_path, name, state='present'):
+def remove_packages(module, opkg_path, packages):
+def install_packages(module, opkg_path, packages):
+def is_installed(xbps_output):
+def query_package(module, xbps_path, name, state='present'):
+def update_package_db(module, xbps_path):
+def upgrade(module, xbps_path):
+def remove_packages(module, xbps_path, packages):
+def install_packages(module, xbps_path, state, packages):
+def check_packages(module, xbps_path, packages, state):
+def main():
+def _configure_base(module, base, conf_file, disable_gpg_check, installroot='/'):
+def _specify_repositories(base, disablerepo, enablerepo):
+def _base(module, conf_file, disable_gpg_check, disablerepo, enablerepo, installroot):
+def _package_dict(package):
+def list_items(module, base, command):
+def _mark_package_install(module, base, pkg_spec):
+def main():
+def parse_key_id(key_id):
+def shorten_key_ids(key_id_list):
+def get_sorcery_ver(module):
+def codex_fresh(codex, module):
+def codex_list(module):
+def update_sorcery(module):
+def update_codex(module):
+def match_depends(module):
+def manage_spells(module):
+def _get_cmd(*args):
+def _parse_repos(module):
+def _repo_changes(realrepo, repocmp):
+def repo_exists(module, repodata, overwrite_multiple):
+def addmodify_repo(module, repodata, old_repos, zypper_version, warnings):
+def remove_repo(module, repo):
+def runrefreshrepo(module, auto_import_keys=False, shortname=None):
+def compare_package(version1, version2):
+def query_package(module, name, depot=None):
+def remove_package(module, name):
+def install_package(module, depot, name):
+def a_valid_tap(tap):
+def already_tapped(module, brew_path, tap):
+def add_tap(module, brew_path, tap, url=None):
+def add_taps(module, brew_path, taps):
+def remove_tap(module, brew_path, tap):
+def remove_taps(module, brew_path, taps):
+def transaction_exists(pkglist):
+def local_nvra(module, path):
+def update_package_db(module, port_path):
+def query_package(module, port_path, name, state='present'):
+def remove_packages(module, port_path, packages):
+def install_packages(module, port_path, packages):
+def activate_packages(module, port_path, packages):
+def deactivate_packages(module, port_path, packages):
+def init_layman(config=None):
+def download_url(module, url, dest):
+def install_overlay(module, name, list_url=None):
+def uninstall_overlay(module, name):
+def sync_overlay(name):
+def sync_overlays():
+def get_version(pacman_output):
+def query_package(module, pacman_path, name, state='present'):
+def get_local_version(pear_output):
+def get_repository_version(pear_output):
+def query_package(module, name, state='present'):
+def _get_packages(module, pip, chdir):
+def _is_present(name, version, installed_pkgs, pkg_command):
+def _get_package_info(module, package, env=None):
+def is_encrypted(data):
+def is_encrypted_file(file_obj, start_pos=0, count=(-1)):
+def parse_kv(args, check_raw=False):
+def _get_quote_state(token, quote_char):
+def _count_jinja2_blocks(token, cur_depth, open_token, close_token):
+def split_args(args):
+def unquote(data):
+def jsonify(result, format=False):
+def parse_address(address, allow_ranges=False):
+def _parse_params(term):
+def make_rdata_dict(rdata):
+def file_props(root, path):
+def _parse_parameters(term):
+def _read_password_file(b_path):
+def _gen_candidate_chars(characters):
+def _random_password(length=DEFAULT_LENGTH, chars=C.DEFAULT_PASSWORD_CHARS):
+def _random_salt():
+def _parse_content(content):
+def _format_content(password, salt, encrypt=True):
+def failed(*a, **kw):
+def success(*a, **kw):
+def changed(*a, **kw):
+def skipped(*a, **kw):
+def regex(value='', pattern='', ignorecase=False, multiline=False, match_type='search'):
+def match(value, pattern='', ignorecase=False, multiline=False):
+def search(value, pattern='', ignorecase=False, multiline=False):
+def version_compare(value, version, operator='eq', strict=False):
+def dict_diff(prv, nxt):
+def colorize(msg, color):
+def to_yaml(a, *args, **kw):
+def to_nice_yaml(a, indent=4, *args, **kw):
+def to_json(a, *args, **kw):
+def to_nice_json(a, indent=4, *args, **kw):
+def to_bool(a):
+def quote(a):
+def fileglob(pathname):
+def regex_replace(value='', pattern='', replacement='', ignorecase=False):
+def regex_findall(value, regex, multiline=False, ignorecase=False):
+def regex_search(value, regex, *args, **kwargs):
+def ternary(value, true_val, false_val):
+def regex_escape(string):
+def failed(*a, **kw):
+def success(*a, **kw):
+def changed(*a, **kw):
+def skipped(*a, **kw):
+@environmentfilter DCNL def do_groupby(environment, value, attribute):
+def ipaddr(value, query='', version=False, alias='ipaddr'):
+def ipsubnet(value, query='', index='x'):
+def nthhost(value, query=''):
+def slaac(value, query=''):
+def hwaddr(value, query='', alias='hwaddr'):
+def ip4_hex(arg):
+def json_query(data, expr):
+def human_readable(size, isbits=False, unit=None):
+def human_to_bytes(size, default_unit=None, isbits=False):
+def secure_hash_s(data, hash_func=sha1):
+def secure_hash(filename, hash_func=sha1):
+def unicode_wrap(func, *args, **kwargs):
+def get_docstring(filename, verbose=False):
+def unfrackpath(path, follow=True):
+def makedirs_safe(path, mode=None):
+def stringc(text, color):
+def colorize(lead, num, color):
+def _validate_mutable_mappings(a, b):
+def combine_vars(a, b):
+def merge_hash(a, b):
+def isidentifier(ident):
+def pct_to_int(value, num_items, min_value=1):
+def shell_expand(path, expand_relative_paths=False):
+def get_config(p, section, key, env_var, default, value_type=None, expand_relative_paths=False):
+def _get_config(p, section, key, env_var, default):
+def load_config_file():
+def preprocess_vars(a):
+def strip_internal_keys(dirty):
+def hash_params(params):
+def load_list_of_blocks(ds, play, parent_block=None, role=None, task_include=None, use_handlers=False, variable_manager=None, loader=None):
+def load_list_of_tasks(ds, play, block=None, role=None, task_include=None, use_handlers=False, variable_manager=None, loader=None):
+def load_list_of_roles(ds, play, current_role_path=None, variable_manager=None, loader=None):
+def parseDatetime(value):
+def setLanguage(meta, key, value):
+def setTrackTotal(meta, key, total):
+def extractMetadata(parser, quality=QUALITY_NORMAL):
+def computeCompressionRate(meta):
+def computeComprRate(meta, compr_size):
+def getBacktrace(empty='Empty DCSP backtrace.'):
+def _getTerminalCharset():
+def getTerminalCharset():
+def guessBytesCharset(bytes, default=None):
+def getMemoryLimit():
+def setMemoryLimit(max_mem):
+def getMemorySize():
+def clearCaches():
+def limitedMemory(limit, func, *args, **kw):
+def getgaps(start, length, blocks):
+def createOrphanField(fieldset, address, field_cls, *args, **kw):
+def Enum(field, enum, key_func=None):
+def deprecated(comment=None):
+def paddingSize(value, align):
+def alignValue(value, align):
+def timedelta2seconds(delta):
+def humanDurationNanosec(nsec):
+def humanDuration(delta):
+def humanFilesize(size):
+def humanBitSize(size):
+def humanBitRate(size):
+def humanFrequency(hertz):
+def makePrintable(data, charset, quote=None, to_unicode=False, smart=True):
+def makeUnicode(text):
+def binarySearch(seq, cmp_func):
+def humanUnixAttributes(mode):
+def createDict(data, index):
+def timestampUNIX(value):
+def timestampMac32(value):
+def durationWin64(value):
+def timestampWin64(value):
+def timestampUUID60(value):
+def humanDatetime(value, strip_microsecond=True):
+def normalizeNewline(text):
+@deprecated('Use DCSP TimedeltaWin64 DCSP field DCSP type') DCNL def durationWin64(field):
+def filesizeHandler(field):
+def hexadecimal(field):
+def getHachoirOptions(parser):
+def swap16(value):
+def swap32(value):
+def bin2long(text, endian):
+def str2hex(value, prefix='', glue=u'', format='%02X'):
+def countBits(value):
+def byte2bin(number, classic_mode=True):
+def long2raw(value, endian, size=None):
+def long2bin(size, value, endian, classic_mode=False):
+def str2bin(value, classic_mode=True):
+def _createStructFormat():
+def str2long(data, endian):
+def signalHandler(signum, frame):
+def limitedTime(second, func, *args, **kw):
+def fixTimeout(second):
+def StringOutputStream():
+def FileOutputStream(filename, real_filename=None):
+def FileInputStream(filename, real_filename=None, **args):
+def locked_function(origfunc):
+def calculate_cache_path(cache_location, url):
+def check_cache_time(path, max_age):
+@locked_function DCNL def exists_in_cache(cache_location, url, max_age):
+@locked_function DCNL def store_in_cache(cache_location, url, response):
+@locked_function DCNL def delete_from_cache(cache_location, url):
+def main():
+def createKeyPair(type, bits):
+def createCertRequest(pkey, digest='md5', **name):
+def createCertificate(req, (issuerCert, issuerKey), serial, (notBefore, notAfter), digest='md5'):
+def _parsems(value):
+def picknthweekday(year, month, dayofweek, hour, minute, whichweek):
+def valuestodict(key):
+def easter(year, method=EASTER_WESTERN):
+def iri2uri(uri):
+def HTTPResponse__getheaders(self):
+def parse_uri(uri):
+def safename(filename):
+def _parse_www_authenticate(headers, headername='www-authenticate'):
+def _entry_disposition(response_headers, request_headers):
+def parseproxyuri(proxyurl):
+def setdefaultproxy(proxytype=None, addr=None, port=None, rdns=True, username=None, password=None):
+def wrapmodule(module):
+def register_send(self):
+def notice_send(self):
+def parse_gntp(data, password=None, debug=False):
+def dumps(params=[], methodname=None, methodresponse=None, encoding=None, rpcid=None, version=None, notify=None):
+def loads(data):
+def flatten_errors(cfg, res, levels=None, results=None):
+def newRecoveryHeader(self):
+def formatRARVersion(field):
+def formatSerialNumber(field):
+def parseCDDA(self):
+def createParser(filename, real_filename=None, tags=None):
+def findSynchronizeBits(parser, start, max_size):
+def interp_avg(data_low, data_high, n):
+def color_name(data, bits):
+def parseDict(parent):
+def parse_flags(flags, flags_dict, show_unknown_flags=True, separator=' DCSP '):
+def eat_descriptor(descr):
+def parse_field_descriptor(descr, name=None):
+def parse_method_descriptor(descr, name=None):
+def parse_any_descriptor(descr, name=None):
+def build_authenticate_header(realm=''):
+def escape(s):
+def generate_timestamp():
+def generate_nonce(length=8):
+def generate_verifier(length=8):
+def profile(fn=None, skip=0, filename=None, immediate=False, dirs=False, sort=None, entries=40, profiler=('cProfile', 'profile', 'hotshot')):
+def coverage(fn):
+def coverage_with_hotshot(fn):
+def timecall(fn=None, immediate=True, timer=time.time):
+def py_scanstring(s, end, encoding=None, strict=True, _b=BACKSLASH, _m=STRINGCHUNK.match):
+def dump(obj, fp, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, encoding='utf-8', default=None, **kw):
+def dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, encoding='utf-8', default=None, **kw):
+def load(fp, encoding=None, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, **kw):
+def loads(s, encoding=None, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, **kw):
+def encode_basestring(s):
+def py_encode_basestring_ascii(s):
+def loadShowsFromDB():
+def daemonize():
+def help_message():
+def main():
+def _downloadResult(result):
+def snatchEpisode(result, endStatus=SNATCHED):
+def filter_release_name(name, filter_words):
+def isFinalResult(result):
+def addNameToCache(name, tvdb_id):
+def retrieveNameFromCache(name):
+def clearCache():
+def call_dispatcher(args, kwargs):
+def filter_params(cmd, args, kwargs):
+def _responds(result_type, data=None, msg=''):
+def check_force_season_folders(pattern=None, multi=None):
+def check_valid_naming(pattern=None, multi=None):
+def check_valid_abd_naming(pattern=None):
+def getWinDrives():
+def foldersAtPath(path, includeParent=False):
+def filterBadReleases(name):
+def sceneToNormalShowNames(name):
+def isGoodResult(name, show, log=True):
+def allPossibleShowNames(show):
+def diagnose():
+def sendNZB(nzb):
+def testAuthentication(host=None, username=None, password=None, apikey=None):
+def indentXML(elem, level=0):
+def remove_extension(name):
+def remove_non_release_groups(name):
+def replaceExtension(filename, newExt):
+def sanitizeFileName(name):
+def getURL(url, validate=False, cookies=cookielib.CookieJar(), password_mgr=None, throw_exc=False):
+def getURLFileLike(url, validate=False, cookies=cookielib.CookieJar(), password_mgr=None, throw_exc=False):
+def readURLFileLike(urlFileLike):
+def is_hidden_folder(folder):
+def list_associated_files(file_path, base_name_only=False, filter_ext=''):
+def sizeof_fmt(num):
+def make_dirs(path):
+def rename_ep_file(cur_path, new_path, old_path_length=0):
+def delete_empty_folders(check_empty_dir, keep_dir=None):
+def real_path(path):
+def sanitizeSceneName(name, ezrss=False):
+def create_https_certificates(ssl_cert, ssl_key):
+def parse_json(data):
+def parse_xml(data, del_xmlns=False):
+def get_xml_text(element, mini_dom=False):
+def processDir(dirName, nzbName=None, method=None, recurse=False, pp_options={}):
+def dbFilename(filename='sickbeard.db', suffix=None):
+def CheckSection(CFG, sec):
+def checkbox_to_value(option, value_on=1, value_off=0):
+def clean_host(host, default_port=None):
+def clean_url(url):
+def to_int(val, default=0):
+def minimax(val, default, low, high):
+def get_scene_exceptions(tvdb_id):
+def get_scene_exception_by_name(show_name):
+def retrieve_exceptions():
+def ex(e):
+def setUp_test_db():
+def tearDown_test_db():
+def test_callable_spec(callable, callable_args, callable_kwargs):
+def VirtualHost(next_dispatcher=Dispatcher(), use_x_forwarded_host=True, **domains):
+def clean_headers(status):
+def get_error_page(status, **kwargs):
+def format_exc(exc=None):
+def bare_error(extrabody=None):
+def client_host(server_host):
+def check_port(host, port, timeout=1.0):
+def wait_for_free_port(host, port):
+def wait_for_occupied_port(host, port):
+def hooks_namespace(k, v):
+def request_namespace(k, v):
+def response_namespace(k, v):
+def error_page_namespace(k, v):
+def plat_specific_errors(*errnames):
+def read_headers(rfile, hdict=None):
+def format_exc(limit=None):
+def process_urlencoded(entity):
+def process_multipart(entity):
+def process_multipart_form_data(entity):
+def _old_process_multipart(entity):
+def as_dict(config):
+def _astnode(s):
+def unrepr(s):
+def modules(modulePath):
+def attributes(full_attribute_name):
+def get(invalid_methods=('POST', 'PUT', 'DELETE'), debug=False, **kwargs):
+def expires(secs=0, force=False, debug=False):
+def decode(encoding=None, default_encoding='utf-8'):
+def compress(body, compress_level):
+def gzip(compress_level=5, mime_types=['text/html', 'text/plain'], debug=False):
+def calculateNonce(realm, algorithm=MD5):
+def digestAuth(realm, algorithm=MD5, nonce=None, qop=AUTH):
+def basicAuth(realm):
+def doAuth(realm):
+def parseAuthorization(credentials):
+def md5SessionKey(params, password):
+def _computeDigestResponse(auth_map, password, method='GET', A1=None, **kwargs):
+def _checkDigestResponse(auth_map, password, method='GET', A1=None, **kwargs):
+def checkResponse(auth_map, password, method='GET', encrypt=None, **kwargs):
+def get_tree(base, exclude):
+def serve_file(path, content_type=None, disposition=None, name=None, debug=False):
+def serve_fileobj(fileobj, content_type=None, disposition=None, name=None, debug=False):
+def _serve_fileobj(fileobj, content_type, content_length, debug=False):
+def serve_download(path, name=None):
+def staticdir(section, dir, root='', match='', content_types=None, index='', debug=False):
+def staticfile(filename, root=None, match='', content_types=None, debug=False):
+def get_ha1_dict_plain(user_password_dict):
+def get_ha1_dict(user_ha1_dict):
+def get_ha1_file_htdigest(filename):
+def synthesize_nonce(s, key, timestamp=None):
+def H(s):
+def www_authenticate(realm, key, algorithm='MD5', nonce=None, qop=qop_auth, stale=False):
+def digest_auth(realm, get_ha1, key, debug=False):
+def file_generator_limited(fileobj, count, chunk_size=65536):
+def set_vary_header(response, header_name):
+def checkpassword_dict(user_password_dict):
+def basic_auth(realm, checkpassword, debug=False):
+def validate_etags(autotags=False, debug=False):
+def validate_since():
+def proxy(base=None, local='X-Forwarded-Host', remote='X-Forwarded-For', scheme='X-Forwarded-Proto', debug=False):
+def ignore_headers(headers=('Range',), debug=False):
+def response_headers(headers=None, debug=False):
+def referer(pattern, accept=True, accept_missing=False, error=403, message='Forbidden DCSP Referer DCSP header.', debug=False):
+def log_traceback(severity=logging.ERROR, debug=False):
+def log_request_headers(debug=False):
+def log_hooks(debug=False):
+def redirect(url='', internal=True, debug=False):
+def trailing_slash(missing=True, extra=False, status=None, debug=False):
+def flatten(debug=False):
+def accept(media=None, debug=False):
+def autovary(ignore=None, debug=False):
+def urljoin(*atoms):
+def protocol_from_http(protocol_str):
+def get_ranges(headervalue, content_length):
+def header_elements(fieldname, fieldvalue):
+def decode_TEXT(value):
+def valid_status(status):
+def _parse_qs(qs, keep_blank_values=0, strict_parsing=0, encoding='utf-8'):
+def parse_query_string(query_string, keep_blank_values=True, encoding='utf-8'):
+def check_auth(users, encrypt=None, realm=None):
+def basic_auth(realm, users, encrypt=None, debug=False):
+def digest_auth(realm, users, debug=False):
+def save():
+def close():
+def init(storage_type='ram', path=None, path_header=None, name='session_id', timeout=60, domain=None, secure=False, clean_freq=5, persistent=True, debug=False, **kwargs):
+def set_response_cookie(path=None, path_header=None, name='session_id', timeout=60, domain=None, secure=False):
+def expire():
+def process_body():
+def patched_path(path):
+def downgrade_wsgi_ux_to_1x(environ):
+def quickstart(root=None, script_name='', config=None):
+def _cherrypy_pydoc_resolve(thing, forceload=0):
+def expose(func=None, alias=None):
+def url(path='', qs='', script_name=None, base=None, relative=None):
+def merge(base, other):
+def _server_namespace_handler(k, v):
+def _engine_namespace_handler(k, v):
+def _tree_namespace_handler(k, v):
+def _getargs(func):
+def long_to_bytes(val, endianness='big'):
+def dict_to_protobuf(pb_klass_or_instance, values, type_callable_map=REVERSE_TYPE_CALLABLE_MAP, strict=True):
+def bit_size(number):
+def gcd(p, q):
+def bytes2int(bytes):
+def int2bytes(number):
+def to64(number):
+def from64(number):
+def int2str64(number):
+def str642int(string):
+def read_random_int(nbits):
+def randint(minvalue, maxvalue):
+def jacobi(a, b):
+def jacobi_witness(x, n):
+def randomized_primality_testing(n, k):
+def is_prime(number):
+def getprime(nbits):
+def are_relatively_prime(a, b):
+def find_p_q(nbits):
+def extended_gcd(a, b):
+def calculate_keys(p, q, nbits):
+def gen_keys(nbits):
+def newkeys(nbits):
+def encrypt_int(message, ekey, n):
+def decrypt_int(cyphertext, dkey, n):
+def encode64chops(chops):
+def decode64chops(string):
+def chopstring(message, key, n, funcref):
+def gluechops(string, key, n, funcref):
+def encrypt(message, key):
+def sign(message, key):
+def decrypt(cypher, key):
+def verify(cypher, key):
+def encrypt_int(message, ekey, n):
+def decrypt_int(cyphertext, dkey, n):
+def read_varint(infile):
+def write_varint(outfile, value):
+def yield_varblocks(infile):
+def yield_fixedblocks(infile, blocksize):
+def _pad_for_encryption(message, target_length):
+def _pad_for_signing(message, target_length):
+def encrypt(message, pub_key):
+def decrypt(crypto, priv_key):
+def sign(message, priv_key, hash):
+def verify(message, signature, pub_key):
+def _hash(message, method_name):
+def _find_method_hash(method_hash):
+def _markers(pem_marker):
+def load_pem(contents, pem_marker):
+def save_pem(contents, pem_marker):
+def keygen():
+def is_bytes(obj):
+def is_integer(obj):
+def byte(num):
+def get_word_alignment(num, force_arch=64, _machine_word_size=MACHINE_WORD_SIZE):
+def bytes2int(raw_bytes):
+def _int2bytes(number, block_size=None):
+def bytes_leading(raw_bytes, needle=ZERO_BYTE):
+def int2bytes(number, fill_size=None, chunk_size=None, overflow=False):
+def getprime(nbits, poolsize):
+def encrypt_bigfile(infile, outfile, pub_key):
+def decrypt_bigfile(infile, outfile, priv_key):
+def read_random_bits(nbits):
+def read_random_int(nbits):
+def randint(maxvalue):
+def bit_size(num):
+def _bit_size(number):
+def byte_size(number):
+def extended_gcd(a, b):
+def inverse(x, n):
+def crt(a_values, modulo_values):
+def gcd(p, q):
+def jacobi(a, b):
+def jacobi_witness(x, n):
+def randomized_primality_testing(n, k):
+def is_prime(number):
+def getprime(nbits):
+def are_relatively_prime(a, b):
+def find_p_q(nbits, getprime_func=rsa.prime.getprime, accurate=True):
+def calculate_keys(p, q, nbits):
+def gen_keys(nbits, getprime_func, accurate=True):
+def newkeys(nbits, accurate=True, poolsize=1):
+def gcd(p, q):
+def bytes2int(bytes):
+def int2bytes(number):
+def fast_exponentiation(a, p, n):
+def read_random_int(nbits):
+def ceil(x):
+def randint(minvalue, maxvalue):
+def fermat_little_theorem(p):
+def jacobi(a, b):
+def jacobi_witness(x, n):
+def randomized_primality_testing(n, k):
+def is_prime(number):
+def getprime(nbits):
+def are_relatively_prime(a, b):
+def find_p_q(nbits):
+def extended_euclid_gcd(a, b):
+def calculate_keys(p, q, nbits):
+def gen_keys(nbits):
+def gen_pubpriv_keys(nbits):
+def encrypt_int(message, ekey, n):
+def decrypt_int(cyphertext, dkey, n):
+def sign_int(message, dkey, n):
+def verify_int(signed, ekey, n):
+def picklechops(chops):
+def unpicklechops(string):
+def chopstring(message, key, n, funcref):
+def gluechops(chops, key, n, funcref):
+def encrypt(message, key):
+def sign(message, key):
+def decrypt(cypher, key):
+def verify(cypher, key):
+def private_to_public():
+def smart_truncate(string, max_length=0, word_boundaries=False, separator=' DCSP '):
+def slugify(text, entities=True, decimal=True, hexadecimal=True, max_length=0, word_boundary=False, separator='-'):
+def central_server_down_or_error(error_msg):
+@allow_jsonp DCNL def register_public_key_server_auto(request):
+@csrf_exempt DCNL def register_device(request):
+@allow_jsonp DCNL def get_server_info(request):
+def require_registration(resource_name):
+@transaction.commit_on_success DCNL def load_data_for_offline_install(in_file):
+def _get_own_device():
+def add_syncing_models(models, dependency_check=False):
+def get_device_counters(**kwargs):
+def get_models(device_counters=None, limit=None, zone=None, dest_version=None, **kwargs):
+def save_serialized_models(data, increment_counters=True, src_version=None, verbose=False):
+def serialize(models, sign=True, increment_counters=True, dest_version=VERSION, *args, **kwargs):
+def deserialize(data, src_version=VERSION, dest_version=VERSION, *args, **kwargs):
+@csrf_exempt DCNL @gzip_page DCNL @require_sync_session DCNL @api_handle_error_with_json DCNL def device_download(data, session):
+@csrf_exempt DCNL @require_sync_session DCNL @api_handle_error_with_json DCNL def device_upload(data, session):
+@csrf_exempt DCNL @require_sync_session DCNL @api_handle_error_with_json DCNL def model_upload(data, session):
+@csrf_exempt DCNL @gzip_page DCNL @require_sync_session DCNL @api_handle_error_with_json DCNL def model_download(data, session):
+@require_admin DCNL @api_handle_error_with_json DCNL def force_sync(request):
+def x_server_test(f, cond, msg):
+def distributed_server_test(f):
+def central_server_test(f):
+def contextmanager(func):
+def memory_usage(proc=(-1), interval=0.1, timeout=None):
+def _find_script(script_name):
+def magic_mprun(self, parameter_s=''):
+def magic_memit(self, line=''):
+def load_ipython_extension(ip):
+def profile(func, stream=None):
+def iri2uri(uri):
+def HTTPResponse__getheaders(self):
+def parse_uri(uri):
+def safename(filename):
+def _parse_www_authenticate(headers, headername='www-authenticate'):
+def _entry_disposition(response_headers, request_headers):
+def proxy_info_from_environment(method='http'):
+def proxy_info_from_url(url, method='http'):
+def setdefaultproxy(proxytype=None, addr=None, port=None, rdns=True, username=None, password=None):
+def wrapmodule(module):
+def get_object_or_None(klass, *args, **kwargs):
+def get_config(key, default):
+def render_to(template=None, mimetype=None):
+def ajax_request(func):
+def autostrip(cls):
+def smart_if(parser, token):
+def align_to_mmap(num, round_up):
+def is_64_bit():
+def xldate_as_datetime(xldate, datemode):
+def xldate_from_date_tuple(date_tuple, datemode):
+def xldate_from_time_tuple(time_tuple):
+def unpack_SST_table(datatab, nstrings):
+def unpack_unicode(data, pos, lenlen=2):
+def unpack_unicode_update_pos(data, pos, lenlen=2, known_len=None):
+def get_text_from_si_or_is(self, elem, r_tag=(U_SSML12 + u'r'), t_tag=(U_SSML12 + u't')):
+def num2strg(num):
+def cellname(rowx, colx):
+def cellnameabs(rowx, colx, r1c1=0):
+def colname(colx):
+def rangename2d(rlo, rhi, clo, chi, r1c1=0):
+def rangename3d(book, ref3d):
+def parse_mime_type(mime_type):
+def parse_media_range(range):
+def fitness_and_quality_parsed(mime_type, parsed_ranges):
+def quality_parsed(mime_type, parsed_ranges):
+def quality(mime_type, ranges):
+def best_match(supported, header):
+def start_replay(replay_file_name, **kwargs):
+def stop_replay():
+@contextmanager DCNL def replay(recording_file_name, url_key=None, body_key=None, headers_key=None):
+def sort_string(s):
+def sort_string_key():
+def filter_query_params(url, remove_params):
+def filter_query_params_key(remove_params):
+def filter_headers(headers, remove_headers):
+def filter_headers_key(remove_headers):
+def _dthandler(obj):
+def am_i_online(url, expected_val=None, search_string=None, timeout=5, allow_redirects=True):
+def set_query_params(url, param_dict):
+def get_ip_addresses(include_loopback=True):
+def calc_last_modified(request, *args, **kwargs):
+def backend_cache_page(handler, cache_time=None, cache_name=None):
+def get_cache_key(path=None, url_name=None, cache=None, failure_ok=False):
+def create_cache(path=None, url_name=None, cache=None, force=False):
+def api_handle_error_with_json(handler):
+def allow_jsonp(handler):
+def render_to_csv(context_keys, delimiter=',', key_label='key', order='stacked'):
+def all_classes_in_module(module_name):
+def allow_api_profiling(handler):
+def force_job(command, name='', frequency='YEARLY', stop=False, **kwargs):
+def call_command_with_output(cmd, *args, **kwargs):
+def call_command_async(cmd, *args, **kwargs):
+def call_outside_command_with_output(command, *args, **kwargs):
+def paginate_data(request, data_list, data_type='cur', per_page=25, page=1):
+def pages_to_show(paginator, page, pages_wanted=None, max_pages_wanted=9):
+def get_request_ip(request):
+def is_loopback_connection(request):
+def Deserializer(object_list, **options):
+def Deserializer(stream_or_string, **options):
+def validate_via_booleans(handler):
+@register.tag DCNL def mkrange(parser, token):
+@register.filter DCNL def format_name(user, format='first_last'):
+def mailchimp_subscribe(email, mc_url):
+def download_video(youtube_id, download_path='../content/', download_url=OUTSIDE_DOWNLOAD_URL, format='mp4', callback=None):
+def break_into_chunks(bigiterator, chunksize=500):
+def isnumeric(obj):
+def datediff(*args, **kwargs):
+def get_host_name():
+def version_diff(v1, v2):
+def ensure_dir(path):
+def convert_date_input(date_to_convert):
+def get_module_source_file(module_name):
+def max_none(data):
+def json_ascii_decoder(data):
+def sort_version_list(version_list, reverse):
+def resolve_model(model_path):
+def low(logging=logging):
+def lowest(logging=logging):
+def normal(logging=logging):
+def system_script_extension(system=None):
+def system_specific_scripts(system=None):
+def not_system_specific_scripts(system=None):
+def _default_callback_zip(src_path, fi, nfiles):
+def system_specific_zipping(files_dict, zip_file=None, compression=ZIP_DEFLATED, callback=_default_callback_zip):
+def _default_callback_unzip(afile, fi, nfiles):
+def system_specific_unzipping(zip_file, dest_dir, callback=_default_callback_unzip):
+def crypt(word, salt=None, iterations=None):
+def _makesalt():
+@register.tag DCNL def announcements(parser, token):
+def get_template(template_name):
+def get_template_from_string(source, origin=None, name=None):
+def render_to_string(template_name, dictionary=None, context_instance=None):
+def select_template(template_name_list):
+@register.tag DCNL def autoescape(parser, token):
+@register.tag DCNL def comment(parser, token):
+@register.tag DCNL def cycle(parser, token):
+@register.tag DCNL def debug(parser, token):
+@register.tag(u'filter') DCNL def do_filter(parser, token):
+@register.tag DCNL def firstof(parser, token):
+@register.tag(u'for') DCNL def do_for(parser, token):
+@register.tag DCNL def ifequal(parser, token):
+@register.tag DCNL def ifnotequal(parser, token):
+@register.tag(u'if') DCNL def do_if(parser, token):
+@register.tag DCNL def ifchanged(parser, token):
+@register.tag DCNL def ssi(parser, token):
+@register.tag DCNL def load(parser, token):
+@register.tag DCNL def now(parser, token):
+@register.tag DCNL def regroup(parser, token):
+@register.tag DCNL def spaceless(parser, token):
+@register.tag DCNL def templatetag(parser, token):
+@register.tag DCNL def url(parser, token):
+@register.tag DCNL def verbatim(parser, token):
+@register.tag DCNL def widthratio(parser, token):
+@register.tag(u'with') DCNL def do_with(parser, token):
+def infix(bp, func):
+def prefix(bp, func):
+def stringfilter(func):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def addslashes(value):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def capfirst(value):
+@register.filter(u'escapejs') DCNL @stringfilter DCNL def escapejs_filter(value):
+@register.filter(u'fix_ampersands', is_safe=True) DCNL @stringfilter DCNL def fix_ampersands_filter(value):
+@register.filter(is_safe=True) DCNL def floatformat(text, arg=(-1)):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def iriencode(value):
+@register.filter(is_safe=True, needs_autoescape=True) DCNL @stringfilter DCNL def linenumbers(value, autoescape=None):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def lower(value):
+@register.filter(is_safe=False) DCNL @stringfilter DCNL def make_list(value):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def slugify(value):
+@register.filter(is_safe=True) DCNL def stringformat(value, arg):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def title(value):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def truncatechars(value, arg):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def truncatewords(value, arg):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def truncatewords_html(value, arg):
+@register.filter(is_safe=False) DCNL @stringfilter DCNL def upper(value):
+@register.filter(is_safe=False) DCNL @stringfilter DCNL def urlencode(value, safe=None):
+@register.filter(is_safe=True, needs_autoescape=True) DCNL @stringfilter DCNL def urlize(value, autoescape=None):
+@register.filter(is_safe=True, needs_autoescape=True) DCNL @stringfilter DCNL def urlizetrunc(value, limit, autoescape=None):
+@register.filter(is_safe=False) DCNL @stringfilter DCNL def wordcount(value):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def wordwrap(value, arg):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def ljust(value, arg):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def rjust(value, arg):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def center(value, arg):
+@register.filter DCNL @stringfilter DCNL def cut(value, arg):
+@register.filter(u'escape', is_safe=True) DCNL @stringfilter DCNL def escape_filter(value):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def force_escape(value):
+@register.filter(u'linebreaks', is_safe=True, needs_autoescape=True) DCNL @stringfilter DCNL def linebreaks_filter(value, autoescape=None):
+@register.filter(is_safe=True, needs_autoescape=True) DCNL @stringfilter DCNL def linebreaksbr(value, autoescape=None):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def safe(value):
+@register.filter(is_safe=True) DCNL def safeseq(value):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def removetags(value, tags):
+@register.filter(is_safe=True) DCNL @stringfilter DCNL def striptags(value):
+@register.filter(is_safe=False) DCNL def dictsort(value, arg):
+@register.filter(is_safe=False) DCNL def dictsortreversed(value, arg):
+@register.filter(is_safe=False) DCNL def first(value):
+@register.filter(is_safe=True, needs_autoescape=True) DCNL def join(value, arg, autoescape=None):
+@register.filter(is_safe=True) DCNL def last(value):
+@register.filter(is_safe=True) DCNL def length(value):
+@register.filter(is_safe=False) DCNL def length_is(value, arg):
+@register.filter(is_safe=True) DCNL def random(value):
+@register.filter(u'slice', is_safe=True) DCNL def slice_filter(value, arg):
+@register.filter(is_safe=True, needs_autoescape=True) DCNL def unordered_list(value, autoescape=None):
+@register.filter(is_safe=False) DCNL def add(value, arg):
+@register.filter(is_safe=False) DCNL def get_digit(value, arg):
+@register.filter(expects_localtime=True, is_safe=False) DCNL def date(value, arg=None):
+@register.filter(expects_localtime=True, is_safe=False) DCNL def time(value, arg=None):
+@register.filter(u'timesince', is_safe=False) DCNL def timesince_filter(value, arg=None):
+@register.filter(u'timeuntil', is_safe=False) DCNL def timeuntil_filter(value, arg=None):
+@register.filter(is_safe=False) DCNL def default(value, arg):
+@register.filter(is_safe=False) DCNL def default_if_none(value, arg):
+@register.filter(is_safe=False) DCNL def divisibleby(value, arg):
+@register.filter(is_safe=False) DCNL def yesno(value, arg=None):
+@register.filter(is_safe=True) DCNL def filesizeformat(bytes):
+@register.filter(is_safe=False) DCNL def pluralize(value, arg=u's'):
+@register.filter(u'phone2numeric', is_safe=True) DCNL def phone2numeric_filter(value):
+@register.filter(is_safe=True) DCNL def pprint(value):
+def compile_string(template_string, origin):
+def resolve_variable(path, context):
+def _render_value_in_context(value, context):
+def token_kwargs(bits, parser, support_legacy=False):
+def parse_bits(parser, bits, params, varargs, varkw, defaults, takes_context, name):
+def generic_tag_compiler(parser, token, params, varargs, varkw, defaults, name, takes_context, node_class):
+def is_library_missing(name):
+def import_library(taglib_module):
+def get_templatetags_modules():
+def get_library(library_name):
+@register.tag('block') DCNL def do_block(parser, token):
+@register.tag('extends') DCNL def do_extends(parser, token):
+@register.tag('include') DCNL def do_include(parser, token):
+def populate_xheaders(request, response, model, object_id):
+def make_msgid(idstring=None):
+def forbid_multi_line_headers(name, val, encoding):
+def get_connection(backend=None, fail_silently=False, **kwds):
+def send_mail(subject, message, from_email, recipient_list, fail_silently=False, auth_user=None, auth_password=None, connection=None):
+def send_mass_mail(datatuple, fail_silently=False, auth_user=None, auth_password=None, connection=None):
+def mail_admins(subject, message, fail_silently=False, connection=None, html_message=None):
+def mail_managers(subject, message, fail_silently=False, connection=None, html_message=None):
+def get_wsgi_application():
+def dumps(obj, key=None, salt=u'django.core.signing', serializer=JSONSerializer, compress=False):
+def loads(s, key=None, salt=u'django.core.signing', serializer=JSONSerializer, max_age=None):
+def get_image_dimensions(file_or_path, close=False):
+def file_move_safe(old_file_name, new_file_name, chunk_size=(1024 * 64), allow_overwrite=False):
+def load_handler(path, *args, **kwargs):
+def fd(f):
+def csrf(request):
+def debug(request):
+def static(request):
+def media(request):
+def Deserializer(stream_or_string, **options):
+def Deserializer(stream_or_string, **options):
+def register_serializer(format, serializer_module, serializers=None):
+def unregister_serializer(format):
+def serialize(format, queryset, **options):
+def deserialize(format, stream_or_string, **options):
+def _load_serializers():
+def getInnerText(node):
+def Deserializer(object_list, **options):
+def _get_model(model_identifier):
+def ip_address_validators(protocol, unpack_ipv4):
+def get_callable(lookup_view, can_fail=False):
+def set_script_prefix(prefix):
+def get_script_prefix():
+def set_urlconf(urlconf_name):
+def get_urlconf(default=None):
+def is_valid_path(path, urlconf=None):
+def parse_backend_uri(backend_uri):
+def parse_backend_conf(backend, **kwargs):
+def get_cache(backend, **kwargs):
+def default_key_func(key, key_prefix, version):
+def get_key_func(key_func):
+def get_validation_errors(outfile, app=None):
+def sql_create(app, style, connection):
+def sql_delete(app, style, connection):
+def sql_flush(style, connection, only_django=False, reset_sequences=True):
+def sql_custom(app, style, connection):
+def sql_indexes(app, style, connection):
+def sql_all(app, style, connection):
+def module_to_dict(module, omittable=(lambda k: k.startswith('_'))):
+def handle_extensions(extensions=('html',), ignored=('py',)):
+def _popen(cmd):
+def find_files(root, ignore_patterns, verbosity, stdout=sys.stdout, symlinks=False):
+def is_ignored(path, ignore_patterns):
+def copy_plural_forms(msgs, locale, domain, verbosity, stdout=sys.stdout):
+def write_pot_file(potfile, msgs, file, work_file, is_templatized):
+def process_file(file, dirpath, potfile, domain, verbosity, extensions, wrap, location, stdout=sys.stdout):
+def write_po_file(pofile, potfile, domain, locale, verbosity, stdout, copy_pforms, wrap, location, no_obsolete):
+def make_messages(locale=None, domain='django', verbosity=1, all=False, extensions=None, symlinks=False, ignore_patterns=None, no_wrap=False, no_location=False, no_obsolete=False, stdout=sys.stdout):
+def sort_dependencies(app_list):
+def supports_color():
+def color_style():
+def no_style():
+def find_commands(management_dir):
+def find_management_module(app_name):
+def load_command_class(app_name, name):
+def get_commands():
+def call_command(name, *args, **options):
+def setup_environ(settings_mod, original_settings_path=None):
+def execute_from_command_line(argv=None):
+def execute_manager(settings_mod, argv=None):
+def handle_default_options(options):
+def get_path_info(environ):
+def get_script_name(environ):
+def get_internal_wsgi_application():
+def set_language(request):
+def get_formats():
+def null_javascript_catalog(request, domain=None, packages=None):
+def javascript_catalog(request, domain='djangojs', packages=None):
+def serve(request, path, document_root=None, show_indexes=False):
+def was_modified_since(header=None, mtime=0, size=0):
+def _date_from_string(year, year_format, month=u'', month_format=u'', day=u'', day_format=u'', delim=u'__'):
+def _get_next_prev(generic_view, date, is_previous, period):
+def timezone_today():
+def cleanse_setting(key, value):
+def get_safe_settings():
+def technical_500_response(request, exc_type, exc_value, tb):
+def technical_404_response(request, exception):
+def empty_urlconf(request):
+def require_http_methods(request_method_list):
+def condition(etag_func=None, last_modified_func=None):
+def xframe_options_deny(view_func):
+def xframe_options_sameorigin(view_func):
+def xframe_options_exempt(view_func):
+def cache_page(*args, **kwargs):
+def never_cache(view_func):
+def vary_on_headers(*headers):
+def vary_on_cookie(func):
+def sensitive_variables(*variables):
+def sensitive_post_parameters(*parameters):
+def csrf_response_exempt(view_func):
+def csrf_view_exempt(view_func):
+def csrf_exempt(view_func):
+def csrf_failure(request, reason=''):
+@requires_csrf_token DCNL def page_not_found(request, template_name='404.html'):
+@requires_csrf_token DCNL def server_error(request, template_name='500.html'):
+@requires_csrf_token DCNL def permission_denied(request, template_name='403.html'):
+def to_list(value):
+def connections_support_transactions():
+def skipIfDBFeature(feature):
+def skipUnlessDBFeature(feature):
+def store_rendered_templates(store, signal, sender, template, context, **kwargs):
+def encode_multipart(boundary, data):
+def build_suite(app_module):
+def build_test(label):
+def partition_suite(suite, classes, bins):
+def reorder_suite(suite, classes):
+def dependency_ordered(test_databases, dependencies):
+def instrumented_test_render(self, context):
+def setup_test_environment():
+def teardown_test_environment():
+def get_warnings_state():
+def restore_warnings_state(state):
+def setup_test_template_loader(templates_dict, use_cached_loader=False):
+def restore_template_loaders():
+def compare_xml(want, got):
+def strip_quotes(want, got):
+def parse_html(html):
+def _extract_future_flags(globs):
+def _normalize_module(module, depth=2):
+def _indent(s, indent=4):
+def _exception_traceback(exc_info):
+def _ellipsis_match(want, got):
+def _comment_line(line):
+def testmod(m=None, name=None, globs=None, verbose=None, report=True, optionflags=0, extraglobs=None, raise_on_error=False, exclude_empty=False):
+def testfile(filename, module_relative=True, name=None, package=None, globs=None, verbose=None, report=True, optionflags=0, extraglobs=None, raise_on_error=False, parser=DocTestParser(), encoding=None):
+def run_docstring_examples(f, globs, verbose=False, name='NoName', compileflags=None, optionflags=0):
+def set_unittest_reportflags(flags):
+def DocTestSuite(module=None, globs=None, extraglobs=None, test_finder=None, test_class=DocTestCase, **options):
+def DocFileSuite(*paths, **kw):
+def script_from_examples(s):
+def testsource(module, name):
+def debug_src(src, pm=False, globs=None):
+def debug_script(src, pm=False, globs=None):
+def debug(module, name, pm=False):
+def shortcut(request, content_type_id, object_id):
+def create_generic_related_manager(superclass):
+def generic_inlineformset_factory(model, form=ModelForm, formset=BaseGenericInlineFormSet, ct_field=u'content_type', fk_field=u'object_id', fields=None, exclude=None, extra=3, can_order=False, can_delete=True, max_num=None, formfield_callback=None):
+def update_contenttypes(app, created_models, verbosity=2, db=DEFAULT_DB_ALIAS, **kwargs):
+def get_current_site(request):
+def update_last_login(sender, user, **kwargs):
+@sensitive_post_parameters() DCNL @csrf_protect DCNL @never_cache DCNL def login(request, template_name='registration/login.html', redirect_field_name=REDIRECT_FIELD_NAME, authentication_form=AuthenticationForm, current_app=None, extra_context=None):
+def logout(request, next_page=None, template_name='registration/logged_out.html', redirect_field_name=REDIRECT_FIELD_NAME, current_app=None, extra_context=None):
+def logout_then_login(request, login_url=None, current_app=None, extra_context=None):
+def redirect_to_login(next, login_url=None, redirect_field_name=REDIRECT_FIELD_NAME):
+@sensitive_post_parameters() DCNL @never_cache DCNL def password_reset_confirm(request, uidb36=None, token=None, template_name='registration/password_reset_confirm.html', token_generator=default_token_generator, set_password_form=SetPasswordForm, post_reset_redirect=None, current_app=None, extra_context=None):
+def _clean_credentials(credentials):
+def authenticate(**credentials):
+def login(request, user):
+def logout(request):
+def get_user_model():
+def auth(request):
+def check_password(password, encoded, setter=None, preferred=u'default'):
+def make_password(password, salt=None, hasher=u'default'):
+def get_hasher(algorithm=u'default'):
+def identify_hasher(encoded):
+def mask_hash(hash, show=6, char=u'*'):
+def _get_all_permissions(opts, ctype):
+def _get_builtin_permissions(opts):
+def _check_permission_clashing(custom, builtin, ctype):
+def get_system_username():
+def get_default_username(check_db=True):
+def skipIfCustomUser(test_func):
+@never_cache DCNL def remote_user_auth_view(request):
+def mock_inputs(inputs):
+def check_password(environ, username, password):
+def groups_for_user(environ, username):
+def user_passes_test(test_func, login_url=None, redirect_field_name=REDIRECT_FIELD_NAME):
+def login_required(function=None, redirect_field_name=REDIRECT_FIELD_NAME, login_url=None):
+def permission_required(perm, login_url=None, raise_exception=False):
+@register.filter(is_safe=True) DCNL def ordinal(value):
+@register.filter(is_safe=True) DCNL def intcomma(value, use_l10n=True):
+@register.filter(is_safe=False) DCNL def intword(value):
+@register.filter(is_safe=True) DCNL def apnumber(value):
+@register.filter(expects_localtime=True) DCNL def naturalday(value, arg=None):
+@register.filter DCNL def naturaltime(value):
+def sentence():
+def paragraph():
+def paragraphs(count, common=True):
+def words(count, common=True):
+@register.tag DCNL def lorem(parser, token):
+@register.filter(is_safe=True) DCNL def markdown(value, arg=''):
+def serve(request, path, document_root=None, insecure=False, **kwargs):
+def matches_patterns(path, patterns=None):
+def get_files(storage, ignore_patterns=None, location=''):
+def check_settings(base_url=None):
+def staticfiles_urlpatterns(prefix=None):
+def find(path, all=False):
+def _get_finder(import_path):
+@register.tag('static') DCNL def do_static(parser, token):
+def next_redirect(request, fallback, **get_kwargs):
+def confirmation_view(template, doc='Display DCSP a DCSP confirmation DCSP view.'):
+@csrf_protect DCNL @login_required DCNL def flag(request, comment_id, next=None):
+@csrf_protect DCNL @permission_required('comments.can_moderate') DCNL def delete(request, comment_id, next=None):
+@csrf_protect DCNL @permission_required('comments.can_moderate') DCNL def approve(request, comment_id, next=None):
+def perform_flag(request, comment):
+@csrf_protect DCNL @require_POST DCNL def post_comment(request, next=None, using=None):
+def get_comment_app():
+def get_comment_app_name():
+def get_model():
+def get_form():
+def get_form_target():
+def get_flag_url(comment):
+def get_delete_url(comment):
+def get_approve_url(comment):
+@register.tag DCNL def get_comment_count(parser, token):
+@register.tag DCNL def get_comment_list(parser, token):
+@register.tag DCNL def render_comment_list(parser, token):
+@register.tag DCNL def get_comment_form(parser, token):
+@register.tag DCNL def render_comment_form(parser, token):
+@register.simple_tag DCNL def comment_form_target():
+@register.simple_tag DCNL def get_comment_permalink(comment, anchor_pattern=None):
+def get_level_tags():
+def messages(request):
+def get_storage(import_path):
+def set_session_data(storage, messages):
+def set_cookie_data(storage, messages, invalid=False, encode_empty=False):
+def stored_cookie_messages_count(storage, response):
+def add_level_messages(storage):
+def add_message(request, level, message, extra_tags='', fail_silently=False):
+def get_messages(request):
+def get_level(request):
+def set_level(request, level):
+def debug(request, message, extra_tags='', fail_silently=False):
+def info(request, message, extra_tags='', fail_silently=False):
+def success(request, message, extra_tags='', fail_silently=False):
+def warning(request, message, extra_tags='', fail_silently=False):
+def error(request, message, extra_tags='', fail_silently=False):
+def normalize_name(name):
+def form_hmac(form):
+def fromfile(file_h):
+def fromstr(string, **kwargs):
+def suite():
+def run(verbosity=1):
+def check_cs_ptr(result, func, cargs):
+def check_cs_op(result, func, cargs):
+def check_cs_get(result, func, cargs):
+def cs_int(func):
+def cs_operation(func, ordinate=False, get=False):
+def cs_output(func, argtypes):
+def binary_predicate(func, *args):
+def unary_predicate(func):
+def last_arg_byref(args):
+def check_dbl(result, func, cargs):
+def check_geom(result, func, cargs):
+def check_minus_one(result, func, cargs):
+def check_predicate(result, func, cargs):
+def check_sized_string(result, func, cargs):
+def check_string(result, func, cargs):
+def check_zero(result, func, cargs):
+def topology(func, *args, **kwargs):
+def bin_constructor(func):
+def bin_output(func):
+def geom_output(func, argtypes):
+def geom_index(func):
+def int_from_geom(func, zero=False):
+def string_from_geom(func):
+def dbl_from_geom(func, num_geom=1):
+def get_pointer_arr(n):
+def geos_version_info():
+def feed(request, url, feed_dict=None):
+def add_srs_entry(srs, auth_name='EPSG', auth_srid=None, ref_sys_name=None, database=None):
+def precision_wkt(geom, prec):
+def ogrinfo(data_source, num_features=10):
+def mapping(data_source, geom_name='geom', layer_key=0, multi_geom=False):
+def ogrinspect(*args, **kwargs):
+def _ogrinspect(data_source, model_name, geom_name='geom', layer_key=0, srid=None, multi_geom=False, name_field=None, imports=True, decimal=False, blank=False, null=False):
+def get_srid_info(srid, connection):
+def get_dist_ops(operator):
+def check_err(code):
+def std_call(func):
+def gdal_version():
+def gdal_full_version():
+def suite():
+def run(verbosity=1):
+def srs_double(f):
+def units_func(f):
+def arg_byref(args, offset=(-1)):
+def ptr_byref(args, offset=(-1)):
+def check_bool(result, func, cargs):
+def check_const_string(result, func, cargs, offset=None):
+def check_string(result, func, cargs, offset=(-1), str_result=False):
+def check_envelope(result, func, cargs, offset=(-1)):
+def check_geom(result, func, cargs):
+def check_geom_offset(result, func, cargs, offset=(-1)):
+def check_arg_errcode(result, func, cargs):
+def check_errcode(result, func, cargs):
+def check_pointer(result, func, cargs):
+def check_str_arg(result, func, cargs):
+def double_output(func, argtypes, errcheck=False, strarg=False):
+def geom_output(func, argtypes, offset=None):
+def int_output(func, argtypes):
+def srs_output(func, argtypes):
+def string_output(func, argtypes, offset=(-1), str_result=False, decoding=None):
+def void_output(func, argtypes, errcheck=True):
+def voidptr_output(func, argtypes):
+def env_func(f, argtypes):
+def pnt_func(f):
+def tuplize(seq):
+def strconvert(d):
+def compress_kml(kml):
+def render_to_kml(*args, **kwargs):
+def render_to_kmz(*args, **kwargs):
+def render_to_text(*args, **kwargs):
+def layer_option(option, opt, value, parser):
+def list_option(option, opt, value, parser):
+def no_backend(test_func, backend):
+def geo_apps(namespace=True, runtests=False):
+def geodjango_suite(apps=True):
+def index(request, sitemaps):
+def sitemap(request, sitemaps, section=None):
+def kml(request, label, model, field_name=None, compress=False, using=DEFAULT_DB_ALIAS):
+def kmz(request, label, model, field_name=None, using=DEFAULT_DB_ALIAS):
+def validate(cls, model):
+def validate_fields_spec(cls, model, opts, flds, label):
+def staff_member_required(view_func):
+def autodiscover():
+def normalize_fieldsets(fieldsets):
+def normalize_dictionary(data_dict):
+def delete_selected(modeladmin, request, queryset):
+def lookup_needs_distinct(opts, lookup_path):
+def prepare_lookup_value(key, value):
+def quote(s):
+def unquote(s):
+def flatten_fieldsets(fieldsets):
+def get_deleted_objects(objs, opts, user, admin_site, using):
+def model_format_dict(obj):
+def model_ngettext(obj, n=None):
+def label_for_field(name, model, model_admin=None, return_attr=False):
+def reverse_field_path(model, path):
+def get_fields_from_path(model, path):
+def remove_trailing_data_field(fields):
+def get_limit_choices_to_from_path(model, path):
+def url_params_from_lookup_dict(lookups):
+@register.tag DCNL def get_admin_log(parser, token):
+@register.simple_tag DCNL def paginator_number(cl, i):
+@register.inclusion_tag(u'admin/pagination.html') DCNL def pagination(cl):
+def result_headers(cl):
+def items_for_result(cl, result, form):
+@register.inclusion_tag(u'admin/change_list_results.html') DCNL def result_list(cl):
+@register.inclusion_tag(u'admin/date_hierarchy.html') DCNL def date_hierarchy(cl):
+@register.inclusion_tag(u'admin/search_form.html') DCNL def search_form(cl):
+@register.inclusion_tag(u'admin/actions.html', takes_context=True) DCNL def admin_actions(context):
+@register.inclusion_tag('admin/prepopulated_fields_js.html', takes_context=True) DCNL def prepopulated_fields_js(context):
+@register.inclusion_tag('admin/submit_line.html', takes_context=True) DCNL def submit_row(context):
+@register.filter DCNL def cell_count(inline_admin_form):
+def get_validation_digit(number):
+def id_number_checksum(gd):
+def validate_id_birthday(gd, fix_coordination_number_day=True):
+def ssn_check_digit(value):
+def vat_number_check_digit(vat_number):
+def missing_docutils_page(request):
+def get_return_data_type(func_name):
+def get_readable_field_data_type(field):
+def extract_views_from_urlpatterns(urlpatterns, base=''):
+def simplify_regex(pattern):
+def trim_docstring(docstring):
+def parse_docstring(docstring):
+def parse_rst(text, default_reference_context, thing_being_parsed=None):
+def flatpage(request, url):
+@csrf_protect DCNL def render_flatpage(request, f):
+@register.tag DCNL def get_flatpages(parser, token):
+def ping_google(sitemap_url=None, ping_url=PING_URL):
+def render_to_response(*args, **kwargs):
+def render(request, *args, **kwargs):
+def redirect(to, *args, **kwargs):
+def _get_queryset(klass):
+def get_object_or_404(klass, *args, **kwargs):
+def get_list_or_404(klass, *args, **kwargs):
+def resolve_url(to, *args, **kwargs):
+def _is_ignorable_404(uri):
+def _is_internal_request(domain, referer):
+def _get_failure_view():
+def get_token(request):
+def urlquote(url, safe=u'/'):
+def urlquote_plus(url, safe=u''):
+def urlunquote(quoted_url):
+def urlunquote_plus(quoted_url):
+def urlencode(query, doseq=0):
+def cookie_date(epoch_seconds=None):
+def http_date(epoch_seconds=None):
+def parse_http_date(date):
+def parse_http_date_safe(date):
+def base36_to_int(s):
+def int_to_base36(i):
+def parse_etags(etag_str):
+def quote_etag(etag):
+def same_origin(url1, url2):
+def is_safe_url(url, host=None):
+def normalize(pattern):
+def next_char(input_iter):
+def walk_to_end(ch, input_iter):
+def get_quantifier(ch, input_iter):
+def contains(source, inst):
+def flatten_result(source):
+def dictConfig(config):
+def is_iterable(x):
+def is_iterator(x):
+def colorize(text='', opts=(), **kwargs):
+def make_style(opts=(), **kwargs):
+def parse_color_setting(config_string):
+def timesince(d, now=None, reversed=False):
+def timeuntil(d, now=None):
+def get_default_timezone():
+def get_default_timezone_name():
+def get_current_timezone():
+def get_current_timezone_name():
+def _get_timezone_name(timezone):
+def activate(timezone):
+def deactivate():
+def template_localtime(value, use_tz=None):
+def localtime(value, timezone=None):
+def now():
+def is_aware(value):
+def is_naive(value):
+def make_aware(value, timezone):
+def make_naive(value, timezone):
+def upath(path):
+def npath(path):
+def safe_join(base, *paths):
+def rmtree_errorhandler(func, path, exc_info):
+def wrap(text, width):
+def get_valid_filename(s):
+def get_text_list(list_, last_word=ugettext_lazy(u'or')):
+def recapitalize(text):
+def phone2numeric(phone):
+def smart_split(text):
+def unescape_string_literal(s):
+def slugify(value):
+def python_2_unicode_compatible(klass):
+def smart_text(s, encoding=u'utf-8', strings_only=False, errors=u'strict'):
+def is_protected_type(obj):
+def force_text(s, encoding=u'utf-8', strings_only=False, errors=u'strict'):
+def smart_bytes(s, encoding=u'utf-8', strings_only=False, errors=u'strict'):
+def force_bytes(s, encoding=u'utf-8', strings_only=False, errors=u'strict'):
+def iri_to_uri(iri):
+def filepath_to_uri(path):
+def module_has_submodule(package, module_name):
+def patch_cache_control(response, **kwargs):
+def get_max_age(response):
+def patch_response_headers(response, cache_timeout=None):
+def add_never_cache_headers(response):
+def patch_vary_headers(response, newheaders):
+def has_vary_header(response, header_query):
+def _i18n_cache_key_suffix(request, cache_key):
+def _generate_cache_key(request, method, headerlist, key_prefix):
+def _generate_cache_header_key(key_prefix, request):
+def get_cache_key(request, key_prefix=None, method=u'GET', cache=None):
+def learn_cache_key(request, response, cache_timeout=None, key_prefix=None, cache=None):
+def clean_ipv6_address(ip_str, unpack_ipv4=False, error_message='This DCSP is DCSP not DCSP a DCSP valid DCSP IPv6 DCSP address'):
+def _sanitize_ipv4_mapping(ip_str):
+def _unpack_ipv4(ip_str):
+def is_valid_ipv6_address(ip_str):
+def _explode_shorthand_ip_string(ip_str):
+def _is_shorthand_ip(ip_str):
+def reset_format_cache():
+def iter_format_modules(lang):
+def get_format_modules(lang=None, reverse=False):
+def get_format(format_type, lang=None, use_l10n=None):
+def date_format(value, format=None, use_l10n=None):
+def time_format(value, format=None, use_l10n=None):
+def number_format(value, decimal_pos=None, use_l10n=None, force_grouping=False):
+def localize(value, use_l10n=None):
+def localize_input(value, default=None):
+def sanitize_separators(value):
+def salted_hmac(key_salt, value, secret=None):
+def get_random_string(length=12, allowed_chars=u'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'):
+def constant_time_compare(val1, val2):
+def _bin_to_long(x):
+def _long_to_bin(x, hex_format_string):
+def _fast_hmac(key, msg, digest):
+def pbkdf2(password, salt, iterations, dklen=0, digest=None):
+def luhn(candidate):
+def _resolve_name(name, package, level):
+def import_module(name, package=None):
+def escape(text):
+def escapejs(value):
+def conditional_escape(text):
+def format_html(format_string, *args, **kwargs):
+def format_html_join(sep, format_string, args_generator):
+def linebreaks(value, autoescape=False):
+def strip_tags(value):
+def remove_tags(html, tags):
+def strip_spaces_between_tags(value):
+def strip_entities(value):
+def fix_ampersands(value):
+def smart_urlquote(url):
+def urlize(text, trim_url_limit=None, nofollow=False, autoescape=False):
+def clean_html(text):
+def _CmpToKey(mycmp):
+def _relpath_nt(path, start=os.path.curdir):
+def _relpath_posix(path, start=os.path.curdir):
+def skip(reason):
+def skipIf(condition, reason):
+def skipUnless(condition, reason):
+def _isnotsuite(test):
+def sorted_list_difference(expected, actual):
+def unorderable_list_difference(expected, actual, ignore_duplicate=False):
+def parse_date(value):
+def parse_time(value):
+def parse_datetime(value):
+def extract(path, to_path=''):
+def format(number, decimal_sep, decimal_pos=None, grouping=0, thousand_sep='', force_grouping=False):
+def get_version(version=None):
+def get_git_changeset():
+def to_locale(language, to_lower=False):
+def to_language(locale):
+def translation(language):
+def activate(language):
+def deactivate():
+def deactivate_all():
+def get_language():
+def get_language_bidi():
+def catalog():
+def do_translate(message, translation_function):
+def gettext(message):
+def gettext_noop(message):
+def ngettext(singular, plural, number):
+def all_locale_paths():
+def check_for_language(lang_code):
+def get_language_from_path(path, supported=None):
+def get_language_from_request(request, check_path=False):
+def blankout(src, char):
+def templatize(src, origin=None):
+def parse_accept_lang_header(lang_string):
+def _string_concat(*strings):
+def memoize(func, cache, num_args):
+def lazy(func, *resultclasses):
+def allow_lazy(func, *resultclasses):
+def partition(predicate, values):
+def literals(choices, prefix='', suffix=''):
+def prepare_js_for_gettext(js):
+def _add_doc(func, doc):
+def _import_module(name):
+def add_move(move):
+def remove_move(name):
+def iterkeys(d, **kw):
+def itervalues(d, **kw):
+def iteritems(d, **kw):
+def iterlists(d, **kw):
+def with_metaclass(meta, base=object):
+def format(value, format_string):
+def time_format(value, format_string):
+def method_decorator(decorator):
+def decorator_from_middleware_with_args(middleware_class):
+def decorator_from_middleware(middleware_class):
+def available_attrs(fn):
+def mark_safe(s):
+def mark_for_escaping(s):
+def new_date(d):
+def new_datetime(d):
+def get_tag_uri(url, date):
+def abort(using=None):
+def enter_transaction_management(managed=True, using=None):
+def leave_transaction_management(using=None):
+def is_dirty(using=None):
+def set_dirty(using=None):
+def set_clean(using=None):
+def is_managed(using=None):
+def managed(flag=True, using=None):
+def commit_unless_managed(using=None):
+def rollback_unless_managed(using=None):
+def commit(using=None):
+def rollback(using=None):
+def savepoint(using=None):
+def savepoint_rollback(sid, using=None):
+def savepoint_commit(sid, using=None):
+def _transaction_func(entering, exiting, using):
+def autocommit(using=None):
+def commit_on_success(using=None):
+def commit_manually(using=None):
+def get_order_dir(field, default='ASC'):
+def setup_join_cache(sender, **kwargs):
+def add_to_dict(data, key, value):
+def is_reverse_o2o(field):
+def order_modified_iter(cursor, trim, sentinel):
+def make_contrib(superclass, func=None):
+def add_lazy_relation(cls, field, relation, operation):
+def do_pending_lookups(sender, **kwargs):
+def create_many_related_manager(superclass, rel):
+def ensure_default_manager(sender, **kwargs):
+def get_klass_info(klass, max_depth=0, cur_depth=0, requested=None, only_load=None, local_only=False):
+def get_cached_row(row, index_start, using, klass_info, offset=0):
+def insert_query(model, objs, fields, return_id=False, raw=False, using=None):
+def prefetch_related_objects(result_cache, related_lookups):
+def get_prefetcher(instance, attr):
+def prefetch_one_level(instances, prefetcher, attname):
+def permalink(func):
+def subclass_exception(name, parents, module, attached_to=None):
+def model_unpickle(model, attrs):
+def select_related_descend(field, restricted, requested, load_fields, reverse=False):
+def deferred_class_factory(model, attrs):
+def to_unicode(s):
+def get_field_size(name):
+def decoder(conv_func):
+def _parse_version(text):
+def get_version(connection):
+def truncate_name(name, length=None, hash_len=4):
+def format_number(value, max_digits, decimal_places):
+def receiver(signal, **kwargs):
+def safeRef(target, onDelete=None):
+def get_bound_method_weakref(target, onDelete):
+def construct_instance(form, instance, fields=None, exclude=None):
+def save_instance(form, instance, fields=None, fail_message=u'saved', commit=True, exclude=None, construct=True):
+def model_to_dict(instance, fields=None, exclude=None):
+def fields_for_model(model, fields=None, exclude=None, widgets=None, formfield_callback=None):
+def modelform_factory(model, form=ModelForm, fields=None, exclude=None, formfield_callback=None, widgets=None):
+def modelformset_factory(model, form=ModelForm, formfield_callback=None, formset=BaseModelFormSet, extra=1, can_delete=False, can_order=False, max_num=None, fields=None, exclude=None):
+def _get_foreign_key(parent_model, model, fk_name=None, can_fail=False):
+def inlineformset_factory(parent_model, model, form=ModelForm, formset=BaseInlineFormSet, fk_name=None, fields=None, exclude=None, extra=3, can_order=False, can_delete=True, max_num=None, formfield_callback=None):
+def pretty_name(name):
+def get_declared_fields(bases, attrs, with_base_fields=True):
+def formset_factory(form, formset=BaseFormSet, extra=1, can_order=False, can_delete=False, max_num=None):
+def all_valid(formsets):
+def flatatt(attrs):
+def from_current_timezone(value):
+def to_current_timezone(value):
+def exhaust(stream_or_iterable):
+def parse_boundary_stream(stream, max_header_size):
+def parse_header(line):
+def fix_location_header(request, response):
+def conditional_content_removal(request, response):
+def fix_IE_for_attach(request, response):
+def fix_IE_for_vary(request, response):
+def build_request_repr(request, path_override=None, GET_override=None, POST_override=None, COOKIES_override=None, META_override=None):
+def bytes_to_text(s, encoding):
+def validate_host(host, allowed_hosts):
+def i18n_patterns(prefix, *args):
+def static(prefix, view='django.views.static.serve', **kwargs):
+def compat_patch_logging_config(logging_config):
+@register.tag(u'get_available_languages') DCNL def do_get_available_languages(parser, token):
+@register.tag(u'get_language_info') DCNL def do_get_language_info(parser, token):
+@register.tag(u'get_language_info_list') DCNL def do_get_language_info_list(parser, token):
+@register.tag(u'get_current_language') DCNL def do_get_current_language(parser, token):
+@register.tag(u'get_current_language_bidi') DCNL def do_get_current_language_bidi(parser, token):
+@register.tag(u'trans') DCNL def do_translate(parser, token):
+@register.tag(u'blocktrans') DCNL def do_block_translate(parser, token):
+@register.tag DCNL def language(parser, token):
+@register.tag(u'cache') DCNL def do_cache(parser, token):
+@register.tag DCNL def get_static_prefix(parser, token):
+@register.tag DCNL def get_media_prefix(parser, token):
+@register.tag('static') DCNL def do_static(parser, token):
+@register.filter(is_safe=False) DCNL def localize(value):
+@register.filter(is_safe=False) DCNL def unlocalize(value):
+@register.tag('localize') DCNL def localize_tag(parser, token):
+@register.filter DCNL def localtime(value):
+@register.filter DCNL def utc(value):
+@register.filter('timezone') DCNL def do_timezone(value, arg):
+@register.tag('localtime') DCNL def localtime_tag(parser, token):
+@register.tag('timezone') DCNL def timezone_tag(parser, token):
+@register.tag('get_current_timezone') DCNL def get_current_timezone_tag(parser, token):
+def prepare_suites_from_test_cases(case_class_list):
+def create_callback_server(session):
+def api_call(target_version, target_api_url, session, debug=False, authenticate=True):
+def n_deep(obj, names):
+def build_authenticate_header(realm=''):
+def escape(s):
+def _utf8_str(s):
+def generate_timestamp():
+def generate_nonce(length=8):
+def generate_verifier(length=8):
+def _resolve_name(name, package, level):
+def import_module(name, package=None):
+def do_terminate_threads(whitelist=list()):
+def terminate_threads(func):
+def _init_atexit():
+def _init_signals():
+def mkchannel(ctype=Channel, wtype=ChannelWriter, rtype=ChannelReader):
+def cpu_count():
+def _mkdir(newdir):
+def _pofile_or_mofile(f, type, **kwargs):
+def pofile(pofile, **kwargs):
+def mofile(mofile, **kwargs):
+def detect_encoding(file, binary_mode=False):
+def escape(st):
+def unescape(st):
+def wrap(text, width=70, **kwargs):
+def update_self(to_screen, verbose):
+def preferredencoding():
+def write_json_file(obj, fn):
+def get_element_by_id(id, html):
+def get_element_by_attribute(attribute, value, html):
+def clean_html(html):
+def sanitize_open(filename, open_mode):
+def timeconvert(timestr):
+def sanitize_filename(s, restricted=False, is_id=False):
+def orderedSet(iterable):
+def _htmlentity_transform(entity):
+def encodeFilename(s, for_subprocess=False):
+def parse_iso8601(date_str, delimiter=u'T'):
+def unified_strdate(date_str):
+def date_from_str(date_str):
+def hyphenate_date(date_str):
+def platform_name():
+def _windows_write_string(s, out):
+def takewhile_inclusive(pred, seq):
+def smuggle_url(url, data):
+def month_by_name(name):
+def fix_xml_ampersands(xml_str):
+def str_to_int(int_str):
+def check_executable(exe, args=[]):
+def get_exe_version(exe, args=[u'--version'], version_re=u'version\\s+([0-9._-a-zA-Z]+)', unrecognized=u'present'):
+def escape_rfc3986(s):
+def escape_url(url):
+def qualities(quality_ids):
+def limit_length(s, length):
+def ytdl_is_updateable():
+def aes_ctr_decrypt(data, key, counter):
+def aes_cbc_decrypt(data, key, iv):
+def key_expansion(data):
+def aes_encrypt(data, expanded_key):
+def aes_decrypt(data, expanded_key):
+def aes_decrypt_text(data, password, key_size_bytes):
+def gen_extractors():
+def get_info_extractor(ie_name):
+def build_fragments_list(boot_info):
+def write_flv_header(stream, metadata):
+def get_suitable_downloader(info_dict):
+def get_type_string(data):
+def dict_strip_unicode_keys(uni_dict):
+def is_valid_javascript_identifier(identifier, escape=u'\\\\u', ucd_cat=category):
+def is_valid_jsonp_callback_value(value):
+def determine_format(request, serializer, default_format=u'application/json'):
+def build_content_type(format, encoding=u'utf-8'):
+def format_datetime(dt):
+def format_date(d):
+def format_time(t):
+def convert_post_to_VERB(request, verb):
+def build_authenticate_header(realm=''):
+def escape(s):
+def _utf8_str(s):
+def generate_timestamp():
+def generate_nonce(length=8):
+def generate_verifier(length=8):
+def test_parse_date_fraction_2():
+def test_parse_no_timezone():
+def test_space_separator():
+def parse_timezone(tzstring, default_timezone=UTC):
+def parse_date(datestring, default_timezone=UTC):
+def test_callable_spec(callable, callable_args, callable_kwargs):
+def VirtualHost(next_dispatcher=Dispatcher(), use_x_forwarded_host=True, **domains):
+def clean_headers(status):
+def get_error_page(status, **kwargs):
+def format_exc(exc=None):
+def bare_error(extrabody=None):
+def client_host(server_host):
+def check_port(host, port, timeout=1.0):
+def wait_for_free_port(host, port, timeout=None):
+def wait_for_occupied_port(host, port, timeout=None):
+def hooks_namespace(k, v):
+def request_namespace(k, v):
+def response_namespace(k, v):
+def error_page_namespace(k, v):
+def format_exc(limit=None):
+def plat_specific_errors(*errnames):
+def read_headers(rfile, hdict=None):
+def get_ssl_adapter_class(name='pyopenssl'):
+def plat_specific_errors(*errnames):
+def read_headers(rfile, hdict=None):
+def get_ssl_adapter_class(name='builtin'):
+def process_urlencoded(entity):
+def process_multipart(entity):
+def process_multipart_form_data(entity):
+def _old_process_multipart(entity):
+def as_dict(config):
+def unrepr(s):
+def modules(modulePath):
+def attributes(full_attribute_name):
+def get(invalid_methods=('POST', 'PUT', 'DELETE'), debug=False, **kwargs):
+def tee_output():
+def expires(secs=0, force=False, debug=False):
+def extrapolate_statistics(scope):
+def decode(encoding=None, default_encoding='utf-8'):
+def compress(body, compress_level):
+def gzip(compress_level=5, mime_types=['text/html', 'text/plain'], debug=False):
+def process_body():
+def patched_path(path):
+def calculateNonce(realm, algorithm=MD5):
+def digestAuth(realm, algorithm=MD5, nonce=None, qop=AUTH):
+def basicAuth(realm):
+def doAuth(realm):
+def parseAuthorization(credentials):
+def md5SessionKey(params, password):
+def _computeDigestResponse(auth_map, password, method='GET', A1=None, **kwargs):
+def _checkDigestResponse(auth_map, password, method='GET', A1=None, **kwargs):
+def checkResponse(auth_map, password, method='GET', encrypt=None, **kwargs):
+def new_func_strip_path(func_name):
+def get_tree(base, exclude, coverage=the_coverage):
+def serve_file(path, content_type=None, disposition=None, name=None, debug=False):
+def serve_fileobj(fileobj, content_type=None, disposition=None, name=None, debug=False):
+def _serve_fileobj(fileobj, content_type, content_length, debug=False):
+def serve_download(path, name=None):
+def staticdir(section, dir, root='', match='', content_types=None, index='', debug=False):
+def staticfile(filename, root=None, match='', content_types=None, debug=False):
+def get_ha1_dict_plain(user_password_dict):
+def get_ha1_dict(user_ha1_dict):
+def get_ha1_file_htdigest(filename):
+def synthesize_nonce(s, key, timestamp=None):
+def H(s):
+def www_authenticate(realm, key, algorithm='MD5', nonce=None, qop=qop_auth, stale=False):
+def digest_auth(realm, get_ha1, key, debug=False):
+def file_generator_limited(fileobj, count, chunk_size=65536):
+def set_vary_header(response, header_name):
+def checkpassword_dict(user_password_dict):
+def basic_auth(realm, checkpassword, debug=False):
+def validate_etags(autotags=False, debug=False):
+def validate_since():
+def allow(methods=None, debug=False):
+def proxy(base=None, local='X-Forwarded-Host', remote='X-Forwarded-For', scheme='X-Forwarded-Proto', debug=False):
+def ignore_headers(headers=('Range',), debug=False):
+def response_headers(headers=None, debug=False):
+def referer(pattern, accept=True, accept_missing=False, error=403, message='Forbidden DCSP Referer DCSP header.', debug=False):
+def log_traceback(severity=logging.ERROR, debug=False):
+def log_request_headers(debug=False):
+def log_hooks(debug=False):
+def redirect(url='', internal=True, debug=False):
+def trailing_slash(missing=True, extra=False, status=None, debug=False):
+def flatten(debug=False):
+def accept(media=None, debug=False):
+def autovary(ignore=None, debug=False):
+def urljoin(*atoms):
+def urljoin_bytes(*atoms):
+def protocol_from_http(protocol_str):
+def get_ranges(headervalue, content_length):
+def header_elements(fieldname, fieldvalue):
+def decode_TEXT(value):
+def valid_status(status):
+def _parse_qs(qs, keep_blank_values=0, strict_parsing=0, encoding='utf-8'):
+def parse_query_string(query_string, keep_blank_values=True, encoding='utf-8'):
+def check_auth(users, encrypt=None, realm=None):
+def basic_auth(realm, users, encrypt=None, debug=False):
+def digest_auth(realm, users, debug=False):
+def json_processor(entity):
+def json_in(content_type=[ntou('application/json'), ntou('text/javascript')], force=True, debug=False, processor=json_processor):
+def json_out(content_type='application/json', debug=False, handler=json_handler):
+def save():
+def close():
+def init(storage_type='ram', path=None, path_header=None, name='session_id', timeout=60, domain=None, secure=False, clean_freq=5, persistent=True, httponly=False, debug=False, **kwargs):
+def set_response_cookie(path=None, path_header=None, name='session_id', timeout=60, domain=None, secure=False, httponly=False):
+def expire():
+def downgrade_wsgi_ux_to_1x(environ):
+def quickstart(root=None, script_name='', config=None):
+def _cherrypy_pydoc_resolve(thing, forceload=0):
+def expose(func=None, alias=None):
+def popargs(*args, **kwargs):
+def url(path='', qs='', script_name=None, base=None, relative=None):
+def base64_decode(n, encoding='ISO-8859-1'):
+def merge(base, other):
+def _server_namespace_handler(k, v):
+def _engine_namespace_handler(k, v):
+def _tree_namespace_handler(k, v):
+def _getargs(func):
+def namedtuple(typename, field_names, verbose=False, rename=False):
+def update_default_args(defaults, updates):
+def get_size(start_path):
+def read_pid_file(filename):
+def get_pid():
+def manage(command, args=None, as_thread=False):
+def start(debug=False, watch=False, daemonize=True, args=[], skip_job_scheduler=False, port=None):
+def stop(args=[], sys_exit=True):
+def get_urls():
+def get_urls_proxy(output_pipe=sys.stderr):
+def status():
+def diagnose():
+def url():
+def docopt(doc, argv=None, help=True, version=None, options_first=False):
+def _parse_focus(arg_str):
+def _parse_command(command):
+def _parse_login(username, password, submit=''):
+def _parse_nav_steps(arg_str):
+def test_parse_focus():
+def test_parse_command():
+@raises(ActionError) DCNL def test_parse_command_action_error():
+@raises(OptionError) DCNL def test_parse_command_option_error():
+def test_parse_login():
+def test_parse_nav_steps():
+def filter_requirement_statements(req):
+def enable_log_to_stdout(logname):
+def get_installed_packages():
+def gen_data_files(*dirs, **kwargs):
+def narrative_view(request, narrative_id):
+@given("I've DCSP started DCSP the DCSP intro") DCNL def step_impl(context):
+@set_database DCNL def setup_content_paths(context, db):
+@set_database DCNL def teardown_content_paths(context, db):
+def setup_sauce_browser(context):
+def setup_local_browser(context):
+def database_setup(context):
+def database_teardown(context):
+def do_fake_registration():
+@render_to('distributed/loadtesting/load_test.html') DCNL def load_test(request, nusers=None):
+def rgba_to_hex(rgba_string):
+def _assert_no_element_by(context, by, value, wait_time=MAX_WAIT_FOR_UNEXPECTED_ELEMENT):
+def assert_no_element_by_id(context, _id, wait_time=MAX_WAIT_FOR_UNEXPECTED_ELEMENT):
+def assert_no_element_by_css_selector(context, css_value, wait_time=MAX_WAIT_FOR_UNEXPECTED_ELEMENT):
+def assert_no_element_by_xpath_selector(context, xpath, wait_time=MAX_WAIT_FOR_UNEXPECTED_ELEMENT):
+def click_and_wait_for_page_load(context, elem, wait_time=MAX_PAGE_LOAD_TIME):
+def click_and_wait_for_id_to_appear(context, elem_click, elem_wait, wait_time=MAX_WAIT_TIME):
+def elem_is_invisible_with_wait(context, elem, wait_time=MAX_WAIT_TIME):
+def elem_is_visible_with_wait(context, elem, wait_time=MAX_WAIT_TIME):
+def find_css_class_with_wait(context, css_class, **kwargs):
+def find_clickable_id_with_wait(context, id_str, **kwargs):
+def find_id_with_wait(context, id_str, **kwargs):
+def id_shown_with_wait(context, id_str, **kwargs):
+def find_xpath_with_wait(context, id_str, **kwargs):
+def find_css_with_wait(context, id_str, **kwargs):
+def _find_elem_with_wait(context, by, wait_time=MAX_WAIT_TIME):
+def _find_clickable_elem_with_wait(context, by, wait_time=MAX_WAIT_TIME):
+def _shown_elem_with_wait(context, by, wait_time=MAX_WAIT_TIME):
+def build_url(context, url, params=None):
+def _login_user(context, username, password, facility=None):
+def login_as_learner(context, learner_name='mrpibb', learner_pass='abc123'):
+def login_as_coach(context, coach_name='mrpibb', coach_pass='abc123'):
+def login_as_admin(context, admin_name='admin', admin_pass='abc123'):
+def post(context, url, data=''):
+def get(context, url, data=''):
+def request(context, url, method='GET', data=''):
+def wait_for_video_player_ready(context, wait_time=MAX_WAIT_TIME):
+def setup_browser(browser_type='Firefox'):
+def hacks_for_phantomjs(browser):
+def browse_to(browser, dest_url, wait_time=0.1, max_retries=50):
+def wait_for_page_change(browser, source_url=None, page_source=None, wait_time=0.1, max_retries=50):
+def central_server_only(handler):
+def distributed_server_only(handler):
+def get_features(app_module):
+def check_feature_file(features_dir, feature_name):
+def check_setup_status(handler):
+@render_to('distributed/learn.html') DCNL def learn(request):
+@check_setup_status DCNL @render_to('distributed/homepage.html') DCNL def homepage(request):
+@require_admin DCNL def zone_redirect(request):
+@require_admin DCNL def device_redirect(request):
+def crypto_login(request):
+def get_messages_for_api_calls(request):
+def main():
+def _slurp(filename):
+def close_issue(issue, github_auth):
+def post_issue_comment(issue, comment_text, github_auth):
+def main():
+def lint_file(filename, apply_fix, verbose):
+def get_plural_form(word):
+def get_plural_num_pos(match):
+def get_is_plural_num(match):
+def _check_plural_arg_is_num(plural_arg):
+def _check_plural_is_ambiguous(plural_arg):
+def _extract_nodes(html_tree, filename):
+def _replace_node(node, replace_node):
+def _parse_single_node(text):
+def _get_outerhtml(html_node):
+def _get_innerhtml(html_node):
+def get_page_html(html_tree):
+def _clean_data_if(match):
+def prompt_user(prompt, default=''):
+def enter_star_ratings(context, val=3):
+def rate_id(context, id_, val=3):
+def enter_text_feedback(context, text_feedback):
+def get_text_feedback(context):
+def unregister_distributed_server():
+def clean_db():
+def clean_pyc(path):
+def reset_sqlite_database(username=None, email=None, password=None, router=None, verbosity='1'):
+def delete_sqlite_database(database=None, verbosity='1'):
+def yml_to_json(filename):
+@require_login DCNL def update_all_distributed(request):
+@csrf_exempt DCNL def update_all_distributed_callback(request):
+def whitewash_node_data(node, path='', channel_data=None):
+def rebuild_topictree(remove_unknown_exercises=False, remove_disabled_topics=True, whitewash_node_data=whitewash_node_data, retrieve_API_data=retrieve_API_data, channel_data={}, channel=None):
+def build_full_cache(items, id_key='id', ids=None):
+def construct_node(location, parent_path, node_cache, channel):
+def channel_data_files(dest=None):
+def set_language_data_from_request(request):
+def get_locale_path(lang_code=None):
+def get_po_filepath(lang_code, filename=None):
+def get_langcode_map(lang_name=None, force=False):
+def get_subtitle_file_path(lang_code=None, youtube_id=None):
+def get_code2lang_map(lang_code=None, force=False):
+def get_language_name(lang_code, native=None, error_on_missing=False):
+def convert_language_code_format(lang_code, for_django=True):
+def outdated_langpacks():
+def _get_installed_language_packs():
+def get_default_language():
+def set_default_language(lang_code):
+def update_jsi18n_file(code='en'):
+def select_best_available_language(target_code, available_codes=None):
+def download_content_pack(fobj, lang, minimal=False):
+def extract_content_db(zf, lang, is_template=False):
+def i18nize_parser(parse_dir, extensions, parse_file, ignores):
+def is_ignored(filepath, ignores):
+def _is_central_object_admin(object_list, bundle):
+def _user_is_admin(object_list, bundle):
+def open_json_or_yml(file_name):
+def get_user_from_request(handler=None, request=None, *args, **kwargs):
+def require_login(handler):
+def require_admin(handler):
+def require_authorized_access_to_student_data(handler):
+def require_authorized_admin(handler):
+def require_superuser(handler):
+def deprecated(func):
+@contextmanager DCNL def inside_transaction():
+def get_resume_recommendations(user, request):
+def get_completed_exercises(user):
+def get_next_recommendations(user, request):
+def get_group_recommendations(user):
+def get_struggling_exercises(user):
+def get_exercise_prereqs(exercises):
+def get_explore_recommendations(user, request):
+def get_exercise_parents_lookup_table():
+def get_exercises_from_topics(topicId_list):
+def get_most_recent_incomplete_item(user):
+def get_most_recent_exercises(user):
+def generate_recommendation_data():
+def get_recommendation_tree(data):
+def get_recommended_exercises(subtopic_id):
+def get_neighbors_at_dist_1(topic_index, subtopic_index, topic):
+def get_subsequent_neighbors(nearest_neighbors, data, curr):
+def set_database(function):
+def parse_data(function):
+@parse_data DCNL @set_database DCNL def get_random_content(kinds=None, limit=1, available=None, **kwargs):
+@set_database DCNL def get_content_item(content_id=None, topic=False, **kwargs):
+@parse_data DCNL @set_database DCNL def get_content_items(ids=None, **kwargs):
+@parse_data DCNL @set_database DCNL def get_topic_nodes(parent=None, ids=None, **kwargs):
+@parse_data DCNL @set_database DCNL def get_topic_update_nodes(parent=None, **kwargs):
+@set_database DCNL def get_topic_node(content_id=None, topic=True, **kwargs):
+@set_database DCNL def get_topic_nodes_with_children(parent=None, **kwargs):
+@parse_data DCNL @set_database DCNL def get_content_parents(ids=None, **kwargs):
+@parse_data DCNL @set_database DCNL def get_leafed_topics(kinds=None, db=None, **kwargs):
+@parse_data DCNL @set_database DCNL def get_topic_contents(kinds=None, topic_id=None, **kwargs):
+@set_database DCNL def get_download_youtube_ids(paths=None, downloaded=False, **kwargs):
+def get_video_from_youtube_id(youtube_id):
+@parse_data DCNL @set_database DCNL def _get_video_from_youtube_id(youtube_id=None, **kwargs):
+@set_database DCNL def search_topic_nodes(kinds=None, query=None, page=1, items_per_page=10, exact=True, **kwargs):
+@set_database DCNL def bulk_insert(items, **kwargs):
+@set_database DCNL def create(item, **kwargs):
+@set_database DCNL def get(item, **kwargs):
+@set_database DCNL def delete_instances(ids, **kwargs):
+@set_database DCNL def get_or_create(item, **kwargs):
+@set_database DCNL def update_item(update=None, path=None, **kwargs):
+def iterator_content_items(ids=None, channel='khan', language='en', **kwargs):
+def iterator_content_items_by_youtube_id(ids=None, channel='khan', language='en', **kwargs):
+@set_database DCNL def create_table(**kwargs):
+def annotate_content_models_by_youtube_id(channel='khan', language='en', youtube_ids=None):
+@set_database DCNL def annotate_content_models(channel='khan', language='en', ids=None, iterator_content_items=iterator_content_items, **kwargs):
+@set_database DCNL def update_parents(parent_mapping=None, **kwargs):
+@set_database DCNL def get_assessment_item_data(assessment_item_id=None, **kwargs):
+def available_content_databases():
+def smart_translate_item_data(item_data):
+@require_authorized_access_to_student_data DCNL @render_to('coachreports/student_view.html') DCNL def student_view(request):
+@require_authorized_access_to_student_data DCNL def student_view_context(request):
+@require_authorized_admin DCNL @facility_from_request DCNL @render_to('coachreports/coach.html') DCNL def coach_reports(request, facility=None, zone_id=None):
+def log_coach_report_view(request):
+def unique_by_id_and_kind_sort(seq):
+def create_some_learner_data():
+def generate_fake_facilities(names=('Wilson DCSP Elementary',)):
+def generate_fake_facility_groups(names=('Class DCSP 4E', 'Class DCSP 5B'), facilities=None):
+def generate_fake_facility_users(nusers=20, facilities=None, facility_groups=None, password='hellothere', is_teacher=False):
+def probability_of(qty, user_settings):
+def generate_fake_exercise_logs(facility_user=None, topics=topics, start_date=(datetime.datetime.now() - datetime.timedelta(days=(30 * 6)))):
+def generate_fake_video_logs(facility_user=None, topics=topics, start_date=(datetime.datetime.now() - datetime.timedelta(days=(30 * 6)))):
+@require_authorized_admin DCNL @render_to_csv(['students'], key_label='user_id', order='stacked') DCNL def facility_management_csv(request, facility, group_id=None, zone_id=None, frequency=None, period_start='', period_end='', user_type=None):
+def _get_date_range(frequency, period_start, period_end):
+def _get_user_usage_data(users, groups=None, period_start=None, period_end=None, group_id=None):
+def check_meta_data(facility):
+def submit_facility_form(context):
+def get_empty_facilities_msg(browser):
+@receiver(post_save, sender=UserLog) DCNL def cull_records(sender, **kwargs):
+@api_handle_error_with_json DCNL def content_recommender(request):
+def VERSION_INFO():
+def user_agent():
+@require_admin DCNL @api_handle_error_with_json DCNL @process_log_from_request DCNL def check_update_progress(request, process_log):
+def _process_log_to_dict(process_log):
+@require_admin DCNL @api_handle_error_with_json DCNL @process_log_from_request DCNL def cancel_update_progress(request, process_log):
+@require_admin DCNL @api_handle_error_with_json DCNL def start_video_download(request):
+@require_admin DCNL @api_handle_error_with_json DCNL def delete_videos(request):
+@require_admin DCNL @api_handle_error_with_json DCNL def delete_language_pack(request):
+def download_video(youtube_id, format='mp4', callback=None):
+def scrape_video(youtube_id, format='mp4', force=False, quiet=False, callback=None):
+@require_authorized_admin DCNL def add_facility_teacher(request):
+@require_authorized_admin DCNL @dynamic_settings DCNL def add_facility_student(request, ds):
+def facility_user_signup(request):
+@require_authorized_admin DCNL @dynamic_settings DCNL def edit_facility_user(request, ds, facility_user_id):
+@facility_required DCNL @render_to('facility/facility_user.html') DCNL def _facility_user(request, facility, title, is_teacher=False, new_user=False, user_being_edited=None):
+def get_accessible_objects_from_logged_in_user(request, facility):
+def facility_from_request(handler=None, request=None, *args, **kwargs):
+def facility_required(handler):
+def get_doc_links():
+def generate_groups_markdown():
+def get_groups_markdown():
+def _get_markdown_renderer():
+def run_convert_to_html(output_dir):
+def assert_np_arrays_not_equal(expected, got):
+def get_functions():
+def get_function_groups():
