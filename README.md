@@ -1,6 +1,7 @@
 # code-docstring-corpus
 
 This repository contains preprocessed Python functions and docstrings for automated code documentation (code2doc) and automated code generation (doc2code) tasks.
+Paper: https://arxiv.org/abs/1707.02275
 
 #### Installation
 The dependencies can be installed using `pip`:
@@ -29,3 +30,6 @@ The data was further sub-tokenized using Sennrich et al. (2016) "Byte Pair Encod
 
 Extraction scripts require AST Unparser ( https://github.com/simonpercivall/astunparse ), NMT tokenization requires the Moses tokenizer scripts ( https://github.com/moses-smt/mosesdecoder )
 
+### Reference
+
+If you use this corpus for a scientific publication, please cite: Miceli Barone, A. V. and Sennrich, R., 2017 "A parallel corpus of Python functions and documentation strings for automated code documentation and code generation" arXiv:1707.02275 https://arxiv.org/abs/1707.02275
