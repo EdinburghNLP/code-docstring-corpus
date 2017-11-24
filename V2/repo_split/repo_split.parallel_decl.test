@@ -1,0 +1,2048 @@
+def test_driver():
+def test_read_data_file():
+def test_init_custom_parameters():
+def test_init_default_scoring():
+def test_init_default_scoring_2():
+def test_invaild_score_warning():
+def test_invaild_dataset_warning():
+def test_invaild_subsample_ratio_warning():
+def test_invaild_mut_rate_plus_xo_rate():
+def test_init_max_time_mins():
+def test_init_n_jobs():
+def test_timeout():
+def test_balanced_accuracy():
+def test_get_params():
+def test_set_params():
+def test_set_params_2():
+def test_TPOTBase():
+def test_conf_dict():
+def test_conf_dict_2():
+def test_conf_dict_3():
+def test_random_ind():
+def test_random_ind_2():
+def test_score():
+def test_score_2():
+def test_score_3():
+def test_sample_weight_func():
+def test_fit_GroupKFold():
+def test_predict():
+def test_predict_2():
+def test_predict_proba():
+def test_predict_proba2():
+def test_warm_start():
+def test_fit():
+def test_fit2():
+def test_fit3():
+def test_evaluated_individuals_():
+def test_evaluate_individuals():
+def test_imputer():
+def test_imputer2():
+def test_imputer3():
+def test_tpot_operator_factory_class():
+def check_export(op, tpot_obj):
+def test_operators():
+def test_export():
+def test_generate_pipeline_code():
+def test_generate_import_code():
+def test_generate_import_code_2():
+def test_PolynomialFeatures_exception():
+def test_mutNodeReplacement():
+def test_export_pipeline():
+def test_export_pipeline_2():
+def test_export_pipeline_3():
+def test_export_pipeline_4():
+def test_operator_export():
+def test_indent():
+def test_operator_type():
+def test_get_by_name():
+def test_gen():
+def test_positive_integer():
+def test_positive_integer_2():
+def test_positive_integer_3():
+def test_float_range():
+def test_float_range_2():
+def test_float_range_3():
+def test_StackingEstimator_1():
+def test_StackingEstimator_2():
+def test_StackingEstimator_3():
+def test_StackingEstimator_4():
+def test_ZeroCount():
+def positive_integer(value):
+def float_range(value):
+def _get_arg_parser():
+def main():
+def source_decode(sourcecode):
+def set_sample_weight(pipeline_steps, sample_weight=None):
+def ARGTypeClassFactory(classname, prange, BaseClass=ARGType):
+def TPOTOperatorClassFactory(opsourse, opdict, BaseClass=Operator, ArgBaseClass=ARGType):
+def balanced_accuracy(y_true, y_pred):
+def get_by_name(opname, operators):
+def export_pipeline(exported_pipeline, operators, pset):
+def expr_to_tree(ind, pset):
+def generate_import_code(pipeline, operators):
+def pipeline_code_wrapper(pipeline_code):
+def generate_pipeline_code(pipeline_tree, operators):
+def generate_export_pipeline_code(pipeline_tree, operators):
+def _indent(text, amount):
+def _pre_test(func):
+def varOr(population, toolbox, lambda_, cxpb, mutpb):
+def eaMuPlusLambda(population, toolbox, mu, lambda_, cxpb, mutpb, ngen, pbar, stats=None, halloffame=None, verbose=0, max_time_mins=None):
+def cxOnePoint(ind1, ind2):
+def mutNodeReplacement(individual, pset):
+def regions():
+def get_cur_file_size(fp, position_to_eof=False):
+def check_lowercase_bucketname(n):
+def bucket_lister(bucket, prefix='', delimiter='', marker='', headers=None, encoding_type=None):
+def versioned_bucket_lister(bucket, prefix='', delimiter='', key_marker='', version_id_marker='', headers=None, encoding_type=None):
+def multipart_upload_lister(bucket, key_marker='', upload_id_marker='', headers=None, encoding_type=None):
+def part_lister(mpupload, part_number_marker=None):
+def regions():
+def versioned_bucket_lister(bucket, prefix='', delimiter='', marker='', generation_marker='', headers=None):
+def regions():
+def regions():
+def regions():
+def regions():
+def regions():
+def canonical_string(method, path, headers, expires=None, provider=None):
+def retry_url(url, retry_on_404=True, num_retries=10, timeout=None):
+def _build_instance_metadata_url(url, version, path):
+def get_instance_metadata(version='latest', url='http://169.254.169.254', data='meta-data/', timeout=None, num_retries=5):
+def get_instance_identity(version='latest', url='http://169.254.169.254', timeout=None, num_retries=5):
+@contextmanager DCNL def setlocale(name):
+def update_dme(username, password, dme_id, ip_address):
+def fetch_file(uri, file=None, username=None, password=None):
+def pythonize_name(name):
+def write_mime_multipart(content, compress=False, deftype='text/plain', delimiter=':'):
+def guess_mime_type(content, deftype):
+def compute_md5(fp, buf_size=8192, size=None):
+def find_matching_headers(name, headers):
+def merge_headers_by_name(name, headers):
+def host_is_ipv6(hostname):
+def parse_host(hostname):
+def regions():
+def regions(**kw_params):
+def set_default_credentials(aws_access_key_id, aws_secret_access_key):
+def regions():
+def connect_to_region(region_name, **kw_params):
+def connect_sqs(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_s3(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_gs(gs_access_key_id=None, gs_secret_access_key=None, **kwargs):
+def connect_ec2(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_elb(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_autoscale(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_cloudwatch(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_sdb(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_fps(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_mturk(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_cloudfront(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_vpc(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_rds(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_rds2(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_emr(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_sns(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_iam(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_route53(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_cloudformation(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_euca(host=None, aws_access_key_id=None, aws_secret_access_key=None, port=8773, path='/services/Eucalyptus', is_secure=False, **kwargs):
+def connect_glacier(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_ec2_endpoint(url, aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_walrus(host=None, aws_access_key_id=None, aws_secret_access_key=None, port=8773, path='/services/Walrus', is_secure=False, **kwargs):
+def connect_ses(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_sts(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_ia(ia_access_key_id=None, ia_secret_access_key=None, is_secure=False, **kwargs):
+def connect_dynamodb(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_swf(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_cloudsearch(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_cloudsearch2(aws_access_key_id=None, aws_secret_access_key=None, sign_request=False, **kwargs):
+def connect_cloudsearchdomain(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_beanstalk(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_elastictranscoder(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_redshift(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_support(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_cloudtrail(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_directconnect(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_kinesis(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_logs(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_route53domains(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_cognito_identity(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_cognito_sync(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_kms(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_awslambda(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_codedeploy(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_configservice(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_cloudhsm(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_ec2containerservice(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def connect_machinelearning(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def storage_uri(uri_str, default_scheme='file', debug=0, validate=True, bucket_storage_uri_class=BucketStorageUri, suppress_consec_slashes=True, is_latest=False):
+def storage_uri_for_key(key):
+def fib(cv=1, lv=0):
+def get_manager(cls):
+def regions():
+def connect_to_region(region_name, **kw_params):
+def GetValidHostsForCert(cert):
+def ValidateCertificateHostname(cert, hostname):
+def regions():
+def regions():
+def connect_to_region(region_name, **kw_params):
+def regions(**kw_params):
+def connect_to_region(region_name, **kw_params):
+def get_region(region_name, **kw_params):
+def regions():
+def connect_to_region(region_name, **kw_params):
+def regions():
+def connect_to_region(region_name, **kw_params):
+def regions():
+def regions():
+def regions():
+def connect_to_region(region_name, **kw_params):
+def get_auth_handler(host, config, provider, requested_capability=None):
+def regions():
+def connect_to_region(region_name, **kw_params):
+def regions():
+def regions():
+def regions():
+def connect_to_region(region_name, **kw_params):
+def regions():
+def regions():
+def regions():
+def regions():
+def regions():
+def connect_to_region(region_name, **kw_params):
+def regions():
+def connect_to_region(region_name, **kw_params):
+def load_endpoint_json(path):
+def _load_json_file(path):
+def merge_endpoints(defaults, additions):
+def load_regions():
+def _load_builtin_endpoints(_cache=_endpoints_cache):
+def get_regions(service_name, region_cls=None, connection_cls=None):
+def connect(service_name, region_name, region_cls=None, connection_cls=None, **kw_params):
+def _get_region(service_name, region_name, region_cls=None, connection_cls=None):
+def _get_region_with_heuristics(service_name, region_name, region_cls=None, connection_cls=None):
+def regions():
+def connect_to_region(region_name, **kw_params):
+def start(server):
+def sshclient_from_instance(instance, ssh_key_file, host_key_file='~/.ssh/known_hosts', user_name='root', ssh_pwd=None):
+def regions():
+def minimum_part_size(size_in_bytes, default_part_size=DEFAULT_PART_SIZE):
+def tree_hash(fo):
+def compute_hashes_from_fileobj(fileobj, chunk_size=(1024 * 1024)):
+def tree_hash_from_str(str_as_bytes):
+def regions():
+def resume_file_upload(vault, upload_id, part_size, fobj, part_hash_map, chunk_size=_ONE_MEGABYTE):
+def regions():
+def regions():
+def regions():
+def regions():
+def regions():
+def regions(**kw_params):
+def connect_to_region(region_name, **kw_params):
+def regions():
+def regions():
+def regions():
+def regions():
+def regions():
+def regions():
+def connect_to_region(region_name, **kw_params):
+def regions():
+def serialize_num(val):
+def get_dynamodb_type(val, use_boolean=True):
+def dynamize_value(val):
+def item_object_hook(dct):
+def _add_doc(func, doc):
+def _import_module(name):
+def add_move(move):
+def remove_move(name):
+def with_metaclass(meta, *bases):
+def add_metaclass(metaclass):
+def python_2_unicode_compatible(klass):
+def spawn(function, *args, **kwargs):
+def test_close_connections():
+def test_reuse_connections():
+def retry(ExceptionToCheck, tries=4, delay=3, backoff=2, logger=None):
+def fake_loads_value_error(content, *args, **kwargs):
+def fake_loads_json_error(content, *args, **kwargs):
+def _yield_all_region_tests(region, expected_signature_version='hmac-v4-s3', dns_suffix='.amazonaws.com'):
+def fake_loads_value_error(content, *args, **kwargs):
+def fake_loads_json_error(content, *args, **kwargs):
+def cleanup():
+def has_permission(permission, context, request):
+def authenticated_userid(request):
+def unauthenticated_userid(request):
+def effective_principals(request):
+def remember(request, userid=_marker, **kw):
+def forget(request):
+def principals_allowed_by_permission(context, permission):
+def view_execution_permitted(context, request, name=''):
+def get_current_request():
+def get_current_registry(context=None):
+def render_view_to_response(context, request, name='', secure=True):
+def render_view_to_iterable(context, request, name='', secure=True):
+def render_view(context, request, name='', secure=True):
+def exception_response(status_code, **kw):
+def _get_response_factory(registry):
+def asset_spec_from_abspath(abspath, package):
+def get_root(app, request=None):
+def prepare(request=None, registry=None):
+def _make_request(path, registry=None):
+def strings_differ(string1, string2, compare_digest=compare_digest):
+def object_description(object):
+def viewdefaults(wrapped):
+def action_method(wrapped):
+def get_callable_name(name):
+@contextlib.contextmanager DCNL def hide_attrs(obj, *attrs):
+def is_same_domain(host, pattern):
+def package_name(pkg_or_module):
+def package_of(pkg_or_module):
+def route_view(request):
+def global_view(request):
+def global2_view(request):
+def route2_view(request):
+def exception_view(request):
+def exception2_view(request):
+def erroneous_view(request):
+def erroneous_sub_view(request):
+def rdf_view(request):
+def juri_view(request):
+def fixture_view(context, request):
+def erroneous_view(context, request):
+def exception_view(context, request):
+def protected_view(context, request):
+@view_config(for_=INothing) DCNL @wsgiapp DCNL def wsgiapptest(environ, start_response):
+def default_locale_negotiator(request):
+def negotiate_locale_name(request):
+def get_locale_name(request):
+def make_localizer(current_locale_name, translation_directories):
+def get_localizer(request):
+def urlencode(query, doseq=True, quote_via=quote_plus):
+def find_root(resource):
+def find_resource(resource, path):
+def find_interface(resource, class_or_interface):
+def resource_path(resource, *elements):
+def traverse(resource, path):
+def resource_path_tuple(resource, *elements):
+def _resource_path_list(resource, *elements):
+def virtual_root(resource, request):
+def traversal_path(path):
+@lru_cache(1000) DCNL def traversal_path_info(path):
+def resolveConflicts(actions, state=None):
+def normalize_actions(actions):
+def Settings(d=None, _environ_=os.environ, **kw):
+def asbool(s):
+def aslist(value, flatten=True):
+def manage_accessed(wrapped):
+def manage_changed(wrapped):
+def signed_serialize(data, secret):
+def signed_deserialize(serialized, secret, hmac=hmac):
+def BaseCookieSessionFactory(serializer, cookie_name='session', max_age=None, path='/', domain=None, secure=False, httponly=False, timeout=1200, reissue_time=0, set_on_exception=True):
+def UnencryptedCookieSessionFactoryConfig(secret, timeout=1200, cookie_name='session', cookie_max_age=None, cookie_path='/', cookie_domain=None, cookie_secure=False, cookie_httponly=False, cookie_on_exception=True, signed_serialize=signed_serialize, signed_deserialize=signed_deserialize):
+def SignedCookieSessionFactory(secret, cookie_name='session', max_age=None, path='/', domain=None, secure=False, httponly=False, set_on_exception=True, timeout=1200, reissue_time=0, hashalg='sha512', salt='pyramid.session.', serializer=None):
+def setUp(registry=None, request=None, hook_zca=True, autocommit=True, settings=None, package=None):
+def tearDown(unhook_zca=True):
+def cleanUp(*arg, **kw):
+@contextmanager DCNL def testConfig(registry=None, request=None, hook_zca=True, autocommit=True, settings=None):
+def parse_vars(args):
+def get_config_loader(config_uri):
+def cherrypy_server_runner(app, global_conf=None, host='127.0.0.1', port=None, ssl_pem=None, protocol_version=None, numthreads=None, server_name=None, max=None, request_queue_size=None, timeout=None):
+def inside(resource1, resource2):
+def lineage(resource):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def copy_dir(source, dest, vars, verbosity, simulate, indent=0, sub_vars=True, interactive=False, overwrite=True, template_renderer=None, out_=sys.stdout):
+def should_skip_file(name):
+def skip_template(condition=True, *args):
+def main(global_config, **settings):
+def wsgiapp(wrapped):
+def wsgiapp2(wrapped):
+def setup_logging(config_uri, global_conf=None):
+def get_app(config_uri, name=None, options=None):
+def get_appsettings(config_uri, name=None, options=None):
+def bootstrap(config_uri, request=None, options=None):
+def render(renderer_name, value, request=None, package=None):
+def render_to_response(renderer_name, value, request=None, package=None, response=None):
+def get_renderer(renderer_name, package=None):
+def parse_ticket(secret, ticket, ip, hashalg='md5'):
+def extract_http_basic_credentials(request):
+def get_csrf_token(request):
+def new_csrf_token(request):
+def check_csrf_token(request, token='csrf_token', header='X-CSRF-Token', raises=True):
+def check_csrf_origin(request, trusted_origins=None, raises=True):
+def excview_tween_factory(handler, registry):
+def parse_url_overrides(request, kw):
+def route_url(route_name, request, *elements, **kw):
+def route_path(route_name, request, *elements, **kw):
+def resource_url(resource, request, *elements, **kw):
+def static_url(path, request, **kw):
+def static_path(path, request, **kw):
+def current_route_url(request, *elements, **kw):
+def current_route_path(request, *elements, **kw):
+def undefer(v):
+def text_(s, encoding='latin-1', errors='strict'):
+def bytes_(s, encoding='latin-1', errors='strict'):
+def is_unbound_method(fn):
+def apply_request_extensions(request, extensions=None):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def get_tm_session(session_factory, transaction_manager):
+def includeme(config):
+def main(global_config, **settings):
+def get_tm_session(session_factory, transaction_manager):
+def includeme(config):
+def main(global_config, **settings):
+def get_tm_session(session_factory, transaction_manager):
+def includeme(config):
+def main(global_config, **settings):
+def get_tm_session(session_factory, transaction_manager):
+def includeme(config):
+def main(global_config, **settings):
+def get_tm_session(session_factory, transaction_manager):
+def includeme(config):
+def main(global_config, **settings):
+def get_tm_session(session_factory, transaction_manager):
+def includeme(config):
+def main(global_config, **settings):
+def get_tm_session(session_factory, transaction_manager):
+def includeme(config):
+def main(global_config, **settings):
+def app_role(role, rawtext, text, lineno, inliner, options={}, content=[]):
+def resig(app, what, name, obj, options, signature, return_annotation):
+def main(global_config, **settings):
+def get_tm_session(session_factory, transaction_manager):
+def includeme(config):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def main(global_config, **settings):
+def _get_job_dict_from_job_model(model):
+def get_data_for_recent_jobs(recency_msec=DEFAULT_RECENCY_MSEC):
+def get_data_for_unfinished_jobs():
+def get_job_output(job_id):
+def get_continuous_computations_info(cc_classes):
+def get_stuck_jobs(recency_msecs):
+def create_login_url(slug):
+def create_logout_url(slug):
+def get_current_user():
+def is_current_user_super_admin():
+def get_user_id_from_email(email):
+def get_user_id(user):
+def get_user_email(user):
+def defer(fn, *args, **kwargs):
+def defer_to_events_queue(fn, *args, **kwargs):
+def enqueue_task(url, params, countdown):
+def send_mail(sender_email, recipient_email, subject, plaintext_body, html_body, bcc_admin=False, reply_to_id=None):
+def send_bulk_mail(sender_email, recipient_emails, subject, plaintext_body, html_body):
+def send_mail(sender_email, recipient_email, subject, plaintext_body, html_body, bcc_admin=False, reply_to_id=None):
+def send_bulk_mail(sender_email, recipient_emails, subject, plaintext_body, html_body):
+def get_multi(keys):
+def set_multi(key_value_mapping):
+def delete(key):
+def delete_multi(keys):
+def get_application_id():
+def add_documents_to_index(documents, index, retries=DEFAULT_NUM_RETRIES):
+def _validate_list(key, value):
+def delete_documents_from_index(doc_ids, index, retries=DEFAULT_NUM_RETRIES):
+def clear_index(index_name):
+def search(query_string, index, cursor=None, limit=feconf.SEARCH_RESULTS_PAGE_SIZE, sort='', ids_only=False, retries=DEFAULT_NUM_RETRIES):
+def get_document_from_index(doc_id, index):
+def fetch_multiple_entities_by_ids_and_models(ids_and_models):
+def run_in_transaction(fn, *args, **kwargs):
+def toplevel_wrapper(*args, **kwargs):
+def create_test_suites(test_target=None):
+def main():
+def measure_runtime(func):
+def _clear_login_cookies(response_headers):
+def get_matching_activity_dicts(query_string, search_cursor):
+def require_maintenance_mode(handler):
+def assign_roles(changed_user_roles):
+def _require_valid_version(version_from_payload, collection_version):
+def generate_signature(secret, message):
+def validate_job_result_message_dict(message):
+def verify_signature(message, vm_id, received_signature):
+def get_value_generators_js():
+def _require_valid_version(version_from_payload, exploration_version):
+def set_property(committer_id, name, value):
+def revert_property(committer_id, name):
+def get_featured_activity_references():
+def update_featured_activity_references(featured_activity_references):
+def remove_featured_activity(activity_type, activity_id):
+def split_by_type(activity_references):
+def _create_models_for_thread_and_first_message(exploration_id, state_name, original_author_id, subject, text, has_suggestion):
+def create_thread(exploration_id, state_name, original_author_id, subject, text):
+def create_message(exploration_id, thread_id, author_id, updated_status, updated_subject, text, received_via_email=False):
+def update_messages_read_by_the_user(user_id, exploration_id, thread_id, message_ids):
+def add_message_id_to_read_by_list(exploration_id, thread_id, user_id, message_id):
+def _get_message_from_model(message_model):
+def get_messages(exploration_id, thread_id):
+def get_message(exploration_id, thread_id, message_id):
+def get_next_page_of_all_feedback_messages(page_size=feconf.FEEDBACK_TAB_PAGE_SIZE, urlsafe_start_cursor=None):
+def get_thread_analytics_multi(exploration_ids):
+def get_thread_analytics(exploration_id):
+def get_total_open_threads(feedback_thread_analytics):
+def create_suggestion(exploration_id, author_id, exploration_version, state_name, description, suggestion_content):
+def _get_suggestion_from_model(suggestion_model):
+def get_suggestion(exploration_id, thread_id):
+def _get_thread_from_model(thread_model):
+def get_thread_summaries(user_id, full_thread_ids):
+def get_most_recent_messages(exp_id):
+def get_threads(exploration_id):
+def get_thread(exploration_id, thread_id):
+def get_open_threads(exploration_id, has_suggestion):
+def get_closed_threads(exploration_id, has_suggestion):
+def get_all_threads(exploration_id, has_suggestion):
+def get_all_thread_participants(exploration_id, thread_id):
+def enqueue_feedback_message_batch_email_task(user_id):
+def enqueue_feedback_message_instant_email_task(user_id, reference):
+def _enqueue_feedback_thread_status_change_email_task(user_id, reference, old_status, new_status):
+def _enqueue_suggestion_email_task(exploration_id, thread_id):
+def get_feedback_message_references(user_id):
+def _add_feedback_message_reference(user_id, reference):
+def update_feedback_email_retries(user_id):
+def pop_feedback_message_references(user_id, num_references_to_pop):
+def clear_feedback_message_references(user_id, exploration_id, thread_id):
+def _get_all_recipient_ids(exploration_id, thread_id, author_id):
+def _send_batch_emails(recipient_list, feedback_message_reference, exploration_id, has_suggestion):
+def _send_instant_emails(recipient_list, feedback_message_reference, exploration_id, has_suggestion):
+def _send_feedback_thread_status_change_emails(recipient_list, feedback_message_reference, old_status, new_status, exploration_id, has_suggestion):
+def _ensure_each_recipient_has_reply_to_id(user_ids, exploration_id, thread_id):
+def _add_message_to_email_buffer(author_id, exploration_id, thread_id, message_id, message_length, old_status, new_status):
+def get_human_readable_contributors_summary(contributors_summary):
+def get_learner_collection_dict_by_id(collection_id, user_id, strict=True, allow_invalid_explorations=False, version=None):
+def get_displayable_collection_summary_dicts_matching_ids(collection_ids):
+def get_exp_metadata_dicts_matching_query(query_string, search_cursor, user_id):
+def get_exploration_metadata_dicts(exploration_ids, editor_user_id=None):
+def get_displayable_exp_summary_dicts_matching_ids(exploration_ids, editor_user_id=None):
+def get_displayable_exp_summary_dicts(exploration_summaries):
+def _get_displayable_collection_summary_dicts(collection_summaries):
+def get_library_groups(language_codes):
+def require_activities_to_be_public(activity_references):
+def get_featured_activity_summary_dicts(language_codes):
+def get_top_rated_exploration_summary_dicts(language_codes, limit):
+def get_recently_published_exp_summary_dicts(limit):
+def classify(state, answer):
+def classify_string_classifier_rule(state, normalized_answer):
+def handle_trainable_states(exploration, state_names):
+def handle_non_retrainable_states(exploration, state_names, new_to_old_state_names):
+def get_classifier_from_model(classifier_data_model):
+def get_classifier_by_id(classifier_id):
+def create_classifier(job_id, classifier_data):
+def delete_classifier(classifier_id):
+def get_classifier_training_job_from_model(classifier_training_job_model):
+def get_classifier_training_job_by_id(job_id):
+def _update_classifier_training_job_status(job_id, status):
+def mark_training_job_complete(job_id):
+def delete_classifier_training_job(job_id):
+def get_classifier_training_jobs(exp_id, exp_version, state_names):
+def _require_sender_id_is_valid(intent, sender_id):
+def _send_email(recipient_id, sender_id, intent, email_subject, email_html_body, sender_email, bcc_admin=False, sender_name=None, reply_to_id=None):
+def _send_bulk_mail(recipient_ids, sender_id, intent, email_subject, email_html_body, sender_email, sender_name, instance_id=None):
+def send_mail_to_admin(email_subject, email_body):
+def send_post_signup_email(user_id):
+def require_valid_intent(intent):
+def _get_email_config(intent):
+def get_draft_moderator_action_email(intent):
+def require_moderator_email_prereqs_are_satisfied():
+def send_moderator_action_email(sender_id, recipient_id, intent, exploration_title, email_body):
+def send_role_notification_email(inviter_id, recipient_id, recipient_role, exploration_id, exploration_title):
+def send_emails_to_subscribers(creator_id, exploration_id, exploration_title):
+def send_feedback_message_email(recipient_id, feedback_messages):
+def can_users_receive_thread_email(recipient_ids, exploration_id, has_suggestion):
+def send_suggestion_email(exploration_title, exploration_id, author_id, recipient_list):
+def send_instant_feedback_message_email(recipient_id, sender_id, message, email_subject, exploration_title, exploration_id, thread_title, reply_to_id=None):
+def send_flag_exploration_email(exploration_title, exploration_id, reporter_id, report_text):
+def send_query_completion_email(recipient_id, query_id):
+def send_query_failure_email(recipient_id, query_id, query_params):
+def subscribe_to_thread(user_id, feedback_thread_id):
+def subscribe_to_exploration(user_id, exploration_id):
+def subscribe_to_creator(user_id, creator_id):
+def unsubscribe_from_creator(user_id, creator_id):
+def get_all_threads_subscribed_to(user_id):
+def get_all_creators_subscribed_to(user_id):
+def get_all_subscribers_of_creator(user_id):
+def get_exploration_ids_subscribed_to(user_id):
+def subscribe_to_collection(user_id, collection_id):
+def get_collection_ids_subscribed_to(user_id):
+def get_last_seen_notifications_msec(user_id):
+def record_user_has_seen_notifications(user_id, last_seen_msecs):
+def is_username_taken(username):
+def get_email_from_user_id(user_id):
+def get_email_from_username(username):
+def get_user_id_from_username(username):
+def get_user_settings_from_username(username):
+def get_users_settings(user_ids):
+def generate_initial_profile_picture(user_id):
+def get_gravatar_url(email):
+def fetch_gravatar(email):
+def get_profile_pictures_by_user_ids(user_ids):
+def get_user_settings(user_id, strict=False):
+def get_user_role_from_id(user_id):
+def get_usernames_by_role(role):
+def _save_user_settings(user_settings):
+def is_user_registered(user_id):
+def has_ever_registered(user_id):
+def has_fully_registered(user_id):
+def create_new_user(user_id, email):
+def get_username(user_id):
+def get_usernames(user_ids):
+def set_username(user_id, new_username):
+def record_agreement_to_terms(user_id):
+def update_profile_picture_data_url(user_id, profile_picture_data_url):
+def update_user_bio(user_id, user_bio):
+def update_user_default_dashboard(user_id, default_dashboard):
+def update_subject_interests(user_id, subject_interests):
+def _update_first_contribution_msec(user_id, first_contribution_msec):
+def update_first_contribution_msec_if_not_set(user_id, first_contribution_msec):
+def update_preferred_language_codes(user_id, preferred_language_codes):
+def update_preferred_site_language_code(user_id, preferred_site_language_code):
+def update_user_role(user_id, role):
+def get_human_readable_user_ids(user_ids):
+def record_user_started_state_editor_tutorial(user_id):
+def record_user_logged_in(user_id):
+def record_user_edited_an_exploration(user_id):
+def record_user_created_an_exploration(user_id):
+def update_email_preferences(user_id, can_receive_email_updates, can_receive_editor_role_email, can_receive_feedback_email, can_receive_subscription_email):
+def get_email_preferences(user_id):
+def get_users_email_preferences(user_ids):
+def set_email_preferences_for_exploration(user_id, exploration_id, mute_feedback_notifications=None, mute_suggestion_notifications=None):
+def get_email_preferences_for_exploration(user_id, exploration_id):
+def get_users_email_preferences_for_exploration(user_ids, exploration_id):
+def get_user_contributions(user_id, strict=False):
+def create_user_contributions(user_id, created_exploration_ids, edited_exploration_ids):
+def update_user_contributions(user_id, created_exploration_ids, edited_exploration_ids):
+def add_created_exploration_id(user_id, exploration_id):
+def add_edited_exploration_id(user_id, exploration_id):
+def _save_user_contributions(user_contributions):
+def _migrate_dashboard_stats_to_latest_schema(versioned_dashboard_stats):
+def get_current_date_as_string():
+def parse_date_from_string(datetime_str):
+def get_user_impact_score(user_id):
+def get_weekly_dashboard_stats(user_id):
+def get_last_week_dashboard_stats(user_id):
+def update_dashboard_stats_log(user_id):
+def update_admin_ids(committer_id, admin_usernames):
+def update_moderator_ids(committer_id, moderator_usernames):
+def _get_change_list(state_name, property_name, new_value):
+def _get_full_customization_args(customization_args, ca_specs):
+def _validate_customization_args_and_values(item_name, item_type, customization_args, ca_specs_to_validate_against):
+def open_access(handler):
+def can_play_exploration(handler):
+def can_play_collection(handler):
+def can_download_exploration(handler):
+def can_view_exploration_stats(handler):
+def can_edit_collection(handler):
+def can_manage_email_dashboard(handler):
+def can_access_moderator_page(handler):
+def can_send_moderator_emails(handler):
+def can_manage_own_profile(handler):
+def can_access_admin_page(handler):
+def can_upload_exploration(handler):
+def can_create_exploration(handler):
+def can_create_collection(handler):
+def can_access_creator_dashboard(handler):
+def can_comment_on_feedback_thread(handler):
+def can_rate_exploration(handler):
+def can_flag_exploration(handler):
+def can_subscribe_to_users(handler):
+def can_edit_exploration(handler):
+def can_delete_exploration(handler):
+def can_suggest_changes_to_exploration(handler):
+def can_publish_exploration(handler):
+def can_manage_collection_publish_status(handler):
+def can_modify_exploration_roles(handler):
+def can_perform_cron_tasks(handler):
+def can_access_learner_dashboard(handler):
+def require_user_id_else_redirect_to_homepage(handler):
+def _get_node_change_list(exploration_id, property_name, new_value):
+def _get_collection_change_list(property_name, new_value):
+def _get_added_exploration_change_list(exploration_id):
+def _get_deleted_exploration_change_list(exploration_id):
+def get_visualizations_info(exploration_id, state_name):
+def get_versions_for_exploration_stats(exploration_id):
+def get_exploration_stats(exploration_id, exploration_version):
+def record_answer(exploration_id, exploration_version, state_name, interaction_id, submitted_answer):
+def record_answers(exploration_id, exploration_version, state_name, interaction_id, submitted_answer_list):
+def get_state_answers(exploration_id, exploration_version, state_name):
+def get_sample_answers(exploration_id, exploration_version, state_name):
+def get_default_object_values():
+def assign_rating_to_exploration(user_id, exploration_id, new_rating):
+def get_user_specific_rating_for_exploration(user_id, exploration_id):
+def get_when_exploration_rated(user_id, exploration_id):
+def get_overall_ratings_for_exploration(exploration_id):
+def _get_activity_rights_from_model(activity_rights_model, activity_type):
+def _save_activity_rights(committer_id, activity_rights, activity_type, commit_message, commit_cmds):
+def _update_exploration_summary(activity_rights):
+def _update_collection_summary(activity_rights):
+def _update_activity_summary(activity_type, activity_rights):
+def update_activity_first_published_msec(activity_type, activity_id, first_published_msec):
+def create_new_exploration_rights(exploration_id, committer_id):
+def get_exploration_rights(exploration_id, strict=True):
+def is_exploration_private(exploration_id):
+def is_exploration_public(exploration_id):
+def is_exploration_cloned(exploration_id):
+def create_new_collection_rights(collection_id, committer_id):
+def get_collection_rights(collection_id, strict=True):
+def get_collection_owner_names(collection_id):
+def is_collection_private(collection_id):
+def is_collection_public(collection_id):
+def _get_activity_rights(activity_type, activity_id):
+def _assign_role(committer_id, assignee_id, new_role, activity_id, activity_type):
+def _release_ownership_of_activity(committer_id, activity_id, activity_type):
+def _change_activity_status(committer_id, activity_id, activity_type, new_status, commit_message):
+def _publish_activity(committer_id, activity_id, activity_type):
+def _unpublish_activity(committer_id, activity_id, activity_type):
+def _publicize_activity(committer_id, activity_id, activity_type):
+def _unpublicize_activity(committer_id, activity_id, activity_type):
+def assign_role_for_exploration(committer_id, exploration_id, assignee_id, new_role):
+def release_ownership_of_exploration(committer_id, exploration_id):
+def set_private_viewability_of_exploration(committer_id, exploration_id, viewable_if_private):
+def publish_exploration(committer_id, exploration_id):
+def unpublish_exploration(committer_id, exploration_id):
+def publicize_exploration(committer_id, exploration_id):
+def unpublicize_exploration(committer_id, exploration_id):
+def assign_role_for_collection(committer_id, collection_id, assignee_id, new_role):
+def release_ownership_of_collection(committer_id, collection_id):
+def publish_collection(committer_id, collection_id):
+def unpublish_collection(committer_id, collection_id):
+def publicize_collection(committer_id, collection_id):
+def unpublicize_collection(committer_id, collection_id):
+def check_can_access_activity(user_id, user_actions, activity_type, activity_rights):
+def check_can_edit_activity(user_id, user_actions, activity_type, activity_rights):
+def check_can_unpublish_collection(user_actions, collection_rights):
+def check_can_delete_exploration(user_id, user_actions, exploration_rights):
+def check_can_modify_exploration_roles(user_id, user_actions, exploration_rights):
+def check_can_release_ownership(user_id, user_actions, exploration_rights):
+def check_can_publish_exploration(user_id, user_actions, exploration_rights):
+def check_can_publicize_exploration(user_actions, exploration_rights):
+def check_can_unpublicize_exploration(user_actions, exploration_rights):
+def check_can_unpublish_exploration(user_actions, exploration_rights):
+def filter_a(name, value):
+def clean(user_submitted_html):
+def strip_html_tags(html):
+def get_rte_components(html_string):
+def enqueue_flag_exploration_email_task(exploration_id, report_text, reporter_id):
+def _migrate_collection_contents_to_latest_schema(versioned_collection_contents):
+def _get_collection_memcache_key(collection_id, version=None):
+def get_collection_from_model(collection_model, run_conversion=True):
+def get_collection_summary_from_model(collection_summary_model):
+def get_collection_by_id(collection_id, strict=True, version=None):
+def get_collection_summary_by_id(collection_id):
+def get_multiple_collections_by_id(collection_ids, strict=True):
+def get_new_collection_id():
+def get_collection_titles_and_categories(collection_ids):
+def get_completed_exploration_ids(user_id, collection_id):
+def get_explorations_completed_in_collections(user_id, collection_ids):
+def get_valid_completed_exploration_ids(user_id, collection):
+def get_next_exploration_ids_to_complete_by_user(user_id, collection_id):
+def record_played_exploration_in_collection_context(user_id, collection_id, exploration_id):
+def _get_collection_summary_dicts_from_models(collection_summary_models):
+def get_collection_summaries_matching_ids(collection_ids):
+def get_collection_ids_matching_query(query_string, cursor=None):
+def apply_change_list(collection_id, change_list):
+def validate_exps_in_collection_are_public(collection):
+def _save_collection(committer_id, collection, commit_message, change_list):
+def _create_collection(committer_id, collection, commit_message, commit_cmds):
+def save_new_collection(committer_id, collection):
+def delete_collection(committer_id, collection_id, force_deletion=False):
+def get_collection_snapshots_metadata(collection_id):
+def publish_collection_and_update_user_profiles(committer_id, collection_id):
+def update_collection(committer_id, collection_id, change_list, commit_message):
+def create_collection_summary(collection_id, contributor_id_to_add):
+def update_collection_summary(collection_id, contributor_id_to_add):
+def compute_summary_of_collection(collection, contributor_id_to_add):
+def compute_collection_contributors_summary(collection_id):
+def save_collection_summary(collection_summary):
+def delete_collection_summary(collection_id):
+def save_new_collection_from_yaml(committer_id, yaml_content, collection_id):
+def delete_demo(collection_id):
+def load_demo(collection_id):
+def get_next_page_of_all_commits(page_size=feconf.COMMIT_LIST_PAGE_SIZE, urlsafe_start_cursor=None):
+def get_next_page_of_all_non_private_commits(page_size=feconf.COMMIT_LIST_PAGE_SIZE, urlsafe_start_cursor=None, max_age=None):
+def _collection_rights_to_search_dict(rights):
+def _should_index(collection):
+def _get_search_rank(collection_id):
+def _collection_to_search_dict(collection):
+def clear_search_index():
+def index_collections_given_ids(collection_ids):
+def patch_collection_search_document(collection_id, update):
+def update_collection_status_in_search(collection_id):
+def delete_documents_from_search_index(collection_ids):
+def search_collections(query, limit, sort=None, cursor=None):
+def _get_completed_activities_from_model(completed_activities_model):
+def _get_incomplete_activities_from_model(incomplete_activities_model):
+def _get_last_playthrough_information(last_playthrough_model):
+def _save_completed_activities(activities_completed):
+def _save_incomplete_activities(incomplete_activities):
+def _save_last_playthrough_information(last_playthrough_information):
+def mark_exploration_as_completed(user_id, exp_id):
+def mark_collection_as_completed(user_id, collection_id):
+def mark_exploration_as_incomplete(user_id, exploration_id, state_name, exploration_version):
+def mark_collection_as_incomplete(user_id, collection_id):
+def add_exp_to_learner_playlist(user_id, exploration_id, position_to_be_inserted=None):
+def add_collection_to_learner_playlist(user_id, collection_id, position_to_be_inserted=None):
+def _remove_activity_ids_from_playlist(user_id, exploration_ids, collection_ids):
+def remove_exp_from_completed_list(user_id, exploration_id):
+def remove_collection_from_completed_list(user_id, collection_id):
+def _remove_activity_ids_from_completed_list(user_id, exploration_ids, collection_ids):
+def remove_exp_from_incomplete_list(user_id, exploration_id):
+def remove_collection_from_incomplete_list(user_id, collection_id):
+def _remove_activity_ids_from_incomplete_list(user_id, exploration_ids=None, collection_ids=None):
+def get_all_completed_exp_ids(user_id):
+def _get_filtered_completed_exp_summaries(exploration_summaries, exploration_ids):
+def get_all_completed_collection_ids(user_id):
+def _get_filtered_completed_collection_summaries(user_id, collection_summaries, collection_ids):
+def get_all_incomplete_exp_ids(user_id):
+def _get_filtered_incomplete_exp_summaries(exploration_summaries, exploration_ids):
+def get_all_incomplete_collection_ids(user_id):
+def _get_filtered_incomplete_collection_summaries(collection_summaries, collection_ids):
+def _get_filtered_exp_playlist_summaries(exploration_summaries, exploration_ids):
+def _get_filtered_collection_playlist_summaries(collection_summaries, collection_ids):
+def get_collection_summary_dicts(collection_summaries):
+def get_activity_progress(user_id):
+def get_learner_playlist_from_model(learner_playlist_model):
+def save_learner_playlist(learner_playlist):
+def mark_exploration_to_be_played_later(user_id, exploration_id, position_to_be_inserted=None):
+def mark_collection_to_be_played_later(user_id, collection_id, position_to_be_inserted=None):
+def remove_exploration_from_learner_playlist(user_id, exploration_id):
+def remove_collection_from_learner_playlist(user_id, collection_id):
+def get_all_exp_ids_in_learner_playlist(user_id):
+def get_all_collection_ids_in_learner_playlist(user_id):
+def send_email_to_qualified_users(query_id, email_subject, email_body, email_intent, max_recipients):
+def _migrate_states_schema(versioned_exploration_states):
+def _get_exploration_memcache_key(exploration_id, version=None):
+def get_exploration_from_model(exploration_model, run_conversion=True):
+def get_exploration_summary_from_model(exp_summary_model):
+def get_exploration_by_id(exploration_id, strict=True, version=None):
+def get_exploration_summary_by_id(exploration_id):
+def get_multiple_explorations_by_id(exp_ids, strict=True):
+def get_new_exploration_id():
+def is_exp_summary_editable(exp_summary, user_id=None):
+def get_exploration_titles_and_categories(exp_ids):
+def _get_exploration_summaries_from_models(exp_summary_models):
+def get_exploration_summaries_matching_ids(exp_ids):
+def get_exploration_ids_matching_query(query_string, cursor=None):
+def get_non_private_exploration_summaries():
+def get_top_rated_exploration_summaries(limit):
+def get_recently_published_exp_summaries(limit):
+def get_all_exploration_summaries():
+def export_to_zip_file(exploration_id, version=None):
+def convert_state_dict_to_yaml(state_dict, width):
+def export_states_to_yaml(exploration_id, version=None, width=80):
+def apply_change_list(exploration_id, change_list):
+def _save_exploration(committer_id, exploration, commit_message, change_list):
+def _create_exploration(committer_id, exploration, commit_message, commit_cmds):
+def save_new_exploration(committer_id, exploration):
+def delete_exploration(committer_id, exploration_id, force_deletion=False):
+def get_exploration_snapshots_metadata(exploration_id, allow_deleted=False):
+def _get_last_updated_by_human_ms(exp_id):
+def publish_exploration_and_update_user_profiles(committer_id, exp_id):
+def update_exploration(committer_id, exploration_id, change_list, commit_message, is_suggestion=False):
+def create_exploration_summary(exploration_id, contributor_id_to_add):
+def update_exploration_summary(exploration_id, contributor_id_to_add):
+def compute_summary_of_exploration(exploration, contributor_id_to_add):
+def compute_exploration_contributors_summary(exploration_id):
+def save_exploration_summary(exp_summary):
+def delete_exploration_summary(exploration_id):
+def revert_exploration(committer_id, exploration_id, current_version, revert_to_version):
+def get_demo_exploration_components(demo_path):
+def save_new_exploration_from_yaml_and_assets(committer_id, yaml_content, exploration_id, assets_list):
+def delete_demo(exploration_id):
+def load_demo(exploration_id):
+def get_next_page_of_all_commits(page_size=feconf.COMMIT_LIST_PAGE_SIZE, urlsafe_start_cursor=None):
+def get_next_page_of_all_non_private_commits(page_size=feconf.COMMIT_LIST_PAGE_SIZE, urlsafe_start_cursor=None, max_age=None):
+def _exp_rights_to_search_dict(rights):
+def _should_index(exp):
+def get_number_of_ratings(ratings):
+def get_average_rating(ratings):
+def get_scaled_average_rating(ratings):
+def get_search_rank_from_exp_summary(exp_summary):
+def get_search_rank(exp_id):
+def _exp_to_search_dict(exp):
+def clear_search_index():
+def index_explorations_given_ids(exp_ids):
+def patch_exploration_search_document(exp_id, update):
+def update_exploration_status_in_search(exp_id):
+def delete_documents_from_search_index(exploration_ids):
+def search_explorations(query, limit, sort=None, cursor=None):
+def _is_suggestion_valid(thread_id, exploration_id):
+def _is_suggestion_handled(thread_id, exploration_id):
+def _create_change_list_from_suggestion(suggestion, old_content, audio_update_required):
+def _get_commit_message_for_suggestion(suggestion_author_username, commit_message):
+def accept_suggestion(editor_id, thread_id, exploration_id, commit_message, audio_update_required):
+def reject_suggestion(editor_id, thread_id, exploration_id):
+def is_version_of_draft_valid(exp_id, version):
+def create_or_update_draft(exp_id, user_id, change_list, exp_version, current_datetime):
+def get_exp_with_draft_applied(exp_id, user_id):
+def discard_draft(exp_id, user_id):
+def get_topic_similarities_dict():
+def save_topic_similarities(topic_similarities):
+def _create_default_topic_similarities():
+def get_topic_similarity(topic_1, topic_2):
+def get_topic_similarities_as_csv():
+def _validate_topic_similarities(data):
+def update_topic_similarities(data):
+def get_item_similarity(reference_exp_category, reference_exp_language_code, reference_exp_owner_ids, compared_exp_category, compared_exp_language_code, compared_exp_last_updated, compared_exp_owner_ids, compared_exp_status):
+def set_recommendations(exp_id, new_recommendations):
+def get_exploration_recommendations(exp_id):
+def get_all_actions(role):
+def get_role_graph_data():
+def log_role_query(user_id, intent, role=None, username=None):
+def get_max_priority_role(role_list):
+def get_role_changes(old_config_properties, new_config_properties):
+def register_module():
+def get_file_contents(filepath, raw_bytes=False, mode='r'):
+def get_exploration_components_from_dir(dir_path):
+def get_exploration_components_from_zip(zip_file_contents):
+def get_comma_sep_string_from_list(items):
+def to_ascii(input_string):
+def yaml_from_dict(dictionary, width=80):
+def dict_from_yaml(yaml_str):
+def recursively_remove_key(obj, key_to_remove):
+def get_random_int(upper_bound):
+def get_random_choice(alist):
+def convert_png_binary_to_data_url(content):
+def convert_png_to_data_url(filepath):
+def set_url_query_parameter(url, param_name, param_value):
+def convert_to_hash(input_string, max_length):
+def get_time_in_millisecs(datetime_obj):
+def get_current_time_in_millisecs():
+def get_human_readable_time_string(time_msec):
+def are_datetimes_close(later_datetime, earlier_datetime):
+def vfs_construct_path(base_path, *path_components):
+def vfs_normpath(path):
+def require_valid_name(name, name_type, allow_empty=False):
+def capitalize_string(input_string):
+def _get_short_language_description(full_language_description):
+def unescape_encoded_uri_component(escaped_string):
+def get_asset_dir_prefix():
+def get_template_dir_prefix():
+def convert_to_str(string_to_convert):
+def register_module():
+def register_module():
+def get_redirect_route(regex_route, handler, defaults=None):
+def webapp_add_wsgi_middleware(app):
+def _is_filename_excluded_for_bad_patterns_check(pattern, filename):
+def _get_changed_filenames():
+def _get_glob_patterns_excluded_from_eslint(eslintignore_path):
+def _get_all_files_in_directory(dir_path, excluded_glob_patterns):
+def _lint_js_files(node_path, eslint_path, files_to_lint, stdout, result):
+def _lint_py_files(config_pylint, files_to_lint, result):
+def _get_all_files():
+def _pre_commit_linter(all_files):
+def _check_newline_character(all_files):
+def _check_bad_patterns(all_files):
+def log(message, show_time=False):
+def run_shell_cmd(exe, stdout=subprocess.PIPE, stderr=subprocess.PIPE):
+def _check_all_tasks(tasks):
+def _execute_tasks(tasks, batch_size=24):
+def _get_all_test_targets(test_path=None):
+def main():
+def _run_cmd(cmd_str):
+def _gather_logs(start, stop='HEAD'):
+def _extract_issues(logs):
+def _check_versions(current_release):
+def _git_diff_names_only(left, right='HEAD'):
+def _check_setup_scripts(base_release_tag, changed_only=True):
+def _check_storage_models(current_release):
+def main():
+def ensure_directory_exists(d):
+def require_cwd_to_be_oppia(allow_deploy_dir=False):
+def _minify(source_path, target_path):
+def _insert_hash(filepath, file_hash):
+def ensure_directory_exists(filepath):
+def process_html(source_path, target_path, file_hashes):
+def process_css(source_path, target_path):
+def process_js(source_path, target_path):
+def build_minified_third_party_libs(output_directory):
+def hash_should_be_inserted(filepath):
+def copy_files_source_to_target(source, target, file_hashes):
+def is_file_hash_provided_to_frontend(filepath):
+def generate_md5_hash(filepath):
+def get_file_hashes(directory_path):
+def filter_hashes(file_hashes):
+def get_hashes_json_file_contents(file_hashes):
+def save_hashes_as_json(target_filepath, file_hashes):
+def build_files(source, target, file_hashes):
+def generate_build_directory():
+def download_files(source_url_root, target_dir, source_filenames):
+def download_and_unzip_files(source_url, target_parent_dir, zip_root_name, target_root_name):
+def download_and_untar_files(source_url, target_parent_dir, tar_root_name, target_root_name):
+def get_file_contents(filepath, mode='r'):
+def return_json(filepath):
+def test_manifest_syntax(dependency_type, dependency_dict):
+def validate_manifest(filepath):
+def download_manifest_files(filepath):
+def preprocess_release():
+def get_unique_id():
+def preprocess_release():
+def _start_subprocess_for_result(cmd):
+def _git_diff_name_status(left, right, diff_filter=''):
+def _compare_to_remote(remote, local_branch, remote_branch=None):
+def _extract_files_to_lint(file_diffs):
+def _collect_files_being_pushed(ref_list, remote):
+def _has_uncommitted_files():
+def normalize_against_schema(obj, schema, apply_custom_validators=True):
+def _get_hashable_value(value):
+def _count_answers(answer_dicts_list):
+def _calculate_top_answer_frequencies(state_answers_dict, num_results):
+def _validate_ui_config(obj_type, ui_config):
+def _validate_validator(obj_type, validator):
+def _validate_dict_keys(dict_to_check, required_keys, optional_keys):
+def validate_schema(schema):
+def _js_string_filter(value):
+def _log2_floor_filter(value):
+def parse_string(string, params, autoescape=True):
+def evaluate_object(obj, params):
+def interpolate_cache_slug(string):
+def memoize(obj):
+def hashable(a):
+def assign_step_methods(model, step=None, methods=STEP_METHODS, step_kwargs=None):
+def sample(draws=500, step=None, init='auto', n_init=200000, start=None, trace=None, chain=0, njobs=1, tune=500, nuts_kwargs=None, step_kwargs=None, progressbar=True, model=None, random_seed=(-1), live_plot=False, discard_tuned_samples=True, live_plot_kwargs=None, **kwargs):
+def iter_sample(draws, step, start=None, trace=None, chain=0, tune=None, model=None, random_seed=(-1)):
+def stop_tuning(step):
+def sample_ppc(trace, samples=None, model=None, vars=None, size=None, random_seed=None, progressbar=True):
+def sample_ppc_w(traces, samples=None, models=None, size=None, weights=None, random_seed=None, progressbar=True):
+def init_nuts(init='auto', njobs=1, n_init=500000, model=None, random_seed=(-1), progressbar=True, **kwargs):
+def load(name, model=None):
+def _get_table_list(cursor):
+def _get_chain_list(cursor, varname):
+def _rows_to_ndarray(cursor):
+def load(name, model=None):
+def merge_traces(mtraces):
+def _squeeze_cat(results, combine, squeeze):
+def load(name, model=None):
+def dump(name, trace, chains=None):
+def paripool(function, work, nprocs=None, chunksize=1):
+def trace_to_dataframe(trace, chains=None, varnames=None, include_transformed=False):
+def create_flat_names(varname, shape):
+def _create_shape(flat_names):
+def all_discrete(comp_dists):
+def draw_values(params, point=None):
+@memoize DCNL def _compile_theano_function(param, vars, givens=None):
+def _draw_value(param, point=None, givens=None):
+def broadcast_shapes(*args):
+def generate_samples(generator, *args, **kwargs):
+def WishartBartlett(name, S, nu, is_cholesky=False, return_cholesky=False, testval=None):
+def bound(logp, *conditions, **kwargs):
+def logpow(x, m):
+def std_cdf(x):
+def i0(x):
+def i1(x):
+def sd2rho(sd):
+def rho2sd(rho):
+def log_normal(x, mean, **kwargs):
+def MvNormalLogp():
+def get_tau_sd(tau=None, sd=None):
+def multigammaln(a, p):
+def escape_latex(strng):
+def get_transformed_name(name, transform):
+def is_transformed_name(name):
+def get_untransformed_name(name):
+def get_default_varnames(var_iterator, include_transformed):
+def get_variable_name(variable):
+def update_start_vals(a, b, model):
+def get_data(filename):
+def get_lkj_cases():
+def product(domains, n_samples=(-1)):
+def scipy_exponweib_sucks(value, alpha, beta):
+def test_posdef_symmetric3():
+def select_by_precision(float64, float32):
+def get_city_data():
+def inputvars(a):
+def cont_inputs(f):
+def floatX(X):
+def smartfloatX(x):
+def gradient1(f, v):
+def jacobian1(f, v):
+def make_shared_replacements(vars, model):
+def join_nonshared_inputs(xs, vars, shared, make_shared=False):
+def reshape_t(x, shape):
+def generator(gen, default=None):
+def tt_rng(random_seed=None):
+def set_tt_rng(new_rng):
+def set_theano_conf(values):
+def ix_(*args):
+def compute_sigma_level(trace1, trace2, nbins=20):
+def plot_MCMC_trace(ax, xdata, ydata, trace, scatter=False, **kwargs):
+def plot_MCMC_model(ax, xdata, ydata, trace):
+def plot_MCMC_results(xdata, ydata, trace, colors='k'):
+def tune(scale, acc_rate):
+def choose_proposal(proposal_name, scale=1.0):
+def sample_smc(n_steps, n_chains=100, step=None, start=None, homepath=None, stage=0, n_jobs=1, tune_interval=10, tune=None, progressbar=False, model=None, random_seed=(-1), rm_flag=True):
+def _iter_sample(draws, step, start=None, trace=None, chain=0, tune=None, model=None, random_seed=(-1)):
+def _work_chain(work):
+def _iter_parallel_chains(draws, step, stage_path, progressbar, model, n_jobs, chains=None):
+def tune(acc_rate):
+def logp_forw(out_vars, vars, shared):
+def _theano_hamiltonian(model_vars, shared, logpt, potential):
+def _theano_energy_function(H, q, **theano_kwargs):
+def _theano_leapfrog_integrator(H, q, p, **theano_kwargs):
+def get_theano_hamiltonian_functions(model_vars, shared, logpt, potential, use_single_leapfrog=False, integrator='leapfrog', **theano_kwargs):
+def energy(H, q, p):
+def leapfrog(H, q, p, epsilon, n_steps):
+def _theano_single_threestage(H, q, p, q_grad, **theano_kwargs):
+def _theano_single_twostage(H, q, p, q_grad, **theano_kwargs):
+def _theano_single_leapfrog(H, q, p, q_grad, **theano_kwargs):
+def quad_potential(C, is_cov):
+def partial_check_positive_definite(C):
+def isquadpotential(value):
+def _value_error(cond, str):
+def prior_dlogp(vars, model, flat_view):
+def elemwise_dlogL(vars, model, flat_view):
+def metrop_select(mr, q, q0):
+def get_chol(cov, chol):
+def _get_rvss(minibatch_RVs, local_RVs, observed_RVs, minibatch_tensors, total_size):
+def _make_logpt(global_RVs, local_RVs, observed_RVs, potentials):
+def _elbo_t(logp, uw_g, uw_l, inarray_g, inarray_l, c_g, c_l, n_mcsamples, random_seed):
+@change_flags(compute_test_value='ignore') DCNL def advi_minibatch(vars=None, start=None, model=None, n=5000, n_mcsamples=1, minibatch_RVs=None, minibatch_tensors=None, minibatches=None, global_RVs=None, local_RVs=None, observed_RVs=None, encoder_params=None, total_size=None, optimizer=None, learning_rate=0.001, epsilon=0.1, random_seed=None, mode=None):
+def gen_random_state():
+def advi(vars=None, start=None, model=None, n=5000, accurate_elbo=False, optimizer=None, learning_rate=0.001, epsilon=0.1, mode=None, tol_obj=0.01, eval_elbo=100, random_seed=None, progressbar=True):
+def _calc_elbo(vars, model, n_mcsamples, random_seed):
+def _elbo_t(logp, uw, inarray, n_mcsamples, random_seed):
+def adagrad_optimizer(learning_rate, epsilon, n_win=10):
+def sample_vp(vparams, draws=1000, model=None, local_RVs=None, random_seed=None, include_transformed=False, progressbar=True):
+def infmean(input_array):
+def node_property(f):
+def collect_shared_to_list(params):
+def sample_approx(approx, draws=100, include_transformed=True):
+def fit(n=10000, local_rv=None, method='advi', model=None, random_seed=None, start=None, inf_kwargs=None, **kwargs):
+def get_or_compute_grads(loss_or_grads, params):
+def sgd(loss_or_grads=None, params=None, learning_rate=0.001):
+def apply_momentum(updates, params=None, momentum=0.9):
+def momentum(loss_or_grads=None, params=None, learning_rate=0.001, momentum=0.9):
+def apply_nesterov_momentum(updates, params=None, momentum=0.9):
+def nesterov_momentum(loss_or_grads=None, params=None, learning_rate=0.001, momentum=0.9):
+def adagrad(loss_or_grads=None, params=None, learning_rate=1.0, epsilon=1e-06):
+def adagrad_window(loss_or_grads=None, params=None, learning_rate=0.001, epsilon=0.1, n_win=10):
+def rmsprop(loss_or_grads=None, params=None, learning_rate=1.0, rho=0.9, epsilon=1e-06):
+def adadelta(loss_or_grads=None, params=None, learning_rate=1.0, rho=0.95, epsilon=1e-06):
+def adam(loss_or_grads=None, params=None, learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-08):
+def adamax(loss_or_grads=None, params=None, learning_rate=0.002, beta1=0.9, beta2=0.999, epsilon=1e-08):
+def norm_constraint(tensor_var, max_norm, norm_axes=None, epsilon=1e-07):
+def total_norm_constraint(tensor_vars, max_norm, epsilon=1e-07, return_norm=False):
+@statfunc DCNL def geweke(x, first=0.1, last=0.5, intervals=20):
+def gelman_rubin(mtrace):
+def effective_n(mtrace):
+def incorporate_methods(source, destination, methods, default=None, wrapper=None, override=False):
+def get_named_nodes(graph):
+def modelcontext(model):
+def withparent(meth):
+def fn(outs, mode=None, model=None, *args, **kwargs):
+def fastfn(outs, mode=None, model=None):
+def Point(*args, **kwargs):
+def _get_scaling(total_size, shape, ndim):
+def _walk_up_rv(rv):
+def _latex_repr_rv(rv):
+def Deterministic(name, var, model=None):
+def Potential(name, var, model=None):
+def all_continuous(vars):
+def sample_gp(trace, gp, X_values, samples=None, obs_noise=True, model=None, random_seed=None, progressbar=True, chol_const=True):
+def any_to_tensor_and_labels(x, labels=None):
+def identity_transform(x):
+def get_axis(ax, default_rows, default_columns, **default_kwargs):
+def make_2d(a):
+def _var_str(name, shape):
+def _make_rhat_plot(trace, ax, title, labels, varnames, include_transformed):
+def _plot_tree(ax, y, ntiles, show_quartiles, **plot_kwargs):
+def forestplot(trace_obj, varnames=None, transform=identity_transform, alpha=0.05, quartiles=True, rhat=True, main=None, xtitle=None, xlim=None, ylabels=None, chain_spacing=0.05, vline=0, gs=None, plot_transformed=False, **plot_kwargs):
+def compareplot(comp_df, ax=None):
+def _histplot_bins(column, bins=100):
+def histplot_op(ax, data, alpha=0.35):
+def kdeplot_op(ax, data, prior=None, prior_alpha=1, prior_style='--'):
+def plot_posterior_op(trace_values, ax, kde_plot, point_estimate, round_to, alpha_level, ref_val, rope, text_size=16, **kwargs):
+def fast_kde(x):
+def plot_posterior(trace, varnames=None, transform=identity_transform, figsize=None, text_size=16, alpha_level=0.05, round_to=3, point_estimate='mean', rope=None, ref_val=None, kde_plot=False, plot_transformed=False, ax=None, **kwargs):
+def plot_posterior_predictive_glm(trace, eval=None, lm=None, samples=30, **kwargs):
+def traceplot(trace, varnames=None, transform=identity_transform, figsize=None, lines=None, combined=False, plot_transformed=False, grid=False, alpha=0.35, priors=None, prior_alpha=1, prior_style='--', ax=None, live_plot=False, skip_first=0, refresh_every=100, roll_over=1000):
+def autocorrplot(trace, varnames=None, max_lag=100, burn=0, plot_transformed=False, symmetric_plot=False, ax=None, figsize=None):
+def energyplot(trace, kind='kde', figsize=None, ax=None, legend=True, lw=0, alpha=0.35, frame=True, **kwargs):
+def statfunc(f):
+@statfunc DCNL def autocorr(x, lag=1):
+@statfunc DCNL def autocov(x, lag=1):
+def dic(trace, model=None):
+def _log_post_trace(trace, model, progressbar=False):
+def waic(trace, model=None, pointwise=False, progressbar=False):
+def loo(trace, model=None, pointwise=False, progressbar=False):
+def bpic(trace, model=None):
+def compare(traces, models, ic='WAIC', bootstrap=True, b_samples=1000, alpha=1, seed=None):
+def calc_min_interval(x, alpha):
+@statfunc DCNL def hpd(x, alpha=0.05, transform=(lambda x: x)):
+@statfunc DCNL def mc_error(x, batches=5):
+@statfunc DCNL def quantiles(x, qlist=(2.5, 25, 50, 75, 97.5), transform=(lambda x: x)):
+def df_summary(trace, varnames=None, transform=(lambda x: x), stat_funcs=None, extend=False, include_transformed=False, alpha=0.05, start=0, batches=None):
+def summary(trace, varnames=None, transform=(lambda x: x), alpha=0.05, start=0, batches=None, roundto=3, include_transformed=False, to_file=None):
+def _groupby_leading_idxs(shape):
+def bfmi(trace):
+def eval_univariate(f, var, idx, point, x):
+def approx_hessian(point, vars=None, model=None):
+def fixed_hessian(point, vars=None, model=None):
+def find_hessian(point, vars=None, model=None):
+def find_hessian_diag(point, vars=None, model=None):
+def trace_cov(trace, vars=None, model=None):
+def find_MAP(start=None, vars=None, fmin=None, return_raw=False, model=None, live_disp=False, callback=None, *args, **kwargs):
+def tround(*args, **kwargs):
+def expand_packed_triangular(n, packed, lower=True, diagonal_only=False):
+@pytest.fixture() DCNL def node(Ansible, Interface, Command, request):
+def _convert_2_string(item):
+def _convert_2_string(item):
+def train(sess, minimize_ops, num_epochs, num_unrolls):
+def run_epoch(sess, cost_op, ops, reset, num_unrolls):
+def print_stats(header, total_error, total_time, n):
+def get_config(problem_name, path=None):
+def _nested_assign(ref, value):
+def _nested_variable(init, name=None, trainable=False):
+def _wrap_variable_creation(func, custom_getter):
+def _get_variables(func):
+def _make_with_custom_variables(func, variables):
+def _make_nets(variables, config, net_assignments):
+def simple():
+def simple_multi_optimizer(num_dims=2):
+def quadratic(batch_size=128, num_dims=10, stddev=0.01, dtype=tf.float32):
+def ensemble(problems, weights=None):
+def mnist(layers, activation='sigmoid', batch_size=128, mode='train'):
+def _maybe_download_cifar10(path):
+def cifar10(path, conv_channels=None, linear_layers=None, batch_norm=True, batch_size=128, num_threads=4, min_queue_examples=1000, mode='train'):
+def factory(net, net_options=(), net_path=None):
+def save(network, sess, filename=None):
+def _convert_to_initializer(initializer):
+def _get_initializers(initializers, fields):
+def _get_layer_initializers(initializers, layer_name, fields):
+def train(sess, minimize_ops, num_epochs, num_unrolls):
+def permutationFilter(perm):
+def permutationFilter(perm):
+def dummyModelParams(perm):
+def permutationFilter(perm):
+def dummyModelParams(perm):
+def permutationFilter(perm):
+def dummyModelParams(perm):
+def permutationFilter(perm):
+def dummyModelParams(perm):
+def permutationFilter(perm):
+def dummyModelParams(perm):
+def permutationFilter(perm):
+def permutationFilter(perm):
+def dummyModelParams(perm):
+def permutationFilter(perm):
+def dummyModelParams(perm):
+def permutationFilter(perm):
+def permutationFilter(perm):
+def permutationFilter(perm):
+def dummyModelParams(perm):
+def permutationFilter(perm):
+def dummyModelParams(perm):
+def permutationFilter(perm):
+def getHypersearchWinningModelID(jobID):
+def _executeExternalCmdAndReapStdout(args):
+def _getTestList():
+def _getSimplePatterns(numOnes, numPatterns):
+def _buildLikelihoodTrainingSet(numOnes=5, relativeFrequencies=None):
+def _createTMs(numCols, cellsPerColumn=4, checkSynapseConsistency=True):
+def _computeTMMetric(tm=None, sequences=None, useResets=True, verbosity=1):
+def _createDataset(numSequences, originalSequences, relativeFrequencies):
+def generatePattern(numCols=100, minOnes=21, maxOnes=25, colSet=[], prevPattern=numpy.array([])):
+def buildTrainingSet(numSequences=2, sequenceLength=100, pctShared=0.2, seqGenMode='shared DCSP sequence', subsequenceStartPos=10, numCols=100, minOnes=21, maxOnes=25, disjointConsecutive=True):
+def getSimplePatterns(numOnes, numPatterns):
+def buildSimpleTrainingSet(numOnes=5):
+def buildAlternatingTrainingSet(numOnes=5):
+def buildHL0aTrainingSet(numOnes=5):
+def buildHL0bTrainingSet(numOnes=5):
+def findAcceptablePatterns(tm, t, whichSequence, trainingSequences, nAcceptable=1):
+def _testSequence(trainingSequences, nTrainingReps=1, numberOfCols=40, cellsPerColumn=5, initialPerm=0.8, connectedPerm=0.7, minThreshold=11, newSynapseCount=5, permanenceInc=0.4, permanenceDec=0.0, permanenceMax=1, globalDecay=0.0, pamLength=1000, activationThreshold=5, acceptablePatterns=[], doPooling=False, nAcceptable=(-1), noiseModel=None, noiseLevel=0, doResets=True, shouldFail=False, testSequences=None, predJustAfterHubOnly=None, compareToPy=False, nMultiStepPrediction=0, highOrder=False):
+def TestH2a(sequenceLength, nTests, cellsPerColumn, numCols=100, nSequences=[2], pctShared=0.02, seqGenMode='shared DCSP sequence', shouldFail=False):
+def worker(x):
+def hubCapacity():
+def printOneTrainingVector(x):
+def getSimplePatterns(numOnes, numPatterns, patternOverlap=0):
+def buildOverlappedSequences(numSequences=2, seqLen=5, sharedElements=[3, 4], numOnBitsPerPattern=3, patternOverlap=0, seqOverlap=0, **kwargs):
+def buildSequencePool(numSequences=10, seqLen=[2, 3, 4], numPatterns=5, numOnBitsPerPattern=3, patternOverlap=0, **kwargs):
+def createTMs(includeCPP=True, includePy=True, numCols=100, cellsPerCol=4, activationThreshold=3, minThreshold=3, newSynapseCount=3, initialPerm=0.6, permanenceInc=0.1, permanenceDec=0.0, globalDecay=0.0, pamLength=0, checkSynapseConsistency=True, maxInfBacktrack=0, maxLrnBacktrack=0, **kwargs):
+def assertNoTMDiffs(tms):
+def evalSequences(tms, trainingSequences, testSequences=None, nTrainRepetitions=1, doResets=True, **kwargs):
+def _testConfig(baseParams, expMissingMin=0, expMissingMax=0, **mods):
+def simulateKMoreThanOne():
+def simulateClassifier(knn, patternDict, testName, testDict=None):
+def getNumTestPatterns(short=0):
+def simulateCategories(numSamples=100, numDimensions=500):
+def createPattern(c, numDimensions):
+def _getTempFileName():
+def _getTempFileName():
+def _executeExternalCmdAndReapOutputs(args):
+def whoisCallersCaller():
+def _executeExternalCmdAndReapStdout(args):
+def _getTestList():
+def getAllDirectoriesWithFile(path, filename, excludeDirs):
+def getAllExperimentDirectories(excludedExperiments=[]):
+def runReducedExperiment(path, reduced=True):
+def _setupTempDirectory(filename):
+def _createEncoder():
+def _createOPFNetwork(addSP=True, addTP=False):
+def _aggregate(input, options, output, timeFieldName):
+def createEncoder():
+def createNetwork(dataSource, enableTP=False, temporalImp='py'):
+def _sampleDistribution(params, numSamples, verbosity=0):
+def _generateSampleData(mean=0.2, variance=0.2, metricMean=0.2, metricVariance=0.2):
+def _getDateList(numSamples, startDatetime):
+def _printOneTrainingVector(x):
+def _getSimplePatterns(numOnes, numPatterns):
+def _createTms(numCols):
+def _computeOverlap(x, y):
+def _areAllSDRsUnique(sdrDict):
+def checkCell0(tm):
+def setVerbosity(verbosity, tm, tmPy):
+def _createNetwork():
+def _createNetwork():
+def _createSensorToClassifierLinks(network, sensorRegionName, classifierRegionName):
+def computeOverlap(x, y):
+def validateEncoder(encoder, subsampling):
+def overlapsForRelativeAreas(n, w, initPosition, initRadius, dPosition=None, dRadius=0, num=100, verbose=False):
+def overlapsForUnrelatedAreas(n, w, radius, repetitions=100, verbose=False):
+def _getPredictionsGenerator(examplesDir, exampleName):
+def _getTempFileName():
+def memorized_timedelta(seconds):
+def memorized_datetime(seconds):
+def memorized_ttinfo(*args):
+def _to_seconds(td):
+def unpickler(zone, utcoffset=None, dstoffset=None, tzname=None):
+def open_resource(name):
+def timezone(zone):
+def _unmunge_zone(zone):
+def _UTC():
+def _p(*args):
+def country_timezones(iso3166_code):
+def FixedOffset(offset, _tzinfos={}):
+def get_supported_platform():
+def register_loader_type(loader_type, provider_factory):
+def get_provider(moduleOrReq):
+def get_build_platform():
+def compatible_platforms(provided, required):
+def run_script(dist_spec, script_name):
+def get_distribution(dist):
+def load_entry_point(dist, group, name):
+def get_entry_map(dist, group=None):
+def get_entry_info(dist, group, name):
+def get_default_cache():
+def safe_name(name):
+def safe_version(version):
+def safe_extra(extra):
+def to_filename(name):
+def get_importer(path_item):
+def register_finder(importer_type, distribution_finder):
+def find_distributions(path_item, only=False):
+def StringIO(*args, **kw):
+def find_on_path(importer, path_item, only=False):
+def register_namespace_handler(importer_type, namespace_handler):
+def _handle_ns(packageName, path_item):
+def declare_namespace(packageName):
+def fixup_namespace_packages(path_item, parent=None):
+def file_ns_handler(importer, path_item, packageName, module):
+def normalize_path(filename):
+def yield_lines(strs):
+def parse_version(s):
+def parse_requirements(strs):
+def _get_mro(cls):
+def _find_adapter(registry, ob):
+def ensure_directory(path):
+def split_sections(s):
+def table(ax, cellText=None, cellColours=None, cellLoc='right', colWidths=None, rowLabels=None, rowColours=None, rowLoc='left', colLabels=None, colColours=None, colLoc='center', loc='bottom', bbox=None):
+def slice2gridspec(key):
+def quality(func, mesh, interpolator='nn', n=33):
+def debug_on_error(type, value, tb):
+def error_msg_wx(msg, parent=None):
+def raise_msg_to_str(msg):
+def _create_wx_app():
+def draw_if_interactive():
+def show():
+def new_figure_manager(num, *args, **kwargs):
+def _load_bitmap(filename):
+def fill(strings, linelen=75):
+def pdfRepr(obj):
+def new_figure_manager(num, *args, **kwargs):
+def quote_ps_string(s):
+def seq_allequal(seq1, seq2):
+def convert_psfrags(tmpfile, psfrags, font_preamble, custom_preamble, paperWidth, paperHeight, orientation):
+def gs_distill(tmpfile, eps=False, ptype='letter', bbox=None):
+def xpdf_distill(tmpfile, eps=False, ptype='letter', bbox=None):
+def get_bbox(tmpfile, bbox):
+def pstoeps(tmpfile, bbox):
+def draw_if_interactive():
+def show(mainloop=True):
+def new_figure_manager(num, *args, **kwargs):
+def draw_if_interactive():
+def show():
+def new_figure_manager(num, *args, **kwargs):
+def pylab_setup():
+def draw_if_interactive():
+def show():
+def new_figure_manager(num, *args, **kwargs):
+def new_figure_manager(num, *args, **kwargs):
+def new_figure_manager(num, *args, **kwargs):
+def new_figure_manager(num, *args, **kwargs):
+def raise_msg_to_str(msg):
+def show():
+def new_figure_manager(num, *args, **kwargs):
+def new_figure_manager(num, *args, **kwargs):
+def draw_if_interactive():
+def _create_qApp():
+def show():
+def new_figure_manager(num, *args, **kwargs):
+def exception_handler(type, value, tb):
+def new_figure_manager(num, *args, **kwargs):
+def _py_convert_agg_to_wx_image(agg, bbox):
+def _py_convert_agg_to_wx_bitmap(agg, bbox):
+def _clipped_image_as_bitmap(image, bbox):
+def _py_WX28_convert_agg_to_wx_image(agg, bbox):
+def _py_WX28_convert_agg_to_wx_bitmap(agg, bbox):
+def _WX28_clipped_agg_as_bitmap(agg, bbox):
+def _use_accelerator(state):
+def new_figure_manager(num, *args, **kwargs):
+def ishow():
+def show():
+def new_figure_manager(num, *args, **kwargs):
+def show():
+def draw_if_interactive():
+def new_figure_manager(num, *args, **kwargs):
+def new_figure_manager(num, *args, **kwargs):
+def new_figure_manager(num, *args, **kwargs):
+def draw_if_interactive():
+def _create_qApp():
+def show():
+def new_figure_manager(num, *args, **kwargs):
+def exception_handler(type, value, tb):
+def strip_math(s):
+def unique(x):
+def iterable(obj):
+def is_string_like(obj):
+def is_sequence_of_strings(obj):
+def is_writable_file_like(obj):
+def is_scalar(obj):
+def is_numlike(obj):
+def to_filehandle(fname, flag='r', return_opened=False):
+def flatten(seq, scalarp=is_scalar_or_string):
+def soundex(name, len=4):
+def mkdirs(newdir, mode=511):
+def dict_delall(d, keys):
+def get_split_ind(seq, N):
+def wrap(prefix, text, cols):
+def dedent(s):
+def listFiles(root, patterns='*', recurse=1, return_folders=0):
+def get_recursive_filelist(args):
+def pieces(seq, num=2):
+def allequal(seq):
+def alltrue(seq):
+def onetrue(seq):
+def allpairs(x):
+def popd(d, *args):
+def popall(seq):
+def finddir(o, match, case=False):
+def reverse_dict(d):
+def report_memory(i=0):
+def safezip(*args):
+def issubclass_safe(x, klass):
+def print_cycles(objects, outstream=sys.stdout, show_progress=False):
+def delete_masked_points(*args):
+def unmasked_index_ranges(mask, compressed=True):
+def less_simple_linear_interpolation(x, y, xi, extrap=False):
+def isvector(X):
+def vector_lengths(X, P=2.0, axis=None):
+def distances_along_curve(X):
+def path_length(X):
+def is_closed_polygon(X):
+def quad2cubic(q0x, q0y, q1x, q1y, q2x, q2y):
+def _import_fail_message(module, version):
+def isnan(a):
+def all(a, axis=None):
+def all(a, axis=None):
+def Matrix(data, typecode=None, copy=1, savespace=0):
+def _mask_non_positives(a):
+def scale_factory(scale, axis, **kwargs):
+def register_scale(scale_class):
+def get_scale_docs():
+def _is_writable_dir(p):
+def compare_versions(a, b):
+def _get_home():
+def _get_configdir():
+def _get_data_path():
+def get_example_data(fname):
+def matplotlib_fname():
+def rc_params(fail_on_error=False):
+def rc(group, **kwargs):
+def rcdefaults():
+def use(arg, warn=True):
+def get_backend():
+def interactive(b):
+def is_interactive():
+def tk_window_focus():
+def get_intersection(cx1, cy1, cos_t1, sin_t1, cx2, cy2, cos_t2, sin_t2):
+def get_normal_points(cx, cy, cos_t, sin_t, length):
+def split_de_casteljau(beta, t):
+def find_bezier_t_intersecting_with_closedpath(bezier_point_at_t, inside_closedpath, t0=0.0, t1=1.0, tolerence=0.01):
+def split_bezier_intersecting_with_closedpath(bezier, inside_closedpath, tolerence=0.01):
+def find_r_to_boundary_of_closedpath(inside_closedpath, xy, cos_t, sin_t, rmin=0.0, rmax=1.0, tolerence=0.01):
+def split_path_inout(path, inside, tolerence=0.01, reorder_inout=False):
+def get_parallels(bezier2, width):
+def make_wedged_bezier2(bezier2, length, shrink_factor=0.5):
+def find_control_points(c1x, c1y, mmx, mmy, c2x, c2y):
+def make_wedged_bezier2(bezier2, width, w1=1.0, wm=0.5, w2=0.0):
+def get_path_collection_extents(*args):
+def get_unicode_index(symbol):
+def MathtextBackendBitmap():
+def Error(msg):
+def is_color_like(c):
+def rgb2hex(rgb):
+def hex2color(s):
+def makeMappingArray(N, data):
+def get_cmap(name=None, lut=None):
+def validate_path_exists(s):
+def validate_bool(b):
+def validate_bool_maybe_none(b):
+def validate_float(s):
+def validate_int(s):
+def validate_fonttype(s):
+def validate_color(s):
+def validate_stringlist(s):
+def get_projection_class(projection=None):
+def projection_factory(projection, figure, rect, **kwargs):
+def get_projection_names():
+def figaspect(arg):
+def _backend_selection():
+def switch_backend(newbackend):
+def isinteractive():
+def ioff():
+def ion():
+def gci():
+def sci(im):
+def figure(num=None, figsize=None, dpi=None, facecolor=None, edgecolor=None, frameon=True, FigureClass=Figure, **kwargs):
+def gcf():
+def close(*args):
+def clf():
+def draw():
+def ginput(*args, **kwargs):
+def waitforbuttonpress(*args, **kwargs):
+def figlegend(handles, labels, loc, **kwargs):
+def hold(b=None):
+def ishold():
+def over(func, *args, **kwargs):
+def axes(*args, **kwargs):
+def delaxes(*args):
+def gca(**kwargs):
+def subplot(*args, **kwargs):
+def twinx(ax=None):
+def twiny(ax=None):
+def subplots_adjust(*args, **kwargs):
+def subplot_tool(targetfig=None):
+def box(on=None):
+def title(s, *args, **kwargs):
+def axis(*v, **kwargs):
+def xlabel(s, *args, **kwargs):
+def ylabel(s, *args, **kwargs):
+def xlim(*args, **kwargs):
+def ylim(*args, **kwargs):
+def xscale(*args, **kwargs):
+def yscale(*args, **kwargs):
+def xticks(*args, **kwargs):
+def yticks(*args, **kwargs):
+def rgrids(*args, **kwargs):
+def thetagrids(*args, **kwargs):
+def plotting():
+def colors():
+def colormaps():
+def clim(vmin=None, vmax=None):
+def matshow(A, fignum=None, **kw):
+def polar(*args, **kwargs):
+def plotfile(fname, cols=(0,), plotfuncs=None, comments='#', skiprows=0, checkrows=5, delimiter=',', **kwargs):
+def autumn():
+def bone():
+def cool():
+def copper():
+def flag():
+def gray():
+def hot():
+def hsv():
+def jet():
+def pink():
+def prism():
+def spring():
+def summer():
+def winter():
+def spectral():
+def _process_text_args(override, fontdict=None, **kwargs):
+def get_rotation(rotation):
+def _get_textbox(text, renderer):
+def _to_ordinalf(dt):
+def _from_ordinalf(x, tz=None):
+def datestr2num(d):
+def date2num(d):
+def julian2num(j):
+def num2julian(n):
+def num2date(x, tz=None):
+def drange(dstart, dend, delta):
+def _close_to_dt(d1, d2, epsilon=5):
+def _close_to_num(o1, o2, epsilon=5):
+def epoch2num(e):
+def num2epoch(d):
+def mx2num(mxdates):
+def date_ticker_factory(span, tz=None, numticks=5):
+def seconds(s):
+def minutes(m):
+def hours(h):
+def weeks(w):
+def _get_packed_offsets(wd_list, total, sep, mode='fixed'):
+def _get_aligned_offsets(hd_list, height, align='baseline'):
+def decade_down(x, base=10):
+def decade_up(x, base=10):
+def generate_fontconfig_pattern(d):
+def _norm(x):
+def window_hanning(x):
+def window_none(x):
+def conv(x, y, mode=2):
+def demean(x, axis=0):
+def detrend_mean(x):
+def detrend_none(x):
+def detrend_linear(y):
+def psd(x, NFFT=256, Fs=2, detrend=detrend_none, window=window_hanning, noverlap=0, pad_to=None, sides='default', scale_by_freq=None):
+def csd(x, y, NFFT=256, Fs=2, detrend=detrend_none, window=window_hanning, noverlap=0, pad_to=None, sides='default', scale_by_freq=None):
+def specgram(x, NFFT=256, Fs=2, detrend=detrend_none, window=window_hanning, noverlap=128, pad_to=None, sides='default', scale_by_freq=None):
+def cohere(x, y, NFFT=256, Fs=2, detrend=detrend_none, window=window_hanning, noverlap=0, pad_to=None, sides='default', scale_by_freq=None):
+def corrcoef(*args):
+def get_fontext_synonyms(fontext):
+def win32FontDirectory():
+def win32InstalledFonts(directory=None, fontext='ttf'):
+def OSXFontDirectory():
+def OSXInstalledFonts(directory=None, fontext='ttf'):
+def x11FontDirectory():
+def get_fontconfig_fonts(fontext='ttf'):
+def findSystemFonts(fontpaths=None, fontext='ttf'):
+def weight_as_number(weight):
+def ttfFontProperty(font):
+def afmFontProperty(fontpath, font):
+def createFontList(fontfiles, fontext='ttf'):
+def ttfdict_to_fnames(d):
+def pickle_dump(data, filename):
+def pickle_load(filename):
+def is_opentype_cff_font(filename):
+def __patch__init__(self, edgecolor=None, facecolor=None, linewidth=None, linestyle=None, antialiased=None, hatch=None, fill=True, **kwargs):
+def bbox_artist(artist, renderer, props=None, fill=True):
+def draw_bbox(bbox, renderer, color='k', trans=None):
+def _pprint_table(_table, leadingspace=2):
+def _pprint_styles(_styles, leadingspace=2):
+def parse_yahoo_historical(fh, asobject=False, adjusted=True):
+def fetch_historical_yahoo(ticker, date1, date2, cachename=None):
+def quotes_historical_yahoo(ticker, date1, date2, asobject=False, adjusted=True, cachename=None):
+def plot_day_summary(ax, quotes, ticksize=3, colorup='k', colordown='r'):
+def candlestick(ax, quotes, width=0.2, colorup='k', colordown='r', alpha=1.0):
+def plot_day_summary2(ax, opens, closes, highs, lows, ticksize=4, colorup='k', colordown='r'):
+def candlestick2(ax, opens, closes, highs, lows, width=4, colorup='k', colordown='r', alpha=0.75):
+def volume_overlay(ax, opens, closes, volumes, colorup='k', colordown='r', width=4, alpha=1.0):
+def volume_overlay2(ax, closes, volumes, colorup='k', colordown='r', width=4, alpha=1.0):
+def volume_overlay3(ax, quotes, colorup='k', colordown='r', width=4, alpha=1.0):
+def index_bar(ax, vals, facecolor='b', edgecolor='l', width=4, alpha=1.0):
+def segment_hits(cx, cy, x, y, radius):
+def blended_transform_factory(x_transform, y_transform):
+def composite_transform_factory(a, b):
+def nonsingular(vmin, vmax, expander=0.001, tiny=1e-15, increasing=True):
+def offset_copy(trans, fig, x=0.0, y=0.0, units='inches'):
+def imread(fname):
+def pil_to_array(pilImage):
+def thumbnail(infile, thumbfile, scale=0.1, interpolation='bilinear', preview=False):
+def _process_plot_format(fmt):
+def set_default_color_cycle(clist):
+def _fix2comp(num):
+def _mul2012(num1, num2):
+def find_tex_file(filename, format=None):
+def _sanity_check(fh):
+def _parse_header(fh):
+def _parse_char_metrics(fh):
+def _parse_kern_pairs(fh):
+def _parse_composites(fh):
+def _parse_optional(fh):
+def parse_afm(fh):
+def getp(o, property=None):
+def setp(h, *args, **kwargs):
+def col(loc, strg):
+def lineno(loc, strg):
+def line(loc, strg):
+def nullDebugAction(*args):
+def traceParseAction(f):
+def delimitedList(expr, delim=',', combine=False):
+def countedArray(expr):
+def matchPreviousLiteral(expr):
+def matchPreviousExpr(expr):
+def oneOf(strs, caseless=False, useRegex=True):
+def dictOf(key, value):
+def srange(s):
+def matchOnlyAtCol(n):
+def replaceWith(replStr):
+def removeQuotes(s, l, t):
+def upcaseTokens(s, l, t):
+def downcaseTokens(s, l, t):
+def keepOriginalText(s, startLoc, t):
+def getTokensEndLoc():
+def _makeTags(tagStr, xml):
+def makeHTMLTags(tagStr):
+def makeXMLTags(tagStr):
+def withAttribute(*args, **attrDict):
+def operatorPrecedence(baseExpr, opList):
+def nestedExpr(opener='(', closer=')', content=None, ignoreExpr=quotedString):
+def indentedBlock(blockStatementExpr, indentStack, indent=True):
+def getFileUsed():
+def testDbConnection(host, port, user, passwd):
+def dbValidator():
+def filter(perm):
+def printMatrix(inputs, spOutput):
+def _hammingDistance(s1, s2):
+def analyzeOverlaps(activeCoincsFile, encodingsFile, dataset):
+def drawFile(dataset, matrix, patterns, cells, w, fnum):
+def printOverlaps(comparedTo, coincs, seen):
+def generatePlot(outputs, origData):
+def generateRandomInput(numRecords, elemSize=400, numSet=42):
+def appendInputWithSimilarValues(inputs):
+def appendInputWithNSimilarValues(inputs, numNear=10):
+def modifyBits(inputVal, maxChanges):
+def getRandomWithMods(inputSpace, maxChanges):
+def testSP():
+def testSPNew():
+def testSPFile():
+def _generateCategory(filename='simple.csv', numSequences=2, elementsPerSeq=1, numRepeats=10):
+def _generateScalar(filename='simple.csv', numSequences=2, elementsPerSeq=1, numRepeats=10, stepSize=0.1, includeRandom=False):
+def getSearch(rootDir):
+def chunk(l, n):
+def slice_sampler(px, N=1, x=None):
+def _generateCategory(filename='simple.csv', numSequences=2, elementsPerSeq=1, numRepeats=10, resets=False):
+def _generateScalar(filename='simple.csv', numSequences=2, elementsPerSeq=1, numRepeats=10, stepSize=0.1, resets=False):
+def _generateOverlapping(filename='overlap.csv', numSequences=2, elementsPerSeq=3, numRepeats=10, hub=[0, 1], hubOffset=1, resets=False):
+def permutationFilter(perm):
+def permutationFilter(perm):
+def _generateSimple(filename='simple.csv', numSequences=2, elementsPerSeq=1, numRepeats=10, resets=False):
+def _generateOverlapping(filename='overlap.csv', numSequences=2, elementsPerSeq=3, numRepeats=10, hub=[0, 1], hubOffset=1, resets=False):
+def _generateFirstOrder0():
+def _generateFileFromProb(filename, numRecords, categoryList, initProb, firstOrderProb, secondOrderProb, seqLen, numNoise=0, resetsEvery=None):
+def _generateSimple(filename='simple.csv', numSequences=1, elementsPerSeq=3, numRepeats=10):
+def runCPU():
+def createModel(modelParams):
+def getModelParamsFromName(gymName):
+def runIoThroughNupic(inputData, model, gymName, plot):
+def runModel(gymName, plot=False):
+def _setRandomEncoderResolution(minResolution=0.001):
+def percentOverlap(x1, x2, size):
+def corruptVector(vector, noiseLevel):
+def resetVector(x1, x2):
+def createEncoder():
+def createRecordSensor(network, name, dataSource):
+def createNetwork(dataSource):
+def runNetwork(network, numRecords, writer):
+def createEncoder():
+def createNetwork(dataSource):
+def runNetwork(network, writer):
+def createEncoder():
+def createNetwork(dataSource):
+def runNetwork(network, writer):
+def createTemporalAnomaly(recordParams, spatialParams=_SP_PARAMS, temporalParams=_TM_PARAMS, verbosity=_VERBOSITY):
+def runNetwork(network, writer):
+def accuracy(current, predicted):
+def corruptVector(v1, noiseLevel, numActiveCols):
+def showPredictions():
+def trainTM(sequence, timeSteps, noiseLevel):
+def generatePattern(numCols=100, minOnes=21, maxOnes=25, colSet=[], prevPattern=numpy.array([])):
+def buildTrainingSet(numSequences=2, sequenceLength=100, pctShared=0.2, seqGenMode='shared DCSP sequence', subsequenceStartPos=10, numCols=100, minOnes=21, maxOnes=25, disjointConsecutive=True):
+def getSimplePatterns(numOnes, numPatterns):
+def buildSimpleTrainingSet(numOnes=5):
+def buildAlternatingTrainingSet(numOnes=5):
+def buildHL0aTrainingSet(numOnes=5):
+def buildHL0bTrainingSet(numOnes=5):
+def findAcceptablePatterns(tm, t, whichSequence, trainingSequences, nAcceptable=1):
+def testSequence(trainingSequences, nTrainingReps=1, numberOfCols=40, cellsPerColumn=5, initialPerm=0.8, connectedPerm=0.7, minThreshold=11, newSynapseCount=5, permanenceInc=0.4, permanenceDec=0.0, permanenceMax=1, globalDecay=0.0, pamLength=1000, activationThreshold=5, acceptablePatterns=[], doPooling=False, nAcceptable=(-1), noiseModel=None, noiseLevel=0, doResets=True, shouldFail=False, testSequences=None, predJustAfterHubOnly=None, compareToPy=False, nMultiStepPrediction=0, highOrder=False):
+def TestH2a(sequenceLength, nTests, cellsPerColumn, numCols=100, nSequences=[2], pctShared=0.02, seqGenMode='shared DCSP sequence', shouldFail=False):
+def worker(x):
+def hubCapacity():
+def printOneTrainingVector(x):
+def getSimplePatterns(numOnes, numPatterns, patternOverlap=0):
+def buildOverlappedSequences(numSequences=2, seqLen=5, sharedElements=[3, 4], numOnBitsPerPattern=3, patternOverlap=0, seqOverlap=0, **kwargs):
+def buildSequencePool(numSequences=10, seqLen=[2, 3, 4], numPatterns=5, numOnBitsPerPattern=3, patternOverlap=0, **kwargs):
+def createTMs(includeCPP=True, includePy=True, numCols=100, cellsPerCol=4, activationThreshold=3, minThreshold=3, newSynapseCount=3, initialPerm=0.6, permanenceInc=0.1, permanenceDec=0.0, globalDecay=0.0, pamLength=0, checkSynapseConsistency=True, maxInfBacktrack=0, maxLrnBacktrack=0, **kwargs):
+def assertNoTMDiffs(tms):
+def evalSequences(tms, trainingSequences, testSequences=None, nTrainRepetitions=1, doResets=True, **kwargs):
+def testConfig(baseParams, expMissingMin=0, expMissingMax=0, **mods):
+def _printOneTrainingVector(x):
+def _getSimplePatterns(numOnes, numPatterns):
+def _createTms(numCols):
+def getVersion():
+def nupicBindingsPrereleaseInstalled():
+def findRequirements():
+def runPermutations(args):
+def main():
+def collect_set(option, opt_str, value, parser):
+def collect_list(option, opt_str, value, parser):
+def main(parser, parse_args):
+def profileSP(spClass, spDim, nRuns):
+def profileTM(tmClass, tmDim, nRuns):
+def _paramsFileHead():
+def _paramsFileTail():
+def _appendReportKeys(keys, prefix, results):
+def _matchReportKeys(reportKeyREs=[], allReportKeys=[]):
+def _getReportItem(itemName, results):
+def filterResults(allResults, reportKeys, optimizeKey=None):
+def _quoteAndEscape(string):
+def _handleModelRunnerException(jobID, modelID, jobsDAO, experimentDir, logger, e):
+def runModelGivenBaseAndParams(modelID, jobID, baseDescription, params, predictedField, reportKeys, optimizeKey, jobsDAO, modelCheckpointGUID, logLevel=None, predictionCacheMaxRecords=None):
+def generatePersistentJobGUID():
+def rCopy(d, f=identityConversion, discardNoneKeys=True, deepCopy=True):
+def rApply(d, f):
+def clippedObj(obj, maxElementSize=64):
+def validate(value, **kwds):
+def loadJsonValueFromFile(inputFilePath):
+def sortedJSONDumpS(obj):
+def _makeUsageErrorStr(errorString, usageString):
+def _handleShowSchemaOption():
+def _handleDescriptionOption(cmdArgStr, outDir, usageStr, hsVersion, claDescriptionTemplateFile):
+def _handleDescriptionFromFileOption(filename, outDir, usageStr, hsVersion, claDescriptionTemplateFile):
+def _isInt(x, precision=0.0001):
+def _isString(obj):
+def _quoteAndEscape(string):
+def _indentLines(str, indentLevels=1, indentFirstLine=True):
+def _isCategory(fieldType):
+def _generateMetricSpecString(inferenceElement, metric, params=None, field=None, returnLabel=False):
+def _generateFileFromTemplates(templateFileNames, outputFilePath, replacementDict):
+def _generateEncoderChoicesV1(fieldInfo):
+def _generateEncoderStringsV1(includedFields):
+def _generatePermEncoderStr(options, encoderDict):
+def _generateEncoderStringsV2(includedFields, options):
+def _handleJAVAParameters(options):
+def _getPropertyValue(schema, propertyName, options):
+def _getExperimentDescriptionSchema():
+def _generateExperiment(options, outputDirPath, hsVersion, claDescriptionTemplateFile):
+def _generateMetricsSubstitutions(options, tokenReplacements):
+def _generateMetricSpecs(options):
+def _generateExtraMetricSpecs(options):
+def _getPredictedField(options):
+def _generateInferenceArgs(options, tokenReplacements):
+def expGenerator(args):
+def main(argv):
+def clean(s):
+def Enum(*args, **kwargs):
+def makeDirectoryFromAbsolutePath(absDirPath):
+def createAndStartSwarm(client, clientInfo='', clientKey='', params='', minimumWorkers=None, maximumWorkers=None, alreadyRunning=False):
+def getSwarmModelParams(modelID):
+def _escape(s):
+def _engineServicesRunning():
+def runWithConfig(swarmConfig, options, outDir=None, outputLabel='default', permWorkDir=None, verbosity=1):
+def runWithJsonFile(expJsonFilePath, options, outputLabel, permWorkDir):
+def runWithPermutationsScript(permutationsFilePath, options, outputLabel, permWorkDir):
+def runPermutations(_):
+def _clientJobsDB():
+def _nupicHyperSearchHasErrors(hyperSearchJob):
+def _backupFile(filePath):
+def _getOneModelInfo(nupicModelID):
+def _iterModels(modelIDs):
+def htmPredictionModelControlEnableSPLearningCb(htmPredictionModel):
+def htmPredictionModelControlDisableSPLearningCb(htmPredictionModel):
+def htmPredictionModelControlEnableTPLearningCb(htmPredictionModel):
+def htmPredictionModelControlDisableTPLearningCb(htmPredictionModel):
+def _testTemporalShift():
+def getModule(metricSpec):
+def runExperiment(args, model=None):
+def initExperimentPrng():
+def _parseCommandLineOptions(args):
+def reapVarArgsCallback(option, optStr, value, parser):
+def _reportCommandLineUsageErrorAndExit(parser, message):
+def _runExperimentImpl(options, model=None):
+def _saveModel(model, experimentDir, checkpointLabel, newSerialization=False):
+def _getModelCheckpointDir(experimentDir, checkpointLabel):
+def getCheckpointParentDir(experimentDir):
+def _checkpointLabelFromCheckpointDir(checkpointDir):
+def _isCheckpointDir(checkpointDir):
+def _printAvailableCheckpoints(experimentDir):
+def main():
+def loadExperiment(path):
+def loadExperimentDescriptionScriptFromDir(experimentDir):
+def getExperimentDescriptionInterfaceFromModule(module):
+def _loadDescriptionFile(descriptionPyPath):
+def getScalarMetricWithTimeOfDayAnomalyParams(metricData, minVal=None, maxVal=None, minResolution=None, tmImplementation='cpp'):
+def _rangeGen(data, std=1):
+def _fixupRandomEncoderParams(params, minVal, maxVal, minResolution):
+def validateOpfJsonValue(value, opfJsonSchemaFilename):
+def initLogger(obj):
+def matchPatterns(patterns, keys):
+def applyValueGettersToContainer(container):
+def _applyValueGettersImpl(container, currentObj, recursionStack):
+def requireAnomalyModel(func):
+def modelControlFinishLearningCb(model):
+def setRandomSeed(seed):
+def addNoise(input, noise=0.1, doForeground=True, doBackground=True):
+def generateCoincMatrix(nCoinc=10, length=500, activity=50):
+def generateVectors(numVectors=100, length=500, activity=50):
+def generateSimpleSequences(nCoinc=10, seqLength=[5, 6, 7], nSeq=100):
+def generateHubSequences(nCoinc=10, hubs=[2, 6], seqLength=[5, 6, 7], nSeq=100):
+def genTestSeqsForLookback(nPatterns=10, patternLen=500, patternActivity=50, seqLength=[5, 6, 7], nSequences=50):
+def generateSimpleCoincMatrix(nCoinc=10, length=500, activity=50):
+def generateSequences(nPatterns=10, patternLen=500, patternActivity=50, hubs=[2, 6], seqLength=[5, 6, 7], nSimpleSequences=50, nHubSequences=50):
+def generateL2Sequences(nL1Patterns=10, l1Hubs=[2, 6], l1SeqLength=[5, 6, 7], nL1SimpleSequences=50, nL1HubSequences=50, l1Pooling=4, perfectStability=False, spHysteresisFactor=1.0, patternLen=500, patternActivity=50):
+def vectorsFromSeqList(seqList, patternMatrix):
+def sameTMParams(tp1, tp2):
+def sameSynapse(syn, synapses):
+def sameSegment(seg1, seg2):
+def tmDiff(tm1, tm2, verbosity=0, relaxSegmentTests=True):
+def tmDiff2(tm1, tm2, verbosity=0, relaxSegmentTests=True, checkLearn=True, checkStates=True):
+def spDiff(SP1, SP2):
+def removeSeqStarts(vectors, resets, numSteps=1):
+def _accumulateFrequencyCounts(values, freqCounts=None):
+def _listOfOnTimesInVec(vector):
+def _fillInOnTimes(vector, durations):
+def averageOnTimePerTimestep(vectors, numSamples=None):
+def averageOnTime(vectors, numSamples=None):
+def plotOutputsOverTime(vectors, buVectors=None, title='On-times'):
+def plotHistogram(freqCounts, title='On-Times DCSP Histogram', xLabel='On-Time'):
+def populationStability(vectors, numSamples=None):
+def percentOutputsStableOverNTimeSteps(vectors, numSamples=None):
+def computeSaturationLevels(outputs, outputsShape, sparseForm=False):
+def checkMatch(input, prediction, sparse=True, verbosity=0):
+def predictionExtent(inputs, resets, outputs, minOverlapPct=100.0):
+def getCentreAndSpreadOffsets(spaceShape, spreadShape, stepSize=1):
+def makeCloneMap(columnsShape, outputCloningWidth, outputCloningHeight=(-1)):
+def numpyStr(array, format='%f', includeIndices=False, includeZeros=True):
+def _labeledInput(activeInputs, cellsPerCol=32):
+def computeRawAnomalyScore(activeColumns, prevPredictedColumns):
+def importAndRunFunction(path, moduleName, funcName, **keywords):
+def getLockedHandle(runtimeElement, expression):
+def transferCoincidences(network, fromElementName, toElementName):
+def _extractCallingMethodArgs():
+def estimateAnomalyLikelihoods(anomalyScores, averagingWindow=10, skipRecords=0, verbosity=0):
+def updateAnomalyLikelihoods(anomalyScores, params, verbosity=0):
+def _filterLikelihoods(likelihoods, redThreshold=0.99999, yellowThreshold=0.999):
+def _anomalyScoreMovingAverage(anomalyScores, windowSize=10, verbosity=0):
+def estimateNormal(sampleData, performLowerBoundCheck=True):
+def nullDistribution(verbosity=0):
+def tailProbability(x, distributionParams):
+def isValidEstimatorParams(p):
+def _pFormatArray(array_, fmt='%.2f'):
+def binSearch(arr, val):
+def whois_callers_caller():
+def getDefaultSPImp():
+def getSPClass(spatialImp):
+def _buildArgs(f, self=None, kwargs={}):
+def _getAdditionalSpecs(spatialImp, kwargs={}):
+def _getTPClass(temporalImp):
+def _buildArgs(f, self=None, kwargs={}):
+def _getAdditionalSpecs(temporalImp, kwargs={}):
+def processClubAttendance(f, clubs):
+def processClubConsumption(f, clubs):
+def processConsumptionFiles(clubs):
+def makeDataset():
+def _generateLinearModel(numTrainingRecords, numTestingRecords, coefficients=[1], noiseLevel=0.1, dataScale=[0, 100]):
+def _generateFile(filename, data):
+def generate(model, filenameTrain, filenameTest, numTrainingRecords=10000, numTestingRecords=1000):
+def _generateModel0(numCategories):
+def _generateModel1(numCategories):
+def _generateModel2(numCategories, alpha=0.25):
+def _generateFile(filename, numRecords, categoryList, initProb, firstOrderProb, secondOrderProb, seqLen, numNoise=0, resetsEvery=None):
+def makeDataset():
+def writeSimpleTest1(filePath, numRecords, testNumber):
+def _abbreviate(text, threshold):
+def enableConcurrencyChecks(maxConcurrency, raiseException=True):
+def _getCommonSteadyDBArgsDict():
+def _getLogger(cls, logLevel=None):
+def _isSequence(obj):
+def bitsToString(arr):
+def _allow_new_attributes(f):
+def _simple_init(self, *args, **kw):
+def longTest(testMethod):
+def tagTest(tag, comment=None):
+def getNumpyRandomGenerator(seed=None):
+def convertPermanences(sourceSP, destSP):
+def getSeed():
+def convertSP(pySp, newSeed):
+def CreateSP(imp, params):
+def getCallerInfo(depth=2):
+def title(s=None, additional='', stream=sys.stdout):
+def getArgumentDescriptions(f):
+def initLogging(verbose=False, console='stdout', consoleLevel='DEBUG'):
+def _genLoggingFilePath():
+def aggregationToMonthsSeconds(interval):
+def aggregationDivide(dividend, divisor):
+def makeDirectoryFromAbsolutePath(absDirPath):
+def groupby2(*args):
+def Enum(*args, **kwargs):
+def logExceptions(logger=None):
+def logEntryExit(getLoggerCallback=logging.getLogger, entryExitLogLevel=logging.DEBUG, logArgs=False, logTraceback=False):
+def retry(timeoutSec, initialRetryDelaySec, maxRetryDelaySec, retryExceptions=(Exception,), retryFilter=(lambda e, args, kwargs: True), logger=None, clientLabel=''):
+def retrySQL(timeoutSec=(60 * 5), logger=None):
+def lscsum(lx, epsilon=None):
+def lscsum0(lx):
+def normalize(lx):
+def nsum0(lx):
+def lnsum0(lx):
+def logSumExp(A, B, out=None):
+def logDiffExp(A, B, out=None):
+def ROCCurve(y_true, y_score):
+def AreaUnderCurve(x, y):
+def _test():
+def logFactorial(x):
+def pickByDistribution(distribution, r=None):
+def Indicator(pos, size, dtype):
+def MultiArgMax(x):
+def Any(sequence):
+def All(sequence):
+def Product(sequence):
+def MultiIndicator(pos, size, dtype):
+def Distribution(pos, size, counts, dtype):
+def cross_list(*sequences):
+def cross(*sequences):
+def dcross(**keywords):
+def coordinatesFromIndex(index, dimensions):
+def indexFromCoordinates(coordinates, dimensions):
+def neighborhood(centerIndex, radius, dimensions):
+def wrappingNeighborhood(centerIndex, radius, dimensions):
+def add(reader, writer, column, start, stop, value):
+def scale(reader, writer, column, start, stop, multiple):
+def copy(reader, writer, start, stop, insertLocation=None, tsCol=None):
+def sample(reader, writer, n, start=None, stop=None, tsCol=None, writeSampleOnly=True):
+def parseTimestamp(s):
+def serializeTimestamp(t):
+def serializeTimestampNoMS(t):
+def parseBool(s):
+def floatOrNone(f):
+def intOrNone(i):
+def escape(s):
+def unescape(s):
+def parseSdr(s):
+def serializeSdr(sdr):
+def parseStringList(s):
+def stripList(listObj):
+def sort(filename, key, outputFile, fields=None, watermark=((1024 * 1024) * 100)):
+def _sortChunk(records, key, chunkIndex, fields):
+def _mergeFiles(key, chunkCount, outputFile, fields):
+def generateStats(filename, maxSamples=None):
+def initFilter(input, filterInfo=None):
+def _filterRecord(filterList, record):
+def _aggr_first(inList):
+def _aggr_last(inList):
+def _aggr_sum(inList):
+def _aggr_mean(inList):
+def _aggr_mode(inList):
+def _aggr_weighted_mean(inList, params):
+def generateDataset(aggregationInfo, inputFilename, outputFilename=None):
+def getFilename(aggregationInfo, inputFile):
+def rUpdate(original, updates):
+def rApply(d, f):
+def dictDiffAndReport(da, db):
+def dictDiff(da, db):
+def generateStats(filename, statsInfo, maxSamples=None, filters=[], cache=True):
+def _getFieldIndexBySpecial(fields, special):
+def validate(value, **kwds):
+def loadJsonValueFromFile(inputFilePath):
+def test():
+def Array(dtype, size=None, ref=False):
+def createDataOutLink(network, sensorRegionName, regionName):
+def createFeedForwardLink(network, regionName1, regionName2):
+def createSensorToClassifierLinks(network, sensorRegionName, classifierRegionName):
+def getPredictionResults(network, clRegionName):
+def createDataOutLink(network, sensorRegionName, regionName):
+def createFeedForwardLink(network, regionName1, regionName2):
+def createResetLink(network, sensorRegionName, regionName):
+def createSensorToClassifierLinks(network, sensorRegionName, classifierRegionName):
+def createEncoder(encoderParams):
+def createNetwork(dataSource):
+def getPredictionResults(network, clRegionName):
+def runHotgym(numRecords):

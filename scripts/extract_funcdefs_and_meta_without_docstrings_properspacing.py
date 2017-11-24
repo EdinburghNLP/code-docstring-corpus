@@ -33,7 +33,7 @@ def process_function(node, out_decl_fd, out_body_fd, out_meta_fd, input_filename
     unparsed_list = astunparse.unparse(node).split('\n')
     n_funcdef_decorators = len(node.decorator_list)
     unparsed_funcdef = unparsed_list[2:3 + n_funcdef_decorators]
-    unparsed_body = unparsed_list[4 + n_funcdef_decorators:]
+    unparsed_body = unparsed_list[3 + n_funcdef_decorators:]
     funcdef = " DCNL ".join([escape_control_strings(line) for line in unparsed_funcdef])
     processed_body = []
     for line in unparsed_body:

@@ -1,0 +1,3618 @@
+def _load_file(filename):
+def _load_module(filename):
+def uncompyle(version, co, out=None, showasm=0, showast=0, deob=0):
+def uncompyle_file(filename, outstream=None, showasm=0, showast=0, deob=0):
+def main(in_base, out_base, files, codes, outfile=None, showasm=0, showast=0, do_verify=0, py=0, deob=0):
+def cmp_code_objects(version, code_obj1, code_obj2, name=''):
+def compare_code_with_srcfile(pyc_filename, src_filename):
+def compare_files(pyc_filename1, pyc_filename2):
+def find_globals(node, globs):
+def find_all_globals(node, globs):
+def is_frozen():
+def get_default_instance():
+def _Cfunction(name, flags, errcheck, *types):
+def _Cobject(cls, ctype):
+def _Constructor(cls, ptr=_internal_guard):
+def string_result(result, func, arguments):
+def class_result(classname):
+def track_description_list(head):
+def module_description_list(head):
+def libvlc_errmsg():
+def libvlc_clearerr():
+def libvlc_vprinterr(fmt, ap):
+def libvlc_new(argc, argv):
+def libvlc_release(p_instance):
+def libvlc_retain(p_instance):
+def libvlc_add_intf(p_instance, name):
+def libvlc_set_user_agent(p_instance, name, http):
+def libvlc_set_app_id(p_instance, id, version, icon):
+def libvlc_get_version():
+def libvlc_get_compiler():
+def libvlc_get_changeset():
+def libvlc_free(ptr):
+def libvlc_event_attach(p_event_manager, i_event_type, f_callback, user_data):
+def libvlc_event_detach(p_event_manager, i_event_type, f_callback, p_user_data):
+def libvlc_event_type_name(event_type):
+def libvlc_log_get_context(ctx):
+def libvlc_log_get_object(ctx, id):
+def libvlc_log_unset(p_instance):
+def libvlc_log_set(cb, data, p_instance):
+def libvlc_log_set_file(p_instance, stream):
+def libvlc_module_description_list_release(p_list):
+def libvlc_audio_filter_list_get(p_instance):
+def libvlc_video_filter_list_get(p_instance):
+def libvlc_clock():
+def libvlc_media_new_location(p_instance, psz_mrl):
+def libvlc_media_new_path(p_instance, path):
+def libvlc_media_new_fd(p_instance, fd):
+def libvlc_media_new_callbacks(instance, open_cb, read_cb, seek_cb, close_cb, opaque):
+def libvlc_media_new_as_node(p_instance, psz_name):
+def libvlc_media_add_option(p_md, psz_options):
+def libvlc_media_add_option_flag(p_md, psz_options, i_flags):
+def libvlc_media_retain(p_md):
+def libvlc_media_release(p_md):
+def libvlc_media_get_mrl(p_md):
+def libvlc_media_duplicate(p_md):
+def libvlc_media_get_meta(p_md, e_meta):
+def libvlc_media_set_meta(p_md, e_meta, psz_value):
+def libvlc_media_save_meta(p_md):
+def libvlc_media_get_state(p_md):
+def libvlc_media_get_stats(p_md, p_stats):
+def libvlc_media_subitems(p_md):
+def libvlc_media_event_manager(p_md):
+def libvlc_media_get_duration(p_md):
+def libvlc_media_parse(p_md):
+def libvlc_media_parse_async(p_md):
+def libvlc_media_parse_with_options(p_md, parse_flag):
+def libvlc_media_is_parsed(p_md):
+def libvlc_media_set_user_data(p_md, p_new_user_data):
+def libvlc_media_get_user_data(p_md):
+def libvlc_media_tracks_get(p_md, tracks):
+def libvlc_media_get_codec_description(i_type, i_codec):
+def libvlc_media_tracks_release(p_tracks, i_count):
+def libvlc_media_get_type(p_md):
+def libvlc_media_discoverer_new(p_inst, psz_name):
+def libvlc_media_discoverer_start(p_mdis):
+def libvlc_media_discoverer_stop(p_mdis):
+def libvlc_media_discoverer_release(p_mdis):
+def libvlc_media_discoverer_localized_name(p_mdis):
+def libvlc_media_discoverer_media_list(p_mdis):
+def libvlc_media_discoverer_event_manager(p_mdis):
+def libvlc_media_discoverer_is_running(p_mdis):
+def libvlc_media_library_new(p_instance):
+def libvlc_media_library_release(p_mlib):
+def libvlc_media_library_retain(p_mlib):
+def libvlc_media_library_load(p_mlib):
+def libvlc_media_library_media_list(p_mlib):
+def libvlc_media_list_new(p_instance):
+def libvlc_media_list_release(p_ml):
+def libvlc_media_list_retain(p_ml):
+def libvlc_media_list_set_media(p_ml, p_md):
+def libvlc_media_list_media(p_ml):
+def libvlc_media_list_add_media(p_ml, p_md):
+def libvlc_media_list_insert_media(p_ml, p_md, i_pos):
+def libvlc_media_list_remove_index(p_ml, i_pos):
+def libvlc_media_list_count(p_ml):
+def libvlc_media_list_item_at_index(p_ml, i_pos):
+def libvlc_media_list_index_of_item(p_ml, p_md):
+def libvlc_media_list_is_readonly(p_ml):
+def libvlc_media_list_lock(p_ml):
+def libvlc_media_list_unlock(p_ml):
+def libvlc_media_list_event_manager(p_ml):
+def libvlc_media_list_player_new(p_instance):
+def libvlc_media_list_player_release(p_mlp):
+def libvlc_media_list_player_retain(p_mlp):
+def libvlc_media_list_player_event_manager(p_mlp):
+def libvlc_media_list_player_set_media_player(p_mlp, p_mi):
+def libvlc_media_list_player_get_media_player(p_mlp):
+def libvlc_media_list_player_set_media_list(p_mlp, p_mlist):
+def libvlc_media_list_player_play(p_mlp):
+def libvlc_media_list_player_pause(p_mlp):
+def libvlc_media_list_player_is_playing(p_mlp):
+def libvlc_media_list_player_get_state(p_mlp):
+def libvlc_media_list_player_play_item_at_index(p_mlp, i_index):
+def libvlc_media_list_player_play_item(p_mlp, p_md):
+def libvlc_media_list_player_stop(p_mlp):
+def libvlc_media_list_player_next(p_mlp):
+def libvlc_media_list_player_previous(p_mlp):
+def libvlc_media_list_player_set_playback_mode(p_mlp, e_mode):
+def libvlc_media_player_new(p_libvlc_instance):
+def libvlc_media_player_new_from_media(p_md):
+def libvlc_media_player_release(p_mi):
+def libvlc_media_player_retain(p_mi):
+def libvlc_media_player_set_media(p_mi, p_md):
+def libvlc_media_player_get_media(p_mi):
+def libvlc_media_player_event_manager(p_mi):
+def libvlc_media_player_is_playing(p_mi):
+def libvlc_media_player_play(p_mi):
+def libvlc_media_player_set_pause(mp, do_pause):
+def libvlc_media_player_pause(p_mi):
+def libvlc_media_player_stop(p_mi):
+def libvlc_video_set_callbacks(mp, lock, unlock, display, opaque):
+def libvlc_video_set_format(mp, chroma, width, height, pitch):
+def libvlc_video_set_format_callbacks(mp, setup, cleanup):
+def libvlc_media_player_set_nsobject(p_mi, drawable):
+def libvlc_media_player_get_nsobject(p_mi):
+def libvlc_media_player_set_agl(p_mi, drawable):
+def libvlc_media_player_get_agl(p_mi):
+def libvlc_media_player_set_xwindow(p_mi, drawable):
+def libvlc_media_player_get_xwindow(p_mi):
+def libvlc_media_player_set_hwnd(p_mi, drawable):
+def libvlc_media_player_get_hwnd(p_mi):
+def libvlc_media_player_set_android_context(p_mi, p_jvm, p_awindow_handler):
+def libvlc_audio_set_callbacks(mp, play, pause, resume, flush, drain, opaque):
+def libvlc_audio_set_volume_callback(mp, set_volume):
+def libvlc_audio_set_format_callbacks(mp, setup, cleanup):
+def libvlc_audio_set_format(mp, format, rate, channels):
+def libvlc_media_player_get_length(p_mi):
+def libvlc_media_player_get_time(p_mi):
+def libvlc_media_player_set_time(p_mi, i_time):
+def libvlc_media_player_get_position(p_mi):
+def libvlc_media_player_set_position(p_mi, f_pos):
+def libvlc_media_player_set_chapter(p_mi, i_chapter):
+def libvlc_media_player_get_chapter(p_mi):
+def libvlc_media_player_get_chapter_count(p_mi):
+def libvlc_media_player_will_play(p_mi):
+def libvlc_media_player_get_chapter_count_for_title(p_mi, i_title):
+def libvlc_media_player_set_title(p_mi, i_title):
+def libvlc_media_player_get_title(p_mi):
+def libvlc_media_player_get_title_count(p_mi):
+def libvlc_media_player_previous_chapter(p_mi):
+def libvlc_media_player_next_chapter(p_mi):
+def libvlc_media_player_get_rate(p_mi):
+def libvlc_media_player_set_rate(p_mi, rate):
+def libvlc_media_player_get_state(p_mi):
+def libvlc_media_player_get_fps(p_mi):
+def libvlc_media_player_has_vout(p_mi):
+def libvlc_media_player_is_seekable(p_mi):
+def libvlc_media_player_can_pause(p_mi):
+def libvlc_media_player_program_scrambled(p_mi):
+def libvlc_media_player_next_frame(p_mi):
+def libvlc_media_player_navigate(p_mi, navigate):
+def libvlc_media_player_set_video_title_display(p_mi, position, timeout):
+def libvlc_track_description_list_release(p_track_description):
+def libvlc_toggle_fullscreen(p_mi):
+def libvlc_set_fullscreen(p_mi, b_fullscreen):
+def libvlc_get_fullscreen(p_mi):
+def libvlc_video_set_key_input(p_mi, on):
+def libvlc_video_set_mouse_input(p_mi, on):
+def libvlc_video_get_size(p_mi, num):
+def libvlc_video_get_cursor(p_mi, num):
+def libvlc_video_get_scale(p_mi):
+def libvlc_video_set_scale(p_mi, f_factor):
+def libvlc_video_get_aspect_ratio(p_mi):
+def libvlc_video_set_aspect_ratio(p_mi, psz_aspect):
+def libvlc_video_get_spu(p_mi):
+def libvlc_video_get_spu_count(p_mi):
+def libvlc_video_get_spu_description(p_mi):
+def libvlc_video_set_spu(p_mi, i_spu):
+def libvlc_video_set_subtitle_file(p_mi, psz_subtitle):
+def libvlc_video_get_spu_delay(p_mi):
+def libvlc_video_set_spu_delay(p_mi, i_delay):
+def libvlc_media_player_get_full_title_descriptions(p_mi, titles):
+def libvlc_title_descriptions_release(p_titles, i_count):
+def libvlc_media_player_get_full_chapter_descriptions(p_mi, i_chapters_of_title, pp_chapters):
+def libvlc_chapter_descriptions_release(p_chapters, i_count):
+def libvlc_video_get_crop_geometry(p_mi):
+def libvlc_video_set_crop_geometry(p_mi, psz_geometry):
+def libvlc_video_get_teletext(p_mi):
+def libvlc_video_set_teletext(p_mi, i_page):
+def libvlc_toggle_teletext(p_mi):
+def libvlc_video_get_track_count(p_mi):
+def libvlc_video_get_track_description(p_mi):
+def libvlc_video_get_track(p_mi):
+def libvlc_video_set_track(p_mi, i_track):
+def libvlc_video_take_snapshot(p_mi, num, psz_filepath, i_width, i_height):
+def libvlc_video_set_deinterlace(p_mi, psz_mode):
+def libvlc_video_get_marquee_int(p_mi, option):
+def libvlc_video_get_marquee_string(p_mi, option):
+def libvlc_video_set_marquee_int(p_mi, option, i_val):
+def libvlc_video_set_marquee_string(p_mi, option, psz_text):
+def libvlc_video_get_logo_int(p_mi, option):
+def libvlc_video_set_logo_int(p_mi, option, value):
+def libvlc_video_set_logo_string(p_mi, option, psz_value):
+def libvlc_video_get_adjust_int(p_mi, option):
+def libvlc_video_set_adjust_int(p_mi, option, value):
+def libvlc_video_get_adjust_float(p_mi, option):
+def libvlc_video_set_adjust_float(p_mi, option, value):
+def libvlc_audio_output_list_get(p_instance):
+def libvlc_audio_output_list_release(p_list):
+def libvlc_audio_output_set(p_mi, psz_name):
+def libvlc_audio_output_device_enum(mp):
+def libvlc_audio_output_device_list_get(p_instance, aout):
+def libvlc_audio_output_device_list_release(p_list):
+def libvlc_audio_output_device_set(mp, module, device_id):
+def libvlc_audio_output_device_get(mp):
+def libvlc_audio_toggle_mute(p_mi):
+def libvlc_audio_get_mute(p_mi):
+def libvlc_audio_set_mute(p_mi, status):
+def libvlc_audio_get_volume(p_mi):
+def libvlc_audio_set_volume(p_mi, i_volume):
+def libvlc_audio_get_track_count(p_mi):
+def libvlc_audio_get_track_description(p_mi):
+def libvlc_audio_get_track(p_mi):
+def libvlc_audio_set_track(p_mi, i_track):
+def libvlc_audio_get_channel(p_mi):
+def libvlc_audio_set_channel(p_mi, channel):
+def libvlc_audio_get_delay(p_mi):
+def libvlc_audio_set_delay(p_mi, i_delay):
+def libvlc_audio_equalizer_get_preset_count():
+def libvlc_audio_equalizer_get_preset_name(u_index):
+def libvlc_audio_equalizer_get_band_count():
+def libvlc_audio_equalizer_get_band_frequency(u_index):
+def libvlc_audio_equalizer_new():
+def libvlc_audio_equalizer_new_from_preset(u_index):
+def libvlc_audio_equalizer_release(p_equalizer):
+def libvlc_audio_equalizer_set_preamp(p_equalizer, f_preamp):
+def libvlc_audio_equalizer_get_preamp(p_equalizer):
+def libvlc_audio_equalizer_set_amp_at_index(p_equalizer, f_amp, u_band):
+def libvlc_audio_equalizer_get_amp_at_index(p_equalizer, u_band):
+def libvlc_media_player_set_equalizer(p_mi, p_equalizer):
+def libvlc_vlm_release(p_instance):
+def libvlc_vlm_add_broadcast(p_instance, psz_name, psz_input, psz_output, i_options, ppsz_options, b_enabled, b_loop):
+def libvlc_vlm_add_vod(p_instance, psz_name, psz_input, i_options, ppsz_options, b_enabled, psz_mux):
+def libvlc_vlm_del_media(p_instance, psz_name):
+def libvlc_vlm_set_enabled(p_instance, psz_name, b_enabled):
+def libvlc_vlm_set_output(p_instance, psz_name, psz_output):
+def libvlc_vlm_set_input(p_instance, psz_name, psz_input):
+def libvlc_vlm_add_input(p_instance, psz_name, psz_input):
+def libvlc_vlm_set_loop(p_instance, psz_name, b_loop):
+def libvlc_vlm_set_mux(p_instance, psz_name, psz_mux):
+def libvlc_vlm_change_media(p_instance, psz_name, psz_input, psz_output, i_options, ppsz_options, b_enabled, b_loop):
+def libvlc_vlm_play_media(p_instance, psz_name):
+def libvlc_vlm_stop_media(p_instance, psz_name):
+def libvlc_vlm_pause_media(p_instance, psz_name):
+def libvlc_vlm_seek_media(p_instance, psz_name, f_percentage):
+def libvlc_vlm_show_media(p_instance, psz_name):
+def libvlc_vlm_get_media_instance_position(p_instance, psz_name, i_instance):
+def libvlc_vlm_get_media_instance_time(p_instance, psz_name, i_instance):
+def libvlc_vlm_get_media_instance_length(p_instance, psz_name, i_instance):
+def libvlc_vlm_get_media_instance_rate(p_instance, psz_name, i_instance):
+def libvlc_vlm_get_media_instance_title(p_instance, psz_name, i_instance):
+def libvlc_vlm_get_media_instance_chapter(p_instance, psz_name, i_instance):
+def libvlc_vlm_get_media_instance_seekable(p_instance, psz_name, i_instance):
+def libvlc_vlm_get_event_manager(p_instance):
+def callbackmethod(callback):
+def _dot2int(v):
+def hex_version():
+def libvlc_hex_version():
+def debug_callback(event, *args, **kwds):
+def start_tribler_core(base_path, child_pipe):
+def get_color(name):
+def pretty_date(time=False):
+def get_base_path():
+def is_frozen():
+def bisect_right(item, item_list, is_torrent):
+def get_gui_setting(gui_settings, value, default, is_bool=False):
+def checkHandleAndSynchronize(default=None):
+def convert_config_to_tribler71():
+def add_tribler_config(new_config, old_config):
+def add_libtribler_config(new_config, old_config):
+def validate_source_string(source):
+def levenshtein_dist(t1_fname, t2_fname):
+def compare_torrents(torrent_1, torrent_2):
+def ent2chr(input_str):
+def make_torrent_file(input, userabortflag=None, userprogresscallback=(lambda x: None)):
+def uniconvertl(l, e):
+def uniconvert(s, enc):
+def makeinfo(input, userabortflag, userprogresscallback):
+def subfiles(d):
+def filename2pathlist(path, skipfirst=False):
+def pathlist2filename(pathlist):
+def get_uniformed_tracker_url(tracker_url):
+def parse_tracker_url(tracker_url):
+def is_frozen():
+def get_base_path():
+def get_random_port(socket_type='all', min_port=5000, max_port=60000):
+def check_random_port(port, socket_type='all'):
+def _test_port(family, sock_type, port):
+def split_into_keywords(string, to_filter_stopwords=False):
+def _a_encode_int(value, mapping):
+def _a_encode_long(value, mapping):
+def _a_encode_float(value, mapping):
+def _a_encode_unicode(value, mapping):
+def _a_encode_bytes(value, mapping):
+def _a_encode_list(values, mapping):
+def _a_encode_set(values, mapping):
+def _a_encode_tuple(values, mapping):
+def _a_encode_dictionary(values, mapping):
+def _a_encode_none(value, mapping):
+def _a_encode_bool(value, mapping):
+def encode(data, version='a'):
+def _a_decode_int(stream, offset, count, _):
+def _a_decode_long(stream, offset, count, _):
+def _a_decode_float(stream, offset, count, _):
+def _a_decode_unicode(stream, offset, count, _):
+def _a_decode_bytes(stream, offset, count, _):
+def _a_decode_list(stream, offset, count, mapping):
+def _a_decode_set(stream, offset, count, mapping):
+def _a_decode_tuple(stream, offset, count, mapping):
+def _a_decode_dictionary(stream, offset, count, mapping):
+def _a_decode_none(stream, offset, count, mapping):
+def _a_decode_true(stream, offset, count, mapping):
+def _a_decode_false(stream, offset, count, mapping):
+def decode(stream, offset=0):
+def add_url_params(url, params):
+def patch_crypto_be_discovery():
+def validate_torrent_nodes(metainfo):
+def validate_init_peers(metainfo):
+def validate_url_list(metainfo):
+def validate_http_seeds(metainfo):
+def validate_files(info):
+def validate_torrent_info(metainfo):
+def create_valid_metainfo(metainfo):
+def valid_torrent_file(metainfo):
+def is_valid_url(url):
+def http_get(uri):
+def parse_magnetlink(url):
+def fix_torrent(file_path):
+def translate_peers_into_health(peer_info_dicts):
+def warnIfDispersyThread(func):
+def return_handled_exception(request, exception):
+def convert_search_torrent_to_json(torrent):
+def convert_db_channel_to_json(channel, include_rel_score=False):
+@blocking_call_on_reactor_thread DCNL def can_edit_channel(channel_id, channel_vote):
+def convert_db_torrent_to_json(torrent, include_rel_score=False):
+def convert_remote_torrent_to_json(torrent):
+def get_parameter(parameters, name):
+def relevance_score_remote_torrent(torrent_name):
+def fix_unicode_dict(d):
+def fix_unicode_array(arr):
+def create_tracker_session(tracker_url, timeout):
+def is_android():
+def fix_filebasename(name, unit=False, maxlen=255):
+def _get_string(buff, start_idx):
+def _decode_options(packet, buff, start_idx):
+def _decode_rrq_wrq(packet, packet_buff, offset):
+def _decode_data(packet, packet_buff, offset):
+def _decode_ack(packet, packet_buff, offset):
+def _decode_error(packet, packet_buff, offset):
+def _decode_oack(packet, packet_buff, offset):
+def decode_packet(packet_buff):
+def encode_packet(packet):
+def get_default_dest_dir():
+def decode_methods_request(offset, data):
+def encode_method_selection_message(version, method):
+def decode_request(orig_offset, data):
+def encode_reply(version, rep, rsv, address_type, bind_address, bind_port):
+def decode_udp_packet(data):
+def encode_udp_packet(rsv, frag, address_type, address, port, payload):
+def prepare_xml_rss(target_path, filename):
+def make_decorator(func):
+def threaded_reactor():
+def stop_reactor():
+def deferred(timeout=None):
+def log_query(func):
+@register.tag DCNL def more_like_this(parser, token):
+@register.tag DCNL def highlight(parser, token):
+def index_field_from_django_field(f, default=CharField):
+def list_max_show_all(changelist):
+def basic_search(request, template=u'search/search.html', load_all=True, form_class=ModelSearchForm, searchqueryset=None, extra_context=None, results_per_page=None):
+def default_get_identifier(obj_or_string):
+def _lookup_identifier_method():
+def ensure_geometry(geom):
+def ensure_point(geom):
+def ensure_wgs84(point):
+def ensure_distance(dist):
+def generate_bounding_box(bottom_left, top_right):
+def haystack_get_app_modules():
+def haystack_load_apps():
+def load_backend(full_backend_path):
+def load_router(full_router_path):
+def get_identifier_method(key):
+def generate_app_name():
+def dict_diff(dict1, dict2):
+def fingerprint(key):
+def encode(obj):
+def construct_patch(self, path, data=u'', content_type=u'application/octet-stream', **extra):
+def send_patch(self, path, data=u'', content_type=u'application/octet-stream', follow=False, **extra):
+def close_db_connections(func, *args, **kwargs):
+def validate_base64(value):
+def validate_id_is_docker_compatible(value):
+def validate_app_structure(value):
+def validate_reserved_names(value):
+def validate_comma_separated(value):
+def validate_domain(value):
+def select_app_name():
+def check_blacklist(repo):
+def log_output(stream):
+def strip_prefix(name):
+@login_required DCNL def account(request):
+@login_required DCNL def dashboard(request):
+@login_required DCNL def apps(request):
+@login_required DCNL def support(request):
+def normalize(a, axis=None):
+def log_normalize(a, axis=None):
+def log_mask_zero(a):
+def log_multivariate_normal_density(X, means, covars, covariance_type='diag'):
+def _log_multivariate_normal_density_diag(X, means, covars):
+def _log_multivariate_normal_density_spherical(X, means, covars):
+def _log_multivariate_normal_density_tied(X, means, covars):
+def _log_multivariate_normal_density_full(X, means, covars, min_covar=1e-07):
+def find_in_path(fname, path=None):
+def substitutetype(ty):
+def parse_docs(element):
+def get_tu(source, lang='c', all_warnings=False, flags=[]):
+def get_cursor(source, spelling):
+def get_cursors(source, spelling):
+def unique(s):
+def generate_key(key_length=64):
+def generate_or_read_from_file(key_file='.secret_key', key_length=64):
+def setup_logging():
+def _get_deployment_flavor():
+def _get_deployment_config_file():
+def load_paste_app(app_name=None):
+def chunkreadable(iter, chunk_size=65536):
+def chunkiter(fp, chunk_size=65536):
+def cooperative_iter(iter):
+def cooperative_read(fd):
+def image_meta_to_http_headers(image_meta):
+def add_features_to_http_headers(features, headers):
+def get_image_meta_from_headers(response):
+def bool_from_string(subject):
+def mutating(func):
+def get_endpoint(service_catalog, service_type='image', endpoint_region=None, endpoint_type='publicURL'):
+def handle_unauthenticated(func):
+def handle_redirects(func):
+def get_bind_addr(default_port=None):
+def get_socket(default_port):
+def urlsafe_encrypt(key, plaintext, blocksize=16):
+def urlsafe_decrypt(key, ciphertext):
+def is_image_mutable(context, image):
+def is_member_mutable(context, member):
+def create_resource():
+def create_resource():
+def load_custom_properties():
+def create_resource(custom_properties=None):
+def create_resource():
+def image_send_notification(bytes_written, expected_size, image_meta, request, notifier):
+def create_resource():
+def redact_loc(image_meta):
+def create_resource():
+def create_resource():
+def add_cli_options():
+def from_migration_import(module_name, fromlist):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def _upgrade_sqlite(t_images, t_image_members, t_image_properties):
+def _downgrade_sqlite(t_images, t_image_members, t_image_properties):
+def _upgrade_other(t_images, t_image_members, t_image_properties, dialect):
+def _downgrade_other(t_images, t_image_members, t_image_properties, dialect):
+def _get_table(table_name, metadata):
+def _get_foreign_keys(t_images, t_image_members, t_image_properties, dialect):
+def _update_all_ids_to_uuids(t_images, t_image_members, t_image_properties):
+def _update_all_uuids_to_ids(t_images, t_image_members, t_image_properties):
+def get_images_table(meta):
+def get_image_properties_table(meta):
+def get_images_table(meta):
+def get_image_properties_table(meta):
+def get_images_table(meta):
+def get_image_properties_table(meta):
+def get_images_table(meta):
+def get_image_properties_table(meta):
+def migrate_location_credentials(migrate_engine, to_quoted):
+def fix_uri_credentials(uri, to_quoted):
+def legacy_parse_uri(self, uri):
+def get_images_table(meta):
+def get_image_properties_table(meta):
+def get_image_members_table(meta):
+def get_images_table(meta):
+def get_image_properties_table(meta):
+def _sanitize(migrate_engine, table):
+def get_images_table(meta):
+def get_image_properties_table(meta):
+def get_images_table(meta):
+def get_image_properties_table(meta):
+def migrate_location_credentials(migrate_engine, to_quoted):
+def fix_uri_credentials(uri, to_quoted):
+def legacy_parse_uri(self, uri):
+def register_models(engine):
+def unregister_models(engine):
+def ping_listener(dbapi_conn, connection_rec, connection_proxy):
+def setup_db_env():
+def configure_db():
+def get_session(autocommit=True, expire_on_commit=False):
+def get_engine():
+def get_maker(autocommit=True, expire_on_commit=False):
+def is_db_connection_error(args):
+def wrap_db_error(f):
+def image_create(context, values):
+def image_update(context, image_id, values, purge_props=False):
+def image_destroy(context, image_id):
+def _image_get(context, image_id, session=None, force_show_deleted=False):
+def is_image_mutable(context, image):
+def is_image_sharable(context, image, **kwargs):
+def is_image_visible(context, image, status=None):
+def paginate_query(query, model, limit, sort_keys, marker=None, sort_dir=None, sort_dirs=None):
+def image_get_all(context, filters=None, marker=None, limit=None, sort_key='created_at', sort_dir='desc', member_status='accepted'):
+def _drop_protected_attrs(model_class, values):
+def validate_image(values):
+def _image_update(context, values, image_id, purge_props=False):
+def _set_properties_for_image(context, image_ref, properties, purge_props=False, session=None):
+def image_property_create(context, values, session=None):
+def _image_property_update(context, prop_ref, values, session=None):
+def image_property_delete(context, prop_ref, session=None):
+def image_member_create(context, values, session=None):
+def _image_member_format(member_ref):
+def image_member_update(context, memb_id, values):
+def _image_member_update(context, memb_ref, values, session=None):
+def image_member_delete(context, memb_id, session=None):
+def _image_member_get(context, memb_id, session):
+def image_member_find(context, image_id=None, member=None, status=None):
+def _can_show_deleted(context):
+def image_tag_create(context, image_id, value, session=None):
+def image_tag_delete(context, image_id, value, session=None):
+def image_tag_get_all(context, image_id, session=None):
+def db_version():
+def upgrade(version=None):
+def downgrade(version):
+def version_control(version=None):
+def _version_control(version):
+def db_sync(version=None, current_version=None):
+def get_migrate_repo_path():
+def is_image_mutable(context, image):
+def is_image_sharable(context, image, **kwargs):
+def is_image_visible(context, image, status=None):
+def db_sync(version=None):
+def db_version():
+def get_bucket(conn, bucket_id):
+def create_bucket_if_missing(bucket, s3_conn):
+def get_key(bucket, obj):
+def create_stores():
+def get_store_from_scheme(context, scheme, loc=None):
+def get_store_from_uri(context, uri, loc=None):
+def get_from_backend(context, uri, **kwargs):
+def get_size_from_backend(context, uri):
+def delete_from_backend(context, uri, **kwargs):
+def get_store_from_location(uri):
+def safe_delete_from_backend(uri, context, image_id, **kwargs):
+def schedule_delayed_delete_from_backend(uri, image_id, **kwargs):
+def get_location_from_uri(uri):
+def register_scheme_map(scheme_map):
+def http_response_iterator(conn, response, size):
+def wait_for_scrub(path):
+def skip_if_disabled(func):
+def execute(cmd, raise_error=True, no_venv=False, exec_env=None, expect_exit=True, expected_exitcode=0, context=None):
+def find_executable(cmdname):
+def get_unused_port():
+def xattr_writes_supported(path):
+def stub_out_http_backend(stubs):
+def stub_out_registry_image_update(stubs):
+def format_s3_location(user, key, authurl, bucket, obj):
+def _get_connect_string(backend, user='openstack_citest', passwd='openstack_citest', database='openstack_citest'):
+def get_table(engine, name):
+def stub_out_registry_and_store_server(stubs, base_dir):
+def stub_out_registry_server(stubs, **kwargs):
+def _make_namespaced_xattr_key(key, namespace='user'):
+def get_xattr(path, key, **kwargs):
+def set_xattr(path, key, value):
+def inc_xattr(path, key, n=1):
+def get_client(host, port=None, timeout=None, use_ssl=False, username=None, password=None, tenant=None, auth_url=None, auth_strategy=None, auth_token=None, region=None, is_silent_upload=False, insecure=False):
+def setup(product_name):
+def isotime(at=None):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def set_rules(rules):
+def reset():
+def check(rule, target, creds, exc=None, *args, **kwargs):
+def _parse_check(rule):
+def _parse_list_rule(rule):
+def _parse_tokenize(rule):
+def reducer(*tokens):
+def _parse_text_rule(rule):
+def parse_rule(rule):
+def register(name, func=None):
+def is_uuid_like(val):
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno():
+def _get_version_from_git(pre_version):
+def _get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def to_primitive(value, convert_instances=False, convert_datetime=True, level=0, max_depth=3):
+def notify(context, message):
+def notify(context, message):
+def notify(_context, message):
+def notify(context, message):
+def notify_decorator(name, fn):
+def notify(context, publisher_id, event_type, priority, payload):
+def _get_drivers():
+def add_driver(notification_driver):
+def _reset_drivers():
+def notify(_context, message):
+def notify(_context, message):
+def import_class(import_str):
+def import_object(import_str, *args, **kwargs):
+def import_object_ns(name_space, import_str, *args, **kwargs):
+def import_module(import_str):
+def try_import(import_str, default=None):
+def format_image_notification(image):
+def make_member_list(members, **attr_map):
+def create_resource():
+def make_image_dict(image):
+def create_resource():
+def configure_registry_client():
+def _sanitize_default(s):
+def cinder_todo_format(physical_line):
+def cinder_except_format(logical_line):
+def cinder_except_format_assert(logical_line):
+def cinder_one_import_per_line(logical_line):
+def cinder_import_module_only(logical_line):
+def cinder_import_alphabetical(physical_line, line_number, lines):
+def cinder_docstring_start_space(physical_line):
+def cinder_docstring_one_line(physical_line):
+def cinder_docstring_multiline_end(physical_line):
+def check_l18n():
+def cinder_localization_strings(logical_line, tokens):
+def readlines(filename):
+def add_cinder():
+def skip_if_fake(func):
+def paginate_query(query, model, limit, sort_keys, marker=None, sort_dir=None, sort_dirs=None):
+def pipeline_factory(loader, global_conf, **local_conf):
+def load_standard_extensions(ext_mgr, logger, path, package, ext_list=None):
+def remove_invalid_options(context, filters, allowed_search_options):
+def _translate_snapshot_detail_view(context, snapshot):
+def _translate_snapshot_summary_view(context, snapshot):
+def get_pagination_params(request):
+def _get_limit_param(request):
+def _get_marker_param(request):
+def limited(items, request, max_limit=FLAGS.osapi_max_limit):
+def limited_by_marker(items, request, max_limit=FLAGS.osapi_max_limit):
+def remove_version_from_href(href):
+def get_items(obj):
+def SubTemplateElement(parent, tag, attrib=None, selector=None, subselector=None, **extra):
+def make_links(parent, selector=None):
+def make_flat_dict(name, selector=None, subselector=None, ns=None):
+def serializers(**serializers):
+def deserializers(**deserializers):
+def response(code):
+def action_peek_json(body):
+def action_peek_xml(body):
+def action(name):
+def extends(*args, **kwargs):
+def _translate_attachment_detail_view(_context, vol):
+def _translate_attachment_summary_view(_context, vol):
+def _translate_volume_detail_view(context, vol, image_id=None):
+def _translate_volume_summary_view(context, vol, image_id=None):
+def remove_invalid_options(context, search_options, allowed_search_options):
+def _translate_snapshot_detail_view(context, snapshot):
+def _translate_snapshot_summary_view(context, snapshot):
+def unquote_header_value(value):
+def parse_list_header(value):
+def parse_options_header(value):
+def _list_hosts(req, service=None):
+def check_host(fn):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def register_models():
+def get_session(autocommit=True, expire_on_commit=False):
+def synchronous_switch_listener(dbapi_conn, connection_rec):
+def ping_listener(dbapi_conn, connection_rec, connection_proxy):
+def is_db_connection_error(args):
+def get_engine():
+def get_maker(engine, autocommit=True, expire_on_commit=False):
+def is_admin_context(context):
+def is_user_context(context):
+def authorize_project_context(context, project_id):
+def authorize_user_context(context, user_id):
+def authorize_quota_class_context(context, class_name):
+def require_admin_context(f):
+def require_context(f):
+def require_volume_exists(f):
+def require_snapshot_exists(f):
+def model_query(context, *args, **kwargs):
+def exact_filter(query, model, filters, legal_keys):
+def _dict_with_extra_specs(inst_type_query):
+def _quota_reservations(session, context, reservations):
+@require_admin_context DCNL def volume_type_create(context, values):
+@require_context DCNL def volume_type_get_all(context, inactive=False, filters=None):
+@require_context DCNL def volume_type_get(context, id, session=None):
+@require_context DCNL def volume_type_get_by_name(context, name, session=None):
+@require_context DCNL def volume_get_active_by_window(context, begin, end=None, project_id=None):
+@require_context DCNL @require_volume_exists DCNL def volume_glance_metadata_get(context, volume_id, session=None):
+@require_context DCNL @require_snapshot_exists DCNL def volume_snapshot_glance_metadata_get(context, snapshot_id, session=None):
+@require_context DCNL @require_volume_exists DCNL def volume_glance_metadata_create(context, volume_id, key, value, session=None):
+@require_context DCNL @require_snapshot_exists DCNL def volume_glance_metadata_copy_to_snapshot(context, snapshot_id, volume_id, session=None):
+@require_context DCNL @require_volume_exists DCNL def volume_glance_metadata_copy_from_volume_to_volume(context, src_volume_id, volume_id, session=None):
+@require_context DCNL @require_volume_exists DCNL def volume_glance_metadata_copy_to_volume(context, volume_id, snapshot_id, session=None):
+def _find_migrate_repo():
+def service_destroy(context, service_id):
+def service_get(context, service_id):
+def service_get_by_host_and_topic(context, host, topic):
+def service_get_all(context, disabled=None):
+def service_get_all_by_topic(context, topic):
+def service_get_all_by_host(context, host):
+def service_get_all_volume_sorted(context):
+def service_get_by_args(context, host, binary):
+def service_create(context, values):
+def service_update(context, service_id, values):
+def migration_update(context, id, values):
+def migration_create(context, values):
+def migration_get(context, migration_id):
+def migration_get_by_instance_and_status(context, instance_uuid, status):
+def migration_get_all_unconfirmed(context, confirm_window):
+def iscsi_target_count_by_host(context, host):
+def iscsi_target_create_safe(context, values):
+def volume_allocate_iscsi_target(context, volume_id, host):
+def volume_attached(context, volume_id, instance_id, mountpoint):
+def volume_create(context, values):
+def volume_data_get_for_host(context, host, session=None):
+def volume_data_get_for_project(context, project_id, session=None):
+def volume_destroy(context, volume_id):
+def volume_detached(context, volume_id):
+def volume_get(context, volume_id):
+def volume_get_all(context, marker, limit, sort_key, sort_dir):
+def volume_get_all_by_host(context, host):
+def volume_get_all_by_instance_uuid(context, instance_uuid):
+def volume_get_all_by_project(context, project_id, marker, limit, sort_key, sort_dir):
+def volume_get_iscsi_target_num(context, volume_id):
+def volume_update(context, volume_id, values):
+def snapshot_create(context, values):
+def snapshot_destroy(context, snapshot_id):
+def snapshot_get(context, snapshot_id):
+def snapshot_get_all(context):
+def snapshot_get_all_by_project(context, project_id):
+def snapshot_get_all_for_volume(context, volume_id):
+def snapshot_update(context, snapshot_id, values):
+def snapshot_data_get_for_project(context, project_id, session=None):
+def snapshot_metadata_get(context, snapshot_id):
+def snapshot_metadata_delete(context, snapshot_id, key):
+def snapshot_metadata_update(context, snapshot_id, metadata, delete):
+def volume_metadata_get(context, volume_id):
+def volume_metadata_delete(context, volume_id, key):
+def volume_metadata_update(context, volume_id, metadata, delete):
+def volume_type_create(context, values):
+def volume_type_get_all(context, inactive=False):
+def volume_type_get(context, id):
+def volume_type_get_by_name(context, name):
+def volume_type_destroy(context, id):
+def volume_get_active_by_window(context, begin, end=None, project_id=None):
+def volume_type_extra_specs_get(context, volume_type_id):
+def volume_type_extra_specs_delete(context, volume_type_id, key):
+def volume_type_extra_specs_update_or_create(context, volume_type_id, extra_specs):
+def volume_glance_metadata_create(context, volume_id, key, value):
+def volume_glance_metadata_get(context, volume_id):
+def volume_snapshot_glance_metadata_get(context, snapshot_id):
+def volume_glance_metadata_copy_to_snapshot(context, snapshot_id, volume_id):
+def volume_glance_metadata_copy_to_volume(context, volume_id, snapshot_id):
+def volume_glance_metadata_delete_by_volume(context, volume_id):
+def volume_glance_metadata_delete_by_snapshot(context, snapshot_id):
+def volume_glance_metadata_copy_from_volume_to_volume(context, src_volume_id, volume_id):
+def sm_backend_conf_create(context, values):
+def sm_backend_conf_update(context, sm_backend_conf_id, values):
+def sm_backend_conf_delete(context, sm_backend_conf_id):
+def sm_backend_conf_get(context, sm_backend_conf_id):
+def sm_backend_conf_get_by_sr(context, sr_uuid):
+def sm_backend_conf_get_all(context):
+def sm_flavor_create(context, values):
+def sm_flavor_update(context, sm_flavor_id, values):
+def sm_flavor_delete(context, sm_flavor_id):
+def sm_flavor_get(context, sm_flavor):
+def sm_flavor_get_all(context):
+def sm_volume_create(context, values):
+def sm_volume_update(context, volume_id, values):
+def sm_volume_delete(context, volume_id):
+def sm_volume_get(context, volume_id):
+def sm_volume_get_all(context):
+def quota_create(context, project_id, resource, limit):
+def quota_get(context, project_id, resource):
+def quota_get_all_by_project(context, project_id):
+def quota_update(context, project_id, resource, limit):
+def quota_destroy(context, project_id, resource):
+def quota_class_create(context, class_name, resource, limit):
+def quota_class_get(context, class_name, resource):
+def quota_class_get_all_by_name(context, class_name):
+def quota_class_update(context, class_name, resource, limit):
+def quota_class_destroy(context, class_name, resource):
+def quota_class_destroy_all_by_name(context, class_name):
+def quota_usage_create(context, project_id, resource, in_use, reserved, until_refresh):
+def quota_usage_get(context, project_id, resource):
+def quota_usage_get_all_by_project(context, project_id):
+def reservation_create(context, uuid, usage, project_id, resource, delta, expire):
+def reservation_get(context, uuid):
+def reservation_get_all_by_project(context, project_id):
+def reservation_destroy(context, uuid):
+def quota_reserve(context, resources, quotas, deltas, expire, until_refresh, max_age, project_id=None):
+def reservation_commit(context, reservations, project_id=None):
+def reservation_rollback(context, reservations, project_id=None):
+def quota_destroy_all_by_project(context, project_id):
+def reservation_expire(context):
+def backup_get(context, backup_id):
+def backup_get_all(context):
+def backup_get_all_by_host(context, host):
+def backup_create(context, values):
+def backup_get_all_by_project(context, project_id):
+def backup_update(context, backup_id, values):
+def backup_destroy(context, backup_id):
+def db_sync(version=None):
+def db_version():
+def find_config(config_path):
+def execute(*cmd, **kwargs):
+def trycmd(*args, **kwargs):
+def last_completed_audit_period(unit=None):
+def generate_password(length=20, symbolgroups=DEFAULT_PASSWORD_SYMBOLS):
+def safe_minidom_parse_string(xml_string):
+def xhtml_escape(value):
+def utf8(value):
+def delete_if_exists(pathname):
+def get_from_path(items, path):
+def flatten_dict(dict_, flattened=None):
+def partition_dict(dict_, keys):
+def map_dict_keys(dict_, key_map):
+def subset_dict(dict_, keys):
+def check_isinstance(obj, cls):
+def bool_from_str(val):
+def is_valid_boolstr(val):
+def is_valid_ipv4(address):
+def monkey_patch():
+def convert_to_list_dict(lst, label):
+def timefunc(func):
+def generate_glance_url():
+@contextlib.contextmanager DCNL def logging_error(message):
+@contextlib.contextmanager DCNL def remove_path_on_error(path):
+def make_dev_path(dev, partition=None, base='/dev'):
+def total_seconds(td):
+def sanitize_hostname(hostname):
+def read_cached_file(filename, cache_info, reload_func=None):
+def file_open(*args, **kwargs):
+def hash_file(file_like_object):
+@contextlib.contextmanager DCNL def temporary_mutation(obj, **kwargs):
+def service_is_up(service):
+def generate_mac_address():
+def read_file_as_root(file_path):
+@contextlib.contextmanager DCNL def temporary_chown(path, owner_uid=None):
+def strcmp_const_time(s1, s2):
+def walk_class_hierarchy(clazz, encountered=None):
+def ensure_tree(path):
+def to_bytes(text, default=0):
+def enforce(context, action, target):
+def check_is_admin(roles):
+def wire_HTTPConnection_to_WSGI(host, app):
+def compare_links(actual, expected):
+def compare_media_types(actual, expected):
+def compare_tree_to_dict(actual, expected, keys):
+def wire_HTTPConnection_to_WSGI(host, app):
+def stub_out(stubs, funcs):
+def generate_random_alphanumeric(length):
+def generate_random_numeric(length):
+def generate_new_element(items, prefix, numeric=False):
+def fake_execute_set_repliers(repliers):
+def fake_execute_default_reply_handler(*ignore_args, **ignore_kwargs):
+def fake_execute(*cmd_parts, **kwargs):
+def example_decorator(name, function):
+def stub_out_https_backend(stubs):
+def _get_connect_string(backend, user='openstack_citest', passwd='openstack_citest', database='openstack_citest'):
+def get_table(engine, name):
+def serialize_args(*args, **kwargs):
+def _get_my_ip():
+def setup(product_name):
+def ensure_tree(path):
+def msg_reply(conf, msg_id, reply_q, connection_pool, reply=None, failure=None, ending=False, log_failure=True):
+def unpack_context(conf, msg):
+def pack_context(msg, context):
+def _add_unique_id(msg):
+def create_connection(conf, new, connection_pool):
+def multicall(conf, context, topic, msg, timeout, connection_pool):
+def call(conf, context, topic, msg, timeout, connection_pool):
+def cast(conf, context, topic, msg, connection_pool):
+def fanout_cast(conf, context, topic, msg, connection_pool):
+def cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def fanout_cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def notify(conf, context, topic, msg, connection_pool, envelope):
+def create_connection(new=True):
+def call(context, topic, msg, timeout=None, check_for_lock=False):
+def cast(context, topic, msg):
+def fanout_cast(context, topic, msg):
+def multicall(context, topic, msg, timeout=None, check_for_lock=False):
+def notify(context, topic, msg, envelope=False):
+def cleanup():
+def cast_to_server(context, server_params, topic, msg):
+def fanout_cast_to_server(context, server_params, topic, msg):
+def queue_get_for(context, topic, host):
+def _get_impl():
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def create_connection(conf, new=True):
+def check_serialize(msg):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def fanout_cast(conf, context, topic, msg):
+def _serialize(data):
+def _deserialize(data):
+def unflatten_envelope(packenv):
+def _multi_send(method, context, topic, msg, timeout=None, envelope=False, _msg_id=None):
+def multicall(conf, *args, **kwargs):
+def call(conf, *args, **kwargs):
+def cast(conf, *args, **kwargs):
+def fanout_cast(conf, context, topic, msg, **kwargs):
+def notify(conf, context, topic, msg, envelope):
+def cleanup():
+def _safe_log(log_func, msg, msg_data):
+def serialize_remote_exception(failure_info, log_failure=True):
+def client_exceptions(*exceptions):
+def version_is_compatible(imp_version, version):
+def _get_queue_arguments(conf):
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def parse_host_port(address, default_port=None):
+def isotime(at=None, subsecond=False):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def set_brain(brain):
+def reset():
+def enforce(match_list, target_dict, credentials_dict, exc=None, *args, **kwargs):
+def register(name, func=None):
+@register('rule') DCNL def _check_rule(brain, match_kind, match, target_dict, cred_dict):
+@register('role') DCNL def _check_role(brain, match_kind, match, target_dict, cred_dict):
+@register('http') DCNL def _check_http(brain, match_kind, match, target_dict, cred_dict):
+@register(None) DCNL def _check_generic(brain, match_kind, match, target_dict, cred_dict):
+def synchronized(name, lock_file_prefix, external=False, lock_path=None):
+def is_uuid_like(val):
+def int_from_bool_as_string(subject):
+def bool_from_string(subject):
+def safe_decode(text, incoming=None, errors='strict'):
+def safe_encode(text, incoming=None, encoding='utf-8', errors='strict'):
+@contextlib.contextmanager DCNL def save_and_reraise_exception():
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno(git_dir):
+def _get_version_from_git(pre_version):
+def _get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def to_primitive(value, convert_instances=False, convert_datetime=True, level=0, max_depth=3):
+def notify(context, message):
+def notify(context, message):
+def notify(_context, message):
+def notify(context, message):
+def notify_decorator(name, fn):
+def notify(context, publisher_id, event_type, priority, payload):
+def _get_drivers():
+def add_driver(notification_driver):
+def _reset_drivers():
+def notify(_context, message):
+def notify(_context, message):
+def import_class(import_str):
+def import_object(import_str, *args, **kwargs):
+def import_object_ns(name_space, import_str, *args, **kwargs):
+def import_module(import_str):
+def try_import(import_str, default=None):
+def get_context_from_function_and_args(function, args, kwargs):
+def build_filter(class_name, *args):
+def load_filters(filters_path):
+def match_filter(filters, userargs, exec_dirs=[]):
+def periodic_task(*args, **kwargs):
+def qemu_img_info(path):
+def convert_image(source, dest, out_format):
+def _parse_image_ref(image_href):
+def _create_glance_client(context, host, port, use_ssl, version=FLAGS.glance_api_version):
+def get_api_servers():
+def _convert_timestamps_to_datetimes(image_meta):
+def _reraise_translated_image_exception(image_id):
+def _reraise_translated_exception():
+def get_remote_image_service(context, image_href):
+def volume_update_db(context, volume_id, host):
+def notify_usage_exists(context, volume_ref, current_period=False):
+def create(context, name, extra_specs={}):
+def destroy(context, id):
+def get_all_types(context, inactive=0, search_opts={}):
+def get_volume_type(ctxt, id):
+def get_volume_type_by_name(context, name):
+def get_default_volume_type():
+def wrap_check_policy(func):
+def _sanitize_default(s):
+def _bytes2int(bytes):
+def _parse_network_details(machine_id):
+def _get_windows_network_adapters():
+def _get_linux_network_adapters():
+def _get_adapter_name_and_ip_address(network_adapters, mac_address):
+def _get_win_adapter_name_and_ip_address(mac_address):
+def _get_linux_adapter_name_and_ip_address(mac_address):
+def _execute(cmd_list, process_input=None, check_exit_code=True):
+def _windows_set_networking():
+def _set_rhel_networking(network_details=None):
+def _set_ubuntu_networking(network_details=None):
+def _linux_set_networking():
+def call_xenapi(xenapi, method, *args):
+def find_orphaned_instances(xenapi):
+def cleanup_instance(xenapi, instance, vm_ref, vm_rec):
+def _get_applicable_vm_recs(xenapi):
+def print_xen_object(obj_type, obj, indent_level=0, spaces_per_indent=4):
+def _find_vdis_connected_to_vm(xenapi, connected_vdi_uuids):
+def _find_all_vdis_and_system_vdis(xenapi, all_vdi_uuids, connected_vdi_uuids):
+def find_orphaned_vdi_uuids(xenapi):
+def list_orphaned_vdis(vdi_uuids):
+def clean_orphaned_vdis(xenapi, vdi_uuids):
+def list_orphaned_instances(orphaned_instances):
+def clean_orphaned_instances(xenapi, orphaned_instances):
+def main():
+def excluded(self, filename):
+def input_dir(self, dirname):
+def nova_todo_format(physical_line, tokens):
+def nova_except_format(logical_line):
+def nova_except_format_assert(logical_line):
+def nova_import_rules(logical_line):
+def nova_import_alphabetical(logical_line, blank_lines, previous_logical, indent_level, previous_indent_level):
+def nova_import_no_db_in_virt(logical_line, filename):
+def is_docstring(physical_line, previous_logical):
+def nova_docstring_start_space(physical_line, previous_logical):
+def nova_docstring_one_line(physical_line, previous_logical):
+def nova_docstring_multiline_end(physical_line, previous_logical, tokens):
+def nova_docstring_multiline_start(physical_line, previous_logical, tokens):
+def nova_no_cr(physical_line):
+def check_i18n():
+def nova_localization_strings(logical_line, tokens):
+def nova_is_not(logical_line):
+def nova_not_in(logical_line):
+def readlines(filename):
+def add_nova():
+def once_git_check_commit_title():
+def get_availability_zones(context):
+def _cleanse_dict(original):
+def wrap_exception(notifier=None, publisher_id=None, event_type=None, level=None):
+def validate_url_path(val):
+def validate_user_data(user_data):
+def validate(args, validator):
+def convert_password(context, password):
+def image_type(image_type):
+@memoize DCNL def id_to_glance_id(context, image_id):
+@memoize DCNL def glance_id_to_id(context, glance_id):
+def ec2_id_to_id(ec2_id):
+def image_ec2_id(image_id, image_type='ami'):
+def get_ip_info_for_instance(context, instance):
+def id_to_ec2_id(instance_id, template='i-%08x'):
+def id_to_ec2_inst_id(instance_id):
+def ec2_inst_id_to_uuid(context, ec2_id):
+def id_to_ec2_snap_id(snapshot_id):
+def id_to_ec2_vol_id(volume_id):
+def ec2_vol_id_to_uuid(ec2_id):
+def is_ec2_timestamp_expired(request, expires=None):
+def ec2_snap_id_to_uuid(ec2_id):
+def _try_convert(value):
+def dict_from_dotted_str(items):
+def ec2_error(req, request_id, code, message):
+def _state_description(vm_state, _shutdown_terminate):
+def _parse_block_device_mapping(bdm):
+def _format_block_device_mapping(bdm):
+def _format_mappings(properties, result):
+def _database_to_isoformat(datetimeobj):
+def pipeline_factory(loader, global_conf, **local_conf):
+def wrap_errors(fn):
+def load_standard_extensions(ext_mgr, logger, path, package, ext_list=None):
+def status_from_state(vm_state, task_state='default'):
+def vm_state_from_status(status):
+def get_pagination_params(request):
+def _get_limit_param(request):
+def _get_marker_param(request):
+def limited(items, request, max_limit=CONF.osapi_max_limit):
+def get_limit_and_marker(request, max_limit=CONF.osapi_max_limit):
+def limited_by_marker(items, request, max_limit=CONF.osapi_max_limit):
+def get_id_from_href(href):
+def remove_version_from_href(href):
+def get_networks_for_instance(context, instance):
+def raise_http_conflict_for_instance_invalid_state(exc, action):
+def get_items(obj):
+def SubTemplateElement(parent, tag, attrib=None, selector=None, subselector=None, **extra):
+def make_links(parent, selector=None):
+def make_flat_dict(name, selector=None, subselector=None, ns=None):
+def safe_minidom_parse_string(xml_string):
+def serializers(**serializers):
+def deserializers(**deserializers):
+def response(code):
+def action_peek_json(body):
+def action_peek_xml(body):
+def action(name):
+def extends(*args, **kwargs):
+def unquote_header_value(value):
+def parse_list_header(value):
+def parse_options_header(value):
+def _translate_keys(cons):
+def _translate_detail_keys(cons):
+def _translate_volume_detail_view(context, vol):
+def _translate_volume_summary_view(context, vol):
+def _translate_attachment_detail_view(volume_id, instance_uuid, mountpoint):
+def _translate_attachment_summary_view(volume_id, instance_uuid, mountpoint):
+def _translate_snapshot_detail_view(context, vol):
+def _translate_snapshot_summary_view(context, vol):
+def _translate_interface_attachment_view(port_info):
+def _filter_keys(item, keys):
+def get_host_from_body(fn):
+def _translate_vif_summary_view(_context, vif):
+def _unquote_domain(domain):
+def remove_invalid_options(context, search_options, allowed_search_options):
+def drop_unique_constraint(migrate_engine, table_name, uc_name, *columns, **col_name_col_instance):
+def drop_old_duplicate_entries_from_table(migrate_engine, table_name, use_soft_delete, *uc_column_names):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def _drop_index(engine, table, idx_name):
+def _map_nodes(meta):
+def _update_nodes(nodemap, instances, migrations):
+def downgrade(migrate_engine):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def get_backend():
+def require_admin_context(f):
+def require_context(f):
+def require_instance_exists_using_uuid(f):
+def require_aggregate_exists(f):
+def _retry_on_deadlock(f):
+def model_query(context, model, *args, **kwargs):
+def exact_filter(query, model, filters, legal_keys):
+def _prep_stats_dict(values):
+@require_admin_context DCNL def compute_node_create(context, values):
+@require_admin_context DCNL def compute_node_update(context, compute_id, values, prune_stats=False):
+@require_admin_context DCNL def compute_node_delete(context, compute_id):
+def compute_node_statistics(context):
+def _ip_range_splitter(ips, block_size=256):
+@require_admin_context DCNL def fixed_ip_associate(context, address, instance_uuid, network_id=None, reserved=False):
+@require_admin_context DCNL def fixed_ip_get_by_address_detailed(context, address, session=None):
+@require_context DCNL def virtual_interface_create(context, values):
+@require_context DCNL def virtual_interface_get(context, vif_id):
+@require_context DCNL def virtual_interface_get_by_address(context, address):
+@require_context DCNL def virtual_interface_get_by_uuid(context, vif_uuid):
+@require_context DCNL @require_instance_exists_using_uuid DCNL def virtual_interface_get_by_instance(context, instance_uuid):
+@require_context DCNL def virtual_interface_get_by_instance_and_network(context, instance_uuid, network_id):
+@require_context DCNL def virtual_interface_delete_by_instance(context, instance_uuid):
+@require_context DCNL def virtual_interface_get_all(context):
+@require_context DCNL def instance_create(context, values):
+def _instances_fill_metadata(context, instances, manual_joins=None):
+@require_context DCNL def instance_get_all_by_filters(context, filters, sort_key, sort_dir, limit=None, marker=None, columns_to_join=None, session=None):
+def regex_filter(query, model, filters):
+@require_context DCNL def instance_get_active_by_window_joined(context, begin, end=None, project_id=None, host=None):
+@require_admin_context DCNL def _instance_get_all_uuids_by_host(context, host, session=None):
+@require_context DCNL def instance_update_and_get_original(context, instance_uuid, values):
+def instance_add_security_group(context, instance_uuid, security_group_id):
+@require_context DCNL def instance_remove_security_group(context, instance_uuid, security_group_id):
+@require_context DCNL def instance_info_cache_get(context, instance_uuid):
+@require_context DCNL def instance_info_cache_update(context, instance_uuid, values):
+@require_context DCNL def instance_info_cache_delete(context, instance_uuid):
+@require_admin_context DCNL def network_associate(context, project_id, network_id=None, force=False):
+def _quota_reservations_query(session, context, reservations):
+@require_context DCNL def ec2_volume_create(context, volume_uuid, id=None):
+@require_context DCNL def ec2_snapshot_create(context, snapshot_uuid, id=None):
+def _security_group_get_by_names(context, session, project_id, group_names):
+def security_group_ensure_default(context, session=None):
+@require_admin_context DCNL def instance_type_create(context, values):
+def _dict_with_extra_specs(inst_type_query):
+@require_context DCNL def instance_type_get_all(context, inactive=False, filters=None):
+@require_context DCNL def instance_type_get(context, id, session=None):
+@require_context DCNL def instance_type_get_by_name(context, name, session=None):
+@require_context DCNL def instance_type_get_by_flavor_id(context, flavor_id, session=None):
+@require_admin_context DCNL def instance_type_destroy(context, name):
+@require_admin_context DCNL def instance_type_access_get_by_flavor_id(context, flavor_id):
+@require_admin_context DCNL def instance_type_access_add(context, flavor_id, project_id):
+@require_admin_context DCNL def instance_type_access_remove(context, flavor_id, project_id):
+@require_context DCNL def vol_get_usage_by_time(context, begin):
+def s3_image_get(context, image_id):
+def s3_image_get_by_uuid(context, image_uuid):
+def s3_image_create(context, image_uuid):
+def instance_fault_create(context, values):
+def instance_fault_get_by_instance_uuids(context, instance_uuids):
+def actions_get(context, instance_uuid):
+def action_get_by_request_id(context, instance_uuid, request_id):
+def action_event_start(context, values):
+def action_event_finish(context, values):
+@require_context DCNL def ec2_instance_create(context, instance_uuid, id=None):
+@require_admin_context DCNL def archive_deleted_rows_for_table(context, tablename, max_rows):
+@require_admin_context DCNL def archive_deleted_rows(context, max_rows=None):
+def _find_migrate_repo():
+def constraint(**conditions):
+def equal_any(*values):
+def not_equal(*values):
+def service_destroy(context, instance_id):
+def service_get(context, service_id):
+def service_get_by_host_and_topic(context, host, topic):
+def service_get_all(context, disabled=None):
+def service_get_all_by_topic(context, topic):
+def service_get_all_by_host(context, host):
+def service_get_by_compute_host(context, host):
+def service_get_by_args(context, host, binary):
+def service_create(context, values):
+def service_update(context, service_id, values):
+def compute_node_get(context, compute_id):
+def compute_node_get_all(context):
+def compute_node_search_by_hypervisor(context, hypervisor_match):
+def compute_node_create(context, values):
+def compute_node_update(context, compute_id, values, prune_stats=False):
+def compute_node_delete(context, compute_id):
+def certificate_create(context, values):
+def certificate_get_all_by_project(context, project_id):
+def certificate_get_all_by_user(context, user_id):
+def certificate_get_all_by_user_and_project(context, user_id, project_id):
+def floating_ip_get_pools(context):
+def floating_ip_allocate_address(context, project_id, pool):
+def floating_ip_bulk_create(context, ips):
+def floating_ip_bulk_destroy(context, ips):
+def floating_ip_create(context, values):
+def floating_ip_count_by_project(context, project_id, session=None):
+def floating_ip_deallocate(context, address):
+def floating_ip_destroy(context, address):
+def floating_ip_disassociate(context, address):
+def floating_ip_fixed_ip_associate(context, floating_address, fixed_address, host):
+def floating_ip_get_all(context):
+def floating_ip_get_all_by_host(context, host):
+def floating_ip_get_all_by_project(context, project_id):
+def floating_ip_get_by_address(context, address):
+def floating_ip_get_by_fixed_address(context, fixed_address):
+def floating_ip_get_by_fixed_ip_id(context, fixed_ip_id):
+def floating_ip_update(context, address, values):
+def floating_ip_set_auto_assigned(context, address):
+def dnsdomain_list(context):
+def dnsdomain_register_for_zone(context, fqdomain, zone):
+def dnsdomain_register_for_project(context, fqdomain, project):
+def dnsdomain_unregister(context, fqdomain):
+def dnsdomain_get(context, fqdomain):
+def migration_update(context, id, values):
+def migration_create(context, values):
+def migration_get(context, migration_id):
+def migration_get_by_instance_and_status(context, instance_uuid, status):
+def migration_get_unconfirmed_by_dest_compute(context, confirm_window, dest_compute):
+def migration_get_in_progress_by_host_and_node(context, host, node):
+def fixed_ip_associate(context, address, instance_uuid, network_id=None, reserved=False):
+def fixed_ip_associate_pool(context, network_id, instance_uuid=None, host=None):
+def fixed_ip_create(context, values):
+def fixed_ip_bulk_create(context, ips):
+def fixed_ip_disassociate(context, address):
+def fixed_ip_disassociate_all_by_timeout(context, host, time):
+def fixed_ip_get(context, id, get_network=False):
+def fixed_ip_get_all(context):
+def fixed_ip_get_by_address(context, address):
+def fixed_ip_get_by_address_detailed(context, address):
+def fixed_ip_get_by_floating_address(context, floating_address):
+def fixed_ip_get_by_instance(context, instance_uuid):
+def fixed_ip_get_by_host(context, host):
+def fixed_ip_get_by_network_host(context, network_uuid, host):
+def fixed_ips_by_virtual_interface(context, vif_id):
+def fixed_ip_update(context, address, values):
+def fixed_ip_count_by_project(context, project_id, session=None):
+def virtual_interface_create(context, values):
+def virtual_interface_get(context, vif_id):
+def virtual_interface_get_by_address(context, address):
+def virtual_interface_get_by_uuid(context, vif_uuid):
+def virtual_interface_get_by_instance(context, instance_id):
+def virtual_interface_get_by_instance_and_network(context, instance_id, network_id):
+def virtual_interface_delete_by_instance(context, instance_id):
+def virtual_interface_get_all(context):
+def instance_create(context, values):
+def instance_data_get_for_project(context, project_id, session=None):
+def instance_destroy(context, instance_uuid, constraint=None, update_cells=True):
+def instance_get_by_uuid(context, uuid):
+def instance_get(context, instance_id):
+def instance_get_all(context, columns_to_join=None):
+def instance_get_all_by_filters(context, filters, sort_key='created_at', sort_dir='desc', limit=None, marker=None, columns_to_join=None):
+def instance_get_active_by_window_joined(context, begin, end=None, project_id=None, host=None):
+def instance_get_all_by_host(context, host, columns_to_join=None):
+def instance_get_all_by_host_and_node(context, host, node):
+def instance_get_all_by_host_and_not_type(context, host, type_id=None):
+def instance_get_floating_address(context, instance_id):
+def instance_floating_address_get_all(context, instance_uuid):
+def instance_get_all_hung_in_rebooting(context, reboot_window):
+def instance_test_and_set(context, instance_uuid, attr, ok_states, new_state):
+def instance_update(context, instance_uuid, values, update_cells=True):
+def instance_update_and_get_original(context, instance_uuid, values):
+def instance_add_security_group(context, instance_id, security_group_id):
+def instance_remove_security_group(context, instance_id, security_group_id):
+def instance_info_cache_get(context, instance_uuid):
+def instance_info_cache_update(context, instance_uuid, values, update_cells=True):
+def instance_info_cache_delete(context, instance_uuid):
+def key_pair_create(context, values):
+def key_pair_destroy(context, user_id, name):
+def key_pair_get(context, user_id, name):
+def key_pair_get_all_by_user(context, user_id):
+def key_pair_count_by_user(context, user_id):
+def network_associate(context, project_id, network_id=None, force=False):
+def network_count_reserved_ips(context, network_id):
+def network_create_safe(context, values):
+def network_delete_safe(context, network_id):
+def network_disassociate(context, network_id, disassociate_host=True, disassociate_project=True):
+def network_get(context, network_id, project_only='allow_none'):
+def network_get_all(context):
+def network_get_all_by_uuids(context, network_uuids, project_only='allow_none'):
+def network_in_use_on_host(context, network_id, host=None):
+def network_get_associated_fixed_ips(context, network_id, host=None):
+def network_get_by_uuid(context, uuid):
+def network_get_by_cidr(context, cidr):
+def network_get_all_by_instance(context, instance_id):
+def network_get_all_by_host(context, host):
+def network_set_host(context, network_id, host_id):
+def network_update(context, network_id, values):
+def quota_create(context, project_id, resource, limit):
+def quota_get(context, project_id, resource):
+def quota_get_all_by_project(context, project_id):
+def quota_update(context, project_id, resource, limit):
+def quota_class_create(context, class_name, resource, limit):
+def quota_class_get(context, class_name, resource):
+def quota_class_get_all_by_name(context, class_name):
+def quota_class_update(context, class_name, resource, limit):
+def quota_usage_get(context, project_id, resource):
+def quota_usage_get_all_by_project(context, project_id):
+def quota_usage_update(context, project_id, resource, **kwargs):
+def reservation_create(context, uuid, usage, project_id, resource, delta, expire):
+def reservation_get(context, uuid):
+def quota_reserve(context, resources, quotas, deltas, expire, until_refresh, max_age, project_id=None):
+def reservation_commit(context, reservations, project_id=None):
+def reservation_rollback(context, reservations, project_id=None):
+def quota_destroy_all_by_project(context, project_id):
+def reservation_expire(context):
+def block_device_mapping_create(context, values):
+def block_device_mapping_update(context, bdm_id, values):
+def block_device_mapping_update_or_create(context, values):
+def block_device_mapping_get_all_by_instance(context, instance_uuid):
+def block_device_mapping_destroy(context, bdm_id):
+def block_device_mapping_destroy_by_instance_and_device(context, instance_uuid, device_name):
+def block_device_mapping_destroy_by_instance_and_volume(context, instance_uuid, volume_id):
+def security_group_get_all(context):
+def security_group_get(context, security_group_id):
+def security_group_get_by_name(context, project_id, group_name):
+def security_group_get_by_project(context, project_id):
+def security_group_get_by_instance(context, instance_id):
+def security_group_exists(context, project_id, group_name):
+def security_group_in_use(context, group_id):
+def security_group_create(context, values):
+def security_group_ensure_default(context):
+def security_group_destroy(context, security_group_id):
+def security_group_count_by_project(context, project_id, session=None):
+def security_group_rule_create(context, values):
+def security_group_rule_get_by_security_group(context, security_group_id):
+def security_group_rule_get_by_security_group_grantee(context, security_group_id):
+def security_group_rule_destroy(context, security_group_rule_id):
+def security_group_rule_get(context, security_group_rule_id):
+def security_group_rule_count_by_group(context, security_group_id):
+def provider_fw_rule_create(context, rule):
+def provider_fw_rule_get_all(context):
+def provider_fw_rule_destroy(context, rule_id):
+def project_get_networks(context, project_id, associate=True):
+def console_pool_create(context, values):
+def console_pool_get_by_host_type(context, compute_host, proxy_host, console_type):
+def console_pool_get_all_by_host_type(context, host, console_type):
+def console_create(context, values):
+def console_delete(context, console_id):
+def console_get_by_pool_instance(context, pool_id, instance_uuid):
+def console_get_all_by_instance(context, instance_uuid):
+def console_get(context, console_id, instance_uuid=None):
+def instance_type_create(context, values):
+def instance_type_get_all(context, inactive=False, filters=None):
+def instance_type_get(context, id):
+def instance_type_get_by_name(context, name):
+def instance_type_get_by_flavor_id(context, id):
+def instance_type_destroy(context, name):
+def instance_type_access_get_by_flavor_id(context, flavor_id):
+def instance_type_access_add(context, flavor_id, project_id):
+def instance_type_access_remove(context, flavor_id, project_id):
+def cell_create(context, values):
+def cell_update(context, cell_name, values):
+def cell_delete(context, cell_name):
+def cell_get(context, cell_name):
+def cell_get_all(context):
+def instance_metadata_get(context, instance_uuid):
+def instance_metadata_delete(context, instance_uuid, key):
+def instance_metadata_update(context, instance_uuid, metadata, delete):
+def instance_system_metadata_get(context, instance_uuid):
+def instance_system_metadata_update(context, instance_uuid, metadata, delete):
+def agent_build_create(context, values):
+def agent_build_get_by_triple(context, hypervisor, os, architecture):
+def agent_build_get_all(context, hypervisor=None):
+def agent_build_destroy(context, agent_update_id):
+def agent_build_update(context, agent_build_id, values):
+def bw_usage_get(context, uuid, start_period, mac):
+def bw_usage_get_by_uuids(context, uuids, start_period):
+def bw_usage_update(context, uuid, mac, start_period, bw_in, bw_out, last_ctr_in, last_ctr_out, last_refreshed=None, update_cells=True):
+def instance_type_extra_specs_get(context, flavor_id):
+def instance_type_extra_specs_delete(context, flavor_id, key):
+def instance_type_extra_specs_update_or_create(context, flavor_id, extra_specs):
+def vol_get_usage_by_time(context, begin):
+def vol_usage_update(context, id, rd_req, rd_bytes, wr_req, wr_bytes, instance_id, last_refreshed=None, update_totals=False):
+def s3_image_get(context, image_id):
+def s3_image_get_by_uuid(context, image_uuid):
+def s3_image_create(context, image_uuid):
+def aggregate_create(context, values, metadata=None):
+def aggregate_get(context, aggregate_id):
+def aggregate_get_by_host(context, host, key=None):
+def aggregate_metadata_get_by_host(context, host, key=None):
+def aggregate_host_get_by_metadata_key(context, key):
+def aggregate_update(context, aggregate_id, values):
+def aggregate_delete(context, aggregate_id):
+def aggregate_get_all(context):
+def aggregate_metadata_add(context, aggregate_id, metadata, set_delete=False):
+def aggregate_metadata_get(context, aggregate_id):
+def aggregate_metadata_delete(context, aggregate_id, key):
+def aggregate_host_add(context, aggregate_id, host):
+def aggregate_host_get_all(context, aggregate_id):
+def aggregate_host_delete(context, aggregate_id, host):
+def instance_fault_create(context, values, update_cells=True):
+def instance_fault_get_by_instance_uuids(context, instance_uuids):
+def action_start(context, values):
+def action_finish(context, values):
+def actions_get(context, uuid):
+def action_get_by_request_id(context, uuid, request_id):
+def action_event_start(context, values):
+def action_event_finish(context, values):
+def action_events_get(context, action_id):
+def get_ec2_instance_id_by_uuid(context, instance_id):
+def get_instance_uuid_by_ec2_id(context, ec2_id):
+def ec2_instance_create(context, instance_uuid, id=None):
+def task_log_end_task(context, task_name, period_beginning, period_ending, host, errors, message=None):
+def task_log_begin_task(context, task_name, period_beginning, period_ending, host, task_items=None, message=None):
+def archive_deleted_rows(context, max_rows=None):
+def archive_deleted_rows_for_table(context, tablename, max_rows=None):
+def db_sync(version=None):
+def db_version():
+def vpn_ping(address, port, timeout=0.05, session_id=None):
+def execute(*cmd, **kwargs):
+def trycmd(*args, **kwargs):
+def last_completed_audit_period(unit=None, before=None):
+def generate_password(length=None, symbolgroups=DEFAULT_PASSWORD_SYMBOLS):
+def xhtml_escape(value):
+def utf8(value):
+def to_bytes(text, default=0):
+def delete_if_exists(pathname):
+def get_from_path(items, path):
+def flatten_dict(dict_, flattened=None):
+def partition_dict(dict_, keys):
+def map_dict_keys(dict_, key_map):
+def subset_dict(dict_, keys):
+def diff_dict(orig, new):
+def check_isinstance(obj, cls):
+def parse_server_string(server_str):
+def bool_from_str(val):
+def is_int_like(val):
+def is_valid_boolstr(val):
+def is_valid_ipv4(address):
+def is_valid_cidr(address):
+def get_ip_version(network):
+def monkey_patch():
+def convert_to_list_dict(lst, label):
+def timefunc(func):
+@contextlib.contextmanager DCNL def remove_path_on_error(path):
+def make_dev_path(dev, partition=None, base='/dev'):
+def total_seconds(td):
+def sanitize_hostname(hostname):
+def read_cached_file(filename, cache_info, reload_func=None):
+def file_open(*args, **kwargs):
+def hash_file(file_like_object):
+@contextlib.contextmanager DCNL def temporary_mutation(obj, **kwargs):
+def generate_mac_address():
+def read_file_as_root(file_path):
+@contextlib.contextmanager DCNL def temporary_chown(path, owner_uid=None):
+def walk_class_hierarchy(clazz, encountered=None):
+def mkfs(fs, path, label=None):
+def last_bytes(file_like_object, num):
+def get_wrapped_function(function):
+def check_string_length(value, name, min_length=0, max_length=None):
+def enforce(context, action, target, do_raise=True):
+def check_is_admin(context):
+def stub_vm_utils_with_vdi_attached_here(function, should_return=True):
+def get_instances_with_cached_ips(orig_func, *args, **kwargs):
+@webob.dec.wsgify DCNL def conditional_forbid(req):
+def get_instances_with_cached_ips(orig_func, *args, **kwargs):
+def webob_factory(url):
+def compare_links(actual, expected):
+def compare_media_types(actual, expected):
+def compare_tree_to_dict(actual, expected, keys):
+def wire_HTTPConnection_to_WSGI(host, app):
+def stub_set_host_enabled(context, host_name, enabled):
+def _create_instance(**kwargs):
+def _create_instance_dict(**kwargs):
+def format_action(action):
+def format_event(event):
+def _quote_domain(domain):
+def stub_out_glanceclient_create(stubs, sent_to_glance):
+def stub_out(stubs, funcs):
+def stub_out_db_instance_api(stubs, injected=True):
+def generate_random_alphanumeric(length):
+def generate_random_numeric(length):
+def generate_new_element(items, prefix, numeric=False):
+def fake_execute_set_repliers(repliers):
+def fake_execute_default_reply_handler(*ignore_args, **ignore_kwargs):
+def fake_execute(*cmd_parts, **kwargs):
+def stub_out_db_instance_api(stubs):
+def fake_get_vim_object(arg):
+def fake_is_vim_object(arg, module):
+def set_stubs(stubs):
+def initialize(_uri):
+def _match_query(query, attrs):
+def _paren_groups(source):
+def _match(key, value, attrs):
+def _subs(value):
+def _from_json(encoded):
+def _to_json(unencoded):
+def example_decorator(name, function):
+def catch_notimplementederror(f):
+def stub_out_db_instance_api(stubs):
+def stubout_session(stubs, cls, product_version=(5, 6, 2), product_brand='XenServer', **opt_args):
+def stubout_determine_is_pv_objectstore(stubs):
+def stubout_is_snapshot(stubs):
+def stubout_lookup_image(stubs):
+def stubout_fetch_disk_image(stubs, raise_failure=False):
+def stubout_create_vm(stubs):
+def stubout_attach_disks(stubs):
+def _get_connect_string(backend, user, passwd, database):
+def get_table(engine, name):
+def _get_instances_with_cached_ips(orig_func, *args, **kwargs):
+def add_hook(name):
+def reset():
+def setup(product_name):
+def ensure_tree(path):
+def msg_reply(conf, msg_id, reply_q, connection_pool, reply=None, failure=None, ending=False, log_failure=True):
+def unpack_context(conf, msg):
+def pack_context(msg, context):
+def _add_unique_id(msg):
+def create_connection(conf, new, connection_pool):
+def multicall(conf, context, topic, msg, timeout, connection_pool):
+def call(conf, context, topic, msg, timeout, connection_pool):
+def cast(conf, context, topic, msg, connection_pool):
+def fanout_cast(conf, context, topic, msg, connection_pool):
+def cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def fanout_cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def notify(conf, context, topic, msg, connection_pool, envelope):
+def create_connection(new=True):
+def call(context, topic, msg, timeout=None, check_for_lock=False):
+def cast(context, topic, msg):
+def fanout_cast(context, topic, msg):
+def multicall(context, topic, msg, timeout=None, check_for_lock=False):
+def notify(context, topic, msg, envelope=False):
+def cleanup():
+def cast_to_server(context, server_params, topic, msg):
+def fanout_cast_to_server(context, server_params, topic, msg):
+def queue_get_for(context, topic, host):
+def _get_impl():
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def create_connection(conf, new=True):
+def check_serialize(msg):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def fanout_cast(conf, context, topic, msg):
+def _serialize(data):
+def _deserialize(data):
+def unflatten_envelope(packenv):
+def _multi_send(method, context, topic, msg, timeout=None, envelope=False, _msg_id=None):
+def multicall(conf, *args, **kwargs):
+def call(conf, *args, **kwargs):
+def cast(conf, *args, **kwargs):
+def fanout_cast(conf, context, topic, msg, **kwargs):
+def notify(conf, context, topic, msg, envelope):
+def cleanup():
+def _safe_log(log_func, msg, msg_data):
+def serialize_remote_exception(failure_info, log_failure=True):
+def client_exceptions(*exceptions):
+def version_is_compatible(imp_version, version):
+def _get_queue_arguments(conf):
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def parse_host_port(address, default_port=None):
+def isotime(at=None):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def paginate_query(query, model, limit, sort_keys, marker=None, sort_dir=None, sort_dirs=None):
+def set_defaults(sql_connection, sqlite_db):
+def get_session(autocommit=True, expire_on_commit=False):
+def raise_if_duplicate_entry_error(integrity_error, engine_name):
+def raise_if_deadlock_error(operational_error, engine_name):
+def get_engine():
+def synchronous_switch_listener(dbapi_conn, connection_rec):
+def add_regexp_listener(dbapi_con, con_record):
+def greenthread_yield(dbapi_con, con_record):
+def ping_listener(dbapi_conn, connection_rec, connection_proxy):
+def is_db_connection_error(args):
+def create_engine(sql_connection):
+def get_maker(engine, autocommit=True, expire_on_commit=False):
+def patch_mysqldb_with_stacktrace_comments():
+def validate_args(fn, *args, **kwargs):
+def set_rules(rules):
+def reset():
+def check(rule, target, creds, exc=None, *args, **kwargs):
+def _parse_check(rule):
+def _parse_list_rule(rule):
+def _parse_tokenize(rule):
+def reducer(*tokens):
+def _parse_text_rule(rule):
+def parse_rule(rule):
+def register(name, func=None):
+def synchronized(name, lock_file_prefix, external=False, lock_path=None):
+def is_uuid_like(val):
+@contextlib.contextmanager DCNL def save_and_reraise_exception():
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno(git_dir):
+def _get_version_from_git(pre_version):
+def _get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def to_primitive(value, convert_instances=False, convert_datetime=True, level=0, max_depth=3):
+def notify(context, message):
+def notify(context, message):
+def notify(_context, message):
+def notify(context, message):
+def notify_decorator(name, fn):
+def notify(context, publisher_id, event_type, priority, payload):
+def _get_drivers():
+def add_driver(notification_driver):
+def _reset_drivers():
+def notify(_context, message):
+def notify(_context, message):
+def import_class(import_str):
+def import_object(import_str, *args, **kwargs):
+def import_object_ns(name_space, import_str, *args, **kwargs):
+def import_module(import_str):
+def try_import(import_str, default=None):
+def execute(*cmd, **kwargs):
+def get_context_from_function_and_args(function, args, kwargs):
+def build_filter(class_name, *args):
+def load_filters(filters_path):
+def match_filter(filters, userargs, exec_dirs=[]):
+def periodic_task(*args, **kwargs):
+def ensure_ca_filesystem():
+def fetch_crl(project_id):
+def convert_from_sshrsa_to_pkcs8(pubkey):
+def ssh_encrypt_text(ssh_public_key, text):
+def revoke_cert(project_id, file_name):
+def revoke_certs_by_user(user_id):
+def revoke_certs_by_project(project_id):
+def revoke_certs_by_user_and_project(user_id, project_id):
+def _project_cert_subject(project_id):
+def _user_cert_subject(user_id, project_id):
+def generate_x509_cert(user_id, project_id, bits=1024):
+def compute_md5(fp):
+def _get_my_ip():
+def basedir_def(*args):
+def bindir_def(*args):
+def state_path_def(*args):
+def basedir_rel(*args):
+def bindir_rel(*args):
+def state_path_rel(*args):
+def generate_glance_url():
+def generate_image_url(image_ref):
+def _parse_image_ref(image_href):
+def _create_glance_client(context, host, port, use_ssl, version=1):
+def get_api_servers():
+def _convert_timestamps_to_datetimes(image_meta):
+def _reraise_translated_image_exception(image_id):
+def _reraise_translated_exception():
+def get_remote_image_service(context, image_href):
+def echo_scsi_command(path, content):
+def find_multipath_device(device):
+def getcallargs(function, *args, **kwargs):
+def send_api_fault(url, status, exception):
+def send_update(context, old_instance, new_instance, service=None, host=None):
+def send_update_with_states(context, instance, old_vm_state, new_vm_state, old_task_state, new_task_state, service='compute', host=None, verify_states=False):
+def _send_instance_update_notification(context, instance, old_vm_state=None, old_task_state=None, new_vm_state=None, new_task_state=None, service='compute', host=None):
+def audit_period_bounds(current_period=False):
+def bandwidth_usage(instance_ref, audit_start, ignore_missing_network_data=True):
+def image_meta(system_metadata):
+def info_from_instance(context, instance_ref, network_info, system_metadata, **kw):
+def load_from_conf_data(conf_data):
+def ssh_connect(connection):
+def ssh_command_as_root(ssh_connection, cmd, check_exit_code=True):
+def ftp_put_command(connection, local_path, remote_dir):
+def ftp_get_command(connection, remote_path, local_path):
+def aix_path_join(path_one, path_two):
+@contextlib.contextmanager DCNL def vios_to_vios_auth(source, dest, conn_info):
+def set_vif_guest_frontend_config(conf, mac, model, driver):
+def set_vif_host_backend_bridge_config(conf, brname, tapname=None):
+def set_vif_host_backend_ethernet_config(conf, tapname):
+def set_vif_host_backend_ovs_config(conf, brname, interfaceid, tapname=None):
+def set_vif_host_backend_802qbg_config(conf, devname, managerid, typeid, typeidversion, instanceid, tapname=None):
+def set_vif_host_backend_802qbh_config(conf, devname, profileid, tapname=None):
+def set_vif_bandwidth_config(conf, extra_specs):
+def get_cache_fname(images, key):
+def get_info_filename(base_path):
+def is_valid_info_file(path):
+def read_stored_info(target, field=None, timestamped=False):
+def write_stored_info(target, field=None, value=None):
+def read_stored_checksum(target, timestamped=True):
+def write_stored_checksum(target):
+def patch_tpool_proxy():
+def get_iscsi_initiator():
+def get_fc_hbas():
+def get_fc_hbas_info():
+def get_fc_wwpns():
+def get_fc_wwnns():
+def create_image(disk_format, path, size):
+def create_cow_image(backing_file, path, size=None):
+def create_lvm_image(vg, lv, size, sparse=False):
+def get_volume_group_info(vg):
+def list_logical_volumes(vg):
+def logical_volume_info(path):
+def logical_volume_size(path):
+def clear_logical_volume(path):
+def remove_logical_volumes(*paths):
+def pick_disk_driver_name(is_block_dev=False):
+def get_disk_size(path):
+def get_disk_backing_file(path, basename=True):
+def copy_image(src, dest, host=None):
+def write_to_file(path, contents, umask=None):
+def chown(path, owner):
+def create_snapshot(disk_path, snapshot_name):
+def delete_snapshot(disk_path, snapshot_name):
+def extract_snapshot(disk_path, source_fmt, snapshot_name, out_path, dest_fmt):
+def load_file(path):
+def file_open(*args, **kwargs):
+def file_delete(path):
+def find_disk(virt_dom):
+def get_disk_type(path):
+def get_fs_info(path):
+def fetch_image(context, target, image_id, user_id, project_id):
+def get_instance_path(instance, forceold=False):
+def has_disk_dev(mapping, disk_dev):
+def get_dev_prefix_for_disk_bus(disk_bus):
+def get_dev_count_for_disk_bus(disk_bus):
+def find_disk_dev_for_disk_bus(mapping, bus, last_device=False):
+def get_disk_bus_for_device_type(virt_type, image_meta=None, device_type='disk'):
+def get_disk_bus_for_disk_dev(virt_type, disk_dev):
+def get_next_disk_info(mapping, disk_bus, device_type='disk', last_device=False):
+def get_disk_mapping(virt_type, instance, disk_bus, cdrom_bus, block_device_info=None, image_meta=None, rescue=False):
+def get_disk_info(virt_type, instance, block_device_info=None, image_meta=None, rescue=False):
+def get_disk_size(path):
+def extend(image, size):
+def can_resize_fs(image, size, use_cow=False):
+def inject_data(image, key=None, net=None, metadata=None, admin_password=None, files=None, partition=None, use_cow=False, mandatory=()):
+def setup_container(image, container_dir, use_cow=False):
+def teardown_container(container_dir):
+def clean_lxc_namespace(container_dir):
+def inject_data_into_fs(fs, key, net, metadata, admin_password, files, mandatory=()):
+def _setup_selinux_for_keys(fs, sshdir):
+def _inject_key_into_fs(key, fs):
+def _inject_net_into_fs(net, fs):
+def _inject_admin_password_into_fs(admin_passwd, fs):
+def _set_passwd(username, admin_passwd, passwd_data, shadow_data):
+def load_compute_driver(virtapi, compute_driver=None):
+def get_session(autocommit=True, expire_on_commit=False):
+def get_engine():
+def model_query(context, *args, **kwargs):
+@sqlalchemy_api.require_admin_context DCNL def bm_node_associate_and_update(context, node_uuid, values):
+def _find_migrate_repo():
+def db_sync(version=None):
+def db_version():
+def _update_state(context, node, instance, state):
+def build_pxe_config(deployment_id, deployment_key, deployment_iscsi_iqn, deployment_aki_path, deployment_ari_path, aki_path, ari_path):
+def get_image_dir_path(instance):
+def get_image_file_path(instance):
+def get_pxe_config_file_path(instance):
+def get_pxe_mac_path(mac):
+def get_tftp_image_info(instance, instance_type):
+def get_network_with_the_name(session, network_name='vmnet0', cluster=None):
+def get_vswitch_for_vlan_interface(session, vlan_interface, cluster=None):
+def check_if_vlan_interface_exists(session, vlan_interface, cluster=None):
+def get_vlanid_and_vswitch_for_portgroup(session, pg_name, cluster=None):
+def create_port_group(session, pg_name, vswitch_name, vlan_id=0, cluster=None):
+def build_datastore_path(datastore_name, path):
+def split_datastore_path(datastore_path):
+def get_vm_create_spec(client_factory, instance, data_store_name, vif_infos, os_type='otherGuest'):
+def create_controller_spec(client_factory, key, adapter_type='lsiLogic'):
+def create_network_spec(client_factory, vif_info):
+def get_vmdk_attach_config_spec(client_factory, adapter_type='lsiLogic', disk_type='preallocated', file_path=None, disk_size=None, linked_clone=False, controller_key=None, unit_number=None, device_name=None):
+def get_vmdk_detach_config_spec(client_factory, device):
+def get_vmdk_path_and_adapter_type(hardware_devices):
+def get_rdm_disk(hardware_devices, uuid):
+def get_copy_virtual_disk_spec(client_factory, adapter_type='lsilogic', disk_type='preallocated'):
+def get_vmdk_create_spec(client_factory, size_in_kb, adapter_type='lsiLogic', disk_type='preallocated'):
+def get_rdm_create_spec(client_factory, device, adapter_type='lsiLogic', disk_type='rdmp'):
+def create_virtual_disk_spec(client_factory, controller_key, disk_type='preallocated', file_path=None, disk_size=None, linked_clone=False, unit_number=None, device_name=None):
+def delete_virtual_disk_spec(client_factory, device):
+def clone_vm_spec(client_factory, location, power_on=False, snapshot=None, template=False):
+def relocate_vm_spec(client_factory, datastore=None, host=None, disk_move_type='moveAllDiskBackingsAndAllowSharing'):
+def get_dummy_vm_create_spec(client_factory, name, data_store_name):
+def get_machine_id_change_spec(client_factory, machine_id_str):
+def get_add_vswitch_port_group_spec(client_factory, vswitch_name, port_group_name, vlan_id):
+def get_vnc_config_spec(client_factory, port, password):
+def search_datastore_spec(client_factory, file_name):
+def get_vm_ref_from_name(session, vm_name):
+def get_cluster_ref_from_name(session, cluster_name):
+def get_host_ref(session, cluster=None):
+def get_datastore_ref_and_name(session, cluster=None, host=None):
+def start_transfer(context, read_file_handle, data_size, write_file_handle=None, image_service=None, image_id=None, image_meta=None):
+def fetch_image(context, image, instance, **kwargs):
+def upload_image(context, image, instance, **kwargs):
+def get_vmdk_size_and_properties(context, image, instance):
+def build_selection_spec(client_factory, name):
+def build_traversal_spec(client_factory, name, spec_type, path, skip, select_set):
+def build_recursive_traversal_spec(client_factory):
+def build_property_spec(client_factory, type='VirtualMachine', properties_to_collect=None, all_properties=False):
+def build_object_spec(client_factory, root_folder, traversal_specs):
+def build_property_filter_spec(client_factory, property_specs, object_specs):
+def get_object_properties(vim, collector, mobj, type, properties):
+def get_dynamic_property(vim, mobj, type, property_name):
+def get_objects(vim, type, properties_to_collect=None, all=False):
+def get_prop_spec(client_factory, spec_type, properties):
+def get_obj_spec(client_factory, obj, select_set=None):
+def get_prop_filter_spec(client_factory, obj_spec, prop_spec):
+def get_properties_for_a_collection_of_objects(vim, type, obj_list, properties):
+def ensure_vlan_bridge(session, vif, cluster=None):
+def get_host_iqn(session, cluster=None):
+def find_st(session, data, cluster=None):
+def rescan_iscsi_hba(session, cluster=None):
+def mountpoint_to_number(mountpoint):
+def log_db_contents(msg=None):
+def reset():
+def cleanup():
+def _create_object(table, table_obj):
+def _get_objects(obj_type):
+def _add_file(file_path):
+def _remove_file(file_path):
+def fake_plug_vifs(*args, **kwargs):
+def fake_get_network(*args, **kwargs):
+def fake_fetch_image(context, image, instance, **kwargs):
+def fake_upload_image(context, image, instance, **kwargs):
+def fake_get_vmdk_size_and_properties(context, image_id, instance):
+def _get_vm_mdo(vm_ref):
+def get_injected_network_template(network_info, use_ipv6=CONF.use_ipv6, template=CONF.injected_network_template):
+@lockutils.synchronized('storage-registry-lock', 'nova-', external=True) DCNL def register_storage_use(storage_path, hostname):
+@lockutils.synchronized('storage-registry-lock', 'nova-', external=True) DCNL def get_storage_users(storage_path):
+def qemu_img_info(path):
+def convert_image(source, dest, out_format, run_as_root=False):
+def find_network_with_bridge(session, bridge):
+def cmp_version(a, b):
+def make_step_decorator(context, instance, instance_update):
+def is_hv_pool(metadata):
+def create_vm(session, instance, name_label, kernel, ramdisk, use_pv_kernel=False):
+def destroy_vm(session, instance, vm_ref):
+def find_vbd_by_number(session, vm_ref, number):
+def unplug_vbd(session, vbd_ref):
+def destroy_vbd(session, vbd_ref):
+def create_vbd(session, vm_ref, vdi_ref, userdevice, vbd_type='disk', read_only=False, bootable=False, osvol=False):
+def safe_destroy_vdis(session, vdi_refs):
+def create_vdi(session, sr_ref, instance, name_label, disk_type, virtual_size, read_only=False):
+@contextlib.contextmanager DCNL def _dummy_vm(session, instance, vdi_ref):
+def _safe_copy_vdi(session, sr_ref, instance, vdi_to_copy_ref):
+def _clone_vdi(session, vdi_to_clone_ref):
+def get_vdi_for_vm_safely(session, vm_ref):
+def get_sr_path(session):
+def destroy_cached_images(session, sr_ref, all_cached=False, dry_run=False):
+def _find_cached_images(session, sr_ref):
+def _find_cached_image(session, image_id, sr_ref):
+def auto_configure_disk(session, vdi_ref, new_gb):
+def _generate_disk(session, instance, vm_ref, userdevice, name_label, disk_type, size_mb, fs_type):
+def create_kernel_image(context, session, instance, name_label, image_id, image_type):
+def _create_image(context, session, instance, name_label, image_id, image_type):
+def _fetch_image(context, session, instance, name_label, image_id, image_type):
+def _fetch_vhd_image(context, session, instance, image_id):
+def _get_vdi_chain_size(session, vdi_uuid):
+def _fetch_disk_image(context, session, instance, name_label, image_id, image_type):
+def determine_disk_image_type(image_meta):
+def determine_is_pv(session, vdi_ref, disk_image_type, os_type):
+def lookup_vm_vdis(session, vm_ref):
+def lookup(session, name_label):
+def preconfigure_instance(session, instance, vdi_ref, network_info):
+def compile_info(record):
+def compile_diagnostics(record):
+def compile_metrics(start_time, stop_time=None):
+def _scan_sr(session, sr_ref=None):
+def scan_default_sr(session):
+def safe_find_sr(session):
+def _find_sr(session):
+def _safe_find_iso_sr(session):
+def _find_iso_sr(session):
+def _get_rrd_server():
+def _get_rrd(server, vm_uuid):
+def _get_rrd_updates(server, start_time):
+def get_instance_vdis_for_sr(session, vm_ref, sr_ref):
+def _walk_vdi_chain(session, vdi_uuid):
+def _child_vhds(session, sr_ref, vdi_uuid):
+def _wait_for_vhd_coalesce(session, instance, sr_ref, vdi_ref, original_parent_uuid):
+def _remap_vbd_dev(dev):
+def _wait_for_device(dev):
+def cleanup_attached_vdis(session):
+def _get_partitions(dev):
+def _resize_part_and_fs(dev, start, old_sectors, new_sectors):
+def _sparse_copy(src_path, dst_path, virtual_size, block_size=4096):
+def _mount_filesystem(dev_path, dir):
+def _mounted_processing(device, key, net, metadata):
+def _prepare_injectables(inst, network_info):
+def ensure_correct_host(session):
+def move_disks(session, instance, disk_info):
+def forget_sr(session, sr_ref):
+def find_sr_by_uuid(session, sr_uuid):
+def find_sr_from_vbd(session, vbd_ref):
+def introduce_vdi(session, sr_ref, vdi_uuid=None, target_lun=None):
+def parse_volume_info(connection_data):
+def mountpoint_to_number(mountpoint):
+def _get_volume_id(path_or_id):
+def _get_target_host(iscsi_string):
+def _get_target_port(iscsi_string):
+def _call_agent(session, instance, vm_ref, method, addl_args=None, timeout=None):
+def find_guest_agent(base_dir):
+def swap_xapi_host(url, host_addr):
+def call_xenhost(session, method, arg_dict):
+def _uuid_find(virtapi, context, host, name_label):
+def _host_find(context, session, src_aggregate, dst):
+def after_VBD_create(vbd_ref, vbd_rec):
+def after_VM_create(vm_ref, vm_rec):
+def create_local_pifs():
+def create_local_srs():
+def as_value(s):
+def as_json(*args, **kwargs):
+def set_nodes(nodes):
+def restore_nodes():
+def instance_update_db(context, instance_uuid, extra_values=None):
+def encode_instance(instance, local=True):
+def new_host_state(self, host, node, capabilities=None, service=None):
+def all_weighers():
+def noop_cost_fn(host_state, weight_properties):
+def compute_fill_first_cost_fn(host_state, weight_properties):
+def _get_cost_functions():
+def all_filters():
+def standard_filters():
+def properties_root_device_name(properties):
+def mappings_prepend_dev(mappings):
+def strip_dev(device_name):
+def strip_prefix(device_name):
+def match_device(device):
+def is_user_context(context):
+def require_admin_context(ctxt):
+def require_context(ctxt):
+def authorize_project_context(context, project_id):
+def authorize_user_context(context, user_id):
+def authorize_quota_class_context(context, class_name):
+def _untranslate_volume_summary_view(context, vol):
+def _untranslate_snapshot_summary_view(context, snapshot):
+def add_instance_fault_from_exc(context, conductor, instance, fault, exc_info=None):
+def get_device_name_for_instance(context, instance, bdms, device):
+def notify_usage_exists(context, instance_ref, current_period=False, ignore_missing_network_data=True, system_metadata=None, extra_usage_info=None):
+def notify_about_instance_usage(context, instance, event_suffix, network_info=None, system_metadata=None, extra_usage_info=None, host=None):
+def HostAPI(*args, **kwargs):
+def InstanceActionAPI(*args, **kwargs):
+def reverts_task_state(function):
+def wrap_instance_fault(function):
+def wrap_instance_event(function):
+def check_instance_state(vm_state=None, task_state=(None,)):
+def policy_decorator(scope):
+def create(name, memory, vcpus, root_gb, ephemeral_gb=None, flavorid=None, swap=None, rxtx_factor=None, is_public=True):
+def destroy(name):
+def get_all_types(ctxt=None, inactive=False, filters=None):
+def get_default_instance_type():
+def get_instance_type(instance_type_id, ctxt=None, inactive=False):
+def get_instance_type_by_name(name, ctxt=None):
+def get_instance_type_by_flavor_id(flavorid, ctxt=None, read_deleted='yes'):
+def get_instance_type_access_by_flavor_id(flavorid, ctxt=None):
+def add_instance_type_access(flavorid, projectid, ctxt=None):
+def remove_instance_type_access(flavorid, projectid, ctxt=None):
+def extract_instance_type(instance, prefix=''):
+def save_instance_type_info(metadata, instance_type, prefix=''):
+def delete_instance_type_info(metadata, *prefixes):
+def _compute_topic(topic, ctxt, host, instance):
+def _reverse_path(path):
+def _response_cell_name_from_path(routing_path, neighbor_only=False):
+def get_instances_to_sync(context, updated_since=None, project_id=None, deleted=True, shuffle=False, uuids_only=False):
+def cell_with_item(cell_name, item):
+def split_cell_and_item(cell_and_item):
+def add_cell_to_compute_node(compute_node, cell_name):
+def add_cell_to_service(service, cell_name):
+def add_cell_to_task_log(task_log, cell_name):
+def sync_from_db(f):
+def get_binary_name():
+def metadata_forward():
+def metadata_accept():
+def init_host(ip_range=None):
+def bind_floating_ip(floating_ip, device):
+def unbind_floating_ip(floating_ip, device):
+def ensure_metadata_ip():
+def ensure_vpn_forward(public_ip, port, private_ip):
+def ensure_floating_forward(floating_ip, fixed_ip, device, network):
+def remove_floating_forward(floating_ip, fixed_ip, device, network):
+def floating_ebtables_rules(fixed_ip, network):
+def get_dhcp_leases(context, network_ref):
+def get_dhcp_hosts(context, network_ref):
+def get_dns_hosts(context, network_ref):
+def _add_dnsmasq_accept_rules(dev):
+def _remove_dnsmasq_accept_rules(dev):
+def get_dhcp_opts(context, network_ref):
+@lockutils.synchronized('dnsmasq_start', 'nova-') DCNL def restart_dhcp(context, dev, network_ref):
+def _host_lease(data):
+def _host_dhcp(data):
+def _host_dhcp_opts(data):
+def _execute(*cmd, **kwargs):
+def device_exists(device):
+def _dhcp_file(dev, kind):
+def _ra_file(dev, kind):
+def _dnsmasq_pid_for(dev):
+def _ra_pid_for(dev):
+def _ip_bridge_cmd(action, params, device):
+def _create_veth_pair(dev1_name, dev2_name):
+def _ensure_requested_network_ordering(accessor, unordered, preferred):
+def refresh_cache(f):
+def wrap_check_policy(func):
+def make_subprocess(cmdline, stdout=False, stderr=False, stdin=False, universal_newlines=False):
+def finish_subprocess(proc, cmdline, ok_exit_codes=None):
+def make_staging_area(sr_path):
+def cleanup_staging_area(staging_path):
+def _handle_old_style_images(staging_path):
+def _assert_vhd_not_hidden(path):
+def _validate_footer_timestamp(vdi_path):
+def _validate_vdi_chain(vdi_path):
+def _validate_sequenced_vhds(staging_path):
+def import_vhds(sr_path, staging_path, uuid_stack):
+def prepare_staging_area(sr_path, staging_path, vdi_uuids, seq_num=0):
+def create_tarball(fileobj, path, callback=None):
+def extract_tarball(fileobj, path, callback=None):
+def register_plugin_calls(*funcs):
+def _record_exists(arg_dict):
+@jsonify DCNL def read_record(self, arg_dict):
+@jsonify DCNL def write_record(self, arg_dict):
+@jsonify DCNL def list_records(self, arg_dict):
+@jsonify DCNL def delete_record(self, arg_dict):
+def _paths_from_ls(recs):
+def _run_command(cmd):
+def validate_exists(args, key, default=None):
+def validate_bool(args, key, default=None):
+def exists(args, key):
+def optional(args, key):
+def vbd_unplug_with_retry(session, vbd):
+def execute_get_output(*command):
+def execute(*command):
+def connect_ec2(aws_access_key_id=None, aws_secret_access_key=None, **kwargs):
+def is_log_callfunc(n):
+def is_log_i18n_msg_with_mod(n):
+def is_wrong_i18n_format(n):
+def is_localized(node):
+def setup_logging(conf):
+def load_paste_app(app_name):
+def read_cached_file(filename, cache_info, reload_func=None):
+def find_config_file(options, config_file):
+def parse_mappings(mapping_list, unique_values=True):
+def compare_elements(a, b):
+def get_topic_name(prefix, table, operation):
+def plugin_aware_extension_middleware_factory(global_config, **local_config):
+def Resource(controller, faults=None, deserializers=None, serializers=None):
+def _verify_dict_keys(expected_keys, target_dict, strict=True):
+def _validate_ip_pools(data, valid_values=None):
+def convert_kvp_str_to_list(data):
+def convert_kvp_list_to_dict(kvp_list):
+def get_filters(request, attr_info, skips=[]):
+def get_limit_and_marker(request):
+def _get_limit_param(request, max_limit):
+def list_args(request, arg):
+def get_sorts(request, attr_info):
+def paginate_query(query, model, limit, sorts, marker_obj=None):
+def upgrade(active_plugin=None, options=None):
+def downgrade(active_plugin=None, options=None):
+def run_migrations_offline():
+def run_migrations_online():
+def parse_service_definition_opt():
+def configure_db():
+def get_session(autocommit=True, expire_on_commit=False):
+def register_models(base=BASE):
+def unregister_models(base=BASE):
+def greenthread_yield(dbapi_con, con_record):
+@event.listens_for(ServiceRouterBinding.resource_type, 'set', retval=True) DCNL def validate_resource_type(target, value, oldvalue, initiator):
+def get_resource_and_action(action):
+def _is_attribute_explicitly_set(attribute_name, resource, target):
+def _build_target(action, original_target, plugin, context):
+def _build_match_rule(action, target):
+def check(context, action, target, plugin=None):
+def enforce(context, action, target, plugin=None):
+def _ofc(id):
+def pipeline_factory(loader, global_conf, **local_conf):
+def setup(product_name):
+def _thread_done(gt, *args, **kwargs):
+def ensure_tree(path):
+def periodic_task(*args, **kwargs):
+def msg_reply(conf, msg_id, reply_q, connection_pool, reply=None, failure=None, ending=False, log_failure=True):
+def unpack_context(conf, msg):
+def pack_context(msg, context):
+def _add_unique_id(msg):
+def create_connection(conf, new, connection_pool):
+def multicall(conf, context, topic, msg, timeout, connection_pool):
+def call(conf, context, topic, msg, timeout, connection_pool):
+def cast(conf, context, topic, msg, connection_pool):
+def fanout_cast(conf, context, topic, msg, connection_pool):
+def cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def fanout_cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def notify(conf, context, topic, msg, connection_pool, envelope):
+def create_connection(new=True):
+def call(context, topic, msg, timeout=None, check_for_lock=False):
+def cast(context, topic, msg):
+def fanout_cast(context, topic, msg):
+def multicall(context, topic, msg, timeout=None, check_for_lock=False):
+def notify(context, topic, msg, envelope=False):
+def cleanup():
+def cast_to_server(context, server_params, topic, msg):
+def fanout_cast_to_server(context, server_params, topic, msg):
+def queue_get_for(context, topic, host):
+def _get_impl():
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def create_connection(conf, new=True):
+def check_serialize(msg):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def fanout_cast(conf, context, topic, msg):
+def _serialize(data):
+def _deserialize(data):
+def unflatten_envelope(packenv):
+def _multi_send(method, context, topic, msg, timeout=None, envelope=False, _msg_id=None):
+def multicall(conf, *args, **kwargs):
+def call(conf, *args, **kwargs):
+def cast(conf, *args, **kwargs):
+def fanout_cast(conf, context, topic, msg, **kwargs):
+def notify(conf, context, topic, msg, envelope):
+def cleanup():
+def _safe_log(log_func, msg, msg_data):
+def serialize_remote_exception(failure_info, log_failure=True):
+def client_exceptions(*exceptions):
+def version_is_compatible(imp_version, version):
+def _get_queue_arguments(conf):
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def parse_host_port(address, default_port=None):
+def isotime(at=None, subsecond=False):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def set_rules(rules):
+def reset():
+def check(rule, target, creds, exc=None, *args, **kwargs):
+def _parse_check(rule):
+def _parse_list_rule(rule):
+def _parse_tokenize(rule):
+def reducer(*tokens):
+def _parse_text_rule(rule):
+def parse_rule(rule):
+def register(name, func=None):
+def synchronized(name, lock_file_prefix, external=False, lock_path=None):
+def is_uuid_like(val):
+@contextlib.contextmanager DCNL def save_and_reraise_exception():
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno(git_dir):
+def _get_version_from_git(pre_version):
+def _get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def to_primitive(value, convert_instances=False, convert_datetime=True, level=0, max_depth=3):
+def notify(context, message):
+def notify(context, message):
+def notify(_context, message):
+def notify(context, message):
+def notify_decorator(name, fn):
+def notify(context, publisher_id, event_type, priority, payload):
+def _get_drivers():
+def add_driver(notification_driver):
+def _reset_drivers():
+def notify(_context, message):
+def notify(_context, message):
+def import_class(import_str):
+def import_object(import_str, *args, **kwargs):
+def import_object_ns(name_space, import_str, *args, **kwargs):
+def import_module(import_str):
+def try_import(import_str, default=None):
+def execute(*cmd, **kwargs):
+def get_context_from_function_and_args(function, args, kwargs):
+def replace_file(file_name, data):
+def setup_conf():
+def kill_dhcp(conf, namespace):
+def eligible_for_deletion(conf, namespace, force=False):
+def destroy_namespace(conf, namespace, force=False):
+def main():
+def create_consumers(dispatcher, prefix, topic_details):
+def setup_conf():
+def collect_quantum_ports(bridges, root_helper):
+def delete_quantum_ports(ports, root_helper):
+def main():
+def _validate_servicetype_ref(data, valid_values=None):
+def _validate_service_defs(data, valid_values=None):
+def sg_label(sg_id, sg_name):
+def chain_names(sg_id, sg_name):
+def _retrieve_extra_groups(conf, key=None, delimiter=':'):
+def register_cluster_groups(conf):
+def parse_config():
+def _validate_device_list(data, valid_values=None):
+def get_cluster_version(cluster):
+def do_single_request(*args, **kwargs):
+def do_multi_request(*args, **kwargs):
+def find_port_and_cluster(clusters, port_id):
+def create_l2_gw_service(cluster, tenant_id, display_name, devices):
+def create_lrouter(cluster, tenant_id, display_name, nexthop):
+def get_all_networks(cluster, tenant_id, networks):
+def get_port_by_display_name(clusters, lswitch, display_name):
+def get_port_by_quantum_tag(cluster, lswitch_uuid, quantum_port_id):
+def create_lport(cluster, lswitch_uuid, tenant_id, quantum_port_id, display_name, device_id, admin_status_enabled, mac_address=None, fixed_ips=None, port_security_enabled=None, security_profiles=None, queue_id=None):
+def create_router_lport(cluster, lrouter_uuid, tenant_id, quantum_port_id, display_name, admin_status_enabled, ip_addresses):
+def update_router_lport(cluster, lrouter_uuid, lrouter_port_uuid, tenant_id, quantum_port_id, display_name, admin_status_enabled, ip_addresses):
+def delete_router_lport(cluster, lrouter_uuid, lport_uuid):
+def find_router_gw_port(context, cluster, router_id):
+def plug_router_port_attachment(cluster, router_id, port_id, attachment_uuid, nvp_attachment_type, attachment_vlan=None):
+def get_port_status(cluster, lswitch_id, port_id):
+def plug_l2_gw_service(cluster, lswitch_id, lport_id, gateway_id, vlan_id=None):
+def plug_interface(cluster, lswitch_id, port, type, attachment=None):
+def format_exception(etype, e, execption_locals, request=None):
+def do_request(*args, **kwargs):
+def mk_body(**kwargs):
+def set_tenant_id_tag(tenant_id, taglist=None):
+def check_cluster_connectivity(cluster):
+def sync_network_states(network_vlan_ranges):
+def get_network_state(physical_network, vlan_id):
+def get_port_from_device(device):
+def set_port_status(port_id, status):
+def get_port_from_device(port_id):
+def _get_my_ip():
+def sync_vlan_allocations(network_vlan_ranges):
+def sync_tunnel_allocations(tunnel_id_ranges):
+def get_port_from_device(port_id):
+def create_agent_config_map(config):
+def save_config(conf_path, logical_config, socket_path=None):
+def _get_server_health_option(config):
+def _expand_expected_codes(codes):
+def create_network(context, net_id, vlan):
+def delete_network(context, net_id):
+def get_network(context, net_id, fields=None):
+def get_networks(context, filters=None, fields=None):
+def create_port(context, port_id, network_id, physical_interface, vlan_id, tenant_id, admin_state_up):
+def get_port(context, port_id):
+def get_ports(context, network_id=None):
+def delete_port(context, port_id):
+def get_port_from_device(session, port_id):
+def update_port_state(context, port_id, admin_state_up):
+def nos_unknown_host_cb(host, fingerprint):
+def get16ByteUUID(uuid):
+def make_net_dict(net_id, net_name, ports):
+def make_port_dict(port_id, port_state, net_id, attachment):
+def create_vlanids():
+def get_all_vlanids():
+def is_vlanid_used(vlan_id):
+def release_vlanid(vlan_id):
+def delete_vlanid(vlan_id):
+def reserve_vlanid():
+def get_all_vlanids_used():
+def get_all_vlan_bindings():
+def get_vlan_binding(netid):
+def add_vlan_binding(vlanid, vlanname, netid):
+def remove_vlan_binding(netid):
+def update_vlan_binding(netid, newvlanid=None, newvlanname=None):
+def get_all_qoss(tenant_id):
+def get_qos(tenant_id, qos_id):
+def add_qos(tenant_id, qos_name, qos_desc):
+def remove_qos(tenant_id, qos_id):
+def update_qos(tenant_id, qos_id, new_qos_name=None):
+def get_all_credentials(tenant_id):
+def get_credential(tenant_id, credential_id):
+def get_credential_name(tenant_id, credential_name):
+def add_credential(tenant_id, credential_name, user_name, password):
+def remove_credential(tenant_id, credential_id):
+def update_credential(tenant_id, credential_id, new_user_name=None, new_password=None):
+def get_all_nexusport_bindings():
+def get_nexusport_binding(port_id, vlan_id, switch_ip, instance_id):
+def get_nexusvlan_binding(vlan_id, switch_ip):
+def add_nexusport_binding(port_id, vlan_id, switch_ip, instance_id):
+def remove_nexusport_binding(port_id, vlan_id, switch_ip, instance_id):
+def update_nexusport_binding(port_id, new_vlan_id):
+def get_nexusvm_binding(vlan_id, instance_id):
+def get_port_vlan_switch_binding(port_id, vlan_id, switch_ip):
+def configure_db(options):
+def get_session(autocommit=True, expire_on_commit=False):
+def register_models():
+def unregister_models():
+def initialize():
+def create_vlanids():
+def get_all_vlanids():
+def is_vlanid_used(vlan_id):
+def release_vlanid(vlan_id):
+def delete_vlanid(vlan_id):
+def reserve_vlanid():
+def get_all_vlanids_used():
+def get_all_vlan_bindings():
+def get_vlan_binding(netid):
+def add_vlan_binding(vlanid, vlanname, netid):
+def remove_vlan_binding(netid):
+def update_vlan_binding(netid, newvlanid=None, newvlanname=None):
+def get_all_qoss(tenant_id):
+def get_qos(tenant_id, qos_id):
+def add_qos(tenant_id, qos_name, qos_desc):
+def remove_qos(tenant_id, qos_id):
+def update_qos(tenant_id, qos_id, new_qos_name=None):
+def get_all_credentials(tenant_id):
+def get_credential(tenant_id, credential_id):
+def get_credential_name(tenant_id, credential_name):
+def add_credential(tenant_id, credential_name, user_name, password):
+def remove_credential(tenant_id, credential_id):
+def update_credential(tenant_id, credential_id, new_user_name=None, new_password=None):
+def get_view_builder(req):
+def get_view_builder(req):
+def run_server(application, port):
+def build_filter(class_name, *args):
+def load_filters(filters_path):
+def match_filter(filter_list, userargs):
+def run_command(cmd, redirect_output=True, check_exit_code=True, cwd=ROOT, die_message=None):
+def check_dependencies():
+def create_virtualenv(venv=VENV):
+def split(path, result=None):
+@register.filter DCNL def has_permissions(user, component):
+@register.inclusion_tag('horizon/_nav_list.html', takes_context=True) DCNL def horizon_main_nav(context):
+@register.inclusion_tag('horizon/_subnav_list.html', takes_context=True) DCNL def horizon_dashboard_nav(context):
+@register.inclusion_tag('horizon/common/_progress_bar.html') DCNL def horizon_progress_bar(current_val, max_val):
+@register.tag DCNL def jstemplate(parser, token):
+def check_message(keywords, message):
+def handle(request, message=None, redirect=None, ignore=False, escalate=False, log_level=None, force_log=None):
+def horizon(request):
+def add_message(request, level, message, extra_tags='', fail_silently=False):
+def debug(request, message, extra_tags='', fail_silently=False):
+def info(request, message, extra_tags='', fail_silently=False):
+def success(request, message, extra_tags='', fail_silently=False):
+def warning(request, message, extra_tags='', fail_silently=False):
+def error(request, message, extra_tags='', fail_silently=False):
+def single_line(text):
+def _current_component(view_func, dashboard=None, panel=None):
+def require_auth(view_func):
+def require_perms(view_func, required):
+def user_home(request):
+def generate_key(key_length=64):
+def generate_or_read_from_file(key_file='.secret_key', key_length=64):
+def vip_create(request, **kwargs):
+def pool_create(request, **kwargs):
+def pool_health_monitor_create(request, **kwargs):
+def member_create(request, **kwargs):
+def get_ipver_str(ip_version):
+def network_list_for_tenant(request, tenant_id, **params):
+def network_create(request, **kwargs):
+def subnet_create(request, network_id, cidr, ip_version, **kwargs):
+def port_create(request, network_id, **kwargs):
+def keystoneclient(request, admin=False):
+def token_create_scoped(request, tenant, token):
+def role_list(request):
+def add_tenant_user_role(request, tenant_id, user_id, role_id):
+def remove_tenant_user_role(request, tenant_id, user_id, role_id):
+def remove_tenant_user(request, tenant_id, user_id):
+def get_default_role(request):
+def volume_list(request, search_opts=None):
+@memoized DCNL def flavor_list(request):
+def flavor_get_extras(request, flavor_id, raw=False):
+def flavor_extra_delete(request, flavor_id, keys):
+def flavor_extra_set(request, flavor_id, metadata):
+def server_console_output(request, instance_id, tail_length=None):
+def server_security_groups(request, instance_id):
+def _objectify(items, container_name):
+def image_get(request, image_id):
+def get_int_or_uuid(value):
+def openstack(request):
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno():
+def get_version_from_git(pre_version):
+def get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def get_err_response(code):
+def get_acl(account_name, headers):
+def canonical_string(req):
+def swift_acl_translate(acl, group='', user='', xml=False):
+def validate_bucket_name(name):
+def filter_factory(global_conf, **local_conf):
+def record_messages(connection, topic, output):
+def monitor_messages(connection, topic):
+def send_messages(connection, topic, input):
+def notify(context, message):
+def get_publisher(url, namespace='ceilometer.publisher'):
+def register_opts(config):
+def compute_signature(message, secret):
+def verify_signature(message, secret):
+def meter_message_from_counter(counter, secret, source):
+def _sanitize_query(q):
+def _get_query_timestamps(args={}):
+def _flatten_metadata(metadata):
+def register_opts(conf):
+def install(app, conf):
+def get_limited_to_project(headers):
+@blueprint.route('/meters') DCNL def list_meters_all():
+@blueprint.route('/resources/<resource>/meters') DCNL def list_meters_by_resource(resource):
+@blueprint.route('/users/<user>/meters') DCNL def list_meters_by_user(user):
+@blueprint.route('/projects/<project>/meters') DCNL def list_meters_by_project(project):
+@blueprint.route('/sources/<source>/meters') DCNL def list_meters_by_source(source):
+def _list_resources(source=None, user=None, project=None):
+@blueprint.route('/projects/<project>/resources') DCNL def list_resources_by_project(project):
+@blueprint.route('/resources') DCNL def list_all_resources():
+@blueprint.route('/sources/<source>') DCNL def get_source(source):
+@blueprint.route('/sources/<source>/resources') DCNL def list_resources_by_source(source):
+@blueprint.route('/users/<user>/resources') DCNL def list_resources_by_user(user):
+def _list_users(source=None):
+@blueprint.route('/users') DCNL def list_all_users():
+@blueprint.route('/sources/<source>/users') DCNL def list_users_by_source(source):
+def _list_projects(source=None):
+@blueprint.route('/projects') DCNL def list_all_projects():
+@blueprint.route('/sources/<source>/projects') DCNL def list_projects_by_source(source):
+def _list_samples(meter, project=None, resource=None, source=None, user=None):
+@blueprint.route('/projects/<project>/meters/<meter>') DCNL def list_samples_by_project(project, meter):
+@blueprint.route('/resources/<resource>/meters/<meter>') DCNL def list_samples_by_resource(resource, meter):
+@blueprint.route('/sources/<source>/meters/<meter>') DCNL def list_samples_by_source(source, meter):
+@blueprint.route('/users/<user>/meters/<meter>') DCNL def list_samples_by_user(user, meter):
+@blueprint.route('/resources/<resource>/meters/<meter>/duration') DCNL def compute_duration_by_resource(resource, meter):
+@blueprint.route('/resources/<resource>/meters/<meter>/volume/max') DCNL def compute_max_resource_volume(resource, meter):
+@blueprint.route('/resources/<resource>/meters/<meter>/volume/sum') DCNL def compute_resource_volume_sum(resource, meter):
+@blueprint.route('/projects/<project>/meters/<meter>/volume/max') DCNL def compute_project_volume_max(project, meter):
+@blueprint.route('/projects/<project>/meters/<meter>/volume/sum') DCNL def compute_project_volume_sum(project, meter):
+def recursive_keypairs(d):
+def dt_to_decimal(utc):
+def decimal_to_dt(dec):
+def sanitize_timestamp(timestamp):
+def setup_pipeline(transformer_manager):
+def setup(product_name):
+def getLazyLogger(name='unknown', version='unknown'):
+def _thread_done(gt, *args, **kwargs):
+def ensure_tree(path):
+def read_cached_file(filename, force_reload=False):
+def delete_if_exists(path):
+@contextlib.contextmanager DCNL def remove_path_on_error(path):
+def file_open(*args, **kwargs):
+def msg_reply(conf, msg_id, reply_q, connection_pool, reply=None, failure=None, ending=False, log_failure=True):
+def unpack_context(conf, msg):
+def pack_context(msg, context):
+def _add_unique_id(msg):
+def create_connection(conf, new, connection_pool):
+def multicall(conf, context, topic, msg, timeout, connection_pool):
+def call(conf, context, topic, msg, timeout, connection_pool):
+def cast(conf, context, topic, msg, connection_pool):
+def fanout_cast(conf, context, topic, msg, connection_pool):
+def cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def fanout_cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def notify(conf, context, topic, msg, connection_pool, envelope):
+def create_connection(new=True):
+def call(context, topic, msg, timeout=None, check_for_lock=False):
+def cast(context, topic, msg):
+def fanout_cast(context, topic, msg):
+def multicall(context, topic, msg, timeout=None, check_for_lock=False):
+def notify(context, topic, msg, envelope=False):
+def cleanup():
+def cast_to_server(context, server_params, topic, msg):
+def fanout_cast_to_server(context, server_params, topic, msg):
+def queue_get_for(context, topic, host):
+def _get_impl():
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def create_connection(conf, new=True):
+def check_serialize(msg):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def fanout_cast(conf, context, topic, msg):
+def _serialize(data):
+def _deserialize(data):
+def unflatten_envelope(packenv):
+def _multi_send(method, context, topic, msg, timeout=None, envelope=False, _msg_id=None):
+def multicall(conf, *args, **kwargs):
+def call(conf, *args, **kwargs):
+def cast(conf, *args, **kwargs):
+def fanout_cast(conf, context, topic, msg, **kwargs):
+def notify(conf, context, topic, msg, envelope):
+def cleanup():
+def _safe_log(log_func, msg, msg_data):
+def serialize_remote_exception(failure_info, log_failure=True):
+def client_exceptions(*exceptions):
+def version_is_compatible(imp_version, version):
+def _get_queue_arguments(conf):
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def parse_host_port(address, default_port=None):
+def isotime(at=None, subsecond=False):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def paginate_query(query, model, limit, sort_keys, marker=None, sort_dir=None, sort_dirs=None):
+def set_defaults(sql_connection, sqlite_db, max_pool_size=None, max_overflow=None, pool_timeout=None):
+def get_session(autocommit=True, expire_on_commit=False, sqlite_fk=False, slave_session=False):
+def _raise_if_duplicate_entry_error(integrity_error, engine_name):
+def _raise_if_deadlock_error(operational_error, engine_name):
+def get_engine(sqlite_fk=False, slave_engine=False):
+def _synchronous_switch_listener(dbapi_conn, connection_rec):
+def _add_regexp_listener(dbapi_con, con_record):
+def _greenthread_yield(dbapi_con, con_record):
+def _ping_listener(dbapi_conn, connection_rec, connection_proxy):
+def _is_db_connection_error(args):
+def create_engine(sql_connection, sqlite_fk=False):
+def get_maker(engine, autocommit=True, expire_on_commit=False):
+def _patch_mysqldb_with_stacktrace_comments():
+def _assert_matching_drivers():
+def _parse_check(rule):
+def _parse_list_rule(rule):
+def _parse_tokenize(rule):
+def reducer(*tokens):
+def _parse_text_rule(rule):
+def parse_rule(rule):
+def register(name, func=None):
+def synchronized(name, lock_file_prefix, external=False, lock_path=None):
+def synchronized_with_prefix(lock_file_prefix):
+def is_uuid_like(val):
+def install(domain):
+def get_lazy_gettext(domain):
+def _is_in_group(opt, group):
+def _sanitize_default(s):
+@contextlib.contextmanager DCNL def save_and_reraise_exception():
+def to_primitive(value, convert_instances=False, convert_datetime=True, level=0, max_depth=3):
+def notify(context, message):
+def _get_drivers():
+def add_driver(notification_driver):
+def remove_driver(notification_driver):
+def notify(context, message):
+def _reset_drivers():
+def notify(context, message):
+def notify(_context, message):
+def notify(context, message):
+def notify_decorator(name, fn):
+def notify(context, publisher_id, event_type, priority, payload):
+def _get_drivers():
+def add_driver(notification_driver):
+def _reset_drivers():
+def notify(_context, message):
+def notify(_context, message):
+def import_class(import_str):
+def import_object(import_str, *args, **kwargs):
+def import_object_ns(name_space, import_str, *args, **kwargs):
+def import_module(import_str):
+def try_import(import_str, default=None):
+def execute(*cmd, **kwargs):
+def trycmd(*args, **kwargs):
+def get_context_from_function_and_args(function, args, kwargs):
+def iter_period(start, end, period):
+def register_opts(conf):
+def get_engine(conf):
+def get_connection(conf):
+def _find_migrate_repo():
+def make_query_from_filter(query, sample_filter, require_meter=True):
+def make_timestamp_range(start, end):
+def make_query_from_filter(sample_filter, require_meter=True):
+def require_map_reduce(conn):
+def reverse_timestamp(dt):
+def make_query(user=None, project=None, meter=None, resource=None, source=None, start=None, end=None, require_meter=True, query_only=False):
+def make_query_from_filter(sample_filter, require_meter=True):
+def _make_rowkey_scan(meter, rts_start=None, rts_end=None):
+def _load_hbase_list(d, prefix):
+def _instance_name(instance):
+def initialize_gatherer(gatherer=None):
+def get_metadata_from_object(instance):
+def get_config(section_name=None, defaults=None):
+def retry(func, *args, **kwargs):
+def teardown_module():
+def premetadata_create_container_stat_table(self, conn, put_timestamp=None):
+def prexsync_create_container_stat_table(self, conn, put_timestamp=None):
+def premetadata_create_account_stat_table(self, conn, put_timestamp):
+def pop_stream(f):
+def sortHeaderNames(headerNames):
+def app_factory(global_conf, **local_conf):
+def dict_factory(crs, row):
+def chexor(old, name, timestamp):
+def get_db_connection(path, timeout=30, okay_to_create=False):
+def run_daemon(klass, conf_file, section_name='', once=False, **kwargs):
+def http_connect(ipaddr, port, device, partition, method, path, headers=None, query_string=None, ssl=False):
+def http_connect_raw(ipaddr, port, method, path, headers=None, query_string=None, ssl=False):
+def filter_factory(global_conf, **local_conf):
+def quote(value, safe='/'):
+def filter_factory(global_conf, **local_conf):
+def filter_factory(global_conf, **local_conf):
+def filter_factory(global_conf, **local_conf):
+def parse_input(raw_data):
+def filter_factory(global_conf, **local_conf):
+def clean_acl(name, value):
+def parse_acl(acl_string):
+def referrer_allowed(referrer, referrer_acl):
+def filter_factory(global_conf, **local_conf):
+def lookup_cname(domain):
+def _parse_attrs(header):
+def _iter_requests(wsgi_input, boundary):
+def filter_factory(global_conf, **local_conf):
+def get_response_body(data_format, data_dict, error_list):
+def backward(f, blocksize=4096):
+def config_true_value(value):
+def load_libc_function(func_name, log_error=True):
+def get_param(req, name, default=None):
+def fallocate(fd, size):
+def fsync(fd):
+def fdatasync(fd):
+def drop_buffer_cache(fd, offset, length):
+def normalize_timestamp(timestamp):
+def mkdirs(path):
+def renamer(old, new):
+def split_path(path, minsegs=1, maxsegs=None, rest_with_last=False):
+def validate_device_partition(device, partition):
+def timing_stats(**dec_kwargs):
+def get_logger(conf, name=None, log_to_console=False, log_route=None, fmt='%(server)s DCSP %(message)s'):
+def get_hub():
+def drop_privileges(user):
+def capture_stdio(logger, **kwargs):
+def parse_options(parser=None, once=False, test_args=None):
+def whataremyips():
+def storage_directory(datadir, partition, hash):
+def hash_path(account, container=None, object=None, raw_digest=False):
+@contextmanager DCNL def lock_path(directory, timeout=10):
+@contextmanager DCNL def lock_file(filename, timeout=10, append=False, unlink=True):
+def lock_parent_directory(filename, timeout=10):
+def get_time_units(time_amount):
+def compute_eta(start_time, current_value, final_value):
+def iter_devices_partitions(devices_dir, item_type):
+def unlink_older_than(path, mtime):
+def item_from_env(env, item_name):
+def cache_from_env(env):
+def readconf(conffile, section_name=None, log_name=None, defaults=None, raw=False):
+def write_pickle(obj, dest, tmp=None, pickle_protocol=0):
+def search_tree(root, glob_match, ext):
+def write_file(path, contents):
+def remove_file(path):
+def audit_location_generator(devices, datadir, mount_check=True, logger=None):
+def ratelimit_sleep(running_time, max_rate, incr_by=1, rate_buffer=5):
+def urlparse(url):
+def human_readable(value):
+def dump_recon_cache(cache_dict, cache_file, logger, lock_timeout=2):
+def streq_const_time(s1, s2):
+def public(func):
+def rsync_ip(ip):
+def get_valid_utf8_str(str_or_unicode):
+def list_from_csv(comma_separated_str):
+def csv_append(csv_string, item):
+def reiterate(iterable):
+def tiers_for_dev(dev):
+def build_tier_tree(devices):
+def check_metadata(req, target_type):
+def check_object_creation(req, object_name):
+def check_mount(root, drive):
+def check_float(string):
+def check_utf8(string):
+def direct_get_account(node, part, account, marker=None, limit=None, prefix=None, delimiter=None, conn_timeout=5, response_timeout=15):
+def direct_head_container(node, part, account, container, conn_timeout=5, response_timeout=15):
+def direct_get_container(node, part, account, container, marker=None, limit=None, prefix=None, delimiter=None, conn_timeout=5, response_timeout=15):
+def direct_head_object(node, part, account, container, obj, conn_timeout=5, response_timeout=15):
+def direct_get_object(node, part, account, container, obj, conn_timeout=5, response_timeout=15, resp_chunk_size=None, headers={}):
+def direct_put_object(node, part, account, container, name, contents, content_length=None, etag=None, content_type=None, headers=None, conn_timeout=5, response_timeout=15, resp_chunk_size=None):
+def direct_post_object(node, part, account, container, name, headers, conn_timeout=5, response_timeout=15):
+def direct_delete_object(node, part, account, container, obj, conn_timeout=5, response_timeout=15, headers={}):
+def retry(func, *args, **kwargs):
+def quarantine_db(object_file, server_type):
+def roundrobin_datadirs(datadirs):
+def setup_env():
+def command(func):
+def watch_server_pids(server_pids, interval=1, **kwargs):
+def sanitize_timeout(timeout):
+def _func_on_containers(logger, conf, concurrency_key, func):
+def delete_containers(logger, conf):
+def create_containers(logger, conf):
+def monkey_patch_mimetools():
+def get_socket(conf, default_port=8080):
+def run_wsgi(conf_file, app_section, *args, **kwargs):
+def init_request_processor(conf_file, app_section, *args, **kwargs):
+def make_pre_authed_request(env, method=None, path=None, body=None, headers=None, agent='Swift', swift_source=None):
+def make_pre_authed_env(env, method=None, path=None, agent='Swift', query_string=None, swift_source=None):
+def _datetime_property(header):
+def _header_property(header):
+def _header_int_property(header):
+def _resp_status_property():
+def _resp_body_property():
+def _resp_etag_property():
+def _resp_content_type_property():
+def _resp_charset_property():
+def _resp_app_iter_property():
+def _req_fancy_property(cls, header, even_if_nonexistent=False):
+def _req_environ_property(environ_field):
+def _req_body_property():
+def _host_url_property():
+def wsgify(func):
+def is_informational(status):
+def is_success(status):
+def is_redirection(status):
+def is_client_error(status):
+def is_server_error(status):
+def read_metadata(fd):
+def write_metadata(fd, metadata):
+def app_factory(global_conf, **local_conf):
+def quarantine_renamer(device_path, corrupted_file_path):
+def hash_suffix(path, reclaim_age):
+def invalidate_hash(suffix_dir):
+def get_hashes(partition_dir, recalculate=[], do_listdir=False, reclaim_age=ONE_WEEK):
+def tpool_reraise(func, *args, **kwargs):
+def app_factory(global_conf, **local_conf):
+def update_headers(response, headers):
+def source_key(resp):
+def delay_denial(func):
+def headers_to_account_info(headers, status_int=HTTP_OK):
+def headers_to_container_info(headers, status_int=HTTP_OK):
+def cors_validation(func):
+def get_container_info(env, app, swift_source=None):
+def get_account_info(env, app, swift_source=None):
+def copy_headers_into(from_r, to_r):
+def app_factory(global_conf, **local_conf):
+def _build_user_auth(token=None, user_id=None, username=None, password=None, tenant_id=None, tenant_name=None, trust_id=None):
+def from_xml(xml):
+def to_xml(d, xmlns=None):
+def http_connect(ipaddr, port, device, partition, method, path, headers=None, query_string=None, ssl=False, key_file=None, cert_file=None):
+def http_connect_raw(ipaddr, port, method, path, headers=None, query_string=None, ssl=False, key_file=None, cert_file=None):
+def fail_gracefully(f):
+def setup_logging(conf):
+def read_cached_file(filename, cache_info, reload_func=None):
+def trunc_password(password):
+def hash_user_password(user):
+def hash_ldap_user_password(user):
+def hash_password(password):
+def ldap_hash_password(password):
+def check_password(password, hashed):
+def check_output(*popenargs, **kwargs):
+def unixtime(dt_obj):
+def auth_str_equal(provided, known):
+def cms_verify(formatted, signing_cert_file_name, ca_file_name):
+def is_ans1_token(token):
+def cms_sign_text(text, signing_cert_file_name, signing_key_file_name):
+def cms_hash_token(token_id):
+def provider(name):
+def requires(*dependencies):
+def _match_query(query, attrs):
+def _paren_groups(source):
+def _match(key, value, attrs):
+def _subs(value):
+def render_response(body=None, status=None, headers=None):
+def render_exception(error):
+def initialize_decorator(init):
+def handle_conflicts(type='object'):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def upgrade(migrate_engine):
+def downgrade(migrate_engine):
+def _find_migrate_repo():
+def flatten(d, parent_key=''):
+def protected(f):
+def filterprotected(*filters):
+def enforce(credentials, action, target, do_raise=True):
+def filter_factory(global_conf, **local_conf):
+def unique_id(token_id):
+def default_expire_time():
+def validate_auth_info(self, context, user_ref, tenant_ref):
+def isotime(at=None, subsecond=False):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def set_rules(rules):
+def reset():
+def check(rule, target, creds, exc=None, *args, **kwargs):
+def _parse_check(rule):
+def _parse_list_rule(rule):
+def _parse_tokenize(rule):
+def reducer(*tokens):
+def _parse_text_rule(rule):
+def parse_rule(rule):
+def register(name, func=None):
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno():
+def _get_version_from_git(pre_version):
+def _get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def to_primitive(value, convert_instances=False, level=0):
+def import_class(import_str):
+def import_object(import_str, *args, **kwargs):
+def import_object_ns(name_space, import_str, *args, **kwargs):
+def import_module(import_str):
+def filter_user(user_ref):
+def format_url(url, data):
+def recreate_token_data(context, token_data=None, expires=None, user_ref=None, project_ref=None):
+def render_token_data_response(token_id, token_data, created=False):
+def run_command_with_code(cmd, redirect_output=True, check_exit_code=True):
+def create_virtualenv(venv=VENV, no_site_packages=True):
+def parse_args():
+def getid(obj):
+def cms_verify(formatted, signing_cert_file_name, ca_file_name):
+def is_ans1_token(token):
+def cms_sign_text(text, signing_cert_file_name, signing_key_file_name):
+def cms_hash_token(token_id):
+def will_expire_soon(expiry):
+def safe_quote(s):
+def filter_factory(global_conf, **local_conf):
+def assert_crypto_availability(f):
+def generate_aes_key(token, secret):
+def compute_mac(token, serialized_data):
+def hash_data(data):
+def sign_data(token, data):
+def verify_signed_data(token, data):
+@assert_crypto_availability DCNL def encrypt_data(token, secret, data):
+@assert_crypto_availability DCNL def decrypt_data(token, secret, data):
+def arg(*args, **kwargs):
+def env(*vars, **kwargs):
+def add_arg(f, *args, **kwargs):
+def add_resource_manager_extra_kwargs_hook(f, hook):
+def get_resource_manager_extra_kwargs(f, args, allow_conflicts=False):
+def unauthenticated(f):
+def isunauthenticated(f):
+def service_type(stype):
+def get_service_type(f):
+def find_resource(manager, name_or_id):
+def safe_issubclass(*args):
+def import_class(import_str):
+def slugify(value):
+def from_response(response, body):
+def isotime(at=None, subsecond=False):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def int_from_bool_as_string(subject):
+def bool_from_string(subject):
+def safe_decode(text, incoming=None, errors='strict'):
+def safe_encode(text, incoming=None, encoding='utf-8', errors='strict'):
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno(git_dir):
+def _get_version_from_git(pre_version):
+def _get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def to_primitive(value, convert_instances=False, convert_datetime=True, level=0, max_depth=3):
+def _poll_for_status(poll_fn, obj_id, action, final_ok_states, poll_period=5, show_progress=True):
+def _find_monitor(cs, monitor):
+def _find_monitor_snapshot(cs, snapshot):
+def _find_backup(cs, backup):
+@utils.arg('--all-tenants', dest='all_tenants', metavar='<0|1>', nargs='?', type=int, const=1, default=0, help='Display DCSP information DCSP from DCSP all DCSP tenants DCSP (Admin DCSP only).') DCNL @utils.arg('--all_tenants', nargs='?', type=int, const=1, help=argparse.SUPPRESS) DCNL @utils.arg('--display-name', metavar='<display-name>', default=None, help='Filter DCSP results DCSP by DCSP display-name') DCNL @utils.arg('--status', metavar='<status>', default=None, help='Filter DCSP results DCSP by DCSP status') DCNL @utils.service_type('monitor') DCNL def do_list(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor.') DCNL @utils.service_type('monitor') DCNL def do_show(cs, args):
+@utils.arg('size', metavar='<size>', type=int, help='Size DCSP of DCSP monitor DCSP in DCSP GB') DCNL @utils.arg('--snapshot-id', metavar='<snapshot-id>', default=None, help='Create DCSP monitor DCSP from DCSP snapshot DCSP id DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--snapshot_id', help=argparse.SUPPRESS) DCNL @utils.arg('--source-volid', metavar='<source-volid>', default=None, help='Create DCSP monitor DCSP from DCSP monitor DCSP id DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--source_volid', help=argparse.SUPPRESS) DCNL @utils.arg('--image-id', metavar='<image-id>', default=None, help='Create DCSP monitor DCSP from DCSP image DCSP id DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--image_id', help=argparse.SUPPRESS) DCNL @utils.arg('--display-name', metavar='<display-name>', default=None, help='ServiceManage DCSP name DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--display_name', help=argparse.SUPPRESS) DCNL @utils.arg('--display-description', metavar='<display-description>', default=None, help='ServiceManage DCSP description DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--display_description', help=argparse.SUPPRESS) DCNL @utils.arg('--monitor-type', metavar='<monitor-type>', default=None, help='ServiceManage DCSP type DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--monitor_type', help=argparse.SUPPRESS) DCNL @utils.arg('--availability-zone', metavar='<availability-zone>', default=None, help='Availability DCSP zone DCSP for DCSP monitor DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--availability_zone', help=argparse.SUPPRESS) DCNL @utils.arg('--metadata', type=str, nargs='*', metavar='<key=value>', help='Metadata DCSP key=value DCSP pairs DCSP (Optional, DCSP Default=None)', default=None) DCNL @utils.service_type('monitor') DCNL def do_create(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP delete.') DCNL @utils.service_type('monitor') DCNL def do_delete(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP delete.') DCNL @utils.service_type('monitor') DCNL def do_force_delete(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP rename.') DCNL @utils.arg('display_name', nargs='?', metavar='<display-name>', help='New DCSP display-name DCSP for DCSP the DCSP monitor.') DCNL @utils.arg('--display-description', metavar='<display-description>', help='Optional DCSP monitor DCSP description. DCSP (Default=None)', default=None) DCNL @utils.service_type('monitor') DCNL def do_rename(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP update DCSP metadata DCSP on.') DCNL @utils.arg('action', metavar='<action>', choices=['set', 'unset'], help="Actions: DCSP 'set' DCSP or DCSP 'unset'") DCNL @utils.arg('metadata', metavar='<key=value>', nargs='+', default=[], help='Metadata DCSP to DCSP set/unset DCSP (only DCSP key DCSP is DCSP necessary DCSP on DCSP unset)') DCNL @utils.service_type('monitor') DCNL def do_metadata(cs, args):
+@utils.arg('--all-tenants', dest='all_tenants', metavar='<0|1>', nargs='?', type=int, const=1, default=0, help='Display DCSP information DCSP from DCSP all DCSP tenants DCSP (Admin DCSP only).') DCNL @utils.arg('--all_tenants', nargs='?', type=int, const=1, help=argparse.SUPPRESS) DCNL @utils.arg('--display-name', metavar='<display-name>', default=None, help='Filter DCSP results DCSP by DCSP display-name') DCNL @utils.arg('--status', metavar='<status>', default=None, help='Filter DCSP results DCSP by DCSP status') DCNL @utils.arg('--monitor-id', metavar='<monitor-id>', default=None, help='Filter DCSP results DCSP by DCSP monitor-id') DCNL @utils.service_type('monitor') DCNL def do_snapshot_list(cs, args):
+@utils.arg('snapshot', metavar='<snapshot>', help='ID DCSP of DCSP the DCSP snapshot.') DCNL @utils.service_type('monitor') DCNL def do_snapshot_show(cs, args):
+@utils.arg('monitor_id', metavar='<monitor-id>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP snapshot') DCNL @utils.arg('--force', metavar='<True|False>', help="Optional DCSP flag DCSP to DCSP indicate DCSP whether DCSP to DCSP snapshot DCSP a DCSP monitor DCSP even DCSP if DCSP it's DCSP attached DCSP to DCSP an DCSP instance. DCSP (Default=False)", default=False) DCNL @utils.arg('--display-name', metavar='<display-name>', default=None, help='Optional DCSP snapshot DCSP name. DCSP (Default=None)') DCNL @utils.arg('--display_name', help=argparse.SUPPRESS) DCNL @utils.arg('--display-description', metavar='<display-description>', default=None, help='Optional DCSP snapshot DCSP description. DCSP (Default=None)') DCNL @utils.arg('--display_description', help=argparse.SUPPRESS) DCNL @utils.service_type('monitor') DCNL def do_snapshot_create(cs, args):
+@utils.arg('snapshot_id', metavar='<snapshot-id>', help='ID DCSP of DCSP the DCSP snapshot DCSP to DCSP delete.') DCNL @utils.service_type('monitor') DCNL def do_snapshot_delete(cs, args):
+@utils.arg('snapshot', metavar='<snapshot>', help='ID DCSP of DCSP the DCSP snapshot.') DCNL @utils.arg('display_name', nargs='?', metavar='<display-name>', help='New DCSP display-name DCSP for DCSP the DCSP snapshot.') DCNL @utils.arg('--display-description', metavar='<display-description>', help='Optional DCSP snapshot DCSP description. DCSP (Default=None)', default=None) DCNL @utils.service_type('monitor') DCNL def do_snapshot_rename(cs, args):
+@utils.service_type('monitor') DCNL def do_type_list(cs, args):
+@utils.service_type('monitor') DCNL def do_extra_specs_list(cs, args):
+@utils.arg('name', metavar='<name>', help='Name DCSP of DCSP the DCSP new DCSP monitor DCSP type') DCNL @utils.service_type('monitor') DCNL def do_type_create(cs, args):
+@utils.arg('id', metavar='<id>', help='Unique DCSP ID DCSP of DCSP the DCSP monitor DCSP type DCSP to DCSP delete') DCNL @utils.service_type('monitor') DCNL def do_type_delete(cs, args):
+@utils.arg('vtype', metavar='<vtype>', help='Name DCSP or DCSP ID DCSP of DCSP the DCSP monitor DCSP type') DCNL @utils.arg('action', metavar='<action>', choices=['set', 'unset'], help="Actions: DCSP 'set' DCSP or DCSP 'unset'") DCNL @utils.arg('metadata', metavar='<key=value>', nargs='*', default=None, help='Extra_specs DCSP to DCSP set/unset DCSP (only DCSP key DCSP is DCSP necessary DCSP on DCSP unset)') DCNL @utils.service_type('monitor') DCNL def do_type_key(cs, args):
+def do_endpoints(cs, args):
+def do_credentials(cs, args):
+@utils.arg('tenant', metavar='<tenant_id>', help='UUID DCSP of DCSP tenant DCSP to DCSP list DCSP the DCSP quotas DCSP for.') DCNL @utils.service_type('monitor') DCNL def do_quota_show(cs, args):
+@utils.arg('tenant', metavar='<tenant_id>', help='UUID DCSP of DCSP tenant DCSP to DCSP list DCSP the DCSP default DCSP quotas DCSP for.') DCNL @utils.service_type('monitor') DCNL def do_quota_defaults(cs, args):
+@utils.arg('tenant', metavar='<tenant_id>', help='UUID DCSP of DCSP tenant DCSP to DCSP set DCSP the DCSP quotas DCSP for.') DCNL @utils.arg('--monitors', metavar='<monitors>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "monitors" DCSP quota.') DCNL @utils.arg('--snapshots', metavar='<snapshots>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "snapshots" DCSP quota.') DCNL @utils.arg('--gigabytes', metavar='<gigabytes>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "gigabytes" DCSP quota.') DCNL @utils.service_type('monitor') DCNL def do_quota_update(cs, args):
+@utils.arg('class_name', metavar='<class>', help='Name DCSP of DCSP quota DCSP class DCSP to DCSP list DCSP the DCSP quotas DCSP for.') DCNL @utils.service_type('monitor') DCNL def do_quota_class_show(cs, args):
+@utils.arg('class_name', metavar='<class>', help='Name DCSP of DCSP quota DCSP class DCSP to DCSP set DCSP the DCSP quotas DCSP for.') DCNL @utils.arg('--monitors', metavar='<monitors>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "monitors" DCSP quota.') DCNL @utils.arg('--snapshots', metavar='<snapshots>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "snapshots" DCSP quota.') DCNL @utils.arg('--gigabytes', metavar='<gigabytes>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "gigabytes" DCSP quota.') DCNL @utils.service_type('monitor') DCNL def do_quota_class_update(cs, args):
+@utils.service_type('monitor') DCNL def do_absolute_limits(cs, args):
+@utils.service_type('monitor') DCNL def do_rate_limits(cs, args):
+def _find_monitor_type(cs, vtype):
+@utils.arg('monitor_id', metavar='<monitor-id>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP upload DCSP to DCSP an DCSP image') DCNL @utils.arg('--force', metavar='<True|False>', help="Optional DCSP flag DCSP to DCSP indicate DCSP whether DCSP to DCSP upload DCSP a DCSP monitor DCSP even DCSP if DCSP it's DCSP attached DCSP to DCSP an DCSP instance. DCSP (Default=False)", default=False) DCNL @utils.arg('--container-format', metavar='<container-format>', help='Optional DCSP type DCSP for DCSP container DCSP format DCSP (Default=bare)', default='bare') DCNL @utils.arg('--disk-format', metavar='<disk-format>', help='Optional DCSP type DCSP for DCSP disk DCSP format DCSP (Default=raw)', default='raw') DCNL @utils.arg('image_name', metavar='<image-name>', help='Name DCSP for DCSP created DCSP image') DCNL @utils.service_type('monitor') DCNL def do_upload_to_image(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP backup.') DCNL @utils.arg('--container', metavar='<container>', help='Optional DCSP Backup DCSP container DCSP name. DCSP (Default=None)', default=None) DCNL @utils.arg('--display-name', metavar='<display-name>', help='Optional DCSP backup DCSP name. DCSP (Default=None)', default=None) DCNL @utils.arg('--display-description', metavar='<display-description>', help='Optional DCSP backup DCSP description. DCSP (Default=None)', default=None) DCNL @utils.service_type('monitor') DCNL def do_backup_create(cs, args):
+@utils.arg('backup', metavar='<backup>', help='ID DCSP of DCSP the DCSP backup.') DCNL @utils.service_type('monitor') DCNL def do_backup_show(cs, args):
+@utils.service_type('monitor') DCNL def do_backup_list(cs, args):
+@utils.arg('backup', metavar='<backup>', help='ID DCSP of DCSP the DCSP backup DCSP to DCSP delete.') DCNL @utils.service_type('monitor') DCNL def do_backup_delete(cs, args):
+@utils.arg('backup', metavar='<backup>', help='ID DCSP of DCSP the DCSP backup DCSP to DCSP restore.') DCNL @utils.arg('--monitor-id', metavar='<monitor-id>', help='Optional DCSP ID DCSP of DCSP the DCSP monitor DCSP to DCSP restore DCSP to.', default=None) DCNL @utils.service_type('monitor') DCNL def do_backup_restore(cs, args):
+@utils.service_type('monitor') DCNL def do_list_extensions(client, _args):
+def getid(obj):
+def cms_verify(formatted, signing_cert_file_name, ca_file_name):
+def is_ans1_token(token):
+def cms_sign_text(text, signing_cert_file_name, signing_key_file_name):
+def cms_hash_token(token_id):
+def will_expire_soon(expiry):
+def safe_quote(s):
+def filter_factory(global_conf, **local_conf):
+def assert_crypto_availability(f):
+def generate_aes_key(token, secret):
+def compute_mac(token, serialized_data):
+def hash_data(data):
+def sign_data(token, data):
+def verify_signed_data(token, data):
+@assert_crypto_availability DCNL def encrypt_data(token, secret, data):
+@assert_crypto_availability DCNL def decrypt_data(token, secret, data):
+def arg(*args, **kwargs):
+def env(*vars, **kwargs):
+def add_arg(f, *args, **kwargs):
+def add_resource_manager_extra_kwargs_hook(f, hook):
+def get_resource_manager_extra_kwargs(f, args, allow_conflicts=False):
+def unauthenticated(f):
+def isunauthenticated(f):
+def service_type(stype):
+def get_service_type(f):
+def find_resource(manager, name_or_id):
+def safe_issubclass(*args):
+def import_class(import_str):
+def slugify(value):
+def from_response(response, body):
+def isotime(at=None, subsecond=False):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def int_from_bool_as_string(subject):
+def bool_from_string(subject):
+def safe_decode(text, incoming=None, errors='strict'):
+def safe_encode(text, incoming=None, encoding='utf-8', errors='strict'):
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno(git_dir):
+def _get_version_from_git(pre_version):
+def _get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def to_primitive(value, convert_instances=False, convert_datetime=True, level=0, max_depth=3):
+def _poll_for_status(poll_fn, obj_id, action, final_ok_states, poll_period=5, show_progress=True):
+def _find_monitor(cs, monitor):
+def _find_monitor_snapshot(cs, snapshot):
+def _find_backup(cs, backup):
+@utils.arg('--all-tenants', dest='all_tenants', metavar='<0|1>', nargs='?', type=int, const=1, default=0, help='Display DCSP information DCSP from DCSP all DCSP tenants DCSP (Admin DCSP only).') DCNL @utils.arg('--all_tenants', nargs='?', type=int, const=1, help=argparse.SUPPRESS) DCNL @utils.arg('--display-name', metavar='<display-name>', default=None, help='Filter DCSP results DCSP by DCSP display-name') DCNL @utils.arg('--status', metavar='<status>', default=None, help='Filter DCSP results DCSP by DCSP status') DCNL @utils.service_type('monitor') DCNL def do_list(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor.') DCNL @utils.service_type('monitor') DCNL def do_show(cs, args):
+@utils.arg('size', metavar='<size>', type=int, help='Size DCSP of DCSP monitor DCSP in DCSP GB') DCNL @utils.arg('--snapshot-id', metavar='<snapshot-id>', default=None, help='Create DCSP monitor DCSP from DCSP snapshot DCSP id DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--snapshot_id', help=argparse.SUPPRESS) DCNL @utils.arg('--source-volid', metavar='<source-volid>', default=None, help='Create DCSP monitor DCSP from DCSP monitor DCSP id DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--source_volid', help=argparse.SUPPRESS) DCNL @utils.arg('--image-id', metavar='<image-id>', default=None, help='Create DCSP monitor DCSP from DCSP image DCSP id DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--image_id', help=argparse.SUPPRESS) DCNL @utils.arg('--display-name', metavar='<display-name>', default=None, help='ServiceManage DCSP name DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--display_name', help=argparse.SUPPRESS) DCNL @utils.arg('--display-description', metavar='<display-description>', default=None, help='ServiceManage DCSP description DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--display_description', help=argparse.SUPPRESS) DCNL @utils.arg('--monitor-type', metavar='<monitor-type>', default=None, help='ServiceManage DCSP type DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--monitor_type', help=argparse.SUPPRESS) DCNL @utils.arg('--availability-zone', metavar='<availability-zone>', default=None, help='Availability DCSP zone DCSP for DCSP monitor DCSP (Optional, DCSP Default=None)') DCNL @utils.arg('--availability_zone', help=argparse.SUPPRESS) DCNL @utils.arg('--metadata', type=str, nargs='*', metavar='<key=value>', help='Metadata DCSP key=value DCSP pairs DCSP (Optional, DCSP Default=None)', default=None) DCNL @utils.service_type('monitor') DCNL def do_create(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP delete.') DCNL @utils.service_type('monitor') DCNL def do_delete(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP delete.') DCNL @utils.service_type('monitor') DCNL def do_force_delete(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP rename.') DCNL @utils.arg('display_name', nargs='?', metavar='<display-name>', help='New DCSP display-name DCSP for DCSP the DCSP monitor.') DCNL @utils.arg('--display-description', metavar='<display-description>', help='Optional DCSP monitor DCSP description. DCSP (Default=None)', default=None) DCNL @utils.service_type('monitor') DCNL def do_rename(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP update DCSP metadata DCSP on.') DCNL @utils.arg('action', metavar='<action>', choices=['set', 'unset'], help="Actions: DCSP 'set' DCSP or DCSP 'unset'") DCNL @utils.arg('metadata', metavar='<key=value>', nargs='+', default=[], help='Metadata DCSP to DCSP set/unset DCSP (only DCSP key DCSP is DCSP necessary DCSP on DCSP unset)') DCNL @utils.service_type('monitor') DCNL def do_metadata(cs, args):
+@utils.arg('--all-tenants', dest='all_tenants', metavar='<0|1>', nargs='?', type=int, const=1, default=0, help='Display DCSP information DCSP from DCSP all DCSP tenants DCSP (Admin DCSP only).') DCNL @utils.arg('--all_tenants', nargs='?', type=int, const=1, help=argparse.SUPPRESS) DCNL @utils.arg('--display-name', metavar='<display-name>', default=None, help='Filter DCSP results DCSP by DCSP display-name') DCNL @utils.arg('--status', metavar='<status>', default=None, help='Filter DCSP results DCSP by DCSP status') DCNL @utils.arg('--monitor-id', metavar='<monitor-id>', default=None, help='Filter DCSP results DCSP by DCSP monitor-id') DCNL @utils.service_type('monitor') DCNL def do_snapshot_list(cs, args):
+@utils.arg('snapshot', metavar='<snapshot>', help='ID DCSP of DCSP the DCSP snapshot.') DCNL @utils.service_type('monitor') DCNL def do_snapshot_show(cs, args):
+@utils.arg('monitor_id', metavar='<monitor-id>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP snapshot') DCNL @utils.arg('--force', metavar='<True|False>', help="Optional DCSP flag DCSP to DCSP indicate DCSP whether DCSP to DCSP snapshot DCSP a DCSP monitor DCSP even DCSP if DCSP it's DCSP attached DCSP to DCSP an DCSP instance. DCSP (Default=False)", default=False) DCNL @utils.arg('--display-name', metavar='<display-name>', default=None, help='Optional DCSP snapshot DCSP name. DCSP (Default=None)') DCNL @utils.arg('--display_name', help=argparse.SUPPRESS) DCNL @utils.arg('--display-description', metavar='<display-description>', default=None, help='Optional DCSP snapshot DCSP description. DCSP (Default=None)') DCNL @utils.arg('--display_description', help=argparse.SUPPRESS) DCNL @utils.service_type('monitor') DCNL def do_snapshot_create(cs, args):
+@utils.arg('snapshot_id', metavar='<snapshot-id>', help='ID DCSP of DCSP the DCSP snapshot DCSP to DCSP delete.') DCNL @utils.service_type('monitor') DCNL def do_snapshot_delete(cs, args):
+@utils.arg('snapshot', metavar='<snapshot>', help='ID DCSP of DCSP the DCSP snapshot.') DCNL @utils.arg('display_name', nargs='?', metavar='<display-name>', help='New DCSP display-name DCSP for DCSP the DCSP snapshot.') DCNL @utils.arg('--display-description', metavar='<display-description>', help='Optional DCSP snapshot DCSP description. DCSP (Default=None)', default=None) DCNL @utils.service_type('monitor') DCNL def do_snapshot_rename(cs, args):
+@utils.service_type('monitor') DCNL def do_type_list(cs, args):
+@utils.service_type('monitor') DCNL def do_extra_specs_list(cs, args):
+@utils.arg('name', metavar='<name>', help='Name DCSP of DCSP the DCSP new DCSP monitor DCSP type') DCNL @utils.service_type('monitor') DCNL def do_type_create(cs, args):
+@utils.arg('id', metavar='<id>', help='Unique DCSP ID DCSP of DCSP the DCSP monitor DCSP type DCSP to DCSP delete') DCNL @utils.service_type('monitor') DCNL def do_type_delete(cs, args):
+@utils.arg('vtype', metavar='<vtype>', help='Name DCSP or DCSP ID DCSP of DCSP the DCSP monitor DCSP type') DCNL @utils.arg('action', metavar='<action>', choices=['set', 'unset'], help="Actions: DCSP 'set' DCSP or DCSP 'unset'") DCNL @utils.arg('metadata', metavar='<key=value>', nargs='*', default=None, help='Extra_specs DCSP to DCSP set/unset DCSP (only DCSP key DCSP is DCSP necessary DCSP on DCSP unset)') DCNL @utils.service_type('monitor') DCNL def do_type_key(cs, args):
+def do_endpoints(cs, args):
+def do_credentials(cs, args):
+@utils.arg('tenant', metavar='<tenant_id>', help='UUID DCSP of DCSP tenant DCSP to DCSP list DCSP the DCSP quotas DCSP for.') DCNL @utils.service_type('monitor') DCNL def do_quota_show(cs, args):
+@utils.arg('tenant', metavar='<tenant_id>', help='UUID DCSP of DCSP tenant DCSP to DCSP list DCSP the DCSP default DCSP quotas DCSP for.') DCNL @utils.service_type('monitor') DCNL def do_quota_defaults(cs, args):
+@utils.arg('tenant', metavar='<tenant_id>', help='UUID DCSP of DCSP tenant DCSP to DCSP set DCSP the DCSP quotas DCSP for.') DCNL @utils.arg('--monitors', metavar='<monitors>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "monitors" DCSP quota.') DCNL @utils.arg('--snapshots', metavar='<snapshots>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "snapshots" DCSP quota.') DCNL @utils.arg('--gigabytes', metavar='<gigabytes>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "gigabytes" DCSP quota.') DCNL @utils.service_type('monitor') DCNL def do_quota_update(cs, args):
+@utils.arg('class_name', metavar='<class>', help='Name DCSP of DCSP quota DCSP class DCSP to DCSP list DCSP the DCSP quotas DCSP for.') DCNL @utils.service_type('monitor') DCNL def do_quota_class_show(cs, args):
+@utils.arg('class_name', metavar='<class>', help='Name DCSP of DCSP quota DCSP class DCSP to DCSP set DCSP the DCSP quotas DCSP for.') DCNL @utils.arg('--monitors', metavar='<monitors>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "monitors" DCSP quota.') DCNL @utils.arg('--snapshots', metavar='<snapshots>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "snapshots" DCSP quota.') DCNL @utils.arg('--gigabytes', metavar='<gigabytes>', type=int, default=None, help='New DCSP value DCSP for DCSP the DCSP "gigabytes" DCSP quota.') DCNL @utils.service_type('monitor') DCNL def do_quota_class_update(cs, args):
+@utils.service_type('monitor') DCNL def do_absolute_limits(cs, args):
+@utils.service_type('monitor') DCNL def do_rate_limits(cs, args):
+def _find_monitor_type(cs, vtype):
+@utils.arg('monitor_id', metavar='<monitor-id>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP upload DCSP to DCSP an DCSP image') DCNL @utils.arg('--force', metavar='<True|False>', help="Optional DCSP flag DCSP to DCSP indicate DCSP whether DCSP to DCSP upload DCSP a DCSP monitor DCSP even DCSP if DCSP it's DCSP attached DCSP to DCSP an DCSP instance. DCSP (Default=False)", default=False) DCNL @utils.arg('--container-format', metavar='<container-format>', help='Optional DCSP type DCSP for DCSP container DCSP format DCSP (Default=bare)', default='bare') DCNL @utils.arg('--disk-format', metavar='<disk-format>', help='Optional DCSP type DCSP for DCSP disk DCSP format DCSP (Default=raw)', default='raw') DCNL @utils.arg('image_name', metavar='<image-name>', help='Name DCSP for DCSP created DCSP image') DCNL @utils.service_type('monitor') DCNL def do_upload_to_image(cs, args):
+@utils.arg('monitor', metavar='<monitor>', help='ID DCSP of DCSP the DCSP monitor DCSP to DCSP backup.') DCNL @utils.arg('--container', metavar='<container>', help='Optional DCSP Backup DCSP container DCSP name. DCSP (Default=None)', default=None) DCNL @utils.arg('--display-name', metavar='<display-name>', help='Optional DCSP backup DCSP name. DCSP (Default=None)', default=None) DCNL @utils.arg('--display-description', metavar='<display-description>', help='Optional DCSP backup DCSP description. DCSP (Default=None)', default=None) DCNL @utils.service_type('monitor') DCNL def do_backup_create(cs, args):
+@utils.arg('backup', metavar='<backup>', help='ID DCSP of DCSP the DCSP backup.') DCNL @utils.service_type('monitor') DCNL def do_backup_show(cs, args):
+@utils.service_type('monitor') DCNL def do_backup_list(cs, args):
+@utils.arg('backup', metavar='<backup>', help='ID DCSP of DCSP the DCSP backup DCSP to DCSP delete.') DCNL @utils.service_type('monitor') DCNL def do_backup_delete(cs, args):
+@utils.arg('backup', metavar='<backup>', help='ID DCSP of DCSP the DCSP backup DCSP to DCSP restore.') DCNL @utils.arg('--monitor-id', metavar='<monitor-id>', help='Optional DCSP ID DCSP of DCSP the DCSP monitor DCSP to DCSP restore DCSP to.', default=None) DCNL @utils.service_type('monitor') DCNL def do_backup_restore(cs, args):
+@utils.service_type('monitor') DCNL def do_list_extensions(client, _args):
+def _sanitize_default(s):
+def monitor_todo_format(physical_line):
+def monitor_except_format(logical_line):
+def monitor_except_format_assert(logical_line):
+def monitor_one_import_per_line(logical_line):
+def monitor_import_module_only(logical_line):
+def monitor_import_alphabetical(physical_line, line_number, lines):
+def monitor_docstring_start_space(physical_line):
+def monitor_docstring_one_line(physical_line):
+def monitor_docstring_multiline_end(physical_line):
+def check_l18n():
+def monitor_localization_strings(logical_line, tokens):
+def readlines(filename):
+def add_monitor():
+def paginate_query(query, model, limit, sort_keys, marker=None, sort_dir=None, sort_dirs=None):
+def pipeline_factory(loader, global_conf, **local_conf):
+def load_standard_extensions(ext_mgr, logger, path, package, ext_list=None):
+def get_pagination_params(request):
+def _get_limit_param(request):
+def _get_marker_param(request):
+def limited(items, request, max_limit=FLAGS.osapi_max_limit):
+def limited_by_marker(items, request, max_limit=FLAGS.osapi_max_limit):
+def remove_version_from_href(href):
+def get_items(obj):
+def SubTemplateElement(parent, tag, attrib=None, selector=None, subselector=None, **extra):
+def make_links(parent, selector=None):
+def make_flat_dict(name, selector=None, subselector=None, ns=None):
+def serializers(**serializers):
+def deserializers(**deserializers):
+def response(code):
+def action_peek_json(body):
+def action_peek_xml(body):
+def action(name):
+def extends(*args, **kwargs):
+def unquote_header_value(value):
+def parse_list_header(value):
+def parse_options_header(value):
+def _list_hosts(req, service=None):
+def check_host(fn):
+def register_models():
+def get_session(autocommit=True, expire_on_commit=False):
+def synchronous_switch_listener(dbapi_conn, connection_rec):
+def ping_listener(dbapi_conn, connection_rec, connection_proxy):
+def is_db_connection_error(args):
+def get_engine():
+def get_maker(engine, autocommit=True, expire_on_commit=False):
+def is_admin_context(context):
+def is_user_context(context):
+def authorize_project_context(context, project_id):
+def authorize_user_context(context, user_id):
+def authorize_quota_class_context(context, class_name):
+def require_admin_context(f):
+def require_context(f):
+def model_query(context, *args, **kwargs):
+def exact_filter(query, model, filters, legal_keys):
+def _get_host_utilization(context, host, ram_mb, disk_gb):
+@require_admin_context DCNL def compute_node_create(context, values, session=None):
+@require_admin_context DCNL def compute_node_update(context, compute_id, values, auto_adjust):
+def compute_node_get_by_host(context, host):
+def compute_node_utilization_update(context, host, free_ram_mb_delta=0, free_disk_gb_delta=0, work_delta=0, vm_delta=0):
+def compute_node_utilization_set(context, host, free_ram_mb=None, free_disk_gb=None, work=None, vms=None):
+def _find_migrate_repo():
+def service_destroy(context, service_id):
+def service_get(context, service_id):
+def service_get_by_host_and_topic(context, host, topic):
+def service_get_all(context, disabled=None):
+def service_get_all_by_topic(context, topic):
+def service_get_all_by_host(context, host):
+def service_get_all_bmc_by_host(context, host):
+def service_get_all_servicemanage_sorted(context):
+def service_get_by_args(context, host, binary):
+def service_create(context, values):
+def service_update(context, service_id, values):
+def compute_node_get(context, compute_id):
+def compute_node_get_all(context):
+def compute_node_create(context, values):
+def compute_node_update(context, compute_id, values, auto_adjust=True):
+def db_sync(version=None):
+def db_version():
+def find_config(config_path):
+def execute(*cmd, **kwargs):
+def trycmd(*args, **kwargs):
+def last_completed_audit_period(unit=None):
+def generate_password(length=20, symbolgroups=DEFAULT_PASSWORD_SYMBOLS):
+def safe_minidom_parse_string(xml_string):
+def xhtml_escape(value):
+def utf8(value):
+def delete_if_exists(pathname):
+def get_from_path(items, path):
+def flatten_dict(dict_, flattened=None):
+def partition_dict(dict_, keys):
+def map_dict_keys(dict_, key_map):
+def subset_dict(dict_, keys):
+def check_isinstance(obj, cls):
+def bool_from_str(val):
+def is_valid_boolstr(val):
+def is_valid_ipv4(address):
+def monkey_patch():
+def convert_to_list_dict(lst, label):
+def timefunc(func):
+def generate_glance_url():
+@contextlib.contextmanager DCNL def logging_error(message):
+@contextlib.contextmanager DCNL def remove_path_on_error(path):
+def make_dev_path(dev, partition=None, base='/dev'):
+def total_seconds(td):
+def sanitize_hostname(hostname):
+def read_cached_file(filename, cache_info, reload_func=None):
+def file_open(*args, **kwargs):
+def hash_file(file_like_object):
+@contextlib.contextmanager DCNL def temporary_mutation(obj, **kwargs):
+def service_is_up(service):
+def generate_mac_address():
+def read_file_as_root(file_path):
+@contextlib.contextmanager DCNL def temporary_chown(path, owner_uid=None):
+def strcmp_const_time(s1, s2):
+def walk_class_hierarchy(clazz, encountered=None):
+def ensure_tree(path):
+def to_bytes(text, default=0):
+def read_cached_file(filename, cache_info, reload_func=None):
+def enforce(context, action, target):
+def check_is_admin(roles):
+def _get_my_ip():
+def setup(product_name):
+def ensure_tree(path):
+def msg_reply(conf, msg_id, reply_q, connection_pool, reply=None, failure=None, ending=False, log_failure=True):
+def unpack_context(conf, msg):
+def pack_context(msg, context):
+def _add_unique_id(msg):
+def create_connection(conf, new, connection_pool):
+def multicall(conf, context, topic, msg, timeout, connection_pool):
+def call(conf, context, topic, msg, timeout, connection_pool):
+def cast(conf, context, topic, msg, connection_pool):
+def fanout_cast(conf, context, topic, msg, connection_pool):
+def cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def fanout_cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def notify(conf, context, topic, msg, connection_pool, envelope):
+def create_connection(new=True):
+def call(context, topic, msg, timeout=None, check_for_lock=False):
+def cast(context, topic, msg):
+def fanout_cast(context, topic, msg):
+def multicall(context, topic, msg, timeout=None, check_for_lock=False):
+def notify(context, topic, msg, envelope=False):
+def cleanup():
+def cast_to_server(context, server_params, topic, msg):
+def fanout_cast_to_server(context, server_params, topic, msg):
+def queue_get_for(context, topic, host):
+def _get_impl():
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def create_connection(conf, new=True):
+def check_serialize(msg):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def fanout_cast(conf, context, topic, msg):
+def _serialize(data):
+def _deserialize(data):
+def unflatten_envelope(packenv):
+def _multi_send(method, context, topic, msg, timeout=None, envelope=False, _msg_id=None):
+def multicall(conf, *args, **kwargs):
+def call(conf, *args, **kwargs):
+def cast(conf, *args, **kwargs):
+def fanout_cast(conf, context, topic, msg, **kwargs):
+def notify(conf, context, topic, msg, envelope):
+def cleanup():
+def _safe_log(log_func, msg, msg_data):
+def serialize_remote_exception(failure_info, log_failure=True):
+def client_exceptions(*exceptions):
+def version_is_compatible(imp_version, version):
+def _get_queue_arguments(conf):
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def parse_host_port(address, default_port=None):
+def isotime(at=None, subsecond=False):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def set_brain(brain):
+def reset():
+def enforce(match_list, target_dict, credentials_dict, exc=None, *args, **kwargs):
+def register(name, func=None):
+@register('rule') DCNL def _check_rule(brain, match_kind, match, target_dict, cred_dict):
+@register('role') DCNL def _check_role(brain, match_kind, match, target_dict, cred_dict):
+@register('http') DCNL def _check_http(brain, match_kind, match, target_dict, cred_dict):
+@register(None) DCNL def _check_generic(brain, match_kind, match, target_dict, cred_dict):
+def synchronized(name, lock_file_prefix, external=False, lock_path=None):
+def is_uuid_like(val):
+def int_from_bool_as_string(subject):
+def bool_from_string(subject):
+def safe_decode(text, incoming=None, errors='strict'):
+def safe_encode(text, incoming=None, encoding='utf-8', errors='strict'):
+@contextlib.contextmanager DCNL def save_and_reraise_exception():
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno(git_dir):
+def _get_version_from_git(pre_version):
+def _get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def to_primitive(value, convert_instances=False, convert_datetime=True, level=0, max_depth=3):
+def notify(context, message):
+def notify(context, message):
+def notify(_context, message):
+def notify(context, message):
+def notify_decorator(name, fn):
+def notify(context, publisher_id, event_type, priority, payload):
+def _get_drivers():
+def add_driver(notification_driver):
+def _reset_drivers():
+def notify(_context, message):
+def notify(_context, message):
+def import_class(import_str):
+def import_object(import_str, *args, **kwargs):
+def import_object_ns(name_space, import_str, *args, **kwargs):
+def import_module(import_str):
+def try_import(import_str, default=None):
+def get_context_from_function_and_args(function, args, kwargs):
+def build_filter(class_name, *args):
+def load_filters(filters_path):
+def match_filter(filters, userargs, exec_dirs=[]):
+def periodic_task(*args, **kwargs):
+def short_cycle_task(*args, **kwargs):
+def paginate_query(query, model, limit, sort_keys, marker=None, sort_dir=None, sort_dirs=None):
+def pipeline_factory(loader, global_conf, **local_conf):
+def load_standard_extensions(ext_mgr, logger, path, package, ext_list=None):
+def get_pagination_params(request):
+def _get_limit_param(request):
+def _get_marker_param(request):
+def limited(items, request, max_limit=FLAGS.osapi_max_limit):
+def limited_by_marker(items, request, max_limit=FLAGS.osapi_max_limit):
+def remove_version_from_href(href):
+def get_items(obj):
+def SubTemplateElement(parent, tag, attrib=None, selector=None, subselector=None, **extra):
+def make_links(parent, selector=None):
+def make_flat_dict(name, selector=None, subselector=None, ns=None):
+def serializers(**serializers):
+def deserializers(**deserializers):
+def response(code):
+def action_peek_json(body):
+def action_peek_xml(body):
+def action(name):
+def extends(*args, **kwargs):
+def _translate_attachment_detail_view(_context, vol):
+def _translate_attachment_summary_view(_context, vol):
+def _translate_conductor_detail_view(context, vol, image_id=None):
+def _translate_conductor_summary_view(context, vol, image_id=None):
+def remove_invalid_options(context, search_options, allowed_search_options):
+def unquote_header_value(value):
+def parse_list_header(value):
+def parse_options_header(value):
+def _list_hosts(req, service=None):
+def check_host(fn):
+def register_models():
+def get_session(autocommit=True, expire_on_commit=False):
+def synchronous_switch_listener(dbapi_conn, connection_rec):
+def ping_listener(dbapi_conn, connection_rec, connection_proxy):
+def is_db_connection_error(args):
+def get_engine():
+def get_maker(engine, autocommit=True, expire_on_commit=False):
+def is_admin_context(context):
+def is_user_context(context):
+def authorize_project_context(context, project_id):
+def authorize_user_context(context, user_id):
+def authorize_quota_class_context(context, class_name):
+def require_admin_context(f):
+def require_context(f):
+def model_query(context, *args, **kwargs):
+def exact_filter(query, model, filters, legal_keys):
+def _get_host_utilization(context, host, ram_mb, disk_gb):
+@require_admin_context DCNL def compute_node_create(context, values, session=None):
+@require_admin_context DCNL def compute_node_update(context, compute_id, values, auto_adjust):
+def compute_node_get_by_host(context, host):
+def compute_node_utilization_update(context, host, free_ram_mb_delta=0, free_disk_gb_delta=0, work_delta=0, vm_delta=0):
+def compute_node_utilization_set(context, host, free_ram_mb=None, free_disk_gb=None, work=None, vms=None):
+def _find_migrate_repo():
+def service_destroy(context, service_id):
+def service_get(context, service_id):
+def service_get_by_host_and_topic(context, host, topic):
+def service_get_all(context, disabled=None):
+def service_get_all_by_topic(context, topic):
+def service_get_all_by_host(context, host):
+def service_get_all_bmc_by_host(context, host):
+def service_get_all_servicemanage_sorted(context):
+def service_get_by_args(context, host, binary):
+def service_create(context, values):
+def service_update(context, service_id, values):
+def compute_node_get(context, compute_id):
+def compute_node_get_all(context):
+def compute_node_create(context, values):
+def compute_node_update(context, compute_id, values, auto_adjust=True):
+def db_sync(version=None):
+def db_version():
+def find_config(config_path):
+def execute(*cmd, **kwargs):
+def trycmd(*args, **kwargs):
+def last_completed_audit_period(unit=None):
+def generate_password(length=20, symbolgroups=DEFAULT_PASSWORD_SYMBOLS):
+def safe_minidom_parse_string(xml_string):
+def xhtml_escape(value):
+def utf8(value):
+def delete_if_exists(pathname):
+def get_from_path(items, path):
+def flatten_dict(dict_, flattened=None):
+def partition_dict(dict_, keys):
+def map_dict_keys(dict_, key_map):
+def subset_dict(dict_, keys):
+def check_isinstance(obj, cls):
+def bool_from_str(val):
+def is_valid_boolstr(val):
+def is_valid_ipv4(address):
+def monkey_patch():
+def convert_to_list_dict(lst, label):
+def timefunc(func):
+def generate_glance_url():
+@contextlib.contextmanager DCNL def logging_error(message):
+@contextlib.contextmanager DCNL def remove_path_on_error(path):
+def make_dev_path(dev, partition=None, base='/dev'):
+def total_seconds(td):
+def sanitize_hostname(hostname):
+def read_cached_file(filename, cache_info, reload_func=None):
+def file_open(*args, **kwargs):
+def hash_file(file_like_object):
+@contextlib.contextmanager DCNL def temporary_mutation(obj, **kwargs):
+def service_is_up(service):
+def generate_mac_address():
+def read_file_as_root(file_path):
+@contextlib.contextmanager DCNL def temporary_chown(path, owner_uid=None):
+def strcmp_const_time(s1, s2):
+def walk_class_hierarchy(clazz, encountered=None):
+def ensure_tree(path):
+def to_bytes(text, default=0):
+def read_cached_file(filename, cache_info, reload_func=None):
+def enforce(context, action, target):
+def check_is_admin(roles):
+def _get_my_ip():
+def setup(product_name):
+def ensure_tree(path):
+def msg_reply(conf, msg_id, reply_q, connection_pool, reply=None, failure=None, ending=False, log_failure=True):
+def unpack_context(conf, msg):
+def pack_context(msg, context):
+def _add_unique_id(msg):
+def create_connection(conf, new, connection_pool):
+def multicall(conf, context, topic, msg, timeout, connection_pool):
+def call(conf, context, topic, msg, timeout, connection_pool):
+def cast(conf, context, topic, msg, connection_pool):
+def fanout_cast(conf, context, topic, msg, connection_pool):
+def cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def fanout_cast_to_server(conf, context, server_params, topic, msg, connection_pool):
+def notify(conf, context, topic, msg, connection_pool, envelope):
+def create_connection(new=True):
+def call(context, topic, msg, timeout=None, check_for_lock=False):
+def cast(context, topic, msg):
+def fanout_cast(context, topic, msg):
+def multicall(context, topic, msg, timeout=None, check_for_lock=False):
+def notify(context, topic, msg, envelope=False):
+def cleanup():
+def cast_to_server(context, server_params, topic, msg):
+def fanout_cast_to_server(context, server_params, topic, msg):
+def queue_get_for(context, topic, host):
+def _get_impl():
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def create_connection(conf, new=True):
+def check_serialize(msg):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def fanout_cast(conf, context, topic, msg):
+def _serialize(data):
+def _deserialize(data):
+def unflatten_envelope(packenv):
+def _multi_send(method, context, topic, msg, timeout=None, envelope=False, _msg_id=None):
+def multicall(conf, *args, **kwargs):
+def call(conf, *args, **kwargs):
+def cast(conf, *args, **kwargs):
+def fanout_cast(conf, context, topic, msg, **kwargs):
+def notify(conf, context, topic, msg, envelope):
+def cleanup():
+def _safe_log(log_func, msg, msg_data):
+def serialize_remote_exception(failure_info, log_failure=True):
+def client_exceptions(*exceptions):
+def version_is_compatible(imp_version, version):
+def _get_queue_arguments(conf):
+def create_connection(conf, new=True):
+def multicall(conf, context, topic, msg, timeout=None):
+def call(conf, context, topic, msg, timeout=None):
+def cast(conf, context, topic, msg):
+def fanout_cast(conf, context, topic, msg):
+def cast_to_server(conf, context, server_params, topic, msg):
+def fanout_cast_to_server(conf, context, server_params, topic, msg):
+def notify(conf, context, topic, msg, envelope):
+def parse_host_port(address, default_port=None):
+def isotime(at=None, subsecond=False):
+def parse_isotime(timestr):
+def strtime(at=None, fmt=PERFECT_TIME_FORMAT):
+def parse_strtime(timestr, fmt=PERFECT_TIME_FORMAT):
+def normalize_time(timestamp):
+def is_older_than(before, seconds):
+def is_newer_than(after, seconds):
+def utcnow_ts():
+def utcnow():
+def iso8601_from_timestamp(timestamp):
+def set_time_override(override_time=datetime.datetime.utcnow()):
+def advance_time_delta(timedelta):
+def advance_time_seconds(seconds):
+def clear_time_override():
+def marshall_now(now=None):
+def unmarshall_time(tyme):
+def delta_seconds(before, after):
+def is_soon(dt, window):
+def set_brain(brain):
+def reset():
+def enforce(match_list, target_dict, credentials_dict, exc=None, *args, **kwargs):
+def register(name, func=None):
+@register('rule') DCNL def _check_rule(brain, match_kind, match, target_dict, cred_dict):
+@register('role') DCNL def _check_role(brain, match_kind, match, target_dict, cred_dict):
+@register('http') DCNL def _check_http(brain, match_kind, match, target_dict, cred_dict):
+@register(None) DCNL def _check_generic(brain, match_kind, match, target_dict, cred_dict):
+def synchronized(name, lock_file_prefix, external=False, lock_path=None):
+def is_uuid_like(val):
+def int_from_bool_as_string(subject):
+def bool_from_string(subject):
+def safe_decode(text, incoming=None, errors='strict'):
+def safe_encode(text, incoming=None, encoding='utf-8', errors='strict'):
+@contextlib.contextmanager DCNL def save_and_reraise_exception():
+def canonicalize_emails(changelog, mapping):
+def write_git_changelog():
+def generate_authors():
+def get_cmdclass():
+def _get_revno(git_dir):
+def _get_version_from_git(pre_version):
+def _get_version_from_pkg_info(package_name):
+def get_version(package_name, pre_version=None):
+def to_primitive(value, convert_instances=False, convert_datetime=True, level=0, max_depth=3):
+def notify(context, message):
+def notify(context, message):
+def notify(_context, message):
+def notify(context, message):
+def notify_decorator(name, fn):
+def notify(context, publisher_id, event_type, priority, payload):
+def _get_drivers():
+def add_driver(notification_driver):
+def _reset_drivers():
+def notify(_context, message):
+def notify(_context, message):
+def import_class(import_str):
+def import_object(import_str, *args, **kwargs):
+def import_object_ns(name_space, import_str, *args, **kwargs):
+def import_module(import_str):
+def try_import(import_str, default=None):
+def get_context_from_function_and_args(function, args, kwargs):
+def build_filter(class_name, *args):
+def load_filters(filters_path):
+def match_filter(filters, userargs, exec_dirs=[]):
+def periodic_task(*args, **kwargs):
+def short_cycle_task(*args, **kwargs):
