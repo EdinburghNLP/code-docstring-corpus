@@ -1,6 +1,6 @@
 # code-docstring-corpus V2
 
-The code-docstring-corpus version 2, with class declarations, class methods, module docstrings and commit SHAs is now available in the directory V2
+The code-docstring-corpus version 2, with class declarations, class methods, module docstrings and commit SHAs
 
 ### Details
 
