@@ -25,7 +25,7 @@ The Python code was then preprocessed to normalize the syntax, extract top-level
 
 | directory | description |
 |---        |---          |
-| parallel-corpus | Main parallel corpus with a canonical split in  109108 training triples, 2000 validation triples and 2000 test triples. Each triple is annotated by metadata (repository owner, repository name, source file and line number). Also two versions of the above corpus reassembled into pairs: (declaration+body, docstring) and (declaration+docstring, body), for  code documentation tasks and code generation tasks, respectively.| 
+| parallel-corpus | Main parallel corpus with a canonical split in  109108 training triples, 2000 validation triples and 2000 test triples. Each triple is annotated by metadata (repository owner, repository name, source file and line number). Also two versions of the above corpus reassembled into pairs: (declaration+body, docstring) and (declaration+docstring, body), for  code documentation tasks and code generation tasks, respectively. You may refer to [the Readme in this folder](./parallel-corpus/) for descriptions about escape tokens| 
 | code-only-corpus | A code-only corpus of 161630 pairs of function declarations and function bodies, annotated with metadata. |
 | backtranslations-corpus | A corpus of docstrings automatically generated from the code-only corpus using Neural Machine Translation, to enable data augmentation by "backtranslation" |
 | nmt-outputs | Test and validation outputs of the baseline Neural Machine Translation models. |
